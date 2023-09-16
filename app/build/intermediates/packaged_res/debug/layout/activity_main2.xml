@@ -12,22 +12,25 @@
         android:layout_height="78dp"
         android:layout_marginStart="108dp"
         android:text="@string/textview2"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="174dp"
         android:layout_height="95dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="172dp"
         android:text="@string/button"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -376,7 +376,9 @@ drawable zombie_anim_f2
 drawable zombie_anim_f3
 id button
 id button2
-id textView
+id nextButton
+id resetCount
+id textView1
 id textView2
 layout activity_main
 layout activity_main2
@@ -385,6 +387,7 @@ mipmap ic_launcher_round
 string Activity1Text
 string app_name
 string button
+string buttonClick
 string buttonText
 string textview2
 string title_activity_main2

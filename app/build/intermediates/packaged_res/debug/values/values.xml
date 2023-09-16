@@ -5,6 +5,7 @@
     <string name="Activity1Text">This is Activity 1</string>
     <string name="app_name">CS2340CTeam50Game</string>
     <string name="button">Button</string>
+    <string name="buttonClick">"Button has been clicked %d times!"</string>
     <string name="buttonText">Button</string>
     <string name="textview2">This is Activity 2</string>
     <string name="title_activity_main2">MainActivity2</string>

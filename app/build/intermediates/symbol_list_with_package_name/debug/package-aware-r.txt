@@ -3690,6 +3690,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id nextButton
 id noScroll
 id noState
 id none
@@ -3726,6 +3727,7 @@ id radio
 id ratio
 id rectangles
 id report_drawn
+id resetCount
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3829,7 +3831,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
+id textView1
 id textView2
 id text_input_end_icon
 id text_input_error_icon
@@ -4113,6 +4115,7 @@ string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
 string button
+string buttonClick
 string buttonText
 string character_counter_content_description
 string character_counter_overflowed_content_description
