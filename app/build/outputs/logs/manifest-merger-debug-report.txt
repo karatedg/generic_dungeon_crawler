@@ -127,7 +127,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Joshua\.gradle\cac
 		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:13:9-55
 	android:dataExtractionRules
 		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.cs2340cteam50game.MainActivity2
+activity#com.example.cs2340cteam50game.ConfigScreen
 ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:15:9-19:62
 	android:label
 		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:18:13-57
@@ -136,13 +136,13 @@ ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\Andr
 	android:theme
 		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:19:13-59
 	android:name
-		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:16:13-42
-activity#com.example.cs2340cteam50game.MainActivity
+		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:16:13-41
+activity#com.example.cs2340cteam50game.OpeningScreen
 ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:20:9-28:20
 	android:exported
 		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:21:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN

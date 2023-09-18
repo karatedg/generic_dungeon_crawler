@@ -1,1558 +1,1566 @@
 [
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_full_open_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_full_open_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_top_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_top_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_activity_main2.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\activity_main2.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ice_zombie_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ice_zombie_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_hole_2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_hole_2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_bomb_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/bomb_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_top_2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_top_2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_bow_2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_bow_2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_banner_yellow.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_banner_yellow.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_necromancer_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\necromancer_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ui_heart_full.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ui_heart_full.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doors_frame_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doors_frame_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_basin_blue_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_basin_blue_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_hammer.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_hammer.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_lavish_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_lavish_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_necromancer_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/necromancer_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_slug_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_slug_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_swampy_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\swampy_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_spikes_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_spikes_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_rusty_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_rusty_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_crate.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\crate.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_coin_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/coin_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_full_open_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_full_open_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_spikes_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_spikes_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_spikes_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_spikes_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_top_3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_top_3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_edge_down.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\edge_down.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_hole_2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_hole_2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ui_heart_full.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ui_heart_full.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_slug_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_slug_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_hammer.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_hammer.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_4.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_4.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_7.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_7.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_column_wall.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\column_wall.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_goo.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_goo.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_throwing_axe.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_throwing_axe.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_red_gem_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_red_gem_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_spikes_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_spikes_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_regular_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_regular_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_full_open_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_full_open_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_mid_red_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_mid_red_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_edge_down.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/edge_down.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_yellow.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_yellow.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_slug_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/slug_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_button_red_up.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/button_red_up.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_button_red_down.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\button_red_down.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_bow.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_bow.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_goo_base.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_goo_base.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_6.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_6.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_mid_blue_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_mid_blue_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_empty_open_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_empty_open_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_5.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_5.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_outer_mid_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_outer_mid_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_necromancer_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/necromancer_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doors_frame_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doors_frame_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_mid_red_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_mid_red_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_banner_green.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_banner_green.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_button_red_up.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\button_red_up.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_empty_open_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_empty_open_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_outer_top_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_outer_top_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_zombie_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\zombie_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ice_zombie_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ice_zombie_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_muddy_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\muddy_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_mid.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_mid.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_mid_red_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_mid_red_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_slug_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\slug_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_top_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_top_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_goo.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_goo.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ice_zombie_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ice_zombie_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_mimic_open_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_mimic_open_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_bottom_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_bottom_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_big_hammer.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_big_hammer.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_top_1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_top_1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_saw_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_saw_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_big_blue.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_big_blue.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_coin_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/coin_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_golden_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_golden_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_mimic_open_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_mimic_open_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_swampy_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/swampy_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_mid_blue_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_mid_blue_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_basin_blue_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_basin_blue_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doors_leaf_closed.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doors_leaf_closed.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_muddy_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/muddy_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_anime_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_anime_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_cleaver.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_cleaver.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_bow_2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_bow_2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_swampy_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/swampy_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_goo_base.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_goo_base.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_baton_with_spikes.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_baton_with_spikes.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_green.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_green.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_basin_blue_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_basin_blue_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_spear.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_spear.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_big_hammer.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_big_hammer.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_ladder.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_ladder.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_mid_blue_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_mid_blue_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_crate.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/crate.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_zombie_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/zombie_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_top_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_top_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_outer_top_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_outer_top_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_double_axe.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_double_axe.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_outer_front_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_outer_front_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ui_heart_half.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ui_heart_half.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_swampy_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/swampy_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_zombie_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/zombie_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skull.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skull.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_big_green.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_big_green.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_mid_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_mid_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_red.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_red.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_top_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_top_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_outer_mid_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_outer_mid_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_muddy_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/muddy_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_4.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_4.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_7.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_7.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_tshape_bottom_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_tshape_bottom_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_mid_red_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_mid_red_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_katana.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_katana.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_swampy_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\swampy_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_button_blue_up.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/button_blue_up.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_bottom_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_bottom_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lever_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lever_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_muddy_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/muddy_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_tshape_bottom_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_tshape_bottom_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_empty_open_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_empty_open_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\activity_main.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_zombie_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\zombie_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_duel_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_duel_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_top_mid.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_top_mid.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_mid_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_mid_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_hole.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\hole.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_muddy_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/muddy_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_machete.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_machete.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_mid_blue_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_mid_blue_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_button_blue_up.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\button_blue_up.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_top_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_top_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_waraxe.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_waraxe.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_top_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_top_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doors_leaf_open.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doors_leaf_open.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_swampy_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\swampy_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_empty_open_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_empty_open_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_yellow.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_yellow.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_spikes_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_spikes_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_zombie_anim_f10.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/zombie_anim_f10.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_spikes_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_spikes_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_cleaver.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_cleaver.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_basin_blue_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_basin_blue_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_8.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_8.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_banner_red.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_banner_red.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_outer_front_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_outer_front_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_knife.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_knife.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_machete.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_machete.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/xml_backup_rules.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_background.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/welcome_background.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_throwing_axe.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_throwing_axe.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_zombie_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/zombie_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_zombie_anim_f10.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\zombie_anim_f10.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_big_yellow.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_big_yellow.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_hole.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/hole.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_spear.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_spear.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_red_gem_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_red_gem_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_outer_front_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_outer_front_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_big_blue.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_big_blue.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_full_open_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_full_open_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_spikes_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_spikes_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_mid.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_mid.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_spikes_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_spikes_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_top_3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_top_3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_hole_1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_hole_1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_basin_blue_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_basin_blue_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_big_yellow.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_big_yellow.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_necromancer_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\necromancer_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_bomb_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/bomb_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_swampy_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\swampy_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_green_magic_staff.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_green_magic_staff.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_slug_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_slug_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_empty_open_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_empty_open_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_stairs.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_stairs.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_outer_mid_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_outer_mid_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_necromancer_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/necromancer_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_necromancer_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\necromancer_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_top_1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_top_1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_button_blue_down.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/button_blue_down.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ui_heart_empty.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ui_heart_empty.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_tshape_bottom_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_tshape_bottom_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_lavish_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_lavish_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_coin_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/coin_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_top_2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_top_2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_slug_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\slug_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_arrow.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_arrow.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ice_zombie_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ice_zombie_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_slug_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/slug_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_empty_open_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_empty_open_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_basin_blue_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_basin_blue_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_slug_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_slug_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_necromancer_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/necromancer_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_bomb_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/bomb_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_m_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_m_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_mid_blue_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_mid_blue_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_mid_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_mid_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_banner_yellow.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_banner_yellow.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_zombie_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\zombie_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_banner_blue.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_banner_blue.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_banner_green.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_banner_green.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_knife.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_knife.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_coin_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/coin_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skelet_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skelet_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doors_leaf_open.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doors_leaf_open.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_rusty_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_rusty_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lever_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lever_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_slug_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_slug_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_skull.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/skull.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_mace.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_mace.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_top_mid.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_top_mid.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_6.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_6.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_outer_mid_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_outer_mid_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_tshape_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_tshape_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_double_axe.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_double_axe.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_mid_red_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_mid_red_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_basin_red_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_basin_red_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wogol_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wogol_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_mid_red_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_mid_red_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_outer_top_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_outer_top_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_red.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_red.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_button_blue_down.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\button_blue_down.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_5.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_5.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_knight_f_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\knight_f_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_tshape_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_tshape_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lever_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lever_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_muddy_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\muddy_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_swampy_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/swampy_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_bomb_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\bomb_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_slug_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/slug_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_column.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\column.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lever_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lever_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_blue.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_blue.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_golden_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_golden_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_demon_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_demon_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_knight_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_knight_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_demon_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_demon_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ice_zombie_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ice_zombie_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_axe.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_axe.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_mid_blue_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_mid_blue_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_hole_1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_hole_1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_big_zombie_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\big_zombie_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_banner_red.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_banner_red.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_regular_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_regular_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_f_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_f_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_coin_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\coin_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doc_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doc_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_tshape_bottom_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_tshape_bottom_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_buttons.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/welcome_buttons.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_big_red.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_big_red.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_saw_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_saw_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_mace.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_mace.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_bomb_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\bomb_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_muddy_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\muddy_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_tshape_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_tshape_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_arrow.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_arrow.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_knight_sword.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_knight_sword.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_mid_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_mid_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doors_frame_top.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doors_frame_top.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_bottom_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_bottom_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_top_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_top_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_bomb_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\bomb_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_stairs.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_stairs.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doors_frame_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doors_frame_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_waraxe.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_waraxe.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_slug_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_slug_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_muddy_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\muddy_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ui_heart_empty.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ui_heart_empty.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_coin_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\coin_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_big_green.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_big_green.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_outer_top_left.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_outer_top_left.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_m_hit_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_m_hit_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_pumpkin_dude_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/pumpkin_dude_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_main2.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_main2.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_column_wall.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/column_wall.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_m_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_m_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chest_mimic_open_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chest_mimic_open_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_basin_red_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_basin_red_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_slug_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/slug_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_big_red.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_big_red.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_column.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/column.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_flask_green.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/flask_green.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doors_frame_top.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doors_frame_top.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_coin_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\coin_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chort_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chort_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_knight_m_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/knight_m_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_red_magic_staff.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_red_magic_staff.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_top_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_top_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ice_zombie_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ice_zombie_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_outer_front_right.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_outer_front_right.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_goblin_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\goblin_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_shaman_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_shaman_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_hit_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_hit_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_slug_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_slug_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_mimic_open_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_mimic_open_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_m_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_m_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_anime_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_anime_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_f_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_f_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_chort_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\chort_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ice_zombie_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ice_zombie_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_basin_red_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_basin_red_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_full_open_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_full_open_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_zombie_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_zombie_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_slug_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\slug_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_basin_red_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_basin_red_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_gt_overlay.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/gt_overlay.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_full_open_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_full_open_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_flask_blue.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\flask_blue.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_button_red_down.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/button_red_down.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_run_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_run_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_banner_blue.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_banner_blue.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_mimic_open_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_mimic_open_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_idle_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_idle_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_edge_bottom_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_edge_bottom_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ice_zombie_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ice_zombie_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_run_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_necromancer_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\necromancer_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_idle_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_slug_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\slug_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_f_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_f_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_dwarf_f_idle_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/dwarf_f_idle_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_masked_orc_run_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\masked_orc_run_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_duel_sword.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_duel_sword.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_orc_warrior_run_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\orc_warrior_run_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_warrior_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_warrior_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wall_fountain_basin_red_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wall_fountain_basin_red_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wizzard_f_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wizzard_f_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_m_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_m_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_tiny_slug_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\tiny_slug_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_f_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_f_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_8.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_8.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_big_zombie_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/big_zombie_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_edge_tshape_right.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_edge_tshape_right.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_doors_frame_left.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/doors_frame_left.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_green_magic_staff.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_green_magic_staff.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_chest_mimic_open_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/chest_mimic_open_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\xml\\backup_rules.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_tiny_zombie_idle_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/tiny_zombie_idle_anim_f2.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_f_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_f_idle_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_imp_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/imp_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_floor_ladder.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\floor_ladder.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_baton_with_spikes.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_baton_with_spikes.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wizzard_m_run_anim_f3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wizzard_m_run_anim_f3.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doc_run_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doc_run_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_run_anim_f2.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_angel_idle_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/angel_idle_anim_f0.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_floor_3.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/floor_3.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_idle_anim_f1.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_red_magic_staff.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_red_magic_staff.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_goblin_run_anim_f2.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/goblin_run_anim_f2.png"
     },
     {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_main.xml.flat",
         "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ogre_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ogre_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_orc_shaman_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/orc_shaman_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_angel_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\angel_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_masked_orc_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/masked_orc_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_skelet_idle_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\skelet_idle_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_katana.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_katana.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_imp_run_anim_f3.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\imp_run_anim_f3.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_wogol_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/wogol_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_lizard_m_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\lizard_m_idle_anim_f2.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_lizard_f_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/lizard_f_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_wall_fountain_basin_red_anim_f1.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\wall_fountain_basin_red_anim_f1.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ui_heart_half.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ui_heart_half.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_coin_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\coin_anim_f0.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_elf_m_run_anim_f0.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/elf_m_run_anim_f0.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_weapon_bow.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\weapon_bow.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ogre_idle_anim_f1.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ogre_idle_anim_f1.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_dwarf_f_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\dwarf_f_idle_anim_f2.png"
-    },
-    {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_pumpkin_dude_idle_anim_f2.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\pumpkin_dude_idle_anim_f2.png"
-    },
-    {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_elf_m_idle_anim_f0.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\elf_m_idle_anim_f0.png"
-    },
-    {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_doors_leaf_closed.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\doors_leaf_closed.png"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_weapon_axe.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/weapon_axe.png"
     }
 ]

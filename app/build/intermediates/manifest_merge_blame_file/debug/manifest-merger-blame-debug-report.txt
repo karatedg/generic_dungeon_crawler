@@ -44,8 +44,8 @@
 29-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:13:9-55
 30        <activity
 30-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:15:9-19:62
-31            android:name="com.example.cs2340cteam50game.MainActivity2"
-31-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:16:13-42
+31            android:name="com.example.cs2340cteam50game.ConfigScreen"
+31-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:16:13-41
 32            android:exported="false"
 32-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:17:13-37
 33            android:label="@string/title_activity_main2"
@@ -54,8 +54,8 @@
 34-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:19:13-59
 35        <activity
 35-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:20:9-28:20
-36            android:name="com.example.cs2340cteam50game.MainActivity"
-36-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:21:13-41
+36            android:name="com.example.cs2340cteam50game.OpeningScreen"
+36-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:21:13-42
 37            android:exported="true" >
 37-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:22:13-36
 38            <intent-filter>

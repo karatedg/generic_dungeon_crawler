@@ -4,59 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="202dp"
-        android:layout_height="97dp"
-        android:text="@string/buttonText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+    android:background="@drawable/welcome_background"
+    tools:context=".OpeningScreen">
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="298dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/Activity1Text"
+        android:layout_width="522dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/welcomeText"
         android:textAlignment="center"
+        android:textColor="#FAF7F7"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/nextButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="133dp"
-        android:layout_height="79dp"
-        android:backgroundTint="#F3DEDE"
-        android:text="Next Activity"
+    <android.widget.Button
+        android:id="@+id/exitButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/welcome_buttons"
+        android:text="@string/exitButtonText"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/startButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/welcome_buttons"
+        android:text="@string/startButtonText"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.678" />
-
-    <Button
-        android:id="@+id/resetCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset Count"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.815" />
+        app:srcCompat="@drawable/gt_overlay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

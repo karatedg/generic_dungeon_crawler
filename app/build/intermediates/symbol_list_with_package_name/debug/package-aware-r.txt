@@ -3051,6 +3051,7 @@ drawable goblin_run_anim_f0
 drawable goblin_run_anim_f1
 drawable goblin_run_anim_f2
 drawable goblin_run_anim_f3
+drawable gt_overlay
 drawable hole
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
@@ -3344,6 +3345,8 @@ drawable weapon_saw_sword
 drawable weapon_spear
 drawable weapon_throwing_axe
 drawable weapon_waraxe
+drawable welcome_background
+drawable welcome_buttons
 drawable wizzard_f_hit_anim_f0
 drawable wizzard_f_idle_anim_f0
 drawable wizzard_f_idle_anim_f1
@@ -3473,7 +3476,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id button2
 id buttonPanel
 id cache_measures
@@ -3557,6 +3559,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id exitButton
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3598,6 +3601,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3690,7 +3694,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id nextButton
 id noScroll
 id noState
 id none
@@ -3727,7 +3730,6 @@ id radio
 id ratio
 id rectangles
 id report_drawn
-id resetCount
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3800,6 +3802,7 @@ id src_in
 id src_over
 id standard
 id start
+id startButton
 id startHorizontal
 id startToEnd
 id startVertical
@@ -4077,7 +4080,6 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
-string Activity1Text
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4116,7 +4118,6 @@ string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
 string button
 string buttonClick
-string buttonText
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -4130,6 +4131,7 @@ string dialog
 string dropdown_menu
 string error_a11y_label
 string error_icon_content_description
+string exitButtonText
 string expanded
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4256,12 +4258,14 @@ string searchview_navigation_content_description
 string selected
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string startButtonText
 string status_bar_notification_info_overflow
 string switch_role
 string tab
 string template_percent
 string textview2
 string title_activity_main2
+string welcomeText
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

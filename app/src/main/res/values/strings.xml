@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">CS2340CTeam50Game</string>
-    <string name="buttonText">Button</string>
+    <string name="exitButtonText">Exit</string>
+    <string name="startButtonText">Start</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="textview2">This is Activity 2</string>
     <string name="button">Button</string>
-    <string name="Activity1Text">This is Activity 1</string>
+    <string name="welcomeText">Generic Dungeon Crawler Game</string>
     <string name="buttonClick">"Button has been clicked %d times!"</string>
 </resources>
