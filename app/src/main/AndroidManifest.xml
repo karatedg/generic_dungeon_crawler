@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CS2340CTeam50Game"
         tools:targetApi="31">
         <activity
+            android:name=".ContinueScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
