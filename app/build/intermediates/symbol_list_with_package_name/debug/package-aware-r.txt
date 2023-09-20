@@ -2903,6 +2903,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable blue_idle
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2916,7 +2917,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable green_idle
 drawable gt_overlay
+drawable health_icon
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3002,6 +3005,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable red_idle
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3161,6 +3165,8 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id difficultySetting
+id difficultyText
 id dimensions
 id direct
 id disableHome
@@ -3219,6 +3225,8 @@ id group_divider
 id grouping
 id groups
 id header_title
+id healthIcon
+id healthValue
 id hide_in_inspector_tag
 id hideable
 id home
@@ -3350,6 +3358,8 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id playerName
+id playerSprite
 id pooling_container_listener_holder_tag
 id position
 id postLayout
@@ -3412,6 +3422,7 @@ id showHome
 id showTitle
 id sin
 id skipCollapsed
+id skipToEnd
 id skipped
 id slide
 id snackbar_action
@@ -3646,6 +3657,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout in_game_activity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
