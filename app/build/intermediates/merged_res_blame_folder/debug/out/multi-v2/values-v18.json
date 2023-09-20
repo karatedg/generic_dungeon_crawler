@@ -4,7 +4,7 @@
             "outputFile": "com.example.cs2340cteam50game.app-mergeDebugResources-55:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\69bb5d7573a25a89f9f143451697c713\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "/Users/devangandhi/.gradle/caches/transforms-3/69bb5d7573a25a89f9f143451697c713/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
