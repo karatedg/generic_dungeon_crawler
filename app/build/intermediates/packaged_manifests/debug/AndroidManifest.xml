@@ -31,10 +31,12 @@
             android:name="com.example.cs2340cteam50game.ConfigScreen"
             android:exported="false"
             android:label="@string/title_activity_main2"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
             android:name="com.example.cs2340cteam50game.OpeningScreen"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
