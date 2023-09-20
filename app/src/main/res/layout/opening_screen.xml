@@ -10,16 +10,16 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="522dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="650dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/GothamUltraItalic"
         android:text="@string/welcomeText"
         android:textAlignment="center"
-        android:textColor="#FAF7F7"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
+        android:textColor="#F8FBFBFB"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,27 +27,35 @@
         android:id="@+id/exitButton"
         android:layout_width="260dp"
         android:layout_height="100dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="132dp"
         android:background="@drawable/welcome_buttons"
+        android:fontFamily="@font/CarneroBold"
         android:text="@string/exitButtonText"
         android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <android.widget.Button
         android:id="@+id/startButton"
         android:layout_width="260dp"
         android:layout_height="100dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="132dp"
         android:background="@drawable/welcome_buttons"
+        android:fontFamily="@font/CarneroBold"
         android:text="@string/startButtonText"
         android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <ImageView
         android:id="@+id/imageView2"
