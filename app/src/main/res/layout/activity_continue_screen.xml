@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9E9FA1"
+    android:background="@drawable/welcome_background"
     tools:context=".ContinueScreen">
 
     <ImageButton
@@ -14,10 +14,10 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898"
+        app:layout_constraintVertical_bias="0.891"
         app:srcCompat="@drawable/back" />
 
     <ImageButton
@@ -27,9 +27,9 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895"
+        app:layout_constraintVertical_bias="0.888"
         app:srcCompat="@drawable/next_pixel" />
 </androidx.constraintlayout.widget.ConstraintLayout>

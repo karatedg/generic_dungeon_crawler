@@ -9,7 +9,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ContinueScreen extends AppCompatActivity {
-
+    private String playerName;
+    private int difficulty;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +21,7 @@ public class ContinueScreen extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(ContinueScreen.this, );
+                //Intent intent = new Intent(ContinueScreen.this, GameScreen.class);
                 //startActivity(intent);
             }
         });
@@ -28,7 +29,7 @@ public class ContinueScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Intent intent = new Intent(ContinueScreen.this, ConfigScreen.class);
-               // startActivity(intent);
+                //startActivity(intent);
             }
         });
     }
