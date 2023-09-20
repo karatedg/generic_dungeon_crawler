@@ -11,7 +11,7 @@
         android:id="@+id/playerSprite"
         android:layout_width="70dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/blueidle"
+        app:srcCompat="@drawable/blue_idle"
         tools:layout_editor_absoluteX="357dp"
         tools:layout_editor_absoluteY="324dp" />
 
@@ -31,9 +31,9 @@
         android:layout_height="31dp"
         android:layout_marginLeft="25px"
         android:layout_marginTop="25px"
+        app:srcCompat="@drawable/health_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/healthIcon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/healthValue"
