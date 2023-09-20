@@ -21,15 +21,15 @@ public class ContinueScreen extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(ContinueScreen.this, GameScreen.class);
-                //startActivity(intent);
+                Intent intent = new Intent(ContinueScreen.this, GameScreen.class);
+                startActivity(intent);
             }
         });
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(ContinueScreen.this, ConfigScreen.class);
-                //startActivity(intent);
+                Intent intent = new Intent(ContinueScreen.this, ConfigScreen.class);
+                startActivity(intent);
             }
         });
     }
