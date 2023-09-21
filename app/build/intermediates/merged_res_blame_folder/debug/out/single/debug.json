@@ -4,6 +4,10 @@
         "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_continue_screen.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_continue_screen.xml"
+    },
+    {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_red_idle.png.flat",
         "source": "com.example.cs2340cteam50game.app-main-59:/drawable/red_idle.png"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_back.jpeg.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/back.jpeg"
     },
     {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_green_idle.png.flat",
@@ -54,6 +62,10 @@
     {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_health_icon.png.flat",
         "source": "com.example.cs2340cteam50game.app-main-59:/drawable/health_icon.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_next_pixel.jpeg.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/next_pixel.jpeg"
     },
     {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
@@ -100,7 +112,15 @@
         "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable-notlong_resource_continue.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable-notlong/resource_continue.png"
+    },
+    {
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
         "source": "com.example.cs2340cteam50game.app-main-59:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_resource_continue.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/resource_continue.png"
     }
 ]

@@ -2903,6 +2903,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable blue_idle
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2993,6 +2994,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable next_pixel
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3006,6 +3008,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable red_idle
+drawable resource_continue
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3099,6 +3102,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3143,6 +3147,7 @@ id container
 id content
 id contentPanel
 id contiguous
+id continueButton
 id continuousVelocity
 id coordinator
 id cos
@@ -3639,6 +3644,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_continue_screen
 layout activity_main
 layout activity_main2
 layout custom_dialog
