@@ -2,16 +2,14 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
-drawable back
 drawable blue_idle
+drawable firstmap
 drawable green_idle
 drawable gt_overlay
 drawable health_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable next_pixel
 drawable red_idle
-drawable resource_continue
 drawable welcome_background
 drawable welcome_buttons
 id back
@@ -22,11 +20,13 @@ id difficultyText
 id exitButton
 id healthIcon
 id healthValue
+id imageView
 id imageView2
 id playerName
 id playerSprite
 id skipToEnd
 id startButton
+id textView
 id textView1
 id textView2
 layout activity_continue_screen

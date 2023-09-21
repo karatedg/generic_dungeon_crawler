@@ -74,4 +74,12 @@
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="330dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="966dp"
+        android:layout_height="565dp"
+        app:srcCompat="@drawable/firstmap"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-86dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
