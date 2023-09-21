@@ -13,12 +13,7 @@
         android:theme="@style/Theme.CS2340CTeam50Game"
         tools:targetApi="31">
         <activity
-            android:name=".ConfigScreen"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.CS2340CTeam50Game" />
-        <activity
-            android:name=".OpeningScreen"
+            android:name=".ContinueScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

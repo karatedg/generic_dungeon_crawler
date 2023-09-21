@@ -28,6 +28,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.CS2340CTeam50Game" >
         <activity
+            android:name="com.example.cs2340cteam50game.ContinueScreen"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.CS2340CTeam50Game" />
+        <activity
             android:name="com.example.cs2340cteam50game.ConfigScreen"
             android:exported="false"
             android:label="@string/title_activity_main2"
