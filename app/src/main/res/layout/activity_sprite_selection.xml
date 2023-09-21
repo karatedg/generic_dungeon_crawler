@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    tools:context=".SpriteSelectionScreen">
+
+        <TextView
+            android:id="@+id/usernameDisplay"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:text="Username Display"
+            android:textAlignment="center"
+            android:textColor="#FAF7F7"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="617dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <TextView
+            android:id="@+id/difficultyDisplay"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:text="Difficulty Display"
+            android:textAlignment="center"
+            android:textColor="#FAF7F7"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="617dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+        <TextView
+            android:id="@+id/spriteViewText"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginEnd="146dp"
+            android:text="Sprite:"
+            android:textAlignment="viewEnd"
+            android:textColor="#FAF7F7"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/hardButton"
+            android:layout_width="117dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/welcome_buttons"
+            android:text="Hard"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mediumButton" />
+
+        <android.widget.Button
+            android:id="@+id/mediumButton"
+            android:layout_width="117dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/welcome_buttons"
+            android:text="Medium"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/easyButton" />
+
+        <android.widget.Button
+            android:id="@+id/easyButton"
+            android:layout_width="117dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/welcome_buttons"
+            android:text="Easy"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/difficultyViewText"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="146dp"
+            android:text="Difficulty:"
+            android:textAlignment="viewEnd"
+            android:textColor="#FAF7F7"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameViewText" />
+
+        <TextView
+            android:id="@+id/usernameViewText"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="146dp"
+            android:text="Username:"
+            android:textAlignment="viewEnd"
+            android:textColor="#FAF7F7"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/nextButton"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="696dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/welcome_buttons"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/backButton"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/welcome_buttons"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/gamePropertiesViewText"
+            android:layout_width="492dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="146dp"
+            android:text="Game Properties"
+            android:textAlignment="center"
+            android:textColor="#FAF7F7"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/redSpriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/red_idle" />
+
+        <ImageButton
+            android:id="@+id/blueSpriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/redSpriteButton"
+            app:srcCompat="@drawable/blue_idle" />
+
+        <ImageButton
+            android:id="@+id/greenSpriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/blueSpriteButton"
+            app:srcCompat="@drawable/green_idle" />
+
+        <EditText
+            android:id="@+id/usernameTextPassword"
+            android:layout_width="375dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="160dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <ImageView
+            android:id="@+id/spriteDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gt_overlay"
+            app:srcCompat="@drawable/red_idle"
+            tools:layout_editor_absoluteX="608dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

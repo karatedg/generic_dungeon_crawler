@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Process;
 import android.util.Log;
 import android.widget.Button;
 import android.content.Intent;
@@ -29,7 +28,7 @@ public class OpeningScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button exitButton = (Button) findViewById(R.id.exitButton);
-        Button nextButton = (Button) findViewById(R.id.startButton);
+        Button nextButton = (Button) findViewById(R.id.redSpriteButton);
         TextView textView1 = (TextView) findViewById(R.id.textView1);
         SharedPreferences p1 = getSharedPreferences("p1", MODE_PRIVATE);
 
