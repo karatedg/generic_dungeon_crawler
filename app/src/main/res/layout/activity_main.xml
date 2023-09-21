@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.widget.Button
-        android:id="@+id/exitButton"
+        android:id="@+id/backButton"
         android:layout_width="260dp"
         android:layout_height="100dp"
         android:layout_marginTop="148dp"

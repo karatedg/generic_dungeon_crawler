@@ -15,8 +15,8 @@ public class ContinueScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_continue_screen);
-        ImageButton continueButton = (ImageButton) findViewById(R.id.continueButton);
-        ImageButton backButton = (ImageButton) findViewById(R.id.back);
+        Button continueButton = (Button) findViewById(R.id.continueButton);
+        Button backButton = (Button) findViewById(R.id.backButton);
 
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
