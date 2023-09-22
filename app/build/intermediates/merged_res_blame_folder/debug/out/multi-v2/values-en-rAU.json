@@ -4,7 +4,7 @@
             "outputFile": "com.example.cs2340cteam50game.app-mergeDebugResources-55:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\69bb5d7573a25a89f9f143451697c713\\transformed\\appcompat-1.6.1\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/69bb5d7573a25a89f9f143451697c713/transformed/appcompat-1.6.1/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\ef8fd35d2ecc24066c86e1a847061c15\\transformed\\material3-1.0.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/ef8fd35d2ecc24066c86e1a847061c15/transformed/material3-1.0.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\d3783e733eeab7851c343ea3b248d521\\transformed\\core-1.9.0\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "4233",
-                        "endColumns": "100",
-                        "endOffsets": "4329"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\0e20bac0935ef8588cc229efda7785dc\\transformed\\ui-1.4.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/0e20bac0935ef8588cc229efda7785dc/transformed/ui-1.4.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "2762,2854,3014,3108,3281,3444,3526,3615,3704,3788,3853,3917,3995,4160,4334,4411,4477",
                         "endColumns": "91,81,93,98,86,81,88,88,83,64,63,77,81,72,76,65,120",
                         "endOffsets": "2849,2931,3103,3202,3363,3521,3610,3699,3783,3848,3912,3990,4072,4228,4406,4472,4593"
+                    }
+                },
+                {
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "4233",
+                        "endColumns": "100",
+                        "endOffsets": "4329"
                     }
                 }
             ]
