@@ -6,17 +6,13 @@ import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class SpriteSelectionScreen extends AppCompatActivity {
     private int spriteNum = 1;
@@ -53,38 +49,38 @@ public class SpriteSelectionScreen extends AppCompatActivity {
 
         //Check for and enforce previous choices
         p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-        username.setText(p1.getString("username",""));
+        username.setText(p1.getString("username", ""));
         switch (p1.getInt("difficulty", 0)) {
-            case 1:
-                difficultyDisplay.setText(R.string.difficulty_easy);
-                difficultyNum = 1;
-                break;
-            case 2:
-                difficultyDisplay.setText(R.string.difficulty_medium);
-                difficultyNum = 2;
-                break;
-            case 3:
-                difficultyDisplay.setText(R.string.difficulty_hard);
-                difficultyNum = 3;
-                break;
-            default:
-                break;
+        case 1:
+            difficultyDisplay.setText(R.string.difficulty_easy);
+            difficultyNum = 1;
+            break;
+        case 2:
+            difficultyDisplay.setText(R.string.difficulty_medium);
+            difficultyNum = 2;
+            break;
+        case 3:
+            difficultyDisplay.setText(R.string.difficulty_hard);
+            difficultyNum = 3;
+            break;
+        default:
+            break;
         }
         switch (p1.getInt("sprite", 0)) {
-            case 1:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null));
-                spriteNum = 1;
-                break;
-            case 2:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null));
-                spriteNum = 2;
-                break;
-            case 3:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null));
-                spriteNum = 3;
-                break;
-            default:
-                break;
+        case 1:
+            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null));
+            spriteNum = 1;
+            break;
+        case 2:
+            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null));
+            spriteNum = 2;
+            break;
+        case 3:
+            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null));
+            spriteNum = 3;
+            break;
+        default:
+            break;
         }
 
 
@@ -153,7 +149,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("")) {
+                if (username.getText().toString().trim().equals("")) {
                     return;
                 } else {
                     p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);

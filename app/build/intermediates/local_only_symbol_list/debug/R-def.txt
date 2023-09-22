@@ -56,7 +56,6 @@ string difficulty_hard
 string difficulty_medium
 string exitButtonText
 string startButtonText
-string usernameDisplay
 string welcomeText
 style Base.Theme.CS2340CTeam50Game
 style Theme.CS2340CTeam50Game

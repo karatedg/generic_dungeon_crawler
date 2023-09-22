@@ -43,3 +43,8 @@ git checkout joshua_buchsbaum
 git checkout main
 git checkout main --force
 git checkout joshua_buchsbaum --force
+git fetch
+git stash
+git pull
+git stash drop
+clear

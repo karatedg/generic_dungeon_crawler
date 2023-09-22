@@ -8,7 +8,6 @@
     <string name="difficulty_medium">Difficulty: Medium</string>
     <string name="exitButtonText">Exit</string>
     <string name="startButtonText">Start</string>
-    <string name="usernameDisplay">Username: %s</string>
     <string name="welcomeText">Generic Dungeon Crawler Game</string>
     <style name="Base.Theme.CS2340CTeam50Game" parent="Theme.Material3.DayNight.NoActionBar">
         

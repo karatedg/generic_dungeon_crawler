@@ -3927,7 +3927,6 @@ string status_bar_notification_info_overflow
 string switch_role
 string tab
 string template_percent
-string usernameDisplay
 string welcomeText
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
