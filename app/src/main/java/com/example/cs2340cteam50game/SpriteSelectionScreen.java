@@ -32,11 +32,12 @@ public class SpriteSelectionScreen extends AppCompatActivity {
 
         EditText username = (EditText) findViewById(R.id.usernameText);
         SharedPreferences p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
+        Log.d("USERNAME", p1.getString("username", "no name"));
 
-        if (p1.contains("username")) {
+
+        if (!(p1.getString("username", "").equals(""))) {
             String prevName = p1.getString("username", "");
             username.setText(prevName);
-            Log.d("nameReceived", prevName);
         }
 
         TextView difficultyDisplay = (TextView) findViewById(R.id.difficultyDisplay);
