@@ -80,13 +80,10 @@ public class GameScreen extends AppCompatActivity {
 
         }
 
-
-
         //skip to end screen when button pressed
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 startActivity(intent);
             }
