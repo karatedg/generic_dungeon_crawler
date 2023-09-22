@@ -12,11 +12,18 @@ import android.widget.TextView;
 
 public class OpeningScreen extends AppCompatActivity {
 
+    SharedPreferences p1;
+    SharedPreferences.Editor e1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.opening_screen);
+
+        p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
+        e1 = p1.edit();
+        e1.clear();
+        e1.apply();
 
 
         Button exitButton = (Button) findViewById(R.id.exitButton);
@@ -41,5 +48,4 @@ public class OpeningScreen extends AppCompatActivity {
 
 
     }
-
 }
