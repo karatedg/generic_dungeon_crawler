@@ -28,7 +28,7 @@ public class ContinueScreen extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContinueScreen.this, ConfigScreen.class);
+                Intent intent = new Intent(ContinueScreen.this, SpriteSelectionScreen.class);
                 startActivity(intent);
             }
         });

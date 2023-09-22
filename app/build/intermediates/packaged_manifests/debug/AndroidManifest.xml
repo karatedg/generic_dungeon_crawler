@@ -28,18 +28,33 @@
         android:testOnly="true"
         android:theme="@style/Theme.CS2340CTeam50Game" >
         <activity
-            android:name="com.example.cs2340cteam50game.ContinueScreen"
+            android:name="com.example.cs2340cteam50game.SpriteSelectionScreen"
             android:exported="false"
-            android:label="@string/title_activity_main2"
+            android:label="sprite_selection_screen"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
-            android:name="com.example.cs2340cteam50game.ConfigScreen"
+            android:name="com.example.cs2340cteam50game.ContinueScreen"
             android:exported="false"
-            android:label="@string/title_activity_main2"
+            android:label="continue_screen"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.CS2340CTeam50Game" />
+        <activity
+            android:name="com.example.cs2340cteam50game.GameScreen"
+            android:exported="false"
+            android:label="game_screen"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.CS2340CTeam50Game" />
+        <activity
+            android:name="com.example.cs2340cteam50game.EndScreen"
+            android:exported="false"
+            android:label="end_screen"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
             android:name="com.example.cs2340cteam50game.OpeningScreen"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
