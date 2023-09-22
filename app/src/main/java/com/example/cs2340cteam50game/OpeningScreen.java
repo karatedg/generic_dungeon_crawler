@@ -23,6 +23,14 @@ public class OpeningScreen extends AppCompatActivity {
         Button nextButton = (Button) findViewById(R.id.startButton);
         TextView textView1 = (TextView) findViewById(R.id.textView1);
 
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OpeningScreen.this, SpriteSelectionScreen.class);
+                startActivity(intent);
+            }
+        });
+
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,13 +38,7 @@ public class OpeningScreen extends AppCompatActivity {
             }
         });
 
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(OpeningScreen.this, ConfigScreen.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

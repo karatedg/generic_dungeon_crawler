@@ -14,16 +14,11 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         super.onCreate(SavedInstanceState);
         setContentView(R.layout.activity_sprite_selection);
 
-        Button redSpriteButton = (Button) findViewById(R.id.redSpriteButton);
-        Button blueSpriteButton = (Button) findViewById(R.id.blueSpriteButton);
-        Button greenSpriteButton = (Button) findViewById(R.id.greenSpriteButton);
         Button backButton = (Button) findViewById(R.id.backButton);
         TextView textView1 = (TextView) findViewById(R.id.gamePropertiesViewText);
 
 
     }
-
-
 
 
 
