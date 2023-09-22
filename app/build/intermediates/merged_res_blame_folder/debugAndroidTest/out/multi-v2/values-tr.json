@@ -4,7 +4,7 @@
             "outputFile": "com.example.cs2340cteam50game.test.app-mergeDebugAndroidTestResources-32:/values-tr/values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\0e20bac0935ef8588cc229efda7785dc\\transformed\\ui-1.4.0\\res\\values-tr\\values-tr.xml",
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/0e20bac0935ef8588cc229efda7785dc/transformed/ui-1.4.0/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\d3783e733eeab7851c343ea3b248d521\\transformed\\core-1.9.0\\res\\values-tr\\values-tr.xml",
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

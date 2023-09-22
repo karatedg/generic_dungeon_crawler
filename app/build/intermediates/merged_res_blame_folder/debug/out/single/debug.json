@@ -1,134 +1,138 @@
 [
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_opening_screen.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\opening_screen.xml"
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_continue_screen.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_continue_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_welcome_buttons.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\welcome_buttons.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_gt_overlay.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/gt_overlay.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_activity_sprite_selection.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\activity_sprite_selection.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\font_gotham_ultra_italic.otf.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\font\\gotham_ultra_italic.otf"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_back.jpeg.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/back.jpeg"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_selected.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\selected.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/layout_in_game_activity.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/layout/in_game_activity.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/layout_opening_screen.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/layout/opening_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\xml\\data_extraction_rules.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/font_gotham_ultra_italic.otf.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/font/gotham_ultra_italic.otf"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ic_launcher_background.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\font_carnero_bold.ttf.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\font\\carnero_bold.ttf"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_blue_idle.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/blue_idle.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\xml\\backup_rules.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_red_idle.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/red_idle.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_blue_idle.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\blue_idle.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_sprite_selection.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/layout/activity_sprite_selection.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_border.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/border.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_activity_continue_screen.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\activity_continue_screen.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_next_pixel.jpeg.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/next_pixel.jpeg"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_border.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\border.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/font_carnero_bold.ttf.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/font/carnero_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_in_game_activity.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\in_game_activity.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_gt_overlay.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\gt_overlay.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_green_idle.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/green_idle.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_background.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/welcome_background.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_welcome_background.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\welcome_background.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_health_icon.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\health_icon.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_continue_screen.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/layout/activity_continue_screen.xml"
     },
     {
-        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_sprite_selection.xml.flat",
-        "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_sprite_selection.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_buttons.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/welcome_buttons.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_red_idle.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\red_idle.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/xml_backup_rules.xml.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_config_screen.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\config_screen.xml"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_selected.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/selected.png"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_green_idle.png.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\green_idle.png"
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_health_icon.png.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/health_icon.png"
+    },
+    {
+        "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
     }
 ]

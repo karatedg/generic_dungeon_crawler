@@ -4,24 +4,7 @@
             "outputFile": "com.example.cs2340cteam50game.test.app-mergeDebugAndroidTestResources-32:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\d3783e733eeab7851c343ea3b248d521\\transformed\\core-1.9.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "1311",
-                        "endColumns": "100",
-                        "endOffsets": "1407"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\0e20bac0935ef8588cc229efda7785dc\\transformed\\ui-1.4.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/0e20bac0935ef8588cc229efda7785dc/transformed/ui-1.4.0/res/values-pt-rPT/values-pt-rPT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "105,200,283,380,479,565,644,741,832,919,991,1060,1145,1235,1412,1488,1560",
                         "endColumns": "94,82,96,98,85,78,96,90,86,71,68,84,89,75,75,71,121",
                         "endOffsets": "195,278,375,474,560,639,736,827,914,986,1055,1140,1230,1306,1483,1555,1677"
+                    }
+                },
+                {
+                    "source": "/Users/noahwest/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1311",
+                        "endColumns": "100",
+                        "endOffsets": "1407"
                     }
                 }
             ]

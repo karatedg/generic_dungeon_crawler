@@ -1,7 +1,7 @@
-#Thu Sep 21 19:55:07 EDT 2023
-base.0=C\:\\Users\\Joshua\\Desktop\\2340 Project\\CS2340C_Team50\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
-base.1=C\:\\Users\\Joshua\\Desktop\\2340 Project\\CS2340C_Team50\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
-base.2=C\:\\Users\\Joshua\\Desktop\\2340 Project\\CS2340C_Team50\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\6\\classes.dex
+#Fri Sep 22 12:23:30 EDT 2023
+base.0=/Users/noahwest/Desktop/CS2340C_Team50/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/Users/noahwest/Desktop/CS2340C_Team50/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.2=/Users/noahwest/Desktop/CS2340C_Team50/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/6/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=6/classes.dex

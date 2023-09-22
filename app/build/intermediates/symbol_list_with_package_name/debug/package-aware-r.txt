@@ -2903,6 +2903,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable blue_idle
 drawable border
 drawable btn_checkbox_checked_mtrl
@@ -2994,6 +2995,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable next_pixel
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3172,8 +3174,9 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
-id difficultyDisplay
+id difficultyChoice
 id difficultySetting
+id difficultyString
 id difficultyText
 id difficultyViewText
 id dimensions
@@ -3453,6 +3456,7 @@ id split_action_bar
 id spread
 id spread_inside
 id spring
+id spriteChoice
 id spriteDisplay
 id spriteViewText
 id square
@@ -3525,6 +3529,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id usernameString
 id usernameText
 id usernameViewText
 id vertical_only
