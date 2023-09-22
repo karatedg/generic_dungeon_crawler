@@ -17,8 +17,7 @@
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.891"
-        app:srcCompat="@drawable/back" />
+        app:layout_constraintVertical_bias="0.891" />
 
     <ImageButton
         android:id="@+id/continueButton"
@@ -30,8 +29,7 @@
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888"
-        app:srcCompat="@drawable/next_pixel" />
+        app:layout_constraintVertical_bias="0.888" />
 
     <TextView
         android:id="@+id/textView"

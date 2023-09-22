@@ -4,7 +4,11 @@
             "outputFile": "com.example.cs2340cteam50game.app-mergeDebugResources-55:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "/Users/devangandhi/.gradle/caches/transforms-3/69bb5d7573a25a89f9f143451697c713/transformed/appcompat-1.6.1/res/values-h720dp-v13/values-h720dp-v13.xml",
+=======
+                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\69bb5d7573a25a89f9f143451697c713\\transformed\\appcompat-1.6.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
