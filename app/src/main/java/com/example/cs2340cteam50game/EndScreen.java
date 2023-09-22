@@ -22,7 +22,7 @@ public class EndScreen extends AppCompatActivity {
         Button restartButton = (Button) findViewById(R.id.restartButton);
         Button quitButton = (Button) findViewById(R.id.quitButton);
 
-        //Leaderboard
+        /*//Leaderboard
         ListView leaderboardlist = (ListView) findViewById(R.id.leaderboard);
         String[] players = new String[5];
         players[0] = "Player 1";
@@ -33,7 +33,7 @@ public class EndScreen extends AppCompatActivity {
         players[5] = "Player 6";
 
         ArrayAdapter<String> playersAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, players);
-        leaderboardlist.setAdapter(playersAdapter);
+        leaderboardlist.setAdapter(playersAdapter);*/
 
         //Return to opening screen
         restartButton.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +48,7 @@ public class EndScreen extends AppCompatActivity {
         quitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                EndScreen.this.finish();
                 System.exit(0);
             }
         });
