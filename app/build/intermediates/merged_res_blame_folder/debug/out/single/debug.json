@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\font\\gotham_ultra_italic.otf"
     },
     {
+        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_selected.png.flat",
+        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\selected.png"
+    },
+    {
         "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
     },
@@ -56,12 +60,12 @@
         "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_blue_idle.png.flat",
         "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\blue_idle.png"
+    },
+    {
+        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -70,6 +74,10 @@
     {
         "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\layout_activity_continue_screen.xml.flat",
         "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\layout\\activity_continue_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\drawable_border.png.flat",
+        "source": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-main-59:\\drawable\\border.png"
     },
     {
         "merged": "C:\\Users\\Joshua\\.gradle\\daemon\\8.0\\com.example.cs2340cteam50game.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",

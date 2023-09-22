@@ -3,12 +3,14 @@ local
 color black
 color white
 drawable blue_idle
+drawable border
 drawable green_idle
 drawable gt_overlay
 drawable health_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable red_idle
+drawable selected
 drawable welcome_background
 drawable welcome_buttons
 font carnero_bold
@@ -22,7 +24,6 @@ id difficultySetting
 id difficultyText
 id difficultyViewText
 id easyButton
-id editTextText
 id exitButton
 id gamePropertiesViewText
 id greenSpriteButton
@@ -41,7 +42,7 @@ id spriteViewText
 id startButton
 id textView
 id textView1
-id usernameDisplay
+id usernameText
 id usernameViewText
 layout activity_continue_screen
 layout activity_sprite_selection
@@ -50,8 +51,12 @@ layout opening_screen
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string difficulty_easy
+string difficulty_hard
+string difficulty_medium
 string exitButtonText
 string startButtonText
+string usernameDisplay
 string welcomeText
 style Base.Theme.CS2340CTeam50Game
 style Theme.CS2340CTeam50Game

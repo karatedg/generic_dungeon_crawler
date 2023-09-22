@@ -2904,6 +2904,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable blue_idle
+drawable border
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3006,6 +3007,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable red_idle
+drawable selected
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3196,7 +3198,6 @@ id easeOut
 id east
 id easyButton
 id edge
-id editTextText
 id edit_query
 id elastic
 id embed
@@ -3524,7 +3525,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id usernameDisplay
+id usernameText
 id usernameViewText
 id vertical_only
 id view_offset_helper
@@ -3788,6 +3789,9 @@ string collapsed
 string default_error_message
 string default_popup_window_title
 string dialog
+string difficulty_easy
+string difficulty_hard
+string difficulty_medium
 string dropdown_menu
 string error_a11y_label
 string error_icon_content_description
@@ -3923,6 +3927,7 @@ string status_bar_notification_info_overflow
 string switch_role
 string tab
 string template_percent
+string usernameDisplay
 string welcomeText
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
