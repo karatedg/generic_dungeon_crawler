@@ -28,10 +28,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.CS2340CTeam50Game" >
         <activity
-<<<<<<< HEAD
-            android:name="com.example.cs2340cteam50game.ContinueScreen"
-            android:exported="true" >
-=======
             android:name="com.example.cs2340cteam50game.SpriteSelectionScreen"
             android:exported="false"
             android:label="sprite_selection_screen"
@@ -59,7 +55,6 @@
             android:name="com.example.cs2340cteam50game.OpeningScreen"
             android:exported="true"
             android:screenOrientation="landscape" >
->>>>>>> main
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

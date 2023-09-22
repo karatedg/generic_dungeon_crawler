@@ -9,7 +9,6 @@
 9        android:targetSdkVersion="33" />
 10
 11    <permission
-<<<<<<< HEAD
 11-->[androidx.core:core:1.9.0] /Users/devangandhi/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.cs2340cteam50game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 12-->[androidx.core:core:1.9.0] /Users/devangandhi/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
@@ -21,7 +20,7 @@
 15-->[androidx.core:core:1.9.0] /Users/devangandhi/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:5:5-24:19
+17-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:5:5-49:19
 18        android:allowBackup="true"
 18-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -44,283 +43,150 @@
 29        android:theme="@style/Theme.CS2340CTeam50Game" >
 29-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:13:9-55
 30        <activity
-30-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:15:9-23:20
-31            android:name="com.example.cs2340cteam50game.ContinueScreen"
-31-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:16:13-43
-32            android:exported="true" >
-32-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:17:13-36
-33            <intent-filter>
-33-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:18:13-22:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:19:17-69
-34-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:19:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:21:17-77
-36-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:21:27-74
-37            </intent-filter>
-38        </activity>
-39        <activity
-39-->[androidx.compose.ui:ui-test-manifest:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/78d04c4b2ec6f28e0f5e8b3065162b48/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:23:9-25:39
-40            android:name="androidx.activity.ComponentActivity"
-40-->[androidx.compose.ui:ui-test-manifest:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/78d04c4b2ec6f28e0f5e8b3065162b48/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:24:13-63
-41            android:exported="true" />
-41-->[androidx.compose.ui:ui-test-manifest:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/78d04c4b2ec6f28e0f5e8b3065162b48/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:25:13-36
-42        <activity
-42-->[androidx.compose.ui:ui-tooling:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/5de454f5eb1317bd0299c50c52d9a57c/transformed/ui-tooling-1.4.0/AndroidManifest.xml:23:9-25:39
-43            android:name="androidx.compose.ui.tooling.PreviewActivity"
-43-->[androidx.compose.ui:ui-tooling:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/5de454f5eb1317bd0299c50c52d9a57c/transformed/ui-tooling-1.4.0/AndroidManifest.xml:24:13-71
-44            android:exported="true" />
-44-->[androidx.compose.ui:ui-tooling:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/5de454f5eb1317bd0299c50c52d9a57c/transformed/ui-tooling-1.4.0/AndroidManifest.xml:25:13-36
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-48            android:authorities="com.example.cs2340cteam50game.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/devangandhi/.gradle/caches/transforms-3/79276fba7bd65563097679f9efd446d0/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/devangandhi/.gradle/caches/transforms-3/79276fba7bd65563097679f9efd446d0/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/devangandhi/.gradle/caches/transforms-3/79276fba7bd65563097679f9efd446d0/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-56            <meta-data
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-57                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-58                android:value="androidx.startup" />
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-59        </provider>
-60
-61        <receiver
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-62            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-63            android:directBootAware="false"
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-64            android:enabled="true"
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-65            android:exported="true"
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-66            android:permission="android.permission.DUMP" >
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-67            <intent-filter>
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-68                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-69            </intent-filter>
-70            <intent-filter>
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-71                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-72            </intent-filter>
-73            <intent-filter>
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-74                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-75            </intent-filter>
-76            <intent-filter>
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-77                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-78            </intent-filter>
-79        </receiver>
-80    </application>
-81
-82</manifest>
-=======
-11-->[androidx.core:core:1.9.0] C:\Users\Joshua\.gradle\caches\transforms-3\d3783e733eeab7851c343ea3b248d521\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.cs2340cteam50game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\Joshua\.gradle\caches\transforms-3\d3783e733eeab7851c343ea3b248d521\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\Joshua\.gradle\caches\transforms-3\d3783e733eeab7851c343ea3b248d521\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.cs2340cteam50game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\Joshua\.gradle\caches\transforms-3\d3783e733eeab7851c343ea3b248d521\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\Joshua\.gradle\caches\transforms-3\d3783e733eeab7851c343ea3b248d521\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:5:5-49:19
-18        android:allowBackup="true"
-18-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\Joshua\.gradle\caches\transforms-3\d3783e733eeab7851c343ea3b248d521\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.CS2340CTeam50Game" >
-29-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:13:9-55
-30        <activity
-30-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:15:9-20:62
+30-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:15:9-20:62
 31            android:name="com.example.cs2340cteam50game.SpriteSelectionScreen"
-31-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:16:13-50
+31-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:16:13-50
 32            android:exported="false"
-32-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:18:13-37
+32-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:18:13-37
 33            android:label="sprite_selection_screen"
-33-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:19:13-52
+33-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:19:13-52
 34            android:screenOrientation="landscape"
-34-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:17:13-50
+34-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:17:13-50
 35            android:theme="@style/Theme.CS2340CTeam50Game" />
-35-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:20:13-59
+35-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:20:13-59
 36        <activity
-36-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:21:9-26:62
+36-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:21:9-26:62
 37            android:name="com.example.cs2340cteam50game.ContinueScreen"
-37-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:22:13-43
+37-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:22:13-43
 38            android:exported="false"
-38-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:24:13-37
+38-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:24:13-37
 39            android:label="continue_screen"
-39-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:25:13-44
+39-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:25:13-44
 40            android:screenOrientation="landscape"
-40-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:23:13-50
+40-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:23:13-50
 41            android:theme="@style/Theme.CS2340CTeam50Game" />
-41-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:26:13-59
+41-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:26:13-59
 42        <activity
-42-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:27:9-32:62
+42-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:27:9-32:62
 43            android:name="com.example.cs2340cteam50game.GameScreen"
-43-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:28:13-39
+43-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:28:13-39
 44            android:exported="false"
-44-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:30:13-37
+44-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:30:13-37
 45            android:label="game_screen"
-45-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:31:13-40
+45-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:31:13-40
 46            android:screenOrientation="landscape"
-46-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:29:13-50
+46-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:29:13-50
 47            android:theme="@style/Theme.CS2340CTeam50Game" />
-47-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:32:13-59
+47-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:32:13-59
 48        <activity
-48-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:33:9-38:62
+48-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:33:9-38:62
 49            android:name="com.example.cs2340cteam50game.EndScreen"
-49-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:34:13-38
+49-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:34:13-38
 50            android:exported="false"
-50-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:36:13-37
+50-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:36:13-37
 51            android:label="end_screen"
-51-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:37:13-39
+51-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:37:13-39
 52            android:screenOrientation="landscape"
-52-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:35:13-50
+52-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:35:13-50
 53            android:theme="@style/Theme.CS2340CTeam50Game" />
-53-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:38:13-59
+53-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:38:13-59
 54        <activity
-54-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:39:9-48:20
+54-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:39:9-48:20
 55            android:name="com.example.cs2340cteam50game.OpeningScreen"
-55-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:40:13-42
+55-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:40:13-42
 56            android:exported="true"
-56-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:42:13-36
+56-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:42:13-36
 57            android:screenOrientation="landscape" >
-57-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:41:13-50
+57-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:41:13-50
 58            <intent-filter>
-58-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:43:13-47:29
+58-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:43:13-47:29
 59                <action android:name="android.intent.action.MAIN" />
-59-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:44:17-69
-59-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:44:25-66
+59-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:44:17-69
+59-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:44:25-66
 60
 61                <category android:name="android.intent.category.LAUNCHER" />
-61-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:46:17-77
-61-->C:\Users\Joshua\Desktop\2340 Project\CS2340C_Team50\app\src\main\AndroidManifest.xml:46:27-74
+61-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:46:17-77
+61-->/Users/devangandhi/Documents/Classes/CS_2340/Project/CS2340C_Team50/app/src/main/AndroidManifest.xml:46:27-74
 62            </intent-filter>
 63        </activity>
 64        <activity
-64-->[androidx.compose.ui:ui-test-manifest:1.4.0] C:\Users\Joshua\.gradle\caches\transforms-3\78d04c4b2ec6f28e0f5e8b3065162b48\transformed\ui-test-manifest-1.4.0\AndroidManifest.xml:23:9-25:39
+64-->[androidx.compose.ui:ui-test-manifest:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/78d04c4b2ec6f28e0f5e8b3065162b48/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:23:9-25:39
 65            android:name="androidx.activity.ComponentActivity"
-65-->[androidx.compose.ui:ui-test-manifest:1.4.0] C:\Users\Joshua\.gradle\caches\transforms-3\78d04c4b2ec6f28e0f5e8b3065162b48\transformed\ui-test-manifest-1.4.0\AndroidManifest.xml:24:13-63
+65-->[androidx.compose.ui:ui-test-manifest:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/78d04c4b2ec6f28e0f5e8b3065162b48/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:24:13-63
 66            android:exported="true" />
-66-->[androidx.compose.ui:ui-test-manifest:1.4.0] C:\Users\Joshua\.gradle\caches\transforms-3\78d04c4b2ec6f28e0f5e8b3065162b48\transformed\ui-test-manifest-1.4.0\AndroidManifest.xml:25:13-36
+66-->[androidx.compose.ui:ui-test-manifest:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/78d04c4b2ec6f28e0f5e8b3065162b48/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:25:13-36
 67        <activity
-67-->[androidx.compose.ui:ui-tooling:1.4.0] C:\Users\Joshua\.gradle\caches\transforms-3\5de454f5eb1317bd0299c50c52d9a57c\transformed\ui-tooling-1.4.0\AndroidManifest.xml:23:9-25:39
+67-->[androidx.compose.ui:ui-tooling:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/5de454f5eb1317bd0299c50c52d9a57c/transformed/ui-tooling-1.4.0/AndroidManifest.xml:23:9-25:39
 68            android:name="androidx.compose.ui.tooling.PreviewActivity"
-68-->[androidx.compose.ui:ui-tooling:1.4.0] C:\Users\Joshua\.gradle\caches\transforms-3\5de454f5eb1317bd0299c50c52d9a57c\transformed\ui-tooling-1.4.0\AndroidManifest.xml:24:13-71
+68-->[androidx.compose.ui:ui-tooling:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/5de454f5eb1317bd0299c50c52d9a57c/transformed/ui-tooling-1.4.0/AndroidManifest.xml:24:13-71
 69            android:exported="true" />
-69-->[androidx.compose.ui:ui-tooling:1.4.0] C:\Users\Joshua\.gradle\caches\transforms-3\5de454f5eb1317bd0299c50c52d9a57c\transformed\ui-tooling-1.4.0\AndroidManifest.xml:25:13-36
+69-->[androidx.compose.ui:ui-tooling:1.4.0] /Users/devangandhi/.gradle/caches/transforms-3/5de454f5eb1317bd0299c50c52d9a57c/transformed/ui-tooling-1.4.0/AndroidManifest.xml:25:13-36
 70
 71        <provider
-71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+71-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
 72            android:name="androidx.startup.InitializationProvider"
-72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+72-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
 73            android:authorities="com.example.cs2340cteam50game.androidx-startup"
-73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+73-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
 74            android:exported="false" >
-74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+74-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
 75            <meta-data
-75-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+75-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
 76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-76-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+76-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
 77                android:value="androidx.startup" />
-77-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\e17e8fa13db18aac371334ae4ee8d8b5\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+77-->[androidx.emoji2:emoji2:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/e17e8fa13db18aac371334ae4ee8d8b5/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 78            <meta-data
-78-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Joshua\.gradle\caches\transforms-3\79276fba7bd65563097679f9efd446d0\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+78-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/devangandhi/.gradle/caches/transforms-3/79276fba7bd65563097679f9efd446d0/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
 79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-79-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Joshua\.gradle\caches\transforms-3\79276fba7bd65563097679f9efd446d0\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+79-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/devangandhi/.gradle/caches/transforms-3/79276fba7bd65563097679f9efd446d0/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
 80                android:value="androidx.startup" />
-80-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Joshua\.gradle\caches\transforms-3\79276fba7bd65563097679f9efd446d0\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+80-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/devangandhi/.gradle/caches/transforms-3/79276fba7bd65563097679f9efd446d0/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
 81            <meta-data
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
 82                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
 83                android:value="androidx.startup" />
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
 84        </provider>
 85
 86        <receiver
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
 87            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
 88            android:directBootAware="false"
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
 89            android:enabled="true"
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
 90            android:exported="true"
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
 91            android:permission="android.permission.DUMP" >
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 92            <intent-filter>
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
 93                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 94            </intent-filter>
 95            <intent-filter>
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
 96                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 97            </intent-filter>
 98            <intent-filter>
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
 99                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 100            </intent-filter>
 101            <intent-filter>
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
 102                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Joshua\.gradle\caches\transforms-3\2920d72e0a3be3938c7ca21d59b15d42\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/devangandhi/.gradle/caches/transforms-3/2920d72e0a3be3938c7ca21d59b15d42/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
 103            </intent-filter>
 104        </receiver>
 105    </application>
 106
 107</manifest>
->>>>>>> main

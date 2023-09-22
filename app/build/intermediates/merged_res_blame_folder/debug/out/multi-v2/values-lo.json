@@ -4,11 +4,7 @@
             "outputFile": "com.example.cs2340cteam50game.app-mergeDebugResources-55:/values-lo/values-lo.xml",
             "map": [
                 {
-<<<<<<< HEAD
                     "source": "/Users/devangandhi/.gradle/caches/transforms-3/ef8fd35d2ecc24066c86e1a847061c15/transformed/material3-1.0.0/res/values-lo/values-lo.xml",
-=======
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\ef8fd35d2ecc24066c86e1a847061c15\\transformed\\material3-1.0.0\\res\\values-lo\\values-lo.xml",
->>>>>>> main
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -25,7 +21,6 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "/Users/devangandhi/.gradle/caches/transforms-3/0e20bac0935ef8588cc229efda7785dc/transformed/ui-1.4.0/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
@@ -44,9 +39,6 @@
                 },
                 {
                     "source": "/Users/devangandhi/.gradle/caches/transforms-3/69bb5d7573a25a89f9f143451697c713/transformed/appcompat-1.6.1/res/values-lo/values-lo.xml",
-=======
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\69bb5d7573a25a89f9f143451697c713\\transformed\\appcompat-1.6.1\\res\\values-lo\\values-lo.xml",
->>>>>>> main
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -63,7 +55,6 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "/Users/devangandhi/.gradle/caches/transforms-3/d3783e733eeab7851c343ea3b248d521/transformed/core-1.9.0/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2",
@@ -82,9 +73,6 @@
                 },
                 {
                     "source": "/Users/devangandhi/.gradle/caches/transforms-3/a3f8cea1dc7a4d6180cdb6a21b844470/transformed/material-1.9.0/res/values-lo/values-lo.xml",
-=======
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\a3f8cea1dc7a4d6180cdb6a21b844470\\transformed\\material-1.9.0\\res\\values-lo\\values-lo.xml",
->>>>>>> main
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -100,40 +88,6 @@
                         "endLines": "5,33,34,35,36,37,38,39,40,48,50,51,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,108",
                         "endColumns": "12,73,70,80,85,82,114,118,82,65,88,68,58,94,65,64,57,64,60,59,105,60,59,57,70,118,85,81,142,74,75,89,54,54,65,68,73,78,72,76,68,69,84,74,92,92,73,68,93,51,66,83,83,61,63,62,98,91,94,91,58,58,78",
                         "endOffsets": "314,3055,3126,3207,3293,3376,3491,3610,3693,4375,4542,4611,4849,4944,5010,5075,5133,5198,5259,5319,5425,5486,5546,5604,5675,5794,5880,5962,6105,6180,6256,6346,6401,6456,6522,6591,6665,6744,6817,6894,6963,7033,7118,7193,7286,7379,7453,7522,7616,7668,7735,7819,7903,7965,8029,8092,8191,8283,8378,8470,8529,8588,8967"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\d3783e733eeab7851c343ea3b248d521\\transformed\\core-1.9.0\\res\\values-lo\\values-lo.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "113",
-                        "startColumns": "4",
-                        "startOffsets": "9292",
-                        "endColumns": "100",
-                        "endOffsets": "9388"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Joshua\\.gradle\\caches\\transforms-3\\0e20bac0935ef8588cc229efda7785dc\\transformed\\ui-1.4.0\\res\\values-lo\\values-lo.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,195,272,381,479,568,657,747,833,916,981,1047,1127,1211,1285,1363,1429",
-                        "endColumns": "89,76,108,97,88,88,89,85,82,64,65,79,83,73,77,65,120",
-                        "endOffsets": "190,267,376,474,563,652,742,828,911,976,1042,1122,1206,1280,1358,1424,1545"
-                    },
-                    "to": {
-                        "startLines": "41,42,44,45,47,52,53,104,105,106,107,109,110,112,114,115,116",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3698,3788,3942,4051,4225,4616,4705,8593,8679,8762,8827,8972,9052,9218,9393,9471,9537",
-                        "endColumns": "89,76,108,97,88,88,89,85,82,64,65,79,83,73,77,65,120",
-                        "endOffsets": "3783,3860,4046,4144,4309,4700,4790,8674,8757,8822,8888,9047,9131,9287,9466,9532,9653"
                     }
                 }
             ]

@@ -17,12 +17,12 @@
 
     <TextView
         android:id="@+id/playerName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
         android:text="Player"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="376dp"
-        tools:layout_editor_absoluteY="332dp" />
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/healthIcon"

@@ -2918,6 +2918,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable firstmap
 drawable green_idle
 drawable gt_overlay
 drawable health_icon
@@ -3020,6 +3021,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id GameOverText
 id META
 id NO_DEBUG
 id SHIFT
@@ -3252,6 +3254,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id imageView2
 id immediateStop
 id included
@@ -3677,6 +3680,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout endofgame_activity
 layout in_game_activity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
