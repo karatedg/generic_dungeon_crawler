@@ -58,8 +58,9 @@ public class GameScreen extends AppCompatActivity {
                 break;
         }
 
+
         playerName.setText(name);
-        healthValue.setText(health);
+        healthValue.setText(Integer.toString(health));
         difficultySetting.setText(difficultyLabel);
 
         switch (spriteNum) {
@@ -75,11 +76,9 @@ public class GameScreen extends AppCompatActivity {
             default:
                 playerSprite.setImageResource(R.drawable.green_idle);
                 break;
+
+
         }
-
-
-
-
 
 
 
@@ -94,5 +93,4 @@ public class GameScreen extends AppCompatActivity {
         });
 
     }
-
 }

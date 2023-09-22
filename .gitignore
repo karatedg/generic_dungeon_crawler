@@ -1,3 +1,5 @@
+#May be some repeats here, just trying to cover everything
+
 # Gradle files
 .gradle/
 build/
@@ -37,6 +39,7 @@ google-services.json
 *.apk
 *.ap_
 *.aab
+/*/build/
                            
 # files for the dex VM
 *.dex
