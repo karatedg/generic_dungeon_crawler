@@ -9,21 +9,20 @@
 
     <ImageView
         android:id="@+id/playerSprite"
-        android:layout_width="70dp"
-        android:layout_height="66dp"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
         app:srcCompat="@drawable/blue_idle"
-        tools:layout_editor_absoluteX="357dp"
-        tools:layout_editor_absoluteY="324dp" />
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="351dp" />
 
     <TextView
         android:id="@+id/playerName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
         android:text="Player"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toTopOf="@+id/playerSprite"
-        tools:layout_editor_absoluteX="373dp" />
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/healthIcon"
@@ -31,9 +30,9 @@
         android:layout_height="31dp"
         android:layout_marginLeft="25px"
         android:layout_marginTop="25px"
-        app:srcCompat="@drawable/health_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/health_icon" />
 
     <TextView
         android:id="@+id/healthValue"
@@ -74,4 +73,12 @@
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="330dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="966dp"
+        android:layout_height="565dp"
+        app:srcCompat="@drawable/firstmap"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="-91dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

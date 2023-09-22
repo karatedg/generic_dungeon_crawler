@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_continue_screen.xml.flat",
         "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_continue_screen.xml"
     },
@@ -110,12 +111,105 @@
     {
         "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_continue_screen.xml.flat",
         "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/layout/activity_continue_screen.xml"
+=======
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_activity_continue_screen.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/activity_continue_screen.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_red_idle.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/red_idle.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_opening_screen.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/opening_screen.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_green_idle.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/green_idle.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_blue_idle.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/blue_idle.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_border.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/border.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_endofgame_activity.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/endofgame_activity.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_gt_overlay.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/gt_overlay.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_health_icon.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/health_icon.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/font_gotham_ultra_italic.otf.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/font/gotham_ultra_italic.otf"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/xml_backup_rules.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_selected.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/selected.png"
+>>>>>>> 6236155fea3bb92dba57bb82dc0f151b572c60cb
     },
     {
         "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_buttons.png.flat",
         "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/drawable/welcome_buttons.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
     },
@@ -134,5 +228,41 @@
     {
         "merged": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/Users/noahwest/.gradle/daemon/8.0/com.example.cs2340cteam50game.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
+=======
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_buttons.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/welcome_buttons.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/layout_in_game_activity.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/layout/in_game_activity.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_welcome_background.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/welcome_background.png"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/font_carnero_bold.ttf.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/font/carnero_bold.ttf"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.cs2340cteam50game.app-merged_res-57:/drawable_firstmap.png.flat",
+        "source": "com.example.cs2340cteam50game.app-main-59:/drawable/firstmap.png"
+>>>>>>> 6236155fea3bb92dba57bb82dc0f151b572c60cb
     }
 ]
