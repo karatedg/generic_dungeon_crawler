@@ -3,10 +3,7 @@ package com.example.cs2340cteam50game;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.os.Bundle;
-import android.os.Process;
-import android.util.Log;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
@@ -20,7 +17,7 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
-    SharedPreferences p1;
+    private SharedPreferences p1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,22 +37,22 @@ public class GameScreen extends AppCompatActivity {
         spriteNum = p1.getInt("sprite", 1);
 
         switch (difficulty) {
-            case 1:
-                health = 150;
-                difficultyLabel = "Easy";
-                break;
-            case 2:
-                health = 100;
-                difficultyLabel = "Normal";
-                break;
-            case 3:
-                health = 75;
-                difficultyLabel = "Hard";
-                break;
-            default:
-                health = 100;
-                difficultyLabel = "Normal";
-                break;
+        case 1:
+            health = 150;
+            difficultyLabel = "Easy";
+            break;
+        case 2:
+            health = 100;
+            difficultyLabel = "Normal";
+            break;
+        case 3:
+            health = 75;
+            difficultyLabel = "Hard";
+            break;
+        default:
+            health = 100;
+            difficultyLabel = "Normal";
+            break;
         }
 
 
@@ -64,20 +61,18 @@ public class GameScreen extends AppCompatActivity {
         difficultySetting.setText(difficultyLabel);
 
         switch (spriteNum) {
-            case 1:
-                playerSprite.setImageResource(R.drawable.red_idle);
-                break;
-            case 2:
-                playerSprite.setImageResource(R.drawable.blue_idle);
-                break;
-            case 3:
-                playerSprite.setImageResource(R.drawable.green_idle);
-                break;
-            default:
-                playerSprite.setImageResource(R.drawable.green_idle);
-                break;
-
-
+        case 1:
+            playerSprite.setImageResource(R.drawable.red_idle);
+            break;
+        case 2:
+            playerSprite.setImageResource(R.drawable.blue_idle);
+            break;
+        case 3:
+            playerSprite.setImageResource(R.drawable.green_idle);
+            break;
+        default:
+            playerSprite.setImageResource(R.drawable.green_idle);
+            break;
         }
 
         //skip to end screen when button pressed
