@@ -18,12 +18,12 @@ public class SpriteSelectionScreen extends AppCompatActivity {
     private int spriteNum = 1;
     private int difficultyNum = 1;
 
-    SharedPreferences p1;
-    SharedPreferences.Editor e1;
+    private SharedPreferences p1;
+    private SharedPreferences.Editor e1;
 
     @Override
-    protected void onCreate(Bundle SavedInstanceState) {
-        super.onCreate(SavedInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sprite_selection);
 
         //Next && Previous
@@ -49,38 +49,41 @@ public class SpriteSelectionScreen extends AppCompatActivity {
 
         //Check for and enforce previous choices
         p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-        username.setText(p1.getString("username",""));
+        username.setText(p1.getString("username", ""));
         switch (p1.getInt("difficulty", 0)) {
-            case 1:
-                difficultyDisplay.setText(R.string.difficulty_easy);
-                difficultyNum = 1;
-                break;
-            case 2:
-                difficultyDisplay.setText(R.string.difficulty_medium);
-                difficultyNum = 2;
-                break;
-            case 3:
-                difficultyDisplay.setText(R.string.difficulty_hard);
-                difficultyNum = 3;
-                break;
-            default:
-                break;
+        case 1:
+            difficultyDisplay.setText(R.string.difficulty_easy);
+            difficultyNum = 1;
+            break;
+        case 2:
+            difficultyDisplay.setText(R.string.difficulty_medium);
+            difficultyNum = 2;
+            break;
+        case 3:
+            difficultyDisplay.setText(R.string.difficulty_hard);
+            difficultyNum = 3;
+            break;
+        default:
+            break;
         }
         switch (p1.getInt("sprite", 0)) {
-            case 1:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null));
-                spriteNum = 1;
-                break;
-            case 2:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null));
-                spriteNum = 2;
-                break;
-            case 3:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null));
-                spriteNum = 3;
-                break;
-            default:
-                break;
+        case 1:
+            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                    R.drawable.red_idle, null));
+            spriteNum = 1;
+            break;
+        case 2:
+            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                    R.drawable.blue_idle, null));
+            spriteNum = 2;
+            break;
+        case 3:
+            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                    R.drawable.green_idle, null));
+            spriteNum = 3;
+            break;
+        default:
+            break;
         }
 
 
@@ -107,7 +110,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 difficultyDisplay.setText(R.string.difficulty_medium);
-                difficultyNum =2;
+                difficultyNum = 2;
             }
         });
 
@@ -123,7 +126,8 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         redSpriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null));
+                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                        R.drawable.red_idle, null));
                 spriteNum = 1;
             }
         });
@@ -131,7 +135,8 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         blueSpriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null));
+                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                        R.drawable.blue_idle, null));
                 spriteNum = 2;
             }
         });
@@ -139,7 +144,8 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         greenSpriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null));
+                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                        R.drawable.green_idle, null));
                 spriteNum = 3;
             }
         });
