@@ -8,13 +8,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ContinueScreen extends AppCompatActivity {
-    SharedPreferences p1;
-    SharedPreferences.Editor e1;
+    private SharedPreferences p1;
+    private SharedPreferences.Editor e1;
 
     private int spriteNum;
     private int difficultyNum;
@@ -30,39 +29,42 @@ public class ContinueScreen extends AppCompatActivity {
         ImageView spriteChoice = (ImageView) findViewById(R.id.spriteChoice);
 
         p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-        usernameString.setText(p1.getString("username",""));
+        usernameString.setText(p1.getString("username", ""));
 
         switch (p1.getInt("sprite", 0)) {
-            case 1:
-                spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null));
-                spriteNum = 1;
-                break;
-            case 2:
-                spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null));
-                spriteNum = 2;
-                break;
-            case 3:
-                spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null));
-                spriteNum = 3;
-                break;
-            default:
-                break;
+        case 1:
+            spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), +
+                    R.drawable.red_idle, null));
+            spriteNum = 1;
+            break;
+        case 2:
+            spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), +
+                    R.drawable.blue_idle, null));
+            spriteNum = 2;
+            break;
+        case 3:
+            spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), +
+                    R.drawable.green_idle, null));
+            spriteNum = 3;
+            break;
+        default:
+            break;
         }
         switch (p1.getInt("difficulty", 0)) {
-            case 1:
-                difficultyString.setText(R.string.difficulty_easy);
-                difficultyNum = 1;
-                break;
-            case 2:
-                difficultyString.setText(R.string.difficulty_medium);
-                difficultyNum = 2;
-                break;
-            case 3:
-                difficultyString.setText(R.string.difficulty_hard);
-                difficultyNum = 3;
-                break;
-            default:
-                break;
+        case 1:
+            difficultyString.setText(R.string.difficulty_easy);
+            difficultyNum = 1;
+            break;
+        case 2:
+            difficultyString.setText(R.string.difficulty_medium);
+            difficultyNum = 2;
+            break;
+        case 3:
+            difficultyString.setText(R.string.difficulty_hard);
+            difficultyNum = 3;
+            break;
+        default:
+            break;
         }
 
         continueButton.setOnClickListener(new View.OnClickListener() {
