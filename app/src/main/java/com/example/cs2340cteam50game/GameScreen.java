@@ -3,12 +3,14 @@ package com.example.cs2340cteam50game;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Process;
 import android.util.Log;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class GameScreen extends AppCompatActivity {
@@ -16,7 +18,9 @@ public class GameScreen extends AppCompatActivity {
     private int health;
     private String name;
     private int difficulty;
+    private String difficultyLabel;
     private int spriteNum;
+    SharedPreferences p1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,31 +31,63 @@ public class GameScreen extends AppCompatActivity {
         Button skipToEnd = (Button) findViewById(R.id.skipToEnd);
         TextView healthValue = (TextView) findViewById(R.id.healthValue);
         TextView playerName = (TextView) findViewById(R.id.playerName);
-        TextView difficultySettings = (TextView) findViewById(R.id.difficultySetting);
+        TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
+        ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
+
+        p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
+        name = p1.getString("username", "player");
+        difficulty = p1.getInt("difficulty", 1);
+        spriteNum = p1.getInt("sprite", 1);
+
+        switch (difficulty) {
+            case 1:
+                health = 150;
+                difficultyLabel = "Easy";
+                break;
+            case 2:
+                health = 100;
+                difficultyLabel = "Normal";
+                break;
+            case 3:
+                health = 75;
+                difficultyLabel = "Hard";
+                break;
+            default:
+                health = 100;
+                difficultyLabel = "Normal";
+                break;
+        }
 
 
-        /**
-         * TODO: set values here for health, name, spriteNum, and string based on what is passed from configScreen
-         * using something like this in the previous screen:
-         * intentName.putExtra("name",value)
-         * Then getting the value here with:
-         * variable = getIntent.get[DATATYPE]Extra("name", defaultValue)
-         * I think this should work for getting the values from Config to Game.
+        playerName.setText(name);
+        healthValue.setText(Integer.toString(health));
+        difficultySetting.setText(difficultyLabel);
 
-         **/
+        switch (spriteNum) {
+            case 1:
+                playerSprite.setImageResource(R.drawable.red_idle);
+                break;
+            case 2:
+                playerSprite.setImageResource(R.drawable.blue_idle);
+                break;
+            case 3:
+                playerSprite.setImageResource(R.drawable.green_idle);
+                break;
+            default:
+                playerSprite.setImageResource(R.drawable.green_idle);
+                break;
 
 
+        }
 
         //skip to end screen when button pressed
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 startActivity(intent);
             }
         });
 
     }
-
 }

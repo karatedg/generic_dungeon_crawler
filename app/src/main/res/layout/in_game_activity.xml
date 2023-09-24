@@ -8,46 +8,50 @@
     android:screenOrientation="landscape">
 
     <ImageView
-        android:id="@+id/playerSprite"
-        android:layout_width="70dp"
-        android:layout_height="66dp"
-        app:srcCompat="@drawable/blue_idle"
-        tools:layout_editor_absoluteX="357dp"
-        tools:layout_editor_absoluteY="324dp" />
+        android:id="@+id/firstMap"
+        android:layout_width="553dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/firstmap" />
 
     <TextView
         android:id="@+id/playerName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
         android:text="Player"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toTopOf="@+id/playerSprite"
-        tools:layout_editor_absoluteX="373dp" />
+        app:layout_constraintStart_toEndOf="@+id/healthValue"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/healthIcon"
         android:layout_width="31dp"
         android:layout_height="31dp"
-        android:layout_marginLeft="25px"
-        android:layout_marginTop="25px"
-        app:srcCompat="@drawable/health_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/health_icon" />
 
     <TextView
         android:id="@+id/healthValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45px"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
         android:text="100"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="40dp" />
+        app:layout_constraintStart_toEndOf="@+id/healthIcon"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/difficultyText"
-        android:layout_width="31dp"
+        android:layout_width="33dp"
         android:layout_height="12dp"
         android:layout_marginLeft="25px"
         android:text="Difficulty:"
@@ -60,18 +64,32 @@
         android:id="@+id/difficultySetting"
         android:layout_width="31dp"
         android:layout_height="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
         android:text="Normal"
         android:textColor="#FFFFFF"
         android:textSize="20px"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintStart_toEndOf="@+id/difficultyText"
+        app:layout_constraintTop_toBottomOf="@+id/healthValue" />
 
     <Button
         android:id="@+id/skipToEnd"
         android:layout_width="115dp"
         android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
         android:text="End Game"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerSprite"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/green_idle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

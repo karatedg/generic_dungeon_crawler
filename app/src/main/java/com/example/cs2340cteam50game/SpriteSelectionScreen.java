@@ -34,7 +34,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         EditText username = (EditText) findViewById(R.id.usernameText);
 
         //Difficulty Preview
-        TextView difficultyDisplay = (TextView) findViewById(R.id.difficultyDisplay);
+        TextView difficultyDisplay = (TextView) findViewById(R.id.difficultyChoice);
 
         //Difficulty Buttons
         Button easyButton = (Button) findViewById(R.id.easyButton);

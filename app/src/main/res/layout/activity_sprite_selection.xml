@@ -20,11 +20,11 @@
             android:cropToPadding="false"
             android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/difficultyDisplay"
+            app:layout_constraintTop_toBottomOf="@+id/difficultyChoice"
             app:srcCompat="@drawable/red_idle" />
 
         <TextView
-            android:id="@+id/difficultyDisplay"
+            android:id="@+id/difficultyChoice"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_marginTop="84dp"

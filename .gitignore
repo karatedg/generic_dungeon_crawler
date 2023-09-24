@@ -1,3 +1,5 @@
+#May be some repeats here, just trying to cover everything
+
 # Gradle files
 .gradle/
 build/
@@ -7,6 +9,7 @@ local.properties
 
 # Log/OS Files
 *.log
+.DS_Store
 
 # Android Studio generated files and folders
 captures/
@@ -31,3 +34,42 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+#built application files
+*.apk
+*.ap_
+*.aab
+/*/build/
+                           
+# files for the dex VM
+*.dex
+                            
+# Java class files
+*.class
+                            
+# generated files
+bin/
+gen/
+                            
+# Local configuration file (sdk path, etc)
+local.properties
+                        
+# Windows thumbnail db
+Thumbs.db
+                
+# OSX files
+.DS_Store
+                            
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json 
+    
+#NDK
+obj/
+.externalNativeBuild
