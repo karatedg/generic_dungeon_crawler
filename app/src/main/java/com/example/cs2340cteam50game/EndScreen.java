@@ -47,7 +47,7 @@ public class EndScreen extends AppCompatActivity {
         quitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EndScreen.this.finish();
+                EndScreen.this.finishAffinity();
                 System.exit(0);
             }
         });
