@@ -3,7 +3,6 @@
     <string name="exitButtonText">Exit</string>
     <string name="startButtonText">Start</string>
     <string name="welcomeText">Generic Dungeon Crawler Game</string>
-    <string name="usernameDisplay">Username: %s</string>
     <string name="difficulty_easy">Difficulty: Easy</string>
     <string name="difficulty_medium">Difficulty: Medium</string>
     <string name="difficulty_hard">Difficulty: Hard</string>

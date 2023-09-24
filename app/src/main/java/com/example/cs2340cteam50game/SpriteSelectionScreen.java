@@ -155,7 +155,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("")) {
+                if (username.getText().toString().trim().equals("")) {
                     return;
                 } else {
                     p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
