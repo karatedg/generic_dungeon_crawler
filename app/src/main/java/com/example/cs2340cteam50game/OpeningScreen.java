@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
@@ -12,8 +11,8 @@ import android.widget.TextView;
 
 public class OpeningScreen extends AppCompatActivity {
 
-    SharedPreferences p1;
-    SharedPreferences.Editor e1;
+    private SharedPreferences p1;
+    private SharedPreferences.Editor e1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
