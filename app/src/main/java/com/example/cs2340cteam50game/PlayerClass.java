@@ -9,8 +9,12 @@ public class PlayerClass {
 
     //Player Selected Values:
     private String username;
-    private int healthPoints;
     private int spriteNum;
+    private int difficultyNum;
+    private int healthPoints;
+
+
+
 
     //In-Game:
 
@@ -34,6 +38,7 @@ public class PlayerClass {
         this.username = "";
         this.healthPoints = 0;
         this.spriteNum = 1;
+        this.difficultyNum = 1;
     }
 
     /**
@@ -150,10 +155,34 @@ public class PlayerClass {
     }
 
     /**
+     * Get difficultyNum.
+     * @return difficultyNum
+     */
+    public int getDifficultyNum() {
+        return difficultyNum;
+    }
+
+    /**
+     * Set difficultyNum.
+     * @param difficultyNum difficultyNum: (1 = Easy, 2 = Medium, 3 = Hard)
+     */
+    public void setDifficultyNum(int difficultyNum) {
+        this.difficultyNum = difficultyNum;
+    }
+
+    /**
      * Deletes the current player instance.
      */
     public static void clear() {
         playerInstance = null;
+    }
+
+    /**
+     * Checks whether or not a player has already been created.
+     * @return true if created, false if not
+     */
+    public static boolean playerExists() {
+        return (playerInstance != null);
     }
 
 }

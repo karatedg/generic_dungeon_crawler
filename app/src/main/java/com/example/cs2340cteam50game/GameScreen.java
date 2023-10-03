@@ -2,7 +2,6 @@ package com.example.cs2340cteam50game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
@@ -17,7 +16,6 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
-    private SharedPreferences p1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,30 +29,25 @@ public class GameScreen extends AppCompatActivity {
         TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
         ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
 
-        p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-        name = p1.getString("username", "player");
-        difficulty = p1.getInt("difficulty", 1);
-        spriteNum = p1.getInt("sprite", 1);
+        PlayerClass player = PlayerClass.getPlayer();
+        name = player.getUsername();
+        difficulty = player.getDifficultyNum();
+        spriteNum = player.getSpriteNum();
+        health = player.getHealthPoints();
 
         switch (difficulty) {
         case 1:
-            health = 150;
             difficultyLabel = "Easy";
             break;
         case 2:
-            health = 100;
-            difficultyLabel = "Normal";
+            difficultyLabel = "Medium";
             break;
         case 3:
-            health = 75;
             difficultyLabel = "Hard";
             break;
         default:
-            health = 100;
-            difficultyLabel = "Normal";
             break;
         }
-
 
         playerName.setText(name);
         healthValue.setText(Integer.toString(health));
@@ -71,7 +64,6 @@ public class GameScreen extends AppCompatActivity {
             playerSprite.setImageResource(R.drawable.green_idle);
             break;
         default:
-            playerSprite.setImageResource(R.drawable.green_idle);
             break;
         }
 
