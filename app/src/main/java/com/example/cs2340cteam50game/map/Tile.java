@@ -1,10 +1,17 @@
 package com.example.cs2340cteam50game.map;
 
+import android.graphics.Canvas;
 import android.graphics.Rect;
 
 import com.example.cs2340cteam50game.graphics.SpriteSheet;
 
 abstract class Tile {
+
+    protected final Rect mapLocationRect;
+
+    public Tile(Rect mapLocationRect) {
+        this.mapLocationRect = mapLocationRect;
+    }
 
     public enum TileType {
         TopLeft_Corner,
@@ -18,26 +25,26 @@ abstract class Tile {
         BottomLeft_Corner
 
     };
-    public static Tile getTile(int index, SpriteSheet SpriteSheet, Rect mapLocationRect) {
+    public static Tile getTile(int index, SpriteSheet spriteSheet, Rect mapLocationRect) {
         switch(TileType.values()[index]) {
             case TopLeft_Corner:
-                return new TopLeftCorner(SpriteSheet, mapLocationRect);
+                return new TopLeftCorner(spriteSheet, mapLocationRect);
             case Top_Wall:
-                return new TopWall(SpriteSheet, mapLocationRect));
+                return new TopWall(spriteSheet, mapLocationRect);
             case TopRight_Corner:
-                return new TopRightCorner(SpriteSheet, mapLocationRect));
+                return new TopRightCorner(spriteSheet, mapLocationRect);
             case Left_Wall:
-                return new LeftWall(SpriteSheet, mapLocationRect));
+                return new LeftWall(spriteSheet, mapLocationRect);
             case Floor:
-                return new Floor(SpriteSheet, mapLocationRect));
+                return new Floor(spriteSheet, mapLocationRect);
             case Right_Wall:
-                return new RightWall(SpriteSheet, mapLocationRect));
+                return new RightWall(spriteSheet, mapLocationRect);
             case Bottom_Wall:
-                return new BottomWall(SpriteSheet, mapLocationRect));
+                return new BottomWall(spriteSheet, mapLocationRect);
             case BottomRight_Corner:
-                return new BottomRightCorner(SpriteSheet, mapLocationRect));
+                return new BottomRightCorner(spriteSheet, mapLocationRect);
             case BottomLeft_Corner:
-                return new BottomLeftCorner(SpriteSheet, mapLocationRect));
+                return new BottomLeftCorner(spriteSheet, mapLocationRect);
             default:
                 return null;
         }

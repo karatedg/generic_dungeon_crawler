@@ -8,13 +8,14 @@ import com.example.cs2340cteam50game.graphics.SpriteSheet;
 public class TopWall extends Tile {
     private final Sprite sprite;
 
-    public TopLeftCorner(SpriteSheet spritesheet, Rect mapLocationRect) {
+  
+    public TopWall(SpriteSheet spritesheet, Rect mapLocationRect) {
         super(mapLocationRect);
         sprite = spritesheet.getTopWall();
     }
 
     @Override
     public void draw(Canvas canvas) {
-
+        sprite.draw(canvas, mapLocationRect.left, mapLocationRect.top);
     }
 }

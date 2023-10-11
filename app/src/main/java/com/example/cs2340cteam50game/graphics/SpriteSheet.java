@@ -28,9 +28,39 @@ public class SpriteSheet {
     }
 
     private Sprite getSpriteByIndex(int row, int col) {
-        new Sprite(this, new Rect(
+        return new Sprite(this, new Rect(
                 col * SPRITE_WIDTH_PIXELS,row * SPRITE_HEIGHT_PIXELS,
-                (col + 1) * SPRITE_WIDTH_PIXELS, (row + 1) * SPRITE_HEIGHT_PIXELS));
+                (col + 1) * SPRITE_WIDTH_PIXELS, (row + 1) * SPRITE_HEIGHT_PIXELS
         ));
     }
+    public Sprite getTopWall() {
+        return getSpriteByIndex(0, 1); //row, col
+    }
+    public Sprite getTopRightCorner() {
+        return getSpriteByIndex(0, 2); //row, col
+    }
+
+    public Sprite getLeftWall() {
+        return getSpriteByIndex(0, 3); //row, col
+    }
+
+    public Sprite getFloor() {
+        return getSpriteByIndex(0, 4); //row, col
+    }
+
+    public Sprite getRightWall() {
+        return getSpriteByIndex(0, 5); //row, col
+    }
+
+    public Sprite getBottomWall() {
+        return getSpriteByIndex(0, 6); //row, col
+    }
+
+    public Sprite getBottomRightCorner() {
+        return getSpriteByIndex(0, 7); //row, col
+    }
+    public Sprite getBottomLeftCorner() {
+        return getSpriteByIndex(0, 8); //row, col
+    }
+
 }
