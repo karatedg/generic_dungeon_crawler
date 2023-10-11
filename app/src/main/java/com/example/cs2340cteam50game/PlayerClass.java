@@ -64,13 +64,6 @@ public class PlayerClass { //extends GameScreenObject
         return playerInstance;
     }
 
-//    public void draw(Canvas canvas, GameDisplay gameDisplay) {
-//        playerSprite.draw(canvas, (int) x, (int) y);
-//    }
-
-    public void update() {
-        return;
-    }
 
     //Getters and Setters for all instance variables
 

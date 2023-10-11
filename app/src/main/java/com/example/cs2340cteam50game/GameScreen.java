@@ -1,15 +1,12 @@
 package com.example.cs2340cteam50game;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-//import com.example.cs2340cteam50game.GameObjects.PlayerClass;
 
 public class GameScreen extends AppCompatActivity {
 
@@ -18,16 +15,12 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
-    //private Game game;
+    private int currentScreen = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.in_game_activity);
-
-        //new stuff here to see if this works:
-//        game = new Game(this);
-//        setContentView(game);
 
         //getting ids for different elements that will be needed
         Button skipToEnd = (Button) findViewById(R.id.skipToEnd);
@@ -35,6 +28,9 @@ public class GameScreen extends AppCompatActivity {
         TextView playerName = (TextView) findViewById(R.id.playerName);
         TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
         ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
+        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        Button previousMap = (Button) findViewById(R.id.previousMap);
+        Button nextMap = (Button) findViewById(R.id.nextMap);
 
         PlayerClass player = PlayerClass.getPlayer();
         name = player.getUsername();
@@ -80,6 +76,50 @@ public class GameScreen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 startActivity(intent);
+            }
+        });
+
+        nextMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currentScreen++;
+                switch(currentScreen) {
+                    case 0:
+                        map.setImageResource(R.drawable.map1);
+                        break;
+                    case 1:
+                        map.setImageResource(R.drawable.map2);
+                        break;
+                    case 2:
+                        map.setImageResource(R.drawable.map3);
+                        break;
+                    default:
+                        map.setImageResource(R.drawable.map1);
+                        currentScreen = 0;
+                        break;
+                }
+            }
+        });
+
+        previousMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currentScreen--;
+                switch (currentScreen) {
+                    case 0:
+                        map.setImageResource(R.drawable.map1);
+                        break;
+                    case 1:
+                        map.setImageResource(R.drawable.map2);
+                        break;
+                    case 2:
+                        map.setImageResource(R.drawable.map3);
+                        break;
+                    default:
+                        map.setImageResource(R.drawable.map1);
+                        currentScreen = 0;
+                        break;
+                }
             }
         });
 
