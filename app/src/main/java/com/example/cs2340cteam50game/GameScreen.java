@@ -2,9 +2,9 @@ package com.example.cs2340cteam50game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.SharedPreferences;
 import android.media.PlaybackParams;
 import android.media.tv.TimelineRequest;
+
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -27,8 +27,8 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
-    private SharedPreferences p1;
-    int scoreVal;
+
+    private int currentScreen = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,29 +41,29 @@ public class GameScreen extends AppCompatActivity {
         TextView playerName = (TextView) findViewById(R.id.playerName);
         TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
         ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
-        TextView scoreText = (TextView) findViewById(R.id.scoreText);
 
-        p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-        name = p1.getString("username", "player");
-        difficulty = p1.getInt("difficulty", 1);
-        spriteNum = p1.getInt("sprite", 1);
+        TextView scoreText = (TextView) findViewById(R.id.scoreText);
+        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        Button previousMap = (Button) findViewById(R.id.previousMap);
+        Button nextMap = (Button) findViewById(R.id.nextMap);
+
+        PlayerClass player = PlayerClass.getPlayer();
+        name = player.getUsername();
+        difficulty = player.getDifficultyNum();
+        spriteNum = player.getSpriteNum();
+        health = player.getHealthPoints();
 
         switch (difficulty) {
         case 1:
-            health = 150;
             difficultyLabel = "Easy";
             break;
         case 2:
-            health = 100;
-            difficultyLabel = "Normal";
+            difficultyLabel = "Medium";
             break;
         case 3:
-            health = 75;
             difficultyLabel = "Hard";
             break;
         default:
-            health = 100;
-            difficultyLabel = "Normal";
             break;
         }
 
@@ -82,7 +82,6 @@ public class GameScreen extends AppCompatActivity {
             playerSprite.setImageResource(R.drawable.green_idle);
             break;
         default:
-            playerSprite.setImageResource(R.drawable.green_idle);
             break;
         }
 
@@ -108,6 +107,50 @@ public class GameScreen extends AppCompatActivity {
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 intent.putExtra("score", score.getScore());
                 startActivity(intent);
+            }
+        });
+
+        nextMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currentScreen++;
+                switch(currentScreen) {
+                    case 0:
+                        map.setImageResource(R.drawable.map1);
+                        break;
+                    case 1:
+                        map.setImageResource(R.drawable.map2);
+                        break;
+                    case 2:
+                        map.setImageResource(R.drawable.map3);
+                        break;
+                    default:
+                        map.setImageResource(R.drawable.map1);
+                        currentScreen = 0;
+                        break;
+                }
+            }
+        });
+
+        previousMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currentScreen--;
+                switch (currentScreen) {
+                    case 0:
+                        map.setImageResource(R.drawable.map1);
+                        break;
+                    case 1:
+                        map.setImageResource(R.drawable.map2);
+                        break;
+                    case 2:
+                        map.setImageResource(R.drawable.map3);
+                        break;
+                    default:
+                        map.setImageResource(R.drawable.map1);
+                        currentScreen = 0;
+                        break;
+                }
             }
         });
 

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,9 +16,6 @@ import android.widget.TextView;
 public class SpriteSelectionScreen extends AppCompatActivity {
     private int spriteNum = 1;
     private int difficultyNum = 1;
-
-    private SharedPreferences p1;
-    private SharedPreferences.Editor e1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,44 +44,41 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         ImageView spriteSelection = (ImageView) findViewById(R.id.spriteDisplay);
 
         //Check for and enforce previous choices
-        p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-        username.setText(p1.getString("username", ""));
-        switch (p1.getInt("difficulty", 0)) {
-        case 1:
-            difficultyDisplay.setText(R.string.difficulty_easy);
-            difficultyNum = 1;
-            break;
-        case 2:
-            difficultyDisplay.setText(R.string.difficulty_medium);
-            difficultyNum = 2;
-            break;
-        case 3:
-            difficultyDisplay.setText(R.string.difficulty_hard);
-            difficultyNum = 3;
-            break;
-        default:
-            break;
+        if (PlayerClass.playerExists()) {
+            PlayerClass player = PlayerClass.getPlayer();
+            username.setText(player.getUsername());
+            difficultyNum = player.getDifficultyNum();
+            spriteNum = player.getSpriteNum();
+            switch (difficultyNum) {
+            case 1:
+                difficultyDisplay.setText(R.string.difficulty_easy);
+                break;
+            case 2:
+                difficultyDisplay.setText(R.string.difficulty_medium);
+                break;
+            case 3:
+                difficultyDisplay.setText(R.string.difficulty_hard);
+                break;
+            default:
+                break;
+            }
+            switch (spriteNum) {
+            case 1:
+                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                        R.drawable.red_idle, null));
+                break;
+            case 2:
+                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                        R.drawable.blue_idle, null));
+                break;
+            case 3:
+                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
+                        R.drawable.green_idle, null));
+                break;
+            default:
+                break;
+            }
         }
-        switch (p1.getInt("sprite", 0)) {
-        case 1:
-            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                    R.drawable.red_idle, null));
-            spriteNum = 1;
-            break;
-        case 2:
-            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                    R.drawable.blue_idle, null));
-            spriteNum = 2;
-            break;
-        case 3:
-            spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                    R.drawable.green_idle, null));
-            spriteNum = 3;
-            break;
-        default:
-            break;
-        }
-
 
         //Return to previous screen
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -150,7 +143,6 @@ public class SpriteSelectionScreen extends AppCompatActivity {
             }
         });
 
-
         //Continue and save choices
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,12 +150,17 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                 if (username.getText().toString().trim().equals("")) {
                     return;
                 } else {
-                    p1 = getSharedPreferences("PlayerChoices", MODE_PRIVATE);
-                    e1 = p1.edit();
-                    e1.putString("username", username.getText().toString());
-                    e1.putInt("difficulty", difficultyNum);
-                    e1.putInt("sprite", spriteNum);
-                    e1.apply();
+                    PlayerClass player = PlayerClass.getPlayer();
+                    player.setUsername(username.getText().toString());
+                    player.setDifficultyNum(difficultyNum);
+                    player.setSpriteNum(spriteNum);
+                    if (difficultyNum == 1) {
+                        player.setHealthPoints(150);
+                    } else if (difficultyNum == 2) {
+                        player.setHealthPoints(100);
+                    } else if (difficultyNum == 3) {
+                        player.setHealthPoints(75);
+                    }
                     Intent intent = new Intent(SpriteSelectionScreen.this, ContinueScreen.class);
                     startActivity(intent);
                 }

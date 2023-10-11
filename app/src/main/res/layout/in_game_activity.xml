@@ -8,15 +8,17 @@
     android:screenOrientation="landscape">
 
     <ImageView
-        android:id="@+id/firstMap"
-        android:layout_width="553dp"
-        android:layout_height="360dp"
+        android:id="@+id/gameMap"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
         android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/firstmap" />
+        app:srcCompat="@drawable/map1" />
 
     <TextView
         android:id="@+id/playerName"
@@ -87,8 +89,7 @@
         android:id="@+id/playerSprite"
         android:layout_width="44dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/firstMap"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/green_idle" />
@@ -106,4 +107,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
+=======
+    <Button
+        android:id="@+id/previousMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Map"
+        app:layout_constraintBottom_toTopOf="@+id/skipToEnd"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
