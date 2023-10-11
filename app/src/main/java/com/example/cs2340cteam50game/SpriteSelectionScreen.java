@@ -13,6 +13,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.GameObjects.PlayerClass;
+
 public class SpriteSelectionScreen extends AppCompatActivity {
     private int spriteNum = 1;
     private int difficultyNum = 1;

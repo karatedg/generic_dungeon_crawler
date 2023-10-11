@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 
+import com.example.cs2340cteam50game.GameDisplay;
 import com.example.cs2340cteam50game.graphics.SpriteSheet;
 
 
@@ -49,5 +50,10 @@ public class Tilemap {
     private Rect getRectByIndex(int row, int col) {
         return new Rect(col * TILE_WIDTH_PIXELS, row * TILE_HEIGHT_PIXELS,
                 (col + 1) * TILE_WIDTH_PIXELS, (row + 1) * TILE_HEIGHT_PIXELS);
+    }
+
+    public void draw(Canvas canvas, GameDisplay gameDisplay) {
+        canvas.drawBitmap(mapBitmap,gameDisplay.getGameRect(),
+                gameDisplay.THE_SCREEN_RECT, null);
     }
 }
