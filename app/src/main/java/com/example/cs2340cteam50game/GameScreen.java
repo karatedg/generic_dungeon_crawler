@@ -27,6 +27,7 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
+    private int scoreVal;
 
     private int currentScreen = 0;
 
@@ -101,9 +102,9 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Score score = new Score(name, scoreVal);
-                Leaderboard leaderBoard = new Leaderboard();
+                Leaderboard leaderBoard = Leaderboard.getLeaderboard();
                 leaderBoard.addScore(score);
-                System.out.println(score.getScore());
+                //System.out.println(score.getScore());
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 intent.putExtra("score", score.getScore());
                 startActivity(intent);

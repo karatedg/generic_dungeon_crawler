@@ -34,8 +34,8 @@ public class EndScreen extends AppCompatActivity {
 
         Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
-        Score score1 = new Score();
-        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard));
+        Score score1 = new Score(PlayerClass.getPlayer().getUsername(), score);
+        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard), score1);
         //leaderboard.setText(Integer.toString(gameScreen.scoreVal));
 
         //Quit to home screen

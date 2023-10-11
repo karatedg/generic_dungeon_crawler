@@ -1,5 +1,6 @@
 package com.example.cs2340cteam50game;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -9,23 +10,30 @@ public class Leaderboard {
     private CompareScore comparatorScore;
     private CompareTime comparatorTime;
 
-    private static Leaderboard leaderboard = new Leaderboard();
+    private static Leaderboard leaderboard = null;
 
-    Leaderboard() {
+    private Leaderboard() {
         scores = new ArrayList<>();
-        for(int i = 0; i < 5; i++) {
-            scores.add(new Score());
-        }
         comparatorScore = new CompareScore();
         comparatorTime = new CompareTime();
     }
 
     public static Leaderboard getLeaderboard() {
+        if (leaderboard == null) {
+            synchronized (Leaderboard.class) {
+                if (leaderboard == null) {
+                    leaderboard = new Leaderboard();
+                }
+            }
+        }
         return leaderboard;
     }
 
     public void addScore(Score s) {
         scores.add(s);
+        for(int i = 0; i < scores.size(); i++) {
+            System.out.println(scores.get(i).getScore());
+        }
         Collections.sort(scores, comparatorScore);
     }
 
@@ -45,5 +53,9 @@ public class Leaderboard {
         }
 
         return latest;
+    }
+
+    public int getSize() {
+        return scores.size();
     }
 }
