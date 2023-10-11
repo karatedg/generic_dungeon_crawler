@@ -1,6 +1,11 @@
-package com.example.cs2340cteam50game.GameObjects;
+package com.example.cs2340cteam50game;
 
-public class PlayerClass {
+import android.graphics.Canvas;
+
+//import com.example.cs2340cteam50game.GameObjects.GameScreenObject;
+//import com.example.cs2340cteam50game.graphics.Sprite;
+
+public class PlayerClass { //extends GameScreenObject
 
     //Default Values:
     private double x;
@@ -12,6 +17,8 @@ public class PlayerClass {
     private int spriteNum;
     private int difficultyNum;
     private int healthPoints;
+
+    //private Sprite playerSprite;
 
 
 
@@ -39,6 +46,7 @@ public class PlayerClass {
         this.healthPoints = 0;
         this.spriteNum = 1;
         this.difficultyNum = 1;
+
     }
 
     /**
@@ -54,6 +62,14 @@ public class PlayerClass {
             }
         }
         return playerInstance;
+    }
+
+//    public void draw(Canvas canvas, GameDisplay gameDisplay) {
+//        playerSprite.draw(canvas, (int) x, (int) y);
+//    }
+
+    public void update() {
+        return;
     }
 
     //Getters and Setters for all instance variables

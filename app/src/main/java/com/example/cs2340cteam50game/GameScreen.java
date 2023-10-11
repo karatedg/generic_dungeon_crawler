@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.cs2340cteam50game.GameObjects.PlayerClass;
+//import com.example.cs2340cteam50game.GameObjects.PlayerClass;
 
 public class GameScreen extends AppCompatActivity {
 
@@ -18,16 +18,16 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
-    private Game game;
+    //private Game game;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.in_game_activity);
+        setContentView(R.layout.in_game_activity);
 
         //new stuff here to see if this works:
-        game = new Game(this);
-        setContentView(game);
+//        game = new Game(this);
+//        setContentView(game);
 
         //getting ids for different elements that will be needed
         Button skipToEnd = (Button) findViewById(R.id.skipToEnd);

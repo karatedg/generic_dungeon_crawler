@@ -10,11 +10,12 @@ import android.view.SurfaceView;
 import com.example.cs2340cteam50game.graphics.SpriteSheet;
 import com.example.cs2340cteam50game.map.Tilemap;
 
-class Game extends SurfaceView{
+class Game extends SurfaceView implements SurfaceHolder.Callback {
 
     private final Tilemap tilemap;
     private GameDisplay gameDisplay;
     private GameLoop loop;
+    private PlayerClass player;
 
     private String currentMapFilename;
 
@@ -23,22 +24,23 @@ class Game extends SurfaceView{
 
         // Get surface holder and add callback
         SurfaceHolder surfaceHolder = getHolder();
+        surfaceHolder.addCallback(this);
 
         loop = new GameLoop(this, surfaceHolder);
 
 
         // Initialize game objects
         SpriteSheet spriteSheet = new SpriteSheet(context);
-        //TODO: Player setup here
+        player = PlayerClass.getPlayer();
 
-        // Initialize display and center it around the player
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        ((Activity) getContext()).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        gameDisplay = new GameDisplay(displayMetrics.widthPixels,
-                displayMetrics.heightPixels, player);
+//        // Initialize display and center it around the player
+//        DisplayMetrics displayMetrics = new DisplayMetrics();
+//        ((Activity) getContext()).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+//        gameDisplay = new GameDisplay(displayMetrics.widthPixels,
+//                displayMetrics.heightPixels, player);
 
         // Initialize Tilemap
-        tilemap = new Tilemap(currentMapFilename, spriteSheet);
+        tilemap = new Tilemap(spriteSheet); //currentMapFilename
 
         setFocusable(true);
     }
@@ -47,9 +49,20 @@ class Game extends SurfaceView{
     public void surfaceCreated(SurfaceHolder holder) {
         if (loop.getState().equals(Thread.State.TERMINATED)) {
             SurfaceHolder surfaceHolder = getHolder();
+            surfaceHolder.addCallback(this);
             loop = new GameLoop(this, surfaceHolder);
         }
         loop.startLoop();
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int four, int height, int width) {
+        return;
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+        return;
     }
 
     @Override
@@ -83,6 +96,7 @@ class Game extends SurfaceView{
 
     //pause/stop loop if neccesary
     public void pause() {
+        System.out.println("pause called");
         loop.stopLoop();
     }
 }
