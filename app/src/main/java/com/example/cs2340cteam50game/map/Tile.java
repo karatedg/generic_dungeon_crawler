@@ -2,6 +2,8 @@ package com.example.cs2340cteam50game.map;
 
 import android.graphics.Rect;
 
+import com.example.cs2340cteam50game.graphics.SpriteSheet;
+
 abstract class Tile {
 
     public enum TileType {
@@ -16,26 +18,26 @@ abstract class Tile {
         BottomLeft_Corner
 
     };
-    public static Tile getTile(int index, Spritesheet spriteSheet, Rect mapLocationRect) {
+    public static Tile getTile(int index, SpriteSheet SpriteSheet, Rect mapLocationRect) {
         switch(TileType.values()[index]) {
             case TopLeft_Corner:
-                return new TopLeftCorner(spriteSheet, mapLocationRect);
+                return new TopLeftCorner(SpriteSheet, mapLocationRect);
             case Top_Wall:
-                return new TopWall(spriteSheet, mapLocationRect));
+                return new TopWall(SpriteSheet, mapLocationRect));
             case TopRight_Corner:
-                return new TopRightCorner(spriteSheet, mapLocationRect));
+                return new TopRightCorner(SpriteSheet, mapLocationRect));
             case Left_Wall:
-                return new LeftWall(spriteSheet, mapLocationRect));
+                return new LeftWall(SpriteSheet, mapLocationRect));
             case Floor:
-                return new Floor(spriteSheet, mapLocationRect));
+                return new Floor(SpriteSheet, mapLocationRect));
             case Right_Wall:
-                return new RightWall(spriteSheet, mapLocationRect));
+                return new RightWall(SpriteSheet, mapLocationRect));
             case Bottom_Wall:
-                return new BottomWall(spriteSheet, mapLocationRect));
+                return new BottomWall(SpriteSheet, mapLocationRect));
             case BottomRight_Corner:
-                return new BottomRightCorner(spriteSheet, mapLocationRect));
+                return new BottomRightCorner(SpriteSheet, mapLocationRect));
             case BottomLeft_Corner:
-                return new BottomLeftCorner(spriteSheet, mapLocationRect));
+                return new BottomLeftCorner(SpriteSheet, mapLocationRect));
             default:
                 return null;
         }

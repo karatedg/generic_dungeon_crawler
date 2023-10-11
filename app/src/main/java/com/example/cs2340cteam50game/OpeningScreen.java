@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 
+import com.example.cs2340cteam50game.GameObjects.PlayerClass;
+
 public class OpeningScreen extends AppCompatActivity {
 
     @Override
