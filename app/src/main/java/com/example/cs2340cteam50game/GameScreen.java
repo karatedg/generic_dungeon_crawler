@@ -3,6 +3,7 @@ package com.example.cs2340cteam50game;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.media.PlaybackParams;
 import android.media.tv.TimelineRequest;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -47,27 +48,6 @@ public class GameScreen extends AppCompatActivity {
         difficulty = p1.getInt("difficulty", 1);
         spriteNum = p1.getInt("sprite", 1);
 
-//        scoreText.setText("100");
-//        final Handler handler = new Handler();
-//        Timer timer = new Timer(false);
-//        TimerTask timerTask = new TimerTask() {
-//            @Override
-//            public void run() {
-//                handler.post(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        int oldScore = Integer.valueOf(scoreText.getText().toString());
-//                        if(oldScore > 0) {
-//                            int newScore = oldScore - 1;
-//                            scoreText.setText(Integer.toString(newScore));
-//                            System.out.println();
-//                        }
-//                    }
-//                });
-//            }
-//        };
-//        timer.scheduleAtFixedRate(timerTask, 1000, 1000);
-
         switch (difficulty) {
         case 1:
             health = 150;
@@ -86,7 +66,6 @@ public class GameScreen extends AppCompatActivity {
             difficultyLabel = "Normal";
             break;
         }
-
 
         playerName.setText(name);
         healthValue.setText(Integer.toString(health));
@@ -108,9 +87,9 @@ public class GameScreen extends AppCompatActivity {
         }
 
         scoreText.setText("Score: 50");
-        new CountDownTimer(3000, 3000) {
+        new CountDownTimer((50) * 3000, 1000) {
             public void onTick(long millisUntilFinished) {
-                scoreVal = (int) (millisUntilFinished / 3000);
+                scoreVal = (int) (millisUntilFinished / 1000);
                 scoreText.setText("Score: " + scoreVal);
             }
             public void onFinish() {
@@ -123,6 +102,9 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
+                Score score = new Score(name, scoreVal);
+                Leaderboard leaderBoard = new Leaderboard();
+                leaderBoard.addScore(score);
                 intent.putExtra("score", scoreVal);
                 startActivity(intent);
             }

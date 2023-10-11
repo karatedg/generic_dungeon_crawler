@@ -11,7 +11,7 @@ public class Leaderboard {
 
     private static Leaderboard leaderboard = new Leaderboard();
 
-    private Leaderboard() {
+    Leaderboard() {
         scores = new ArrayList<>();
         comparatorScore = new CompareScore();
         comparatorTime = new CompareTime();
