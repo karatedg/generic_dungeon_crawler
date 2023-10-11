@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.GameObjects.PlayerClass;
+
 public class ContinueScreen extends AppCompatActivity {
 
     @Override
