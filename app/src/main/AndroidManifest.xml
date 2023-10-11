@@ -13,33 +13,36 @@
         android:theme="@style/Theme.CS2340CTeam50Game"
         tools:targetApi="31">
         <activity
+            android:name=".Room1"
+            android:exported="false" />
+        <activity
             android:name=".SpriteSelectionScreen"
-            android:screenOrientation="landscape"
             android:exported="false"
             android:label="sprite_selection_screen"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
             android:name=".ContinueScreen"
-            android:screenOrientation="landscape"
             android:exported="false"
             android:label="continue_screen"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
             android:name=".GameScreen"
-            android:screenOrientation="landscape"
             android:exported="false"
             android:label="game_screen"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
             android:name=".EndScreen"
-            android:screenOrientation="landscape"
             android:exported="false"
             android:label="end_screen"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
             android:name=".OpeningScreen"
-            android:screenOrientation="landscape"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
