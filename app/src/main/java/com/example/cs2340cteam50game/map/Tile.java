@@ -1,8 +1,17 @@
 package com.example.cs2340cteam50game.map;
 
+import android.graphics.Canvas;
 import android.graphics.Rect;
 
+import com.example.cs2340cteam50game.graphics.SpriteSheet;
+
 abstract class Tile {
+
+    protected final Rect mapLocationRect;
+
+    public Tile(Rect mapLocationRect) {
+        this.mapLocationRect = mapLocationRect;
+    }
 
     public enum TileType {
         TopLeft_Corner,
@@ -16,7 +25,7 @@ abstract class Tile {
         BottomLeft_Corner
 
     };
-    public static Tile getTile(int index, Spritesheet spriteSheet, Rect mapLocationRect) {
+    public static Tile getTile(int index, SpriteSheet spriteSheet, Rect mapLocationRect) {
         switch(TileType.values()[index]) {
             case TopLeft_Corner:
                 return new TopLeftCorner(spriteSheet, mapLocationRect);

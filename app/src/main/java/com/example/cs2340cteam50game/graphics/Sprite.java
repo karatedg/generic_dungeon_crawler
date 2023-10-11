@@ -12,7 +12,14 @@ public class Sprite {
         this.rect = rect;
     }
 
-    public void draw(Canvas canvas) {
+    public void draw(Canvas canvas, int x, int y) {
         canvas.drawBitmap(spriteSheet.getBitmap(), rect, rect, null);
+    }
+    public int getWidth() {
+        return rect.width();
+    }
+
+    public int getHeight() {
+        return rect.height();
     }
 }
