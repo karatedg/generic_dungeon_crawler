@@ -13,6 +13,9 @@ public class Leaderboard {
 
     Leaderboard() {
         scores = new ArrayList<>();
+        for(int i = 0; i < 5; i++) {
+            scores.add(new Score());
+        }
         comparatorScore = new CompareScore();
         comparatorTime = new CompareTime();
     }

@@ -101,11 +101,12 @@ public class GameScreen extends AppCompatActivity {
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 Score score = new Score(name, scoreVal);
                 Leaderboard leaderBoard = new Leaderboard();
                 leaderBoard.addScore(score);
-                intent.putExtra("score", scoreVal);
+                System.out.println(score.getScore());
+                Intent intent = new Intent(GameScreen.this, EndScreen.class);
+                intent.putExtra("score", score.getScore());
                 startActivity(intent);
             }
         });

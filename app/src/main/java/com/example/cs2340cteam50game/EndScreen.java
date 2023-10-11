@@ -32,8 +32,11 @@ public class EndScreen extends AppCompatActivity {
                     }
                 });
 
-        //LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard));
-        leaderboard.setText(Integer.toString(gameScreen.scoreVal));
+        Intent intent = getIntent();
+        int score = intent.getIntExtra("score", 0);
+        Score score1 = new Score();
+        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard));
+        //leaderboard.setText(Integer.toString(gameScreen.scoreVal));
 
         //Quit to home screen
         quitButton.setOnClickListener(new View.OnClickListener() {

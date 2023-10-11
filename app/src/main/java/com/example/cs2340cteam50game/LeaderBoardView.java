@@ -4,10 +4,10 @@ import android.widget.TextView;
 
 public class LeaderBoardView {
 
-    public static void renderLeaderboard(Leaderboard l, TextView text) {
+    public static void renderLeaderboard(Leaderboard l, TextView text, Score score) {
         String render = String.format("%10s %10s\n", "NAME", "SCORE");
 
-        Score latest = l.getLatestScore();
+        Score latest = score;
         render += String.format("%10s %10d\n\n", latest.getName(), latest.getScore());
 
         for (int i = 0; i < 5; i++) {
