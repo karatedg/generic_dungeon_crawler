@@ -7,12 +7,6 @@ public class Score {
     private int score;
     private LocalDateTime timestamp;
 
-    public Score() {
-        this.name = "Unnamed Player";
-        this.score = -1;
-        timestamp = LocalDateTime.now();
-    }
-
     public Score(String name, int score) {
         this.name = name;
         this.score = score;
