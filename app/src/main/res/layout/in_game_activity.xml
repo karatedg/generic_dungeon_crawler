@@ -92,4 +92,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/green_idle" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="276dp"
+        android:text="Timer: "
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toTopOf="@+id/skipToEnd"
+        app:layout_constraintEnd_toStartOf="@+id/firstMap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyText"
+        app:layout_constraintVertical_bias="0.109" />
 </androidx.constraintlayout.widget.ConstraintLayout>
