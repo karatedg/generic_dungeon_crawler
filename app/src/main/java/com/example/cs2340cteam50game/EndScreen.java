@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class EndScreen extends AppCompatActivity {
-    GameScreen gameScreen = new GameScreen();
+    private GameScreen gameScreen = new GameScreen();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +35,8 @@ public class EndScreen extends AppCompatActivity {
         Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
         Score score1 = new Score(PlayerClass.getPlayer().getUsername(), score);
-        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard), score1);
+        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(),
+                                findViewById(R.id.leaderboard), score1);
         //leaderboard.setText(Integer.toString(gameScreen.scoreVal));
 
         //Quit to home screen

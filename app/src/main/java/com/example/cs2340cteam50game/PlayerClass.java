@@ -1,11 +1,7 @@
 package com.example.cs2340cteam50game;
 
-import android.graphics.Canvas;
 
-//import com.example.cs2340cteam50game.GameObjects.GameScreenObject;
-//import com.example.cs2340cteam50game.graphics.Sprite;
-
-public class PlayerClass { //extends GameScreenObject
+public class PlayerClass {
 
     //Default Values:
     private double x;

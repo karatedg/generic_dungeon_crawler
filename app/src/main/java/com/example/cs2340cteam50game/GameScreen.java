@@ -2,23 +2,13 @@ package com.example.cs2340cteam50game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.media.PlaybackParams;
-import android.media.tv.TimelineRequest;
-
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import java.io.Console;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class GameScreen extends AppCompatActivity {
 
