@@ -15,7 +15,7 @@ public class LeaderBoardView {
                 time.replace('T', ' ').substring(0, time.length() - 7));
 
         int leaderBoardSize = Leaderboard.getLeaderboard().getSize();
-        if(leaderBoardSize > 5) {
+        if (leaderBoardSize > 5) {
             leaderBoardSize = 5;
         }
 
