@@ -30,21 +30,21 @@ abstract class Tile {
             case TopLeft_Corner:
                 return new TopLeftCorner(spriteSheet, mapLocationRect);
             case Top_Wall:
-                return new TopWall(spriteSheet, mapLocationRect));
+                return new TopWall(spriteSheet, mapLocationRect);
             case TopRight_Corner:
-                return new TopRightCorner(spriteSheet, mapLocationRect));
+                return new TopRightCorner(spriteSheet, mapLocationRect);
             case Left_Wall:
-                return new LeftWall(spriteSheet, mapLocationRect));
+                return new LeftWall(spriteSheet, mapLocationRect);
             case Floor:
-                return new Floor(spriteSheet, mapLocationRect));
+                return new Floor(spriteSheet, mapLocationRect);
             case Right_Wall:
-                return new RightWall(spriteSheet, mapLocationRect));
+                return new RightWall(spriteSheet, mapLocationRect);
             case Bottom_Wall:
-                return new BottomWall(spriteSheet, mapLocationRect));
+                return new BottomWall(spriteSheet, mapLocationRect);
             case BottomRight_Corner:
-                return new BottomRightCorner(spriteSheet, mapLocationRect));
+                return new BottomRightCorner(spriteSheet, mapLocationRect);
             case BottomLeft_Corner:
-                return new BottomLeftCorner(spriteSheet, mapLocationRect));
+                return new BottomLeftCorner(spriteSheet, mapLocationRect);
             default:
                 return null;
         }
