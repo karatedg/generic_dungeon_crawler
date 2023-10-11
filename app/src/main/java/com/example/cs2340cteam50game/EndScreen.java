@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 
 public class EndScreen extends AppCompatActivity {
-
+    GameScreen gameScreen = new GameScreen();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,20 +20,7 @@ public class EndScreen extends AppCompatActivity {
         Button restartButton = (Button) findViewById(R.id.restartButton);
         Button quitButton = (Button) findViewById(R.id.quitButton);
 
-        /*//Leaderboard
-        ListView leaderboardlist = (ListView) findViewById(R.id.leaderboard);
-        String[] players = new String[5];
-        players[0] = "Player 1";
-        players[1] = "Player 2";
-        players[2] = "Player 3";
-        players[3] = "Player 4";
-        players[4] = "Player 5";
-        players[5] = "Player 6";
-
-        ArrayAdapter<String> playersAdapter = new ArrayAdapter<>(this,
-                                                                android.R.layout.simple_list_item_1,
-                                                                players);
-        leaderboardlist.setAdapter(playersAdapter);*/
+        TextView leaderboard = (TextView) findViewById(R.id.leaderboard);
 
         //Return to opening screen
         restartButton.setOnClickListener(
@@ -42,6 +31,12 @@ public class EndScreen extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+
+        Intent intent = getIntent();
+        int score = intent.getIntExtra("score", 0);
+        Score score1 = new Score();
+        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard));
+        //leaderboard.setText(Integer.toString(gameScreen.scoreVal));
 
         //Quit to home screen
         quitButton.setOnClickListener(new View.OnClickListener() {

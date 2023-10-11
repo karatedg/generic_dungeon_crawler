@@ -1,12 +1,24 @@
 package com.example.cs2340cteam50game;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.media.PlaybackParams;
+import android.media.tv.TimelineRequest;
+
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.io.Console;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class GameScreen extends AppCompatActivity {
 
@@ -15,6 +27,7 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
+
     private int currentScreen = 0;
 
     @Override
@@ -28,6 +41,8 @@ public class GameScreen extends AppCompatActivity {
         TextView playerName = (TextView) findViewById(R.id.playerName);
         TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
         ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
+
+        TextView scoreText = (TextView) findViewById(R.id.scoreText);
         ImageView map = (ImageView) findViewById(R.id.gameMap);
         Button previousMap = (Button) findViewById(R.id.previousMap);
         Button nextMap = (Button) findViewById(R.id.nextMap);
@@ -70,11 +85,27 @@ public class GameScreen extends AppCompatActivity {
             break;
         }
 
+        scoreText.setText("Score: 50");
+        new CountDownTimer((50) * 3000, 1000) {
+            public void onTick(long millisUntilFinished) {
+                scoreVal = (int) (millisUntilFinished / 1000);
+                scoreText.setText("Score: " + scoreVal);
+            }
+            public void onFinish() {
+                scoreText.setText("Score: 0");
+            }
+        }.start();
+
         //skip to end screen when button pressed
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Score score = new Score(name, scoreVal);
+                Leaderboard leaderBoard = new Leaderboard();
+                leaderBoard.addScore(score);
+                System.out.println(score.getScore());
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
+                intent.putExtra("score", score.getScore());
                 startActivity(intent);
             }
         });
