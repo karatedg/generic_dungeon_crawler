@@ -87,7 +87,7 @@ public class GameScreen extends AppCompatActivity {
         }
 
         scoreText.setText("Score: 50");
-        new CountDownTimer((50) * 3000, 1000) {
+        new CountDownTimer((50) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
                 scoreVal = (int) (millisUntilFinished / 1000);
                 scoreText.setText("Score: " + scoreVal);
