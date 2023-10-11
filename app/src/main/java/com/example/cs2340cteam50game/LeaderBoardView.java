@@ -10,7 +10,12 @@ public class LeaderBoardView {
         Score latest = score;
         render += String.format("%10s %10d\n\n", latest.getName(), latest.getScore());
 
-        for (int i = 0; i < 5; i++) {
+        int leaderBoardSize = Leaderboard.getLeaderboard().getSize();
+        if(leaderBoardSize > 5) {
+            leaderBoardSize = 5;
+        }
+
+        for (int i = 0; i < leaderBoardSize; i++) {
             if (i < l.getScores().size()) {
                 Score s = l.getScores().get(i);
                 render += String.format("%10s %10d\n", s.getName(), s.getScore());

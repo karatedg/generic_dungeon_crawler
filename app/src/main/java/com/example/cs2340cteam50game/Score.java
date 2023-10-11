@@ -9,7 +9,7 @@ public class Score {
 
     public Score() {
         this.name = "Unnamed Player";
-        this.score = 0;
+        this.score = -1;
         timestamp = LocalDateTime.now();
     }
 
