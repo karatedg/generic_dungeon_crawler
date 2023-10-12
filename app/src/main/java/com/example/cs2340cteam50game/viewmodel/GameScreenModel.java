@@ -17,7 +17,7 @@ public class GameScreenModel {
     }
 
     public static void setScoreVal(int score) {
-        if (scoreVal < 0) {
+        if (score < 0) {
             scoreVal = 0;
         } else {
             scoreVal = score;
