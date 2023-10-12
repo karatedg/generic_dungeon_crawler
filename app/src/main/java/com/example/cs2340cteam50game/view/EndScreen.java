@@ -21,6 +21,7 @@ public class EndScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.endofgame_activity);
 
+
         //Restart and Quit Buttons
         Button restartButton = (Button) findViewById(R.id.restartButton);
         Button quitButton = (Button) findViewById(R.id.quitButton);

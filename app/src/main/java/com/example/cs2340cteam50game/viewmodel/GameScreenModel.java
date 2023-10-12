@@ -9,22 +9,23 @@ import com.example.cs2340cteam50game.R;
 public class GameScreenModel {
 
 
-    private static int scoreVal;
+
+    private static int scoreVal = 50;
 
     public static int getScoreVal() {
         return scoreVal;
     }
 
-    public static void setScoreVal(int scoreVal) {
+    public static void setScoreVal(int score) {
         if (scoreVal < 0) {
             scoreVal = 0;
         } else {
-            scoreVal = scoreVal;
+            scoreVal = score;
         }
     }
 
-    public static void startTimer(TextView scoreText) {
-        new CountDownTimer((50) * 1000, 1000) {
+    public static CountDownTimer startTimer(TextView scoreText) {
+        CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
                 scoreVal = (int) (millisUntilFinished / 1000);
                 if (scoreVal < 0) {
@@ -36,6 +37,8 @@ public class GameScreenModel {
                 scoreText.setText("Score: 0");
             }
         }.start();
+
+        return timer;
     }
 
 
