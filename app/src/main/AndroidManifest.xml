@@ -16,31 +16,31 @@
             android:name=".Room1"
             android:exported="false" />
         <activity
-            android:name=".SpriteSelectionScreen"
+            android:name=".view.SpriteSelectionScreen"
             android:exported="false"
             android:label="sprite_selection_screen"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
-            android:name=".ContinueScreen"
+            android:name=".view.ContinueScreen"
             android:exported="false"
             android:label="continue_screen"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
-            android:name=".GameScreen"
+            android:name=".view.GameScreen"
             android:exported="false"
             android:label="game_screen"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
-            android:name=".EndScreen"
+            android:name=".view.EndScreen"
             android:exported="false"
             android:label="end_screen"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.CS2340CTeam50Game" />
         <activity
-            android:name=".OpeningScreen"
+            android:name=".view.OpeningScreen"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>
