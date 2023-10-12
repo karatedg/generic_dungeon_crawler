@@ -23,7 +23,8 @@ public class GameScreen extends AppCompatActivity {
     private int difficulty;
     private String difficultyLabel;
     private int spriteNum;
-    private int scoreVal;
+
+
 
     private int currentScreen = 0;
 
@@ -73,24 +74,18 @@ public class GameScreen extends AppCompatActivity {
         }
 
         scoreText.setText("Score: 50");
-        new CountDownTimer((50) * 1000, 1000) {
-            public void onTick(long millisUntilFinished) {
-                scoreVal = (int) (millisUntilFinished / 1000);
-                scoreText.setText("Score: " + scoreVal);
-            }
-            public void onFinish() {
-                scoreText.setText("Score: 0");
-            }
-        }.start();
+
+        CountDownTimer timer = GameScreenModel.startTimer(scoreText);
+
 
         //skip to end screen when button pressed
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Score score = new Score(name, scoreVal);
+                Score score = new Score(name, GameScreenModel.getScoreVal());
                 Leaderboard leaderBoard = Leaderboard.getLeaderboard();
                 leaderBoard.addScore(score);
-                //System.out.println(score.getScore());
+                timer.cancel();
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 intent.putExtra("score", score.getScore());
                 startActivity(intent);

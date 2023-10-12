@@ -1,11 +1,44 @@
 package com.example.cs2340cteam50game.viewmodel;
 
+import android.os.CountDownTimer;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
 
 public class GameScreenModel {
 
+
+    private static int scoreVal = 50;
+
+    public static int getScoreVal() {
+        return scoreVal;
+    }
+
+    public static void setScoreVal(int score) {
+        if (scoreVal < 0) {
+            scoreVal = 0;
+        } else {
+            scoreVal = score;
+        }
+    }
+
+    public static CountDownTimer startTimer(TextView scoreText) {
+        CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
+            public void onTick(long millisUntilFinished) {
+                scoreVal = (int) (millisUntilFinished / 1000);
+                if (scoreVal < 0) {
+                    scoreVal = 0;
+                }
+                scoreText.setText("Score: " + scoreVal);
+            }
+            public void onFinish() {
+                scoreText.setText("Score: 0");
+            }
+        }.start();
+        return timer;
+
+    }
 
 
     public static String difficultySwitch(int difficulty) {
