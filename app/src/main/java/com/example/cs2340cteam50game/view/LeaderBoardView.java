@@ -1,6 +1,9 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.view;
 
 import android.widget.TextView;
+
+import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.Leaderboard;
 
 public class LeaderBoardView {
 

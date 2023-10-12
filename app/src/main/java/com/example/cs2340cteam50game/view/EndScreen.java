@@ -1,4 +1,4 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.Leaderboard;
 
 
 public class EndScreen extends AppCompatActivity {

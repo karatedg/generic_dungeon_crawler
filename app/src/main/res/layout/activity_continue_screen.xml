@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/welcome_background"
-    tools:context=".ContinueScreen">
+    tools:context=".view.ContinueScreen">
 
     <TextView
         android:id="@+id/textView"
