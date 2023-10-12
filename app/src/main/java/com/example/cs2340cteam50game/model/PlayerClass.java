@@ -124,6 +124,11 @@ public class PlayerClass {
      * @param username username
      */
     public void setUsername(String username) {
+        if (username == null || username.equals("")) {
+            throw new IllegalArgumentException("Username cannot be empty or null");
+        } else if (username.length() > 25) {
+            throw new IllegalArgumentException("Username is too long!");
+        }
         this.username = username;
     }
 
@@ -173,6 +178,13 @@ public class PlayerClass {
      */
     public void setDifficultyNum(int difficultyNum) {
         this.difficultyNum = difficultyNum;
+        if (difficultyNum == 1) {
+            setHealthPoints(150);
+        } else if (difficultyNum == 2) {
+            setHealthPoints(100);
+        } else if (difficultyNum == 3) {
+            setHealthPoints(75);
+        }
     }
 
     /**

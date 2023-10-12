@@ -150,22 +150,15 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().trim().equals("")) {
-                    return;
-                } else {
+                try {
                     PlayerClass player = PlayerClass.getPlayer();
-                    player.setUsername(username.getText().toString());
+                    player.setUsername(username.getText().toString().trim());
                     player.setDifficultyNum(difficultyNum);
                     player.setSpriteNum(spriteNum);
-                    if (difficultyNum == 1) {
-                        player.setHealthPoints(150);
-                    } else if (difficultyNum == 2) {
-                        player.setHealthPoints(100);
-                    } else if (difficultyNum == 3) {
-                        player.setHealthPoints(75);
-                    }
                     Intent intent = new Intent(SpriteSelectionScreen.this, ContinueScreen.class);
                     startActivity(intent);
+                } catch (IllegalArgumentException e) {
+                    return;
                 }
             }
         });
