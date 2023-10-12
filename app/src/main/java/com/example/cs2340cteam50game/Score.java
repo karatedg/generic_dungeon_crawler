@@ -24,4 +24,11 @@ public class Score {
     public LocalDateTime getTimestamp() {
         return timestamp;
     }
+
+    @Override
+    public String toString() {
+        String s = "Name: " +  name + "   Score: " + score;
+        return s;
+    }
+
 }
