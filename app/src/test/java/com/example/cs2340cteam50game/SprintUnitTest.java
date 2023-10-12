@@ -2,11 +2,19 @@ package com.example.cs2340cteam50game;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
+
+import com.example.cs2340cteam50game.model.Leaderboard;
+import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
+
 import org.junit.Test;
 import java.util.ArrayList;
 
 public class SprintUnitTest {
     // Player Unit Tests
+
+    // Joshua Buchsbaum
     @Test
     public void playerSingleton() {
         PlayerClass player1 = PlayerClass.getPlayer();
@@ -15,6 +23,7 @@ public class SprintUnitTest {
         assertEquals(player1, player2);
     }
 
+    // Devan Gandhi
     @Test(expected = java.lang.IllegalArgumentException.class)
     public void playerNameEmpty() {
         PlayerClass player = PlayerClass.getPlayer();
@@ -22,12 +31,21 @@ public class SprintUnitTest {
         player.setUsername("");
     }
 
+    // Devan Gandhi
     @Test(expected = java.lang.IllegalArgumentException.class)
     public void playerNameNull() {
         PlayerClass player = PlayerClass.getPlayer();
         player.setUsername(null);
     }
 
+    // David Martinez
+    @Test(expected = java.lang.IllegalArgumentException.class)
+    public void playerNameLength() {
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setUsername("abcdefghijklmnopqrstuvwxyz");
+    }
+
+    // David Martinez
     @Test
     public void playerHealthEasy() {
         PlayerClass player  = PlayerClass.getPlayer();
@@ -35,12 +53,15 @@ public class SprintUnitTest {
         assertEquals(player.getHealthPoints(), 150);
     }
 
+    // Noah West
     @Test
     public void playerHealthMedium() {
         PlayerClass player  = PlayerClass.getPlayer();
         player.setDifficultyNum(2);
         assertEquals(player.getHealthPoints(), 100);
     }
+
+    // Noah West
     @Test
     public void playerHealthHard() {
         PlayerClass player  = PlayerClass.getPlayer();
@@ -48,6 +69,7 @@ public class SprintUnitTest {
         assertEquals(player.getHealthPoints(), 75);
     }
 
+    // Sathwik Toduru
     @Test
     public void leaderboardSingleton() {
         Leaderboard board1 = Leaderboard.getLeaderboard();
@@ -56,6 +78,7 @@ public class SprintUnitTest {
         assertEquals(board1, board2);
     }
 
+    // Sathwik Toduru
     @Test
     public void leaderboardSorting() {
         Leaderboard.clear();
@@ -80,5 +103,11 @@ public class SprintUnitTest {
         }
     }
 
+    //Joshua Buchsbaum
+    @Test
+    public void scoreMin() {
+        GameScreenModel.setScoreVal(-100);
+        assertEquals(GameScreenModel.getScoreVal(), 0);
+    }
 
 }
