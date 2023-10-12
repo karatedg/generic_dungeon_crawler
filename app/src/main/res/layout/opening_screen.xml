@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/welcome_background"
     android:screenOrientation="landscape"
-    tools:context=".OpeningScreen">
+    tools:context=".view.OpeningScreen">
 
     <TextView
         android:id="@+id/textView1"

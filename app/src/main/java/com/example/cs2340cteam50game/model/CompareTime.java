@@ -1,4 +1,4 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.model;
 
 import android.os.Build;
 

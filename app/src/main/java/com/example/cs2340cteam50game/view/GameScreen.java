@@ -1,4 +1,4 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,12 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.Leaderboard;
+import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 public class GameScreen extends AppCompatActivity {
 
@@ -44,23 +50,13 @@ public class GameScreen extends AppCompatActivity {
         spriteNum = player.getSpriteNum();
         health = player.getHealthPoints();
 
-        switch (difficulty) {
-        case 1:
-            difficultyLabel = "Easy";
-            break;
-        case 2:
-            difficultyLabel = "Medium";
-            break;
-        case 3:
-            difficultyLabel = "Hard";
-            break;
-        default:
-            break;
-        }
+        difficultyLabel = GameScreenModel.difficultySwitch(difficulty);
 
         playerName.setText(name);
         healthValue.setText(Integer.toString(health));
         difficultySetting.setText(difficultyLabel);
+
+        GameScreenModel.spriteSet(spriteNum, playerSprite);
 
         switch (spriteNum) {
         case 1:
@@ -105,21 +101,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen++;
-                switch(currentScreen) {
-                    case 0:
-                        map.setImageResource(R.drawable.map1);
-                        break;
-                    case 1:
-                        map.setImageResource(R.drawable.map2);
-                        break;
-                    case 2:
-                        map.setImageResource(R.drawable.map3);
-                        break;
-                    default:
-                        map.setImageResource(R.drawable.map1);
-                        currentScreen = 0;
-                        break;
-                }
+                currentScreen = GameScreenModel.setScreen(currentScreen, map);
             }
         });
 
@@ -127,21 +109,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen--;
-                switch (currentScreen) {
-                    case 0:
-                        map.setImageResource(R.drawable.map1);
-                        break;
-                    case 1:
-                        map.setImageResource(R.drawable.map2);
-                        break;
-                    case 2:
-                        map.setImageResource(R.drawable.map3);
-                        break;
-                    default:
-                        map.setImageResource(R.drawable.map1);
-                        currentScreen = 0;
-                        break;
-                }
+                currentScreen = GameScreenModel.setScreen(currentScreen, map);
             }
         });
 
