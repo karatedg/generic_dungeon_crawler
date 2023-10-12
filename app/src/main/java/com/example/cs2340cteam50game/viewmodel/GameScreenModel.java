@@ -9,6 +9,7 @@ import com.example.cs2340cteam50game.R;
 public class GameScreenModel {
 
 
+
     private static int scoreVal = 50;
 
     public static int getScoreVal() {
@@ -36,8 +37,8 @@ public class GameScreenModel {
                 scoreText.setText("Score: 0");
             }
         }.start();
-        return timer;
 
+        return timer;
     }
 
 

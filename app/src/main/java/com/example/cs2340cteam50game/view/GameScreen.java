@@ -3,7 +3,6 @@ package com.example.cs2340cteam50game.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
@@ -75,7 +74,9 @@ public class GameScreen extends AppCompatActivity {
 
         scoreText.setText("Score: 50");
 
+
         CountDownTimer timer = GameScreenModel.startTimer(scoreText);
+
 
 
         //skip to end screen when button pressed
@@ -85,6 +86,7 @@ public class GameScreen extends AppCompatActivity {
                 Score score = new Score(name, GameScreenModel.getScoreVal());
                 Leaderboard leaderBoard = Leaderboard.getLeaderboard();
                 leaderBoard.addScore(score);
+
                 timer.cancel();
                 Intent intent = new Intent(GameScreen.this, EndScreen.class);
                 intent.putExtra("score", score.getScore());
