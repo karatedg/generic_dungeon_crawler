@@ -5,10 +5,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.view.GameScreen;
 
 public class GameScreenModel {
 
+    static TextView scoreText;
 
+    public static void setScoreText(TextView score) {
+        scoreText = score;
+    }
 
     private static int scoreVal = 50;
 
@@ -24,17 +29,19 @@ public class GameScreenModel {
         }
     }
 
-    public static CountDownTimer startTimer(TextView scoreText) {
+    public static void updateScoreDisplay() {
+        scoreText.setText("Score: " + scoreVal);
+    }
+
+    public static CountDownTimer startTimer() {
         CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
-                scoreVal = (int) (millisUntilFinished / 1000);
-                if (scoreVal < 0) {
-                    scoreVal = 0;
-                }
-                scoreText.setText("Score: " + scoreVal);
+                setScoreVal((int) (millisUntilFinished / 1000));
+                updateScoreDisplay();
             }
             public void onFinish() {
-                scoreText.setText("Score: 0");
+                setScoreVal(0);
+                updateScoreDisplay();
             }
         }.start();
 

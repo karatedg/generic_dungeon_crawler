@@ -23,6 +23,8 @@ public class GameScreen extends AppCompatActivity {
     private String difficultyLabel;
     private int spriteNum;
 
+    private static TextView scoreText;
+
 
 
     private int currentScreen = 0;
@@ -39,7 +41,9 @@ public class GameScreen extends AppCompatActivity {
         TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
         ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
 
-        TextView scoreText = (TextView) findViewById(R.id.scoreText);
+        scoreText = (TextView) findViewById(R.id.scoreText);
+        GameScreenModel.setScoreText(scoreText);
+
         ImageView map = (ImageView) findViewById(R.id.gameMap);
         Button previousMap = (Button) findViewById(R.id.previousMap);
         Button nextMap = (Button) findViewById(R.id.nextMap);
@@ -75,7 +79,7 @@ public class GameScreen extends AppCompatActivity {
         scoreText.setText("Score: 50");
 
 
-        CountDownTimer timer = GameScreenModel.startTimer(scoreText);
+        CountDownTimer timer = GameScreenModel.startTimer();
 
 
 
@@ -109,6 +113,5 @@ public class GameScreen extends AppCompatActivity {
                 currentScreen = GameScreenModel.setScreen(currentScreen, map);
             }
         });
-
     }
 }
