@@ -5,11 +5,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.view.GameScreen;
+import com.example.cs2340cteam50game.model.DefaultSpeed;
+import com.example.cs2340cteam50game.model.MovementStrategy;
 
 public class GameScreenModel {
 
-    static TextView scoreText;
+    private static TextView scoreText;
 
     public static void setScoreText(TextView score) {
         scoreText = score;
@@ -93,6 +94,12 @@ public class GameScreenModel {
             map.setImageResource(R.drawable.map1);
             return 0;
         }
+    }
+
+    private static MovementStrategy movementStrategy = new DefaultSpeed();
+
+    public static void setMovementStrategy(MovementStrategy movementStrategy) {
+        GameScreenModel.movementStrategy = movementStrategy;
     }
 
 }

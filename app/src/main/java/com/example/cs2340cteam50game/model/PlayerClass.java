@@ -79,6 +79,11 @@ public class PlayerClass {
         this.x = x;
     }
 
+    public void moveX(double distance) {
+        //TODO: Ensure that the player cannot move out of the bounds of the map
+        this.x = x + distance;
+    }
+
     /**
      * Get y position.
      * @return y-coordinate
@@ -93,6 +98,11 @@ public class PlayerClass {
      */
     public void setY(double y) {
         this.y = y;
+    }
+
+    public void moveY(double distance) {
+        //TODO: Ensure that the player cannot move out of the bounds of the map
+        this.y = y + distance;
     }
 
     /**
