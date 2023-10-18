@@ -30,22 +30,8 @@ public class ContinueScreen extends AppCompatActivity {
 
         usernameString.setText(player.getUsername());
 
-        switch (player.getSpriteNum()) {
-        case 1:
-            spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), +
-                    R.drawable.red_idle, null));
-            break;
-        case 2:
-            spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), +
-                    R.drawable.blue_idle, null));
-            break;
-        case 3:
-            spriteChoice.setImageDrawable(ResourcesCompat.getDrawable(getResources(), +
-                    R.drawable.green_idle, null));
-            break;
-        default:
-            break;
-        }
+        spriteChoice.setImageDrawable(player.getSprite());
+
         switch (player.getDifficultyNum()) {
         case 1:
             difficultyString.setText(R.string.difficulty_easy);

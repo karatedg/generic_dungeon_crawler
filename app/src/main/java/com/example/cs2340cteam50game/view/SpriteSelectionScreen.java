@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.example.cs2340cteam50game.model.PlayerClass;
 
 public class SpriteSelectionScreen extends AppCompatActivity {
     private int spriteNum = 1;
+    private Drawable sprite = null;
     private int difficultyNum = 1;
 
     @Override
@@ -52,6 +54,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
             username.setText(player.getUsername());
             difficultyNum = player.getDifficultyNum();
             spriteNum = player.getSpriteNum();
+            sprite = player.getSprite();
             switch (difficultyNum) {
             case 1:
                 difficultyDisplay.setText(R.string.difficulty_easy);
@@ -65,22 +68,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
             default:
                 break;
             }
-            switch (spriteNum) {
-            case 1:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.red_idle, null));
-                break;
-            case 2:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.blue_idle, null));
-                break;
-            case 3:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.green_idle, null));
-                break;
-            default:
-                break;
-            }
+            spriteSelection.setImageDrawable(sprite);
         }
 
         //Return to previous screen
@@ -125,6 +113,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                 spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
                         R.drawable.red_idle, null));
                 spriteNum = 1;
+                sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null);
             }
         });
 
@@ -134,6 +123,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                 spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
                         R.drawable.blue_idle, null));
                 spriteNum = 2;
+                sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null);
             }
         });
 
@@ -143,6 +133,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                 spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
                         R.drawable.green_idle, null));
                 spriteNum = 3;
+                sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null);
             }
         });
 
@@ -155,6 +146,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                     player.setUsername(username.getText().toString().trim());
                     player.setDifficultyNum(difficultyNum);
                     player.setSpriteNum(spriteNum);
+                    player.setSprite(sprite);
                     Intent intent = new Intent(SpriteSelectionScreen.this, ContinueScreen.class);
                     startActivity(intent);
                 } catch (IllegalArgumentException e) {

@@ -1,6 +1,9 @@
 package com.example.cs2340cteam50game.model;
 
 
+import android.graphics.drawable.Drawable;
+
+
 public class PlayerClass {
 
     //Default Values:
@@ -10,6 +13,8 @@ public class PlayerClass {
 
     //Player Selected Values:
     private String username;
+    private Drawable sprite;
+
     private int spriteNum;
     private int difficultyNum;
     private int healthPoints;
@@ -40,6 +45,7 @@ public class PlayerClass {
         this.movementSpeed = 5.0;
         this.username = "";
         this.healthPoints = 0;
+        this.sprite = null;
         this.spriteNum = 1;
         this.difficultyNum = 1;
 
@@ -172,6 +178,14 @@ public class PlayerClass {
      */
     public void setSpriteNum(int spriteNum) {
         this.spriteNum = spriteNum;
+    }
+
+    public Drawable getSprite() {
+        return sprite;
+    }
+
+    public void setSprite(Drawable sprite) {
+        this.sprite = sprite;
     }
 
     /**
