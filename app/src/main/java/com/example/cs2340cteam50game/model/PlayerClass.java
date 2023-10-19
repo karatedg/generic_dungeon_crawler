@@ -5,11 +5,12 @@ import android.graphics.drawable.Drawable;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.cs2340cteam50game.view.PlayerView;
+
 public class PlayerClass {
 
     private double screenWidth;
     private double screenHeight;
-
     public void setScreenWidth(double x) {
         this.screenWidth = x;
     }
@@ -29,6 +30,11 @@ public class PlayerClass {
     private int healthPoints;
 
     //In-Game:
+    private PlayerView playerView;
+
+    public void setPlayerView(PlayerView playerView) {
+        this.playerView = playerView;
+    }
 
     /*
     Will be properly implemented once we make the parent class for inventoryItems!
@@ -51,7 +57,6 @@ public class PlayerClass {
         this.healthPoints = 0;
         this.sprite = null;
         this.difficultyNum = 1;
-
     }
 
     /**
@@ -89,10 +94,10 @@ public class PlayerClass {
     }
 
     public void moveX(double distance) {
-        if (x + distance < 25) {
-            this.x = 25;
-        } else if (x + distance > screenWidth - 60) {
-            this.x = screenWidth - 60;
+        if (x + distance < 0) {
+            this.x = 0;
+        } else if (x + playerView.getSpriteWidth() + distance > screenWidth) {
+            this.x = screenWidth - playerView.getSpriteWidth();
         } else {
             x += distance;
         }
@@ -115,10 +120,10 @@ public class PlayerClass {
     }
 
     public void moveY(double distance) {
-        if (y + distance < 25) {
-            this.y = 25;
-        } else if (y + distance > screenHeight - 125) {
-            this.y = screenHeight - 125;
+        if (y + distance < 0) {
+            this.y = 0;
+        } else if ((y + playerView.getSpriteHeight() + distance) > (screenHeight - 60)) {
+            this.y = screenHeight - playerView.getSpriteHeight() - 60;
         } else {
             y += distance;
         }
@@ -136,9 +141,6 @@ public class PlayerClass {
      * Set movementSpeed.
      * @param movementSpeed movementSpeed
      */
-    public void setMovementSpeed(double movementSpeed) {
-        this.movementSpeed = movementSpeed;
-    }
 
     /**
      * Get username.

@@ -65,8 +65,9 @@ public class GameScreen extends AppCompatActivity {
 
         player.setX(screenWidth / 2);
         player.setY(screenHeight - player.getSprite().getIntrinsicHeight());
-        playerView = new PlayerView(this);
 
+        playerView = new PlayerView(this);
+        player.setPlayerView(playerView);
         gameLayout.addView(playerView);
 
         //Get player attributes
