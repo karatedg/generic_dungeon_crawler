@@ -3,8 +3,6 @@ package com.example.cs2340cteam50game.model;
 
 import android.graphics.drawable.Drawable;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.cs2340cteam50game.view.PlayerView;
 
 public class PlayerClass {

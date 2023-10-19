@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.MovementStrategy;
-import com.example.cs2340cteam50game.model.PlayerClass;
 
 public class GameScreenModel extends AppCompatActivity {
 

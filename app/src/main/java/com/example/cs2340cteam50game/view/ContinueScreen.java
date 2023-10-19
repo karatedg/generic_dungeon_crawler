@@ -1,7 +1,6 @@
 package com.example.cs2340cteam50game.view;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -3,13 +3,9 @@ package com.example.cs2340cteam50game.view;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.view.View;
 
-import androidx.compose.ui.graphics.Outline;
 
 import com.example.cs2340cteam50game.model.PlayerClass;
 
