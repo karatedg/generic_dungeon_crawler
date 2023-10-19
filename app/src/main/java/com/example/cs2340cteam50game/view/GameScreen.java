@@ -80,14 +80,15 @@ public class GameScreen extends AppCompatActivity {
         difficultyDisplay.setText(difficultyLabel);
 
         scoreDisplay.setText("Score: 50");
-        CountDownTimer timer = gameScreenModel.startTimer(scoreDisplay);
+        CountDownTimer timer = gameScreenModel.startScoreTimer(scoreDisplay);
 
 
         //skip to end screen when button pressed
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Score score = new Score(name, GameScreenModel.getScoreVal());
+                GameScreenModel gameScreenModel = new GameScreenModel();
+                Score score = new Score(name, gameScreenModel.getScoreVal());
                 Leaderboard leaderBoard = Leaderboard.getLeaderboard();
                 leaderBoard.addScore(score);
 
@@ -136,4 +137,7 @@ public class GameScreen extends AppCompatActivity {
         playerView.updatePosition();
         return true;
     }
+
+
+
 }

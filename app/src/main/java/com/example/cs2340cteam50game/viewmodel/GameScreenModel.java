@@ -10,13 +10,11 @@ import com.example.cs2340cteam50game.model.MovementStrategy;
 
 public class GameScreenModel {
 
-    private static int scoreVal = 50;
-
-    public static int getScoreVal() {
+    private int scoreVal = 50;
+    public int getScoreVal() {
         return scoreVal;
     }
-
-    public static void setScoreVal(int score) {
+    public void setScoreVal(int score) {
         if (score < 0) {
             scoreVal = 0;
         } else {
@@ -28,7 +26,7 @@ public class GameScreenModel {
         scoreText.setText("Score: " + scoreVal);
     }
 
-    public CountDownTimer startTimer(TextView scoreDisplay) {
+    public CountDownTimer startScoreTimer(TextView scoreDisplay) {
         CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
                 setScoreVal((int) (millisUntilFinished / 1000));
@@ -53,7 +51,7 @@ public class GameScreenModel {
         case 3:
             return "Hard";
         default:
-            return "Easy";
+            return null;
         }
     }
 
@@ -75,6 +73,7 @@ public class GameScreenModel {
     }
 
     private MovementStrategy movementStrategy = new DefaultSpeed();
+
     public void setMovementStrategy(MovementStrategy movementStrategy) {
         this.movementStrategy = movementStrategy;
     }
@@ -82,15 +81,19 @@ public class GameScreenModel {
     //Callable movement methods
     public void moveLeft() {
         movementStrategy.moveLeft();
+
+    }
+    public void moveUp() {
+        movementStrategy.moveUp();
+
     }
     public void moveRight() {
         movementStrategy.moveRight();
+
     }
     public void moveDown() {
         movementStrategy.moveDown();
     }
-    public void moveUp() {
-        movementStrategy.moveUp();
-    }
+
 
 }

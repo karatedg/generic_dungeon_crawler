@@ -106,8 +106,9 @@ public class SprintUnitTest {
     //Joshua Buchsbaum
     @Test
     public void scoreMin() {
-        GameScreenModel.setScoreVal(-100);
-        assertEquals(GameScreenModel.getScoreVal(), 0);
+        GameScreenModel model = new GameScreenModel();
+        model.setScoreVal(-100);
+        assertEquals(model.getScoreVal(), 0);
     }
 
 }

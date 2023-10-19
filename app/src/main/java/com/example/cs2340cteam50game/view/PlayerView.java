@@ -12,6 +12,7 @@ import com.example.cs2340cteam50game.model.PlayerClass;
 public class PlayerView extends View {
     private PlayerClass player;
     private Bitmap playerSprite;
+
     private float width;
     private float height;
 
@@ -27,10 +28,11 @@ public class PlayerView extends View {
     public PlayerView(Context context) {
         super(context);
         player = PlayerClass.getPlayer();
-        playerSprite = ((BitmapDrawable) player.getSprite()).getBitmap();
+        Bitmap temp = ((BitmapDrawable) player.getSprite()).getBitmap();
         this.x = (float) player.getX();
         this.y = (float) player.getY();
-
+        playerSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
+                (int) (1.5 * temp.getHeight()), true);
         width = playerSprite.getWidth();
         height = playerSprite.getHeight();
     }
