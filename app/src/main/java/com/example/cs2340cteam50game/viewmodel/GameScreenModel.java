@@ -4,18 +4,20 @@ import android.os.CountDownTimer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.MovementStrategy;
+import com.example.cs2340cteam50game.model.PlayerClass;
 
-public class GameScreenModel {
+public class GameScreenModel extends AppCompatActivity {
 
     private static TextView scoreText;
 
     public static void setScoreText(TextView score) {
         scoreText = score;
     }
-
     private static int scoreVal = 50;
 
     public static int getScoreVal() {
@@ -63,22 +65,6 @@ public class GameScreenModel {
         }
     }
 
-    public static void spriteSet(int spriteNum, ImageView spriteImage) {
-        switch (spriteNum) {
-        case 1:
-            spriteImage.setImageResource(R.drawable.red_idle);
-            break;
-        case 2:
-            spriteImage.setImageResource(R.drawable.blue_idle);
-            break;
-        case 3:
-            spriteImage.setImageResource(R.drawable.green_idle);
-            break;
-        default:
-            break;
-        }
-    }
-
     public static int setScreen(int currentScreen, ImageView map) {
         switch (currentScreen) {
         case 0:
@@ -97,9 +83,22 @@ public class GameScreenModel {
     }
 
     private static MovementStrategy movementStrategy = new DefaultSpeed();
-
     public static void setMovementStrategy(MovementStrategy movementStrategy) {
         GameScreenModel.movementStrategy = movementStrategy;
+    }
+
+    //Callable movement methods
+    public static void moveLeft() {
+        movementStrategy.moveLeft();
+    }
+    public static void moveRight() {
+        movementStrategy.moveRight();
+    }
+    public static void moveDown() {
+        movementStrategy.moveDown();
+    }
+    public static void moveUp() {
+        movementStrategy.moveUp();
     }
 
 }

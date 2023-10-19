@@ -5,12 +5,12 @@ public class DefaultSpeed implements MovementStrategy {
 
     @Override
     public void moveUp() {
-        player.moveY(player.getMovementSpeed());
+        player.moveY(-1 * player.getMovementSpeed());
     }
 
     @Override
     public void moveDown() {
-        player.moveY(-1 * player.getMovementSpeed());
+        player.moveY(player.getMovementSpeed());
     }
 
     @Override
