@@ -4,19 +4,12 @@ import android.os.CountDownTimer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.MovementStrategy;
 
-public class GameScreenModel extends AppCompatActivity {
+public class GameScreenModel {
 
-    private static TextView scoreText;
-
-    public static void setScoreText(TextView score) {
-        scoreText = score;
-    }
     private static int scoreVal = 50;
 
     public static int getScoreVal() {
@@ -31,19 +24,19 @@ public class GameScreenModel extends AppCompatActivity {
         }
     }
 
-    public static void updateScoreDisplay() {
+    public void updateScoreDisplay(TextView scoreText) {
         scoreText.setText("Score: " + scoreVal);
     }
 
-    public static CountDownTimer startTimer() {
+    public CountDownTimer startTimer(TextView scoreDisplay) {
         CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
                 setScoreVal((int) (millisUntilFinished / 1000));
-                updateScoreDisplay();
+                updateScoreDisplay(scoreDisplay);
             }
             public void onFinish() {
                 setScoreVal(0);
-                updateScoreDisplay();
+                updateScoreDisplay(scoreDisplay);
             }
         }.start();
 
@@ -51,7 +44,7 @@ public class GameScreenModel extends AppCompatActivity {
     }
 
 
-    public static String difficultySwitch(int difficulty) {
+    public String difficultySwitch(int difficulty) {
         switch (difficulty) {
         case 1:
             return "Easy";
@@ -64,7 +57,7 @@ public class GameScreenModel extends AppCompatActivity {
         }
     }
 
-    public static int setScreen(int currentScreen, ImageView map) {
+    public int setScreen(int currentScreen, ImageView map) {
         switch (currentScreen) {
         case 0:
             map.setImageResource(R.drawable.map1);
@@ -81,22 +74,22 @@ public class GameScreenModel extends AppCompatActivity {
         }
     }
 
-    private static MovementStrategy movementStrategy = new DefaultSpeed();
-    public static void setMovementStrategy(MovementStrategy movementStrategy) {
-        GameScreenModel.movementStrategy = movementStrategy;
+    private MovementStrategy movementStrategy = new DefaultSpeed();
+    public void setMovementStrategy(MovementStrategy movementStrategy) {
+        this.movementStrategy = movementStrategy;
     }
 
     //Callable movement methods
-    public static void moveLeft() {
+    public void moveLeft() {
         movementStrategy.moveLeft();
     }
-    public static void moveRight() {
+    public void moveRight() {
         movementStrategy.moveRight();
     }
-    public static void moveDown() {
+    public void moveDown() {
         movementStrategy.moveDown();
     }
-    public static void moveUp() {
+    public void moveUp() {
         movementStrategy.moveUp();
     }
 

@@ -24,12 +24,17 @@ public class GameScreen extends AppCompatActivity {
     private double screenWidth;
     private double screenHeight;
 
+    private GameScreenModel gameScreenModel;
+
     private int currentScreen = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.in_game_activity);
+
+        //Create associated model
+        gameScreenModel = new GameScreenModel();
 
         //Button ids
         Button skipToEnd = (Button) findViewById(R.id.skipToEnd);
@@ -44,10 +49,7 @@ public class GameScreen extends AppCompatActivity {
 
         //Map setup
         ImageView map = (ImageView) findViewById(R.id.gameMap);
-        GameScreenModel.setScreen(currentScreen, map);
-
-        //Pass access to the scoreDisplay to the GameScreenModel
-        GameScreenModel.setScoreText(scoreDisplay);
+        gameScreenModel.setScreen(currentScreen, map);
 
         //Set up playerView
         PlayerClass player = PlayerClass.getPlayer();
@@ -70,7 +72,7 @@ public class GameScreen extends AppCompatActivity {
         String name = player.getUsername();
         int difficulty = player.getDifficultyNum();
         int health = player.getHealthPoints();
-        String difficultyLabel = GameScreenModel.difficultySwitch(difficulty);
+        String difficultyLabel = gameScreenModel.difficultySwitch(difficulty);
 
         //Update Screen with Player Attributes
         playerNameDisplay.setText(name);
@@ -78,7 +80,7 @@ public class GameScreen extends AppCompatActivity {
         difficultyDisplay.setText(difficultyLabel);
 
         scoreDisplay.setText("Score: 50");
-        CountDownTimer timer = GameScreenModel.startTimer();
+        CountDownTimer timer = gameScreenModel.startTimer(scoreDisplay);
 
 
         //skip to end screen when button pressed
@@ -100,7 +102,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen++;
-                currentScreen = GameScreenModel.setScreen(currentScreen, map);
+                currentScreen = gameScreenModel.setScreen(currentScreen, map);
             }
         });
 
@@ -108,7 +110,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen--;
-                currentScreen = GameScreenModel.setScreen(currentScreen, map);
+                currentScreen = gameScreenModel.setScreen(currentScreen, map);
             }
         });
     }
@@ -117,16 +119,16 @@ public class GameScreen extends AppCompatActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode) {
         case KeyEvent.KEYCODE_A:
-            GameScreenModel.moveLeft();
+            gameScreenModel.moveLeft();
             break;
         case KeyEvent.KEYCODE_D:
-            GameScreenModel.moveRight();
+            gameScreenModel.moveRight();
             break;
         case KeyEvent.KEYCODE_W:
-            GameScreenModel.moveUp();
+            gameScreenModel.moveUp();
             break;
         case KeyEvent.KEYCODE_S:
-            GameScreenModel.moveDown();
+            gameScreenModel.moveDown();
             break;
         default:
             break;
