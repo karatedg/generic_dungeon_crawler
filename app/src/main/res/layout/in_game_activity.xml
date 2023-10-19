@@ -2,23 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/welcome_background"
     android:screenOrientation="landscape">
 
-    <ImageView
-        android:id="@+id/gameMap"
-        android:layout_width="600dp"
-        android:layout_height="600dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerInside"
+    <RelativeLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/map2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/map1" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/gameMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/map1" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/playerName"
@@ -85,15 +91,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/playerSprite"
-        android:layout_width="44dp"
-        android:layout_height="39dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/green_idle" />
-
     <TextView
         android:id="@+id/scoreText"
         android:layout_width="wrap_content"
@@ -102,12 +99,12 @@
         android:text="Score: "
         android:textColor="#FFFF"
         app:layout_constraintBottom_toTopOf="@+id/skipToEnd"
-        app:layout_constraintEnd_toStartOf="@+id/firstMap"
         app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
-=======
+    =======
+
     <Button
         android:id="@+id/previousMap"
         android:layout_width="wrap_content"
@@ -123,4 +120,5 @@
         android:text="Next Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

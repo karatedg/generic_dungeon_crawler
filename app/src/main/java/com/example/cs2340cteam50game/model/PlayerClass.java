@@ -3,8 +3,19 @@ package com.example.cs2340cteam50game.model;
 
 import android.graphics.drawable.Drawable;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayerClass {
+
+    private double screenWidth;
+    private double screenHeight;
+
+    public void setScreenWidth(double x) {
+        this.screenWidth = x;
+    }
+    public void setScreenHeight(double y) {
+        this.screenHeight = y;
+    }
 
     //Default Values:
     private double x;
@@ -14,15 +25,8 @@ public class PlayerClass {
     //Player Selected Values:
     private String username;
     private Drawable sprite;
-
-    private int spriteNum;
     private int difficultyNum;
     private int healthPoints;
-
-    //private Sprite playerSprite;
-
-
-
 
     //In-Game:
 
@@ -42,11 +46,10 @@ public class PlayerClass {
     private PlayerClass() {
         this.x = 0.0;
         this.y = 0.0;
-        this.movementSpeed = 5.0;
+        this.movementSpeed = 15.0;
         this.username = "";
         this.healthPoints = 0;
         this.sprite = null;
-        this.spriteNum = 1;
         this.difficultyNum = 1;
 
     }
@@ -86,8 +89,13 @@ public class PlayerClass {
     }
 
     public void moveX(double distance) {
-        //TODO: Ensure that the player cannot move out of the bounds of the map
-        this.x = x + distance;
+        if (x + distance < 25) {
+            this.x = 25;
+        } else if (x + distance > screenWidth - 60) {
+            this.x = screenWidth - 60;
+        } else {
+            x += distance;
+        }
     }
 
     /**
@@ -107,8 +115,13 @@ public class PlayerClass {
     }
 
     public void moveY(double distance) {
-        //TODO: Ensure that the player cannot move out of the bounds of the map
-        this.y = y + distance;
+        if (y + distance < 25) {
+            this.y = 25;
+        } else if (y + distance > screenHeight - 125) {
+            this.y = screenHeight - 125;
+        } else {
+            y += distance;
+        }
     }
 
     /**
@@ -162,22 +175,6 @@ public class PlayerClass {
      */
     public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
-    }
-
-    /**
-     * Get spriteNum.
-     * @return spriteNum
-     */
-    public int getSpriteNum() {
-        return spriteNum;
-    }
-
-    /**
-     * Set spriteNum.
-     * @param spriteNum spriteNum: (1 = Red, 2 = Blue, 3 = Green)
-     */
-    public void setSpriteNum(int spriteNum) {
-        this.spriteNum = spriteNum;
     }
 
     public Drawable getSprite() {
