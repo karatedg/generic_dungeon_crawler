@@ -1,8 +1,8 @@
 package com.example.cs2340cteam50game;
 
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Score;
@@ -91,7 +91,7 @@ public class SprintUnitTest {
 
         ArrayList<Score> scores = board1.getScores();
 
-        ArrayList<Score> scoresOrdered = new ArrayList<Score>(5);
+        ArrayList<Score> scoresOrdered = new ArrayList<>(5);
         scoresOrdered.add(new Score("3", 32));
         scoresOrdered.add(new Score("4", 20));
         scoresOrdered.add(new Score("1", 10));
@@ -106,8 +106,99 @@ public class SprintUnitTest {
     //Joshua Buchsbaum
     @Test
     public void scoreMin() {
-        GameScreenModel.setScoreVal(-100);
-        assertEquals(GameScreenModel.getScoreVal(), 0);
+        GameScreenModel model = new GameScreenModel();
+        model.setScoreVal(-100);
+        assertEquals(model.getScoreVal(), 0);
     }
+
+    @Test
+    public void playerMoveLeftOutOfBounds() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(0.0);
+        player.setyPos(0.0);
+        player.moveLeft();
+        double pos2 = player.getxPos();
+
+        assertEquals(0, (int) pos2);
+    }
+
+    @Test
+    public void playerMoveRightOutOfBounds() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(5);
+        player.setScreenWidth(5);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(0.0);
+        player.setyPos(0.0);
+        player.moveRight();
+        double pos2 = player.getyPos();
+
+        assertEquals(0, (int) pos2);
+    }
+
+    @Test
+    public void playerMoveUpOutOfBounds() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(0.0);
+        player.setyPos(0.0);
+        player.moveUp();
+        double pos2 = player.getyPos();
+
+        assertEquals(0, (int) pos2);
+    }
+
+    @Test
+    public void playerMoveDownOutOfBounds() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(30);
+        player.setScreenHeight(90);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(0.0);
+        player.setyPos(0.0);
+        player.moveDown();
+        double pos2 = player.getyPos();
+
+        assertEquals(0, (int) pos2);
+    }
+
+    @Test
+    public void playerMoveLeft(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getxPos());
+        player.setyPos(100);
+        player.moveLeft();
+        System.out.println(player.getxPos());
+        double pos2 = player.getxPos();
+
+        assertEquals(75, (int) pos2);
+    }
+    @Test
+    public void playerMoveRight(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getxPos());
+        player.setyPos(100);
+        player.moveRight();
+        System.out.println(player.getxPos());
+        double pos2 = player.getxPos();
+
+        assertEquals(125, (int) pos2);
+    }
+
 
 }

@@ -4,27 +4,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
+
 public class GameScreen extends AppCompatActivity {
-
-    private int health;
-    private String name;
-    private int difficulty;
-    private String difficultyLabel;
-    private int spriteNum;
-
-
-
+    private PlayerView playerView;
+    private RelativeLayout gameLayout;
+    private double screenWidth;
+    private double screenHeight;
+    private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
 
     @Override
@@ -32,58 +33,61 @@ public class GameScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.in_game_activity);
 
-        //getting ids for different elements that will be needed
-        Button skipToEnd = (Button) findViewById(R.id.skipToEnd);
-        TextView healthValue = (TextView) findViewById(R.id.healthValue);
-        TextView playerName = (TextView) findViewById(R.id.playerName);
-        TextView difficultySetting = (TextView) findViewById(R.id.difficultySetting);
-        ImageView playerSprite = (ImageView) findViewById(R.id.playerSprite);
+        //Create associated model
+        gameScreenModel = new GameScreenModel();
 
-        TextView scoreText = (TextView) findViewById(R.id.scoreText);
-        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        //Button ids
+        Button skipToEnd = (Button) findViewById(R.id.skipToEnd);
         Button previousMap = (Button) findViewById(R.id.previousMap);
         Button nextMap = (Button) findViewById(R.id.nextMap);
 
+        //Display item ids
+        TextView healthValueDisplay = (TextView) findViewById(R.id.healthValue);
+        TextView playerNameDisplay = (TextView) findViewById(R.id.playerName);
+        TextView difficultyDisplay = (TextView) findViewById(R.id.difficultySetting);
+        TextView scoreDisplay = (TextView) findViewById(R.id.scoreText);
+
+        //Map setup
+        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        gameScreenModel.setScreen(currentScreen, map);
+
+        //Set up playerView
+
+        gameLayout = findViewById(R.id.gameLayout);
+        screenWidth = getResources().getDisplayMetrics().widthPixels;
+        screenHeight = getResources().getDisplayMetrics().heightPixels;
+
         PlayerClass player = PlayerClass.getPlayer();
-        name = player.getUsername();
-        difficulty = player.getDifficultyNum();
-        spriteNum = player.getSpriteNum();
-        health = player.getHealthPoints();
+        player.setScreenWidth(screenWidth);
+        player.setScreenHeight(screenHeight);
 
-        difficultyLabel = GameScreenModel.difficultySwitch(difficulty);
+        player.setxPos(screenWidth / 2);
+        player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
 
-        playerName.setText(name);
-        healthValue.setText(Integer.toString(health));
-        difficultySetting.setText(difficultyLabel);
+        playerView = new PlayerView(this);
+        player.setPlayerView(playerView);
+        gameLayout.addView(playerView);
 
-        GameScreenModel.spriteSet(spriteNum, playerSprite);
+        //Get player attributes
+        String name = player.getUsername();
+        int difficulty = player.getDifficultyNum();
+        int health = player.getHealthPoints();
+        String difficultyLabel = gameScreenModel.difficultySwitch(difficulty);
 
-        switch (spriteNum) {
-        case 1:
-            playerSprite.setImageResource(R.drawable.red_idle);
-            break;
-        case 2:
-            playerSprite.setImageResource(R.drawable.blue_idle);
-            break;
-        case 3:
-            playerSprite.setImageResource(R.drawable.green_idle);
-            break;
-        default:
-            break;
-        }
+        //Update Screen with Player Attributes
+        playerNameDisplay.setText(name);
+        healthValueDisplay.setText(Integer.toString(health));
+        difficultyDisplay.setText(difficultyLabel);
 
-        scoreText.setText("Score: 50");
-
-
-        CountDownTimer timer = GameScreenModel.startTimer(scoreText);
-
+        scoreDisplay.setText("Score: 50");
+        CountDownTimer timer = gameScreenModel.startScoreTimer(scoreDisplay);
 
 
         //skip to end screen when button pressed
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Score score = new Score(name, GameScreenModel.getScoreVal());
+                Score score = new Score(name, gameScreenModel.getScoreVal());
                 Leaderboard leaderBoard = Leaderboard.getLeaderboard();
                 leaderBoard.addScore(score);
 
@@ -98,7 +102,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen++;
-                currentScreen = GameScreenModel.setScreen(currentScreen, map);
+                currentScreen = gameScreenModel.setScreen(currentScreen, map);
             }
         });
 
@@ -106,9 +110,32 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen--;
-                currentScreen = GameScreenModel.setScreen(currentScreen, map);
+                currentScreen = gameScreenModel.setScreen(currentScreen, map);
             }
         });
-
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Log.d("KEY", "KeyDown: " + keyCode);
+        switch (keyCode) {
+        case KeyEvent.KEYCODE_A:
+            gameScreenModel.moveLeft();
+            break;
+        case KeyEvent.KEYCODE_D:
+            gameScreenModel.moveRight();
+            break;
+        case KeyEvent.KEYCODE_W:
+            gameScreenModel.moveUp();
+            break;
+        case KeyEvent.KEYCODE_S:
+            gameScreenModel.moveDown();
+            break;
+        default:
+            break;
+        }
+        playerView.updatePosition();
+        return false;
+    }
+
 }

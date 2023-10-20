@@ -1,25 +1,37 @@
 package com.example.cs2340cteam50game.model;
 
 
+import android.graphics.drawable.Drawable;
+import com.example.cs2340cteam50game.view.PlayerView;
+
 public class PlayerClass {
 
+    private double screenWidth;
+    private double screenHeight;
+    public void setScreenWidth(double x) {
+        this.screenWidth = x;
+    }
+    public void setScreenHeight(double y) {
+        this.screenHeight = y;
+    }
+
     //Default Values:
-    private double x;
-    private double y;
-    private double movementSpeed;
+    private double xPos;
+    private double yPos;
+    private final double movementSpeed;
+    private MovementStrategy movementStrategy;
 
     //Player Selected Values:
     private String username;
-    private int spriteNum;
+    private Drawable sprite;
+
+    private float spriteWidth;
+    private float spriteHeight;
     private int difficultyNum;
     private int healthPoints;
 
-    //private Sprite playerSprite;
-
-
-
-
     //In-Game:
+    private PlayerView playerView;
 
     /*
     Will be properly implemented once we make the parent class for inventoryItems!
@@ -35,14 +47,13 @@ public class PlayerClass {
      * Instantiates with default values that can be changed afterwards
      */
     private PlayerClass() {
-        this.x = 0.0;
-        this.y = 0.0;
-        this.movementSpeed = 5.0;
+        this.xPos = 0.0;
+        this.yPos = 0.0;
+        this.movementSpeed = 25;
         this.username = "";
         this.healthPoints = 0;
-        this.spriteNum = 1;
+        this.sprite = null;
         this.difficultyNum = 1;
-
     }
 
     /**
@@ -60,55 +71,104 @@ public class PlayerClass {
         return playerInstance;
     }
 
-
     //Getters and Setters for all instance variables
+
+    public void setPlayerView(PlayerView playerView) {
+        this.playerView = playerView;
+        this.spriteWidth = playerView.getSpriteWidth();
+        this.spriteHeight = playerView.getSpriteHeight();
+    }
+
+    public void setSpriteWidth(int spriteWidth) {
+        this.spriteWidth = spriteWidth;
+    }
+
+    public void setSpriteHeight(int spriteHeight) {
+        this.spriteHeight = spriteHeight;
+    }
+
+    /**
+     * MovementStrategy Setter
+     * @param movementStrategy movement strategy
+     */
+    public void setMovementStrategy(MovementStrategy movementStrategy) {
+        this.movementStrategy = movementStrategy;
+    }
 
     /**
      * Get x position.
      * @return x-coordinate
      */
-    public double getX() {
-        return x;
+    public double getxPos() {
+        return xPos;
     }
 
     /**
      * Set x position.
      * @param x x-coordinate
      */
-    public void setX(double x) {
-        this.x = x;
+    public void setxPos(double x) {
+        this.xPos = x;
+    }
+
+
+    public void moveX(double distance) {
+        if (xPos + distance < 0) {
+            this.xPos = 0;
+        } else if (xPos + spriteWidth + distance > screenWidth) {
+            this.xPos = screenWidth - spriteWidth;
+        } else {
+            xPos += distance;
+        }
+    }
+
+    public void moveLeft() {
+        movementStrategy.moveLeft();
+    }
+
+    public void moveRight() {
+        movementStrategy.moveRight();
+    }
+
+    public void moveUp() {
+        movementStrategy.moveUp();
+    }
+
+    public void moveDown() {
+        movementStrategy.moveDown();
     }
 
     /**
      * Get y position.
      * @return y-coordinate
      */
-    public double getY() {
-        return y;
+    public double getyPos() {
+        return yPos;
     }
 
     /**
      * Set y position.
-     * @param y y-coordinate
+     * @param yPos y-coordinate
      */
-    public void setY(double y) {
-        this.y = y;
+    public void setyPos(double yPos) {
+        this.yPos = yPos;
     }
 
+    public void moveY(double distance) {
+        if (yPos + distance < 0) {
+            this.yPos = 0;
+        } else if ((yPos + spriteHeight + distance) > (screenHeight - 60)) {
+            this.yPos = screenHeight - spriteHeight - 60;
+        } else {
+            yPos += distance;
+        }
+    }
     /**
      * Get movementSpeed.
      * @return movementSpeed
      */
     public double getMovementSpeed() {
         return movementSpeed;
-    }
-
-    /**
-     * Set movementSpeed.
-     * @param movementSpeed movementSpeed
-     */
-    public void setMovementSpeed(double movementSpeed) {
-        this.movementSpeed = movementSpeed;
     }
 
     /**
@@ -149,19 +209,19 @@ public class PlayerClass {
     }
 
     /**
-     * Get spriteNum.
-     * @return spriteNum
+     * Get Sprite.
+     * @return sprite drawable
      */
-    public int getSpriteNum() {
-        return spriteNum;
+    public Drawable getSprite() {
+        return sprite;
     }
 
     /**
-     * Set spriteNum.
-     * @param spriteNum spriteNum: (1 = Red, 2 = Blue, 3 = Green)
+     * Set Sprite.
+     * @param sprite sprite drawable
      */
-    public void setSpriteNum(int spriteNum) {
-        this.spriteNum = spriteNum;
+    public void setSprite(Drawable sprite) {
+        this.sprite = sprite;
     }
 
     /**
