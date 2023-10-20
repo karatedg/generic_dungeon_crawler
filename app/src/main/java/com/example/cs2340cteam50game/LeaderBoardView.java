@@ -11,7 +11,7 @@ public class LeaderBoardView {
         Score latest = score;
 
         String time = latest.getTimestamp().toString();
-        render += String.format("%10s %15d %45s\n\n", latest.getName(), latest.getScore(),
+        render += String.format("%10s %15d %45s\n\n\n", latest.getName(), latest.getScore(),
                 time.replace('T', ' ').substring(0, time.length() - 7));
 
         int leaderBoardSize = Leaderboard.getLeaderboard().getSize();
@@ -24,7 +24,7 @@ public class LeaderBoardView {
             if (i < l.getScores().size()) {
                 Score s = l.getScores().get(i);
                 String sTime = s.getTimestamp().toString();
-                render += String.format("%10s %15d %45s\n\n", s.getName(), s.getScore(),
+                render += String.format("%10s %15d %45s\n", s.getName(), s.getScore(),
                         sTime.replace('T', ' ').substring(0, time.length() - 7));
             } else {
                 render += String.format("%10s %10s\n", "-", "-");
