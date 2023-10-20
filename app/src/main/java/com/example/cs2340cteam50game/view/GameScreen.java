@@ -11,21 +11,20 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
-public class GameScreen extends AppCompatActivity {
 
+public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
     private RelativeLayout gameLayout;
     private double screenWidth;
     private double screenHeight;
-
     private GameScreenModel gameScreenModel;
-
     private int currentScreen = 0;
 
     @Override
@@ -52,17 +51,17 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setScreen(currentScreen, map);
 
         //Set up playerView
-        PlayerClass player = PlayerClass.getPlayer();
 
         gameLayout = findViewById(R.id.gameLayout);
         screenWidth = getResources().getDisplayMetrics().widthPixels;
         screenHeight = getResources().getDisplayMetrics().heightPixels;
+
+        PlayerClass player = PlayerClass.getPlayer();
         player.setScreenWidth(screenWidth);
         player.setScreenHeight(screenHeight);
 
-
-        player.setX(screenWidth / 2);
-        player.setY(screenHeight - player.getSprite().getIntrinsicHeight());
+        player.setxPos(screenWidth / 2);
+        player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
 
         playerView = new PlayerView(this);
         player.setPlayerView(playerView);
@@ -134,10 +133,7 @@ public class GameScreen extends AppCompatActivity {
         default:
             break;
         }
-        playerView.updatePosition();
         return true;
     }
-
-
 
 }

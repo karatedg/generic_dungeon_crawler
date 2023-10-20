@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
 
 public class SpriteSelectionScreen extends AppCompatActivity {
@@ -139,6 +140,7 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                     player.setUsername(username.getText().toString().trim());
                     player.setDifficultyNum(difficultyNum);
                     player.setSprite(sprite);
+                    player.setMovementStrategy(new DefaultSpeed());
                     Intent intent = new Intent(SpriteSelectionScreen.this, ContinueScreen.class);
                     startActivity(intent);
                 } catch (IllegalArgumentException e) {

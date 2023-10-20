@@ -2,7 +2,6 @@ package com.example.cs2340cteam50game.model;
 
 
 import android.graphics.drawable.Drawable;
-
 import com.example.cs2340cteam50game.view.PlayerView;
 
 public class PlayerClass {
@@ -17,9 +16,10 @@ public class PlayerClass {
     }
 
     //Default Values:
-    private double x;
-    private double y;
-    private double movementSpeed;
+    private double xPos;
+    private double yPos;
+    private final double movementSpeed;
+    private MovementStrategy movementStrategy;
 
     //Player Selected Values:
     private String username;
@@ -48,9 +48,9 @@ public class PlayerClass {
      * Instantiates with default values that can be changed afterwards
      */
     private PlayerClass() {
-        this.x = 0.0;
-        this.y = 0.0;
-        this.movementSpeed = 15.0;
+        this.xPos = 0.0;
+        this.yPos = 0.0;
+        this.movementSpeed = 25;
         this.username = "";
         this.healthPoints = 0;
         this.sprite = null;
@@ -72,61 +72,86 @@ public class PlayerClass {
         return playerInstance;
     }
 
-
     //Getters and Setters for all instance variables
+
+    /**
+     * MovementStrategy Setter
+     * @param movementStrategy movement strategy
+     */
+    public void setMovementStrategy(MovementStrategy movementStrategy) {
+        this.movementStrategy = movementStrategy;
+    }
 
     /**
      * Get x position.
      * @return x-coordinate
      */
-    public double getX() {
-        return x;
+    public double getxPos() {
+        return xPos;
     }
 
     /**
      * Set x position.
      * @param x x-coordinate
      */
-    public void setX(double x) {
-        this.x = x;
+    public void setxPos(double x) {
+        this.xPos = x;
     }
 
+
     public void moveX(double distance) {
-        if (x + distance < 0) {
-            this.x = 0;
-        } else if (x + playerView.getSpriteWidth() + distance > screenWidth) {
-            this.x = screenWidth - playerView.getSpriteWidth();
+        if (xPos + distance < 0) {
+            this.xPos = 0;
+        } else if (xPos + playerView.getSpriteWidth() + distance > screenWidth) {
+            this.xPos = screenWidth - playerView.getSpriteWidth();
         } else {
-            x += distance;
+            xPos += distance;
         }
+        playerView.updatePosition();
+    }
+
+    public void moveLeft() {
+        movementStrategy.moveLeft();
+    }
+
+    public void moveRight() {
+        movementStrategy.moveRight();
+    }
+
+    public void moveUp() {
+        movementStrategy.moveUp();
+    }
+
+    public void moveDown() {
+        movementStrategy.moveDown();
     }
 
     /**
      * Get y position.
      * @return y-coordinate
      */
-    public double getY() {
-        return y;
+    public double getyPos() {
+        return yPos;
     }
 
     /**
      * Set y position.
-     * @param y y-coordinate
+     * @param yPos y-coordinate
      */
-    public void setY(double y) {
-        this.y = y;
+    public void setyPos(double yPos) {
+        this.yPos = yPos;
     }
 
     public void moveY(double distance) {
-        if (y + distance < 0) {
-            this.y = 0;
-        } else if ((y + playerView.getSpriteHeight() + distance) > (screenHeight - 60)) {
-            this.y = screenHeight - playerView.getSpriteHeight() - 60;
+        if (yPos + distance < 0) {
+            this.yPos = 0;
+        } else if ((yPos + playerView.getSpriteHeight() + distance) > (screenHeight - 60)) {
+            this.yPos = screenHeight - playerView.getSpriteHeight() - 60;
         } else {
-            y += distance;
+            yPos += distance;
         }
+        playerView.updatePosition();
     }
-
     /**
      * Get movementSpeed.
      * @return movementSpeed
@@ -134,11 +159,6 @@ public class PlayerClass {
     public double getMovementSpeed() {
         return movementSpeed;
     }
-
-    /**
-     * Set movementSpeed.
-     * @param movementSpeed movementSpeed
-     */
 
     /**
      * Get username.
@@ -177,10 +197,18 @@ public class PlayerClass {
         this.healthPoints = healthPoints;
     }
 
+    /**
+     * Get Sprite.
+     * @return sprite drawable
+     */
     public Drawable getSprite() {
         return sprite;
     }
 
+    /**
+     * Set Sprite.
+     * @param sprite sprite drawable
+     */
     public void setSprite(Drawable sprite) {
         this.sprite = sprite;
     }

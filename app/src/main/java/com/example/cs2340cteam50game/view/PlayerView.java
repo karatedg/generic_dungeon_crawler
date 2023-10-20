@@ -29,8 +29,8 @@ public class PlayerView extends View {
         super(context);
         player = PlayerClass.getPlayer();
         Bitmap temp = ((BitmapDrawable) player.getSprite()).getBitmap();
-        this.x = (float) player.getX();
-        this.y = (float) player.getY();
+        this.x = (float) player.getxPos();
+        this.y = (float) player.getyPos();
         playerSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
                 (int) (1.5 * temp.getHeight()), true);
         width = playerSprite.getWidth();
@@ -44,11 +44,10 @@ public class PlayerView extends View {
     }
 
     public void updatePosition() {
-        this.x = (float) player.getX();
-        this.y = (float) player.getY();
+        this.x = (float) player.getxPos();
+        this.y = (float) player.getyPos();
         invalidate();
     }
-
 
 
 }

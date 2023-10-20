@@ -5,8 +5,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.DefaultSpeed;
-import com.example.cs2340cteam50game.model.MovementStrategy;
+import com.example.cs2340cteam50game.model.PlayerClass;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class GameScreenModel {
 
@@ -72,27 +74,20 @@ public class GameScreenModel {
         }
     }
 
-    private MovementStrategy movementStrategy = new DefaultSpeed();
-
-    public void setMovementStrategy(MovementStrategy movementStrategy) {
-        this.movementStrategy = movementStrategy;
-    }
+    private PlayerClass player = PlayerClass.getPlayer();
 
     //Callable movement methods
     public void moveLeft() {
-        movementStrategy.moveLeft();
-
+        player.moveLeft();
     }
     public void moveUp() {
-        movementStrategy.moveUp();
-
+        player.moveUp();
     }
     public void moveRight() {
-        movementStrategy.moveRight();
-
+        player.moveRight();
     }
     public void moveDown() {
-        movementStrategy.moveDown();
+        player.moveDown();
     }
 
 
