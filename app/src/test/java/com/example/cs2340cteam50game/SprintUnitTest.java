@@ -167,5 +167,38 @@ public class SprintUnitTest {
         assertEquals(0, (int) pos2);
     }
 
+    @Test
+    public void playerMoveLeft(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getxPos());
+        player.setyPos(100);
+        player.moveLeft();
+        System.out.println(player.getxPos());
+        double pos2 = player.getxPos();
+
+        assertEquals(75, (int) pos2);
+    }
+    @Test
+    public void playerMoveRight(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getxPos());
+        player.setyPos(100);
+        player.moveRight();
+        System.out.println(player.getxPos());
+        double pos2 = player.getxPos();
+
+        assertEquals(125, (int) pos2);
+    }
+
 
 }
