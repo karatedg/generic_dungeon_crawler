@@ -24,15 +24,14 @@ public class PlayerClass {
     //Player Selected Values:
     private String username;
     private Drawable sprite;
+
+    private float spriteWidth;
+    private float spriteHeight;
     private int difficultyNum;
     private int healthPoints;
 
     //In-Game:
     private PlayerView playerView;
-
-    public void setPlayerView(PlayerView playerView) {
-        this.playerView = playerView;
-    }
 
     /*
     Will be properly implemented once we make the parent class for inventoryItems!
@@ -74,6 +73,20 @@ public class PlayerClass {
 
     //Getters and Setters for all instance variables
 
+    public void setPlayerView(PlayerView playerView) {
+        this.playerView = playerView;
+        this.spriteWidth = playerView.getSpriteWidth();
+        this.spriteHeight = playerView.getSpriteHeight();
+    }
+
+    public void setSpriteWidth(int spriteWidth) {
+        this.spriteWidth = spriteWidth;
+    }
+
+    public void setSpriteHeight(int spriteHeight) {
+        this.spriteHeight = spriteHeight;
+    }
+
     /**
      * MovementStrategy Setter
      * @param movementStrategy movement strategy
@@ -102,12 +115,11 @@ public class PlayerClass {
     public void moveX(double distance) {
         if (xPos + distance < 0) {
             this.xPos = 0;
-        } else if (xPos + playerView.getSpriteWidth() + distance > screenWidth) {
-            this.xPos = screenWidth - playerView.getSpriteWidth();
+        } else if (xPos + spriteWidth + distance > screenWidth) {
+            this.xPos = screenWidth - spriteWidth;
         } else {
             xPos += distance;
         }
-        playerView.updatePosition();
     }
 
     public void moveLeft() {
@@ -145,12 +157,11 @@ public class PlayerClass {
     public void moveY(double distance) {
         if (yPos + distance < 0) {
             this.yPos = 0;
-        } else if ((yPos + playerView.getSpriteHeight() + distance) > (screenHeight - 60)) {
-            this.yPos = screenHeight - playerView.getSpriteHeight() - 60;
+        } else if ((yPos + spriteHeight + distance) > (screenHeight - 60)) {
+            this.yPos = screenHeight - spriteHeight - 60;
         } else {
             yPos += distance;
         }
-        playerView.updatePosition();
     }
     /**
      * Get movementSpeed.

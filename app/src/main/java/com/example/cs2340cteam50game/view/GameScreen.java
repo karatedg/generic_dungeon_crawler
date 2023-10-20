@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.Button;
 import android.content.Intent;
@@ -86,7 +87,6 @@ public class GameScreen extends AppCompatActivity {
         skipToEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GameScreenModel gameScreenModel = new GameScreenModel();
                 Score score = new Score(name, gameScreenModel.getScoreVal());
                 Leaderboard leaderBoard = Leaderboard.getLeaderboard();
                 leaderBoard.addScore(score);
@@ -117,6 +117,7 @@ public class GameScreen extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Log.d("KEY", "KeyDown: " + keyCode);
         switch (keyCode) {
         case KeyEvent.KEYCODE_A:
             gameScreenModel.moveLeft();
@@ -133,7 +134,8 @@ public class GameScreen extends AppCompatActivity {
         default:
             break;
         }
-        return true;
+        playerView.updatePosition();
+        return false;
     }
 
 }

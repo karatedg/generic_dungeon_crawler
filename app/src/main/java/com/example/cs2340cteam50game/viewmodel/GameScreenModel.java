@@ -7,9 +7,6 @@ import android.widget.TextView;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.PlayerClass;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class GameScreenModel {
 
     private int scoreVal = 50;
