@@ -19,6 +19,8 @@ import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
+import org.w3c.dom.Text;
+
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
@@ -27,6 +29,9 @@ public class GameScreen extends AppCompatActivity {
     private double screenHeight;
     private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
+    PlayerClass player;
+
+    TextView playerPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,9 @@ public class GameScreen extends AppCompatActivity {
         Button previousMap = (Button) findViewById(R.id.previousMap);
         Button nextMap = (Button) findViewById(R.id.nextMap);
 
+        //TEMP
+        playerPosition = (TextView) findViewById(R.id.playerPosition);
+
         //Display item ids
         TextView healthValueDisplay = (TextView) findViewById(R.id.healthValue);
         TextView playerNameDisplay = (TextView) findViewById(R.id.playerName);
@@ -52,12 +60,11 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setScreen(currentScreen, map);
 
         //Set up playerView
-
         gameLayout = findViewById(R.id.gameLayout);
         screenWidth = getResources().getDisplayMetrics().widthPixels;
         screenHeight = getResources().getDisplayMetrics().heightPixels;
 
-        PlayerClass player = PlayerClass.getPlayer();
+        player = PlayerClass.getPlayer();
         player.setScreenWidth(screenWidth);
         player.setScreenHeight(screenHeight);
 
@@ -135,6 +142,7 @@ public class GameScreen extends AppCompatActivity {
             break;
         }
         playerView.updatePosition();
+        playerPosition.setText("X: " + player.getxPos() + " Y: " + player.getyPos());
         return false;
     }
 

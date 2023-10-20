@@ -49,7 +49,7 @@ public class PlayerClass {
     private PlayerClass() {
         this.xPos = 0.0;
         this.yPos = 0.0;
-        this.movementSpeed = 25;
+        this.movementSpeed = 10;
         this.username = "";
         this.healthPoints = 0;
         this.sprite = null;
