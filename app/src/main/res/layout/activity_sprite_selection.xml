@@ -7,7 +7,7 @@
     android:background="@drawable/welcome_background"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.498"
-    tools:context=".SpriteSelectionScreen">
+    tools:context=".view.SpriteSelectionScreen">
 
         <ImageView
             android:id="@+id/spriteDisplay"

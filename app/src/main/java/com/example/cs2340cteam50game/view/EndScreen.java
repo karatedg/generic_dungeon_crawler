@@ -1,4 +1,4 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +8,19 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.Leaderboard;
+
 
 public class EndScreen extends AppCompatActivity {
-    GameScreen gameScreen = new GameScreen();
+    private GameScreen gameScreen = new GameScreen();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.endofgame_activity);
+
 
         //Restart and Quit Buttons
         Button restartButton = (Button) findViewById(R.id.restartButton);
@@ -35,7 +41,8 @@ public class EndScreen extends AppCompatActivity {
         Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
         Score score1 = new Score(PlayerClass.getPlayer().getUsername(), score);
-        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(), findViewById(R.id.leaderboard), score1);
+        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(),
+                                findViewById(R.id.leaderboard), score1);
         //leaderboard.setText(Integer.toString(gameScreen.scoreVal));
 
         //Quit to home screen

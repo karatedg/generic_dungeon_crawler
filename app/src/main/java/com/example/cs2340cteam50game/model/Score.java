@@ -1,4 +1,4 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.model;
 
 import java.time.LocalDateTime;
 
@@ -24,4 +24,11 @@ public class Score {
     public LocalDateTime getTimestamp() {
         return timestamp;
     }
+
+    @Override
+    public String toString() {
+        String s = "Name: " +  name + "   Score: " + score;
+        return s;
+    }
+
 }

@@ -1,6 +1,5 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.model;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -31,9 +30,6 @@ public class Leaderboard {
 
     public void addScore(Score s) {
         scores.add(s);
-        for(int i = 0; i < scores.size(); i++) {
-            System.out.println(scores.get(i).getScore());
-        }
         Collections.sort(scores, comparatorScore);
     }
 
@@ -57,5 +53,9 @@ public class Leaderboard {
 
     public int getSize() {
         return scores.size();
+    }
+
+    public static void clear() {
+        leaderboard = null;
     }
 }

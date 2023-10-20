@@ -1,10 +1,11 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.view;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,14 +14,21 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.DefaultSpeed;
+import com.example.cs2340cteam50game.model.PlayerClass;
+
 public class SpriteSelectionScreen extends AppCompatActivity {
-    private int spriteNum = 1;
-    private int difficultyNum = 1;
+    private Drawable sprite;
+    private int difficultyNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sprite_selection);
+
+        sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null);
+        difficultyNum = 1;
 
         //Next && Previous
         Button backButton = (Button) findViewById(R.id.backButton);
@@ -47,9 +55,8 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         if (PlayerClass.playerExists()) {
             PlayerClass player = PlayerClass.getPlayer();
             username.setText(player.getUsername());
-            difficultyNum = player.getDifficultyNum();
-            spriteNum = player.getSpriteNum();
-            switch (difficultyNum) {
+            spriteSelection.setImageDrawable(player.getSprite());
+            switch (player.getDifficultyNum()) {
             case 1:
                 difficultyDisplay.setText(R.string.difficulty_easy);
                 break;
@@ -58,22 +65,6 @@ public class SpriteSelectionScreen extends AppCompatActivity {
                 break;
             case 3:
                 difficultyDisplay.setText(R.string.difficulty_hard);
-                break;
-            default:
-                break;
-            }
-            switch (spriteNum) {
-            case 1:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.red_idle, null));
-                break;
-            case 2:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.blue_idle, null));
-                break;
-            case 3:
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.green_idle, null));
                 break;
             default:
                 break;
@@ -119,27 +110,24 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         redSpriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.red_idle, null));
-                spriteNum = 1;
+                sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null);
+                spriteSelection.setImageDrawable(sprite);
             }
         });
 
         blueSpriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.blue_idle, null));
-                spriteNum = 2;
+                sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.blue_idle, null);
+                spriteSelection.setImageDrawable(sprite);
             }
         });
 
         greenSpriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                spriteSelection.setImageDrawable(ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.green_idle, null));
-                spriteNum = 3;
+                sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.green_idle, null);
+                spriteSelection.setImageDrawable(sprite);
             }
         });
 
@@ -147,22 +135,16 @@ public class SpriteSelectionScreen extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().trim().equals("")) {
-                    return;
-                } else {
+                try {
                     PlayerClass player = PlayerClass.getPlayer();
-                    player.setUsername(username.getText().toString());
+                    player.setUsername(username.getText().toString().trim());
                     player.setDifficultyNum(difficultyNum);
-                    player.setSpriteNum(spriteNum);
-                    if (difficultyNum == 1) {
-                        player.setHealthPoints(150);
-                    } else if (difficultyNum == 2) {
-                        player.setHealthPoints(100);
-                    } else if (difficultyNum == 3) {
-                        player.setHealthPoints(75);
-                    }
+                    player.setSprite(sprite);
+                    player.setMovementStrategy(new DefaultSpeed());
                     Intent intent = new Intent(SpriteSelectionScreen.this, ContinueScreen.class);
                     startActivity(intent);
+                } catch (IllegalArgumentException e) {
+                    return;
                 }
             }
         });

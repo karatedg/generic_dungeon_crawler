@@ -1,6 +1,9 @@
-package com.example.cs2340cteam50game;
+package com.example.cs2340cteam50game.view;
 
 import android.widget.TextView;
+
+import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.Leaderboard;
 
 public class LeaderBoardView {
 
@@ -15,7 +18,7 @@ public class LeaderBoardView {
                 time.replace('T', ' ').substring(0, time.length() - 7));
 
         int leaderBoardSize = Leaderboard.getLeaderboard().getSize();
-        if(leaderBoardSize > 5) {
+        if (leaderBoardSize > 5) {
             leaderBoardSize = 5;
         }
 
