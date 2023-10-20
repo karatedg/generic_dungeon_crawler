@@ -57,16 +57,16 @@ public class GameScreenModel {
     public int setScreen(int currentScreen, ImageView map) {
         switch (currentScreen) {
         case 0:
-            map.setImageResource(R.drawable.map1);
+            map.setImageResource(R.drawable.newmap1);
             return 0;
         case 1:
-            map.setImageResource(R.drawable.map2);
+            map.setImageResource(R.drawable.newmap2);
             return 1;
         case 2:
-            map.setImageResource(R.drawable.map3);
+            map.setImageResource(R.drawable.newmap3);
             return 2;
         default:
-            map.setImageResource(R.drawable.map1);
+            map.setImageResource(R.drawable.newmap1);
             return 0;
         }
     }
