@@ -15,23 +15,21 @@ public class PlayerClass {
         this.screenHeight = y;
     }
 
-    //Default Values:
+    //System Values:
     private double xPos;
     private double yPos;
     private final double movementSpeed;
     private MovementStrategy movementStrategy;
+    private float spriteWidth;
+    private float spriteHeight;
+    private int healthPoints;
 
     //Player Selected Values:
     private String username;
     private Drawable sprite;
-
-    private float spriteWidth;
-    private float spriteHeight;
     private int difficultyNum;
-    private int healthPoints;
 
     //In-Game:
-    private PlayerView playerView;
     private GameScreenModel gameScreenModel;
 
     /*
@@ -88,14 +86,52 @@ public class PlayerClass {
         movementStrategy.moveDown();
     }
 
-    //
-    //
-    // Getters and Setters for all instance variables //
-    //
-    //
+    /** Move x by given distance
+     * @param distance distance to move
+     */
+    public void moveX(double distance) {
+        double newX = xPos + distance;
+        int collisionType = gameScreenModel.checkCollisions(newX, yPos);
+        if (collisionType == 2) {
+            gameScreenModel.nextRoom();
+        } else if (collisionType == 0) {
+            if (xPos + distance < 0) {
+                this.xPos = 0;
+            } else if (xPos + spriteWidth + distance > screenWidth) {
+                this.xPos = screenWidth - spriteWidth;
+            } else {
+                xPos += distance;
+            }
+        }
+    }
 
-    public void setPlayerView(PlayerView playerView) {
-        this.playerView = playerView;
+    /** Move y by given distance
+     * @param distance distance to move
+     */
+    public void moveY(double distance) {
+        double newY = yPos + distance;
+        int collisionType = gameScreenModel.checkCollisions(xPos, newY);
+        if (gameScreenModel.checkCollisions(xPos, newY) == 2) {
+            gameScreenModel.nextRoom();
+        } else if (collisionType == 0) {
+            if (yPos + distance < 0) {
+                this.yPos = 0;
+            } else if ((yPos + spriteHeight + distance) > (screenHeight - 60)) {
+                this.yPos = screenHeight - spriteHeight - 60;
+            } else {
+                yPos += distance;
+            }
+        }
+    }
+
+
+    ///////////////////////////////////////////////////////
+    //                                                   //
+    //  Getters and Setters for all instance variables  //
+    //                                                  //
+    //////////////////////////////////////////////////////
+
+    public void setSpriteData(PlayerView playerView) {
         this.spriteWidth = playerView.getSpriteWidth();
         this.spriteHeight = playerView.getSpriteHeight();
     }
@@ -136,21 +172,6 @@ public class PlayerClass {
         this.xPos = x;
     }
 
-    /** Move x by given distance
-     * @param distance distance to move
-     */
-    public void moveX(double distance) {
-        double newX = xPos + distance;
-        if (gameScreenModel.checkCollisions(newX, yPos)) {
-            return;
-        } else if (xPos + distance < 0) {
-            this.xPos = 0;
-        } else if (xPos + spriteWidth + distance > screenWidth) {
-            this.xPos = screenWidth - spriteWidth;
-        } else {
-            xPos += distance;
-        }
-    }
 
     /**
      * Get y position.
@@ -168,21 +189,7 @@ public class PlayerClass {
         this.yPos = yPos;
     }
 
-    /** Move y by given distance
-     * @param distance distance to move
-     */
-    public void moveY(double distance) {
-        double newY = xPos + distance;
-        if (gameScreenModel.checkCollisions(xPos, newY)) {
-            return;
-        } else if (yPos + distance < 0) {
-            this.yPos = 0;
-        } else if ((yPos + spriteHeight + distance) > (screenHeight - 60)) {
-            this.yPos = screenHeight - spriteHeight - 60;
-        } else {
-            yPos += distance;
-        }
-    }
+
     /**
      * Get movementSpeed.
      * @return movementSpeed

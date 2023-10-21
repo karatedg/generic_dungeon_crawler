@@ -6,4 +6,7 @@
     <string name="difficulty_easy">Difficulty: Easy</string>
     <string name="difficulty_medium">Difficulty: Medium</string>
     <string name="difficulty_hard">Difficulty: Hard</string>
+    <string name="player">Player</string>
+    <string name="_100">100</string>
+    <string name="difficulty">Difficulty:</string>
 </resources>

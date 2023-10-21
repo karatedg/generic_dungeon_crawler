@@ -7,20 +7,24 @@ import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.PlayerView;
 
 public class GameScreenModel {
 
     private final PlayerClass player = PlayerClass.getPlayer();
     private PlayerView playerView;
+    private GameScreen gameScreen;
+
     private final RectF[] map1Walls = {
         new RectF(423, 256, 450, 695),
-        new RectF(526, 860, 953, 920),
+        new RectF(526, 860, 953, 950),
         new RectF(738, 79, 768, 435),
+        new RectF(1055, 168, 1088, 425),
         new RectF(1055, 518, 1088, 693),
-        new RectF(2000, 342, 2206, 410),
-        new RectF(2000, 522, 2206, 592),
-        new RectF(2156, 420, 2206, 510)
+        new RectF(2000, 342, 2220, 410),
+        new RectF(2000, 522, 2220, 592),
+        new RectF(2156, 420, 2220, 510)
     };
     private final RectF[] map2Walls = {
         new RectF(106, 232, 536, 302),
@@ -48,16 +52,8 @@ public class GameScreenModel {
         new RectF(1980, 0, 2010, 80),
         new RectF(1801, 0, 1979, 20),
     };
-
     private RectF[] currentWallSet;
-
     private int scoreVal = 50;
-    public int getScoreVal() {
-        return scoreVal;
-    }
-    public void setScoreVal(int score) {
-        scoreVal = Math.max(score, 0);
-    }
 
     public CountDownTimer startScoreTimer(TextView scoreDisplay) {
         CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
@@ -88,6 +84,48 @@ public class GameScreenModel {
         }
     }
 
+    //Callable movement methods
+    public void moveLeft() {
+        player.moveLeft();
+    }
+    public void moveUp() {
+        player.moveUp();
+    }
+    public void moveRight() {
+        player.moveRight();
+    }
+    public void moveDown() {
+        player.moveDown();
+    }
+
+    //Collision Handler
+    public int checkCollisions(double newX, double newY) {
+        RectF playerHitBox = new RectF((float) newX, (float) newY,
+                (float) newX + playerView.getSpriteWidth(),
+                (float) newY + playerView.getSpriteHeight());
+        if (checkMoveRooms(playerHitBox)) {
+            return 2;
+        }
+        for (int i = 0; i < currentWallSet.length - 1; i++) {
+            if (playerHitBox.intersect(currentWallSet[i])) {
+                return 1;
+            }
+        }
+        return 0;
+    }
+
+    //Specialized collision handler for changing rooms
+    public boolean checkMoveRooms(RectF playerHitBox) {
+        RectF exitBox = currentWallSet[currentWallSet.length - 1];
+        return playerHitBox.intersect(exitBox);
+    }
+
+    //Passes on the nextRoom call to the GameScreen which handles it
+    public void nextRoom() {
+        gameScreen.nextRoom();
+    }
+
+    //Updates the current game screen - handling the new image, screenNum, and currentWallSet
     public void setScreen(int currentScreen, ImageView map) {
         switch (currentScreen) {
         case 0:
@@ -109,34 +147,27 @@ public class GameScreenModel {
         }
     }
 
-    //Callable movement methods
-    public void moveLeft() {
-        player.moveLeft();
-    }
-    public void moveUp() {
-        player.moveUp();
-    }
-    public void moveRight() {
-        player.moveRight();
-    }
-    public void moveDown() {
-        player.moveDown();
-    }
-
-    //Collision Handler
-    public boolean checkCollisions(double newX, double newY) {
-        RectF playerHitBox = new RectF((float) newX, (float) newY,
-                (float) newX + playerView.getSpriteWidth(),
-                (float) newY + playerView.getSpriteHeight());
-        for (int i = 0; i < currentWallSet.length - 2; i++) {
-            if (playerHitBox.intersect(currentWallSet[i])) {
-                return true;
-            }
-        }
-        return false;
-    }
-
+    //Sets the currently used PlayerView
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
     }
+
+    //Sets the currently used GameScreen
+    public void setGameScreen(GameScreen game) {
+        this.gameScreen = game;
+    }
+
+    //Getter for score
+    public int getScoreVal() {
+        return scoreVal;
+    }
+
+    //Setter for score
+    public void setScoreVal(int score) {
+        scoreVal = Math.max(score, 0);
+    }
+
+
 }
+
+

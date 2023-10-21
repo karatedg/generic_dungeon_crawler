@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.widget.Button;
 import android.content.Intent;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -25,8 +23,9 @@ public class GameScreen extends AppCompatActivity {
     private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
     private PlayerClass player;
-
-    private TextView playerPosition;
+    private String name;
+    private CountDownTimer timer;
+    private ImageView map;
 
 
     @Override
@@ -34,29 +33,21 @@ public class GameScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.in_game_activity);
 
-        //Create associated model
+        //Create associated model and give it access to this GameScreen
         gameScreenModel = new GameScreenModel();
+        gameScreenModel.setGameScreen(this);
 
-        //Button ids
-        Button skipToEnd = (Button) findViewById(R.id.skipToEnd);
-        Button previousMap = (Button) findViewById(R.id.previousMap);
-        Button nextMap = (Button) findViewById(R.id.nextMap);
-
-        //TEMP
-        playerPosition = (TextView) findViewById(R.id.playerPosition);
-
-        //Display item ids
+        //Get ids for display elements
         TextView healthValueDisplay = (TextView) findViewById(R.id.healthValue);
         TextView playerNameDisplay = (TextView) findViewById(R.id.playerName);
         TextView difficultyDisplay = (TextView) findViewById(R.id.difficultySetting);
         TextView scoreDisplay = (TextView) findViewById(R.id.scoreText);
 
-        //Map setup
-        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        //Initialize map and give access to the GameScreenModel
+        map = (ImageView) findViewById(R.id.gameMap);
         gameScreenModel.setScreen(currentScreen, map);
 
-        //Set up playerView
-        RelativeLayout gameLayout = findViewById(R.id.gameLayout);
+        //
         double screenWidth = getResources().getDisplayMetrics().widthPixels;
         double screenHeight = getResources().getDisplayMetrics().heightPixels;
 
@@ -67,57 +58,25 @@ public class GameScreen extends AppCompatActivity {
         player.setxPos(screenWidth / 2);
         player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
 
+        //Initialize PlayerView
+        RelativeLayout gameLayout = findViewById(R.id.gameLayout);
         playerView = new PlayerView(this);
         gameScreenModel.setPlayerView(playerView);
-        player.setPlayerView(playerView);
+        player.setSpriteData(playerView);
         player.setGameScreenModel(gameScreenModel);
         gameLayout.addView(playerView);
 
-        //Get player attributes
-        String name = player.getUsername();
+        //Retrieve Player attributes
+        name = player.getUsername();
         int difficulty = player.getDifficultyNum();
         int health = player.getHealthPoints();
-        String difficultyLabel = gameScreenModel.difficultySwitch(difficulty);
 
         //Update Screen with Player Attributes
         playerNameDisplay.setText(name);
         healthValueDisplay.setText(Integer.toString(health));
-        difficultyDisplay.setText(difficultyLabel);
-
+        difficultyDisplay.setText(gameScreenModel.difficultySwitch(difficulty));
         scoreDisplay.setText("Score: 50");
-        CountDownTimer timer = gameScreenModel.startScoreTimer(scoreDisplay);
-
-
-        //skip to end screen when button pressed
-        skipToEnd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Score score = new Score(name, gameScreenModel.getScoreVal());
-                Leaderboard leaderBoard = Leaderboard.getLeaderboard();
-                leaderBoard.addScore(score);
-
-                timer.cancel();
-                Intent intent = new Intent(GameScreen.this, EndScreen.class);
-                intent.putExtra("score", score.getScore());
-                startActivity(intent);
-            }
-        });
-
-        nextMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                currentScreen++;
-                gameScreenModel.setScreen(currentScreen, map);
-            }
-        });
-
-        previousMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                currentScreen--;
-                gameScreenModel.setScreen(currentScreen, map);
-            }
-        });
+        timer = gameScreenModel.startScoreTimer(scoreDisplay);
     }
 
     @Override
@@ -140,8 +99,36 @@ public class GameScreen extends AppCompatActivity {
             break;
         }
         playerView.updatePosition();
-        playerPosition.setText("X: " + player.getxPos() + " Y: " + player.getyPos());
         return false;
     }
+
+    public void nextRoom() {
+        if (currentScreen == 2) {
+            Score score = new Score(name, gameScreenModel.getScoreVal());
+            Leaderboard leaderBoard = Leaderboard.getLeaderboard();
+            leaderBoard.addScore(score);
+
+            timer.cancel();
+            Intent intent = new Intent(GameScreen.this, EndScreen.class);
+            intent.putExtra("score", score.getScore());
+            startActivity(intent);
+        } else {
+            currentScreen++;
+            gameScreenModel.setScreen(currentScreen, map);
+            switch (currentScreen) {
+            case 1:
+                player.setxPos(700);
+                player.setyPos(882);
+                break;
+            case 2:
+                player.setxPos(10);
+                player.setyPos(312);
+                break;
+            default:
+            }
+            playerView.updatePosition();
+        }
+    }
+
 
 }
