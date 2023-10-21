@@ -35,6 +35,8 @@ public class PlayerView extends View {
                 (int) (1.5 * temp.getHeight()), true);
         width = playerSprite.getWidth();
         height = playerSprite.getHeight();
+        player.setSpriteWidth(width);
+        player.setSpriteHeight(height);
     }
 
     @Override

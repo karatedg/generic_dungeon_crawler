@@ -130,5 +130,9 @@ public class GameScreen extends AppCompatActivity {
         }
     }
 
+    public void setPlayerView(PlayerView view) {
+        this.playerView = view;
+    }
+
 
 }

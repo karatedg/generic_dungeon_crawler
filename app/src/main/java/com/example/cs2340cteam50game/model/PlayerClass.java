@@ -140,11 +140,11 @@ public class PlayerClass {
         this.gameScreenModel = model;
     }
 
-    public void setSpriteWidth(int spriteWidth) {
+    public void setSpriteWidth(float spriteWidth) {
         this.spriteWidth = spriteWidth;
     }
 
-    public void setSpriteHeight(int spriteHeight) {
+    public void setSpriteHeight(float spriteHeight) {
         this.spriteHeight = spriteHeight;
     }
 
@@ -288,5 +288,13 @@ public class PlayerClass {
     public static boolean playerExists() {
         return (playerInstance != null);
     }
+
+    public float getSpriteWidth() {
+        return spriteWidth;
+    }
+    public float getSpriteHeight() {
+        return spriteHeight;
+    }
+
 
 }
