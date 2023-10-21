@@ -1,8 +1,8 @@
 package com.example.cs2340cteam50game.model;
 
-
 import android.graphics.drawable.Drawable;
 import com.example.cs2340cteam50game.view.PlayerView;
+import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 public class PlayerClass {
 
@@ -32,6 +32,7 @@ public class PlayerClass {
 
     //In-Game:
     private PlayerView playerView;
+    private GameScreenModel gameScreenModel;
 
     /*
     Will be properly implemented once we make the parent class for inventoryItems!
@@ -71,12 +72,36 @@ public class PlayerClass {
         return playerInstance;
     }
 
-    //Getters and Setters for all instance variables
+    public void moveLeft() {
+        movementStrategy.moveLeft();
+    }
+
+    public void moveRight() {
+        movementStrategy.moveRight();
+    }
+
+    public void moveUp() {
+        movementStrategy.moveUp();
+    }
+
+    public void moveDown() {
+        movementStrategy.moveDown();
+    }
+
+    //
+    //
+    // Getters and Setters for all instance variables //
+    //
+    //
 
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
         this.spriteWidth = playerView.getSpriteWidth();
         this.spriteHeight = playerView.getSpriteHeight();
+    }
+
+    public void setGameScreenModel(GameScreenModel model) {
+        this.gameScreenModel = model;
     }
 
     public void setSpriteWidth(int spriteWidth) {
@@ -111,31 +136,20 @@ public class PlayerClass {
         this.xPos = x;
     }
 
-
+    /** Move x by given distance
+     * @param distance distance to move
+     */
     public void moveX(double distance) {
-        if (xPos + distance < 0) {
+        double newX = xPos + distance;
+        if (gameScreenModel.checkCollisions(newX, yPos)) {
+            return;
+        } else if (xPos + distance < 0) {
             this.xPos = 0;
         } else if (xPos + spriteWidth + distance > screenWidth) {
             this.xPos = screenWidth - spriteWidth;
         } else {
             xPos += distance;
         }
-    }
-
-    public void moveLeft() {
-        movementStrategy.moveLeft();
-    }
-
-    public void moveRight() {
-        movementStrategy.moveRight();
-    }
-
-    public void moveUp() {
-        movementStrategy.moveUp();
-    }
-
-    public void moveDown() {
-        movementStrategy.moveDown();
     }
 
     /**
@@ -154,8 +168,14 @@ public class PlayerClass {
         this.yPos = yPos;
     }
 
+    /** Move y by given distance
+     * @param distance distance to move
+     */
     public void moveY(double distance) {
-        if (yPos + distance < 0) {
+        double newY = xPos + distance;
+        if (gameScreenModel.checkCollisions(xPos, newY)) {
+            return;
+        } else if (yPos + distance < 0) {
             this.yPos = 0;
         } else if ((yPos + spriteHeight + distance) > (screenHeight - 60)) {
             this.yPos = screenHeight - spriteHeight - 60;

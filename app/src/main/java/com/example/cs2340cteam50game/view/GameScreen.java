@@ -19,19 +19,15 @@ import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
-import org.w3c.dom.Text;
-
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
-    private RelativeLayout gameLayout;
-    private double screenWidth;
-    private double screenHeight;
     private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
-    PlayerClass player;
+    private PlayerClass player;
 
-    TextView playerPosition;
+    private TextView playerPosition;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,9 +56,9 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setScreen(currentScreen, map);
 
         //Set up playerView
-        gameLayout = findViewById(R.id.gameLayout);
-        screenWidth = getResources().getDisplayMetrics().widthPixels;
-        screenHeight = getResources().getDisplayMetrics().heightPixels;
+        RelativeLayout gameLayout = findViewById(R.id.gameLayout);
+        double screenWidth = getResources().getDisplayMetrics().widthPixels;
+        double screenHeight = getResources().getDisplayMetrics().heightPixels;
 
         player = PlayerClass.getPlayer();
         player.setScreenWidth(screenWidth);
@@ -72,7 +68,9 @@ public class GameScreen extends AppCompatActivity {
         player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
 
         playerView = new PlayerView(this);
+        gameScreenModel.setPlayerView(playerView);
         player.setPlayerView(playerView);
+        player.setGameScreenModel(gameScreenModel);
         gameLayout.addView(playerView);
 
         //Get player attributes
@@ -109,7 +107,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen++;
-                currentScreen = gameScreenModel.setScreen(currentScreen, map);
+                gameScreenModel.setScreen(currentScreen, map);
             }
         });
 
@@ -117,7 +115,7 @@ public class GameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScreen--;
-                currentScreen = gameScreenModel.setScreen(currentScreen, map);
+                gameScreenModel.setScreen(currentScreen, map);
             }
         });
     }

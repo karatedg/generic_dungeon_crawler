@@ -3,8 +3,6 @@ package com.example.cs2340cteam50game.view;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.view.View;
 
@@ -42,7 +40,6 @@ public class PlayerView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawRect(x, y, x + playerSprite.getWidth(), y + playerSprite.getHeight(), new Paint(Color.RED));
         canvas.drawBitmap(playerSprite, x, y, null);
     }
 
