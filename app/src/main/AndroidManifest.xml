@@ -13,9 +13,6 @@
         android:theme="@style/Theme.CS2340CTeam50Game"
         tools:targetApi="31">
         <activity
-            android:name=".Room1"
-            android:exported="false" />
-        <activity
             android:name=".view.SpriteSelectionScreen"
             android:exported="false"
             android:label="sprite_selection_screen"

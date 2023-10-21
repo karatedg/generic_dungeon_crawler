@@ -3,9 +3,9 @@ package com.example.cs2340cteam50game.view;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+
 import android.graphics.drawable.BitmapDrawable;
 import android.view.View;
-
 
 import com.example.cs2340cteam50game.model.PlayerClass;
 
@@ -41,6 +41,7 @@ public class PlayerView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawBitmap(playerSprite, x, y, null);
+
     }
 
     public void updatePosition() {

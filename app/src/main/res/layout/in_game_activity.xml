@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +11,6 @@
         android:id="@+id/gameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/map2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,19 +18,19 @@
 
         <ImageView
             android:id="@+id/gameMap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/map1" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
     </RelativeLayout>
 
     <TextView
         android:id="@+id/playerName"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="14dp"
-        android:text="Player"
+        android:text="@string/player"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/healthValue"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +39,7 @@
         android:id="@+id/healthIcon"
         android:layout_width="31dp"
         android:layout_height="31dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -52,7 +50,7 @@
         android:layout_width="30dp"
         android:layout_height="16dp"
         android:layout_marginTop="16dp"
-        android:text="100"
+        android:text="@string/_100"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/healthIcon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,8 +59,8 @@
         android:id="@+id/difficultyText"
         android:layout_width="33dp"
         android:layout_height="12dp"
-        android:layout_marginLeft="25px"
-        android:text="Difficulty:"
+        android:layout_marginStart="25dp"
+        android:text="@string/difficulty"
         android:textColor="#FFFFFF"
         android:textSize="20px"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +70,6 @@
         android:id="@+id/difficultySetting"
         android:layout_width="31dp"
         android:layout_height="12dp"
-        android:layout_marginLeft="5dp"
         android:layout_marginTop="9dp"
         android:text="Normal"
         android:textColor="#FFFFFF"
@@ -80,45 +77,16 @@
         app:layout_constraintStart_toEndOf="@+id/difficultyText"
         app:layout_constraintTop_toBottomOf="@+id/healthValue" />
 
-    <Button
-        android:id="@+id/skipToEnd"
-        android:layout_width="115dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="End Game"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/scoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="63dp"
         android:text="Score: "
         android:textColor="#FFFF"
-        app:layout_constraintBottom_toTopOf="@+id/skipToEnd"
-        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintTop_toTopOf="parent" />
     =======
-
-    <Button
-        android:id="@+id/previousMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Previous Map"
-        app:layout_constraintBottom_toTopOf="@+id/skipToEnd"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/nextMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next Map"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
