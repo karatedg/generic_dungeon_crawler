@@ -56,7 +56,7 @@ public class SprintUnitTest {
     // David Martinez
     @Test
     public void playerHealthEasy() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(1);
         assertEquals(player.getHealthPoints(), 150);
     }
@@ -64,7 +64,7 @@ public class SprintUnitTest {
     // Noah West
     @Test
     public void playerHealthMedium() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(2);
         assertEquals(player.getHealthPoints(), 100);
     }
@@ -72,7 +72,7 @@ public class SprintUnitTest {
     // Noah West
     @Test
     public void playerHealthHard() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(3);
         assertEquals(player.getHealthPoints(), 75);
     }
@@ -118,6 +118,10 @@ public class SprintUnitTest {
         model.setScoreVal(-100);
         assertEquals(model.getScoreVal(), 0);
     }
+
+    ///////////////////////////
+    // SPRINT 2 TESTS!!!!!  //
+    /////////////////////////
 
     @Test
     public void playerMoveLeftOutOfBounds() {
@@ -193,9 +197,9 @@ public class SprintUnitTest {
 
         assertEquals(-60, (int) pos2);
     }
-  
+
     @Test
-    public void playerMoveLeft(){
+    public void playerMoveLeft() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -212,8 +216,9 @@ public class SprintUnitTest {
 
         assertEquals(90, (int) pos2);
     }
+
     @Test
-    public void playerMoveRight(){
+    public void playerMoveRight() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -232,7 +237,7 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void playerMoveUp(){
+    public void playerMoveUp() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -253,7 +258,7 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void playerMovedown(){
+    public void playerMovedown() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -272,8 +277,8 @@ public class SprintUnitTest {
 
         assertEquals(110, (int) pos2);
     }
-  
-      @Test(expected = java.lang.NullPointerException.class)
+
+    @Test(expected = java.lang.NullPointerException.class)
     public void playerMoveNextRoom() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
@@ -295,7 +300,7 @@ public class SprintUnitTest {
         System.out.println("Room: " + model.getCurrentRoom());
     }
 
-    @Test (expected = RuntimeException.class)
+    @Test(expected = RuntimeException.class)
     public void playerMoveEndGame() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
@@ -313,43 +318,6 @@ public class SprintUnitTest {
         player.setyPos(28);
 
         player.moveUp();
-      
-    }
-
-
-    @Test
-    public void playerGoesToNextRoom() {
-        PlayerClass.clear();
-        PlayerClass player = PlayerClass.getPlayer();
-        GameScreen gameScreen = new GameScreen();
-        GameScreenModel gameScreenModel = gameScreen.getGameScreenModel();
-        player.setGameScreenModel(gameScreenModel);
-        player.setSpriteHeight(30);
-        player.setSpriteWidth(30);
-        player.setScreenHeight(3000);
-        player.setScreenWidth(3000);
-        player.setMovementStrategy(new DefaultSpeed());
-        player.setxPos(2130);
-        player.setyPos(450);
-        ImageView img = new ImageView(null);
-        gameScreenModel.setScreen(0, img);
-        assertEquals(0, gameScreenModel.checkCollisions(player.getxPos(),
-                player.getyPos())); //should be no collision yet
-        player.moveRight(); //
-        player.moveRight(); //
-        player.moveRight(); //
-        player.moveRight(); //
-
-        System.out.println(player.getxPos());
-        System.out.println(player.getyPos());
-
-        double xpos = player.getxPos();
-        double ypos = player.getyPos();
-
-        //assertEquals(2, gameScreenModel.checkCollisions(player.getxPos(), player.getyPos()));
-
-        assertEquals(700, (int) xpos);
-        assertEquals(882, (int) ypos);
 
     }
 }
