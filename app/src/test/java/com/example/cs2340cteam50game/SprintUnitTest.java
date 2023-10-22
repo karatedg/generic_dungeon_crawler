@@ -179,8 +179,87 @@ public class SprintUnitTest {
 
         assertEquals(0, (int) pos2);
     }
+  
+    @Test
+    public void playerMoveLeft(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getxPos());
+        player.setyPos(100);
+        player.moveLeft();
+        System.out.println(player.getxPos());
+        double pos2 = player.getxPos();
 
-    @Test(expected = java.lang.NullPointerException.class)
+        assertEquals(90, (int) pos2);
+    }
+    @Test
+    public void playerMoveRight(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getxPos());
+        player.setyPos(100);
+        player.moveRight();
+        System.out.println(player.getxPos());
+        double pos2 = player.getxPos();
+
+        assertEquals(110, (int) pos2);
+    }
+
+    @Test
+    public void playerMoveUp(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setSpriteHeight(30);
+        player.setScreenHeight(200);
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(100);
+        System.out.println(player.getyPos());
+        player.setyPos(100);
+        player.moveUp();
+        System.out.println(player.getyPos());
+        double pos2 = player.getyPos();
+
+        assertEquals(90, (int) pos2);
+    }
+
+    @Test
+    public void playerMovedown(){
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setSpriteHeight(30);
+        player.setScreenHeight(200);
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setyPos(100);
+        System.out.println(player.getyPos());
+        player.setxPos(100);
+        player.moveDown();
+        System.out.println(player.getyPos());
+        double pos2 = player.getyPos();
+
+        assertEquals(110, (int) pos2);
+    }
+  
+      @Test(expected = java.lang.NullPointerException.class)
     public void playerMoveNextRoom() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
@@ -220,6 +299,7 @@ public class SprintUnitTest {
         player.setyPos(28);
 
         player.moveUp();
+      
     }
 
 }
