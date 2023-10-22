@@ -6,11 +6,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
-import com.example.cs2340cteam50game.model.Score;
-import com.example.cs2340cteam50game.view.EndScreen;
 import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.PlayerView;
 
