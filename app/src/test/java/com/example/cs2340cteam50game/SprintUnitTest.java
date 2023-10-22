@@ -53,7 +53,7 @@ public class SprintUnitTest {
     // David Martinez
     @Test
     public void playerHealthEasy() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(1);
         assertEquals(player.getHealthPoints(), 150);
     }
@@ -61,7 +61,7 @@ public class SprintUnitTest {
     // Noah West
     @Test
     public void playerHealthMedium() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(2);
         assertEquals(player.getHealthPoints(), 100);
     }
@@ -69,7 +69,7 @@ public class SprintUnitTest {
     // Noah West
     @Test
     public void playerHealthHard() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(3);
         assertEquals(player.getHealthPoints(), 75);
     }
@@ -115,6 +115,10 @@ public class SprintUnitTest {
         model.setScoreVal(-100);
         assertEquals(model.getScoreVal(), 0);
     }
+
+    ///////////////////////////
+    // SPRINT 2 TESTS!!!!!  //
+    /////////////////////////
 
     @Test
     public void playerMoveLeftOutOfBounds() {
@@ -190,9 +194,9 @@ public class SprintUnitTest {
 
         assertEquals(-60, (int) pos2);
     }
-  
+
     @Test
-    public void playerMoveLeft(){
+    public void playerMoveLeft() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -209,8 +213,9 @@ public class SprintUnitTest {
 
         assertEquals(90, (int) pos2);
     }
+
     @Test
-    public void playerMoveRight(){
+    public void playerMoveRight() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -229,7 +234,7 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void playerMoveUp(){
+    public void playerMoveUp() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -250,7 +255,7 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void playerMovedown(){
+    public void playerMovedown() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -269,8 +274,8 @@ public class SprintUnitTest {
 
         assertEquals(110, (int) pos2);
     }
-  
-      @Test(expected = java.lang.NullPointerException.class)
+
+    @Test(expected = java.lang.NullPointerException.class)
     public void playerMoveNextRoom() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
@@ -292,7 +297,7 @@ public class SprintUnitTest {
         System.out.println("Room: " + model.getCurrentRoom());
     }
 
-    @Test (expected = RuntimeException.class)
+    @Test(expected = RuntimeException.class)
     public void playerMoveEndGame() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
@@ -310,7 +315,6 @@ public class SprintUnitTest {
         player.setyPos(28);
 
         player.moveUp();
-      
-    }
 
+    }
 }

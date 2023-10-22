@@ -116,15 +116,15 @@ public class GameScreenModel {
         }
         for (int i = 0; i < currentWallSet.length - 1; i++) {
 
-            float eLeft = currentWallSet[i].left;
-            float eTop = currentWallSet[i].top;
-            float eRight = currentWallSet[i].right;
-            float eBottom = currentWallSet[i].bottom;
+            float eLeft = currentWallSet[i].getLeft();
+            float eTop = currentWallSet[i].getTop();
+            float eRight = currentWallSet[i].getRight();
+            float eBottom = currentWallSet[i].getBottom();
 
-            float pLeft = playerHitBox.left;
-            float pTop = playerHitBox.top;
-            float pRight = playerHitBox.right;
-            float pBottom = playerHitBox.bottom;
+            float pLeft = playerHitBox.getLeft();
+            float pTop = playerHitBox.getTop();
+            float pRight = playerHitBox.getRight();
+            float pBottom = playerHitBox.getBottom();
 
             boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
                     || (eLeft <=  pRight && pRight <= eRight));
@@ -141,15 +141,15 @@ public class GameScreenModel {
 
     //Specialized collision handler for changing rooms
     public boolean checkMoveRooms(Rectangle playerHitBox) {
-        float eLeft = exitBox.left;
-        float eTop = exitBox.top;
-        float eRight = exitBox.right;
-        float eBottom = exitBox.bottom;
+        float eLeft = exitBox.getLeft();
+        float eTop = exitBox.getTop();
+        float eRight = exitBox.getRight();
+        float eBottom = exitBox.getBottom();
 
-        float pLeft = playerHitBox.left;
-        float pTop = playerHitBox.top;
-        float pRight = playerHitBox.right;
-        float pBottom = playerHitBox.bottom;
+        float pLeft = playerHitBox.getLeft();
+        float pTop = playerHitBox.getTop();
+        float pRight = playerHitBox.getRight();
+        float pBottom = playerHitBox.getBottom();
 
         boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
                 || (eLeft <=  pRight && pRight <= eRight));
