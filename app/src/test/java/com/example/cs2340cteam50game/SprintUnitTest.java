@@ -6,9 +6,6 @@ import static org.junit.Assert.assertTrue;
 import android.util.Log;
 import android.widget.TextView;
 
-import android.media.Image;
-import android.widget.ImageView;
-
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
