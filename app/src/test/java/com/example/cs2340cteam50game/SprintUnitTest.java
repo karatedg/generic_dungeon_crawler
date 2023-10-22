@@ -2,10 +2,14 @@ package com.example.cs2340cteam50game;
 
 import static org.junit.Assert.assertEquals;
 
+import android.media.Image;
+import android.widget.ImageView;
+
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 import org.junit.Test;
@@ -246,4 +250,40 @@ public class SprintUnitTest {
         assertEquals(110, (int) pos2);
     }
 
+
+    @Test
+    public void playerGoesToNextRoom() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreen gameScreen = new GameScreen();
+        GameScreenModel gameScreenModel = gameScreen.getGameScreenModel();
+        player.setGameScreenModel(gameScreenModel);
+        player.setSpriteHeight(30);
+        player.setSpriteWidth(30);
+        player.setScreenHeight(3000);
+        player.setScreenWidth(3000);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(2130);
+        player.setyPos(450);
+        ImageView img = new ImageView(null);
+        gameScreenModel.setScreen(0, img);
+        assertEquals(0, gameScreenModel.checkCollisions(player.getxPos(),
+                player.getyPos())); //should be no collision yet
+        player.moveRight(); //
+        player.moveRight(); //
+        player.moveRight(); //
+        player.moveRight(); //
+
+        System.out.println(player.getxPos());
+        System.out.println(player.getyPos());
+
+        double xpos = player.getxPos();
+        double ypos = player.getyPos();
+
+        //assertEquals(2, gameScreenModel.checkCollisions(player.getxPos(), player.getyPos()));
+
+        assertEquals(700, (int) xpos);
+        assertEquals(882, (int) ypos);
+
+    }
 }

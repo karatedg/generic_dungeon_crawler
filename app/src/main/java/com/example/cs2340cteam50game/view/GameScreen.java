@@ -134,5 +134,10 @@ public class GameScreen extends AppCompatActivity {
         this.playerView = view;
     }
 
+    public GameScreenModel getGameScreenModel() {
+        return gameScreenModel;
+    }
+
+
 
 }
