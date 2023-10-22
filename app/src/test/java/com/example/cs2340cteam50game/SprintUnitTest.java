@@ -1,16 +1,13 @@
 package com.example.cs2340cteam50game;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
-import android.util.Log;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Score;
-import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 import org.junit.Test;

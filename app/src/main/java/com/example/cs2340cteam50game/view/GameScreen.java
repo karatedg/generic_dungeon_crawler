@@ -3,7 +3,6 @@ package com.example.cs2340cteam50game.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.content.Intent;
