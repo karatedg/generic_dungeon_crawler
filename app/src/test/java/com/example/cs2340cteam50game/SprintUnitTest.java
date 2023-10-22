@@ -115,6 +115,8 @@ public class SprintUnitTest {
     public void playerMoveLeftOutOfBounds() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setMovementStrategy(new DefaultSpeed());
         player.setxPos(0.0);
         player.setyPos(0.0);
@@ -130,6 +132,8 @@ public class SprintUnitTest {
         PlayerClass player = PlayerClass.getPlayer();
         player.setSpriteWidth(5);
         player.setScreenWidth(5);
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setMovementStrategy(new DefaultSpeed());
         player.setxPos(0.0);
         player.setyPos(0.0);
@@ -143,6 +147,8 @@ public class SprintUnitTest {
     public void playerMoveUpOutOfBounds() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setMovementStrategy(new DefaultSpeed());
         player.setxPos(0.0);
         player.setyPos(0.0);
@@ -156,6 +162,8 @@ public class SprintUnitTest {
     public void playerMoveDownOutOfBounds() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setSpriteHeight(30);
         player.setScreenHeight(90);
         player.setMovementStrategy(new DefaultSpeed());

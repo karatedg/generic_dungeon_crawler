@@ -52,7 +52,9 @@ public class GameScreenModel {
         new RectF(1980, 0, 2010, 80),
         new RectF(1801, 0, 1979, 20),
     };
-    private RectF[] currentWallSet;
+    private RectF[] currentWallSet = map1Walls;
+
+    private RectF exitBox = currentWallSet[currentWallSet.length - 1];
     private int scoreVal = 50;
 
     public CountDownTimer startScoreTimer(TextView scoreDisplay) {
@@ -101,13 +103,13 @@ public class GameScreenModel {
     //Collision Handler
     public int checkCollisions(double newX, double newY) {
         RectF playerHitBox = new RectF((float) newX, (float) newY,
-                (float) newX + playerView.getSpriteWidth(),
-                (float) newY + playerView.getSpriteHeight());
+                (float) newX + player.getSpriteWidth(),
+                (float) newY + player.getSpriteHeight());
         if (checkMoveRooms(playerHitBox)) {
             return 2;
         }
         for (int i = 0; i < currentWallSet.length - 1; i++) {
-            if (playerHitBox.intersect(currentWallSet[i])) {
+            if (RectF.intersects(playerHitBox, currentWallSet[i])) {
                 return 1;
             }
         }
@@ -116,8 +118,7 @@ public class GameScreenModel {
 
     //Specialized collision handler for changing rooms
     public boolean checkMoveRooms(RectF playerHitBox) {
-        RectF exitBox = currentWallSet[currentWallSet.length - 1];
-        return playerHitBox.intersect(exitBox);
+        return RectF.intersects(playerHitBox, exitBox);
     }
 
     //Passes on the nextRoom call to the GameScreen which handles it
@@ -145,6 +146,7 @@ public class GameScreenModel {
             currentWallSet = map1Walls;
             break;
         }
+        exitBox = currentWallSet[currentWallSet.length - 1];
     }
 
     //Sets the currently used PlayerView
