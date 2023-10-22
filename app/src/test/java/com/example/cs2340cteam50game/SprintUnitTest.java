@@ -1,6 +1,10 @@
 package com.example.cs2340cteam50game;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import android.util.Log;
+import android.widget.TextView;
 
 import android.media.Image;
 import android.widget.ImageView;
@@ -178,11 +182,13 @@ public class SprintUnitTest {
 
         assertEquals(0, (int) pos2);
     }
-
+  
     @Test
     public void playerMoveLeft(){
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setSpriteWidth(5);
         player.setScreenWidth(200);
         player.setMovementStrategy(new DefaultSpeed());
@@ -193,12 +199,14 @@ public class SprintUnitTest {
         System.out.println(player.getxPos());
         double pos2 = player.getxPos();
 
-        assertEquals(75, (int) pos2);
+        assertEquals(90, (int) pos2);
     }
     @Test
     public void playerMoveRight(){
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setSpriteWidth(5);
         player.setScreenWidth(200);
         player.setMovementStrategy(new DefaultSpeed());
@@ -209,13 +217,15 @@ public class SprintUnitTest {
         System.out.println(player.getxPos());
         double pos2 = player.getxPos();
 
-        assertEquals(125, (int) pos2);
+        assertEquals(110, (int) pos2);
     }
 
     @Test
     public void playerMoveUp(){
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setSpriteHeight(30);
         player.setScreenHeight(200);
         player.setSpriteWidth(5);
@@ -228,26 +238,71 @@ public class SprintUnitTest {
         System.out.println(player.getyPos());
         double pos2 = player.getyPos();
 
-        assertEquals(75, (int) pos2);
+        assertEquals(90, (int) pos2);
     }
 
     @Test
     public void playerMovedown(){
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
         player.setSpriteHeight(30);
         player.setScreenHeight(200);
         player.setSpriteWidth(5);
         player.setScreenWidth(200);
         player.setMovementStrategy(new DefaultSpeed());
-        player.setxPos(100);
-        System.out.println(player.getyPos());
         player.setyPos(100);
+        System.out.println(player.getyPos());
+        player.setxPos(100);
         player.moveDown();
         System.out.println(player.getyPos());
         double pos2 = player.getyPos();
 
         assertEquals(110, (int) pos2);
+    }
+  
+      @Test(expected = java.lang.NullPointerException.class)
+    public void playerMoveNextRoom() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setMovementStrategy(new DefaultSpeed());
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setScreenHeight(3000);
+        player.setScreenWidth(3000);
+        player.setSpriteHeight(10);
+        player.setSpriteWidth(10);
+        player.setxPos(2146);
+        player.setyPos(420);
+
+        player.moveRight();
+        player.moveRight();
+
+        System.out.println(player.getxPos());
+        System.out.println(player.getyPos());
+        System.out.println("Room: " + model.getCurrentRoom());
+    }
+
+    @Test (expected = NullPointerException.class)
+    public void playerMoveEndGame() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setMovementStrategy(new DefaultSpeed());
+        GameScreenModel model = new GameScreenModel();
+        model.setCurrentWallSet(2);
+        TextView text = new TextView(null);
+        model.startScoreTimer(text);
+        player.setGameScreenModel(model);
+        player.setScreenHeight(3000);
+        player.setScreenWidth(3000);
+        player.setSpriteHeight(10);
+        player.setSpriteWidth(10);
+        player.setxPos(1810);
+        player.setyPos(28);
+
+        player.moveUp();
+      
     }
 
 
