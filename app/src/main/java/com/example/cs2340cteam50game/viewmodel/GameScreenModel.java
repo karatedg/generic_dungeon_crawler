@@ -1,7 +1,6 @@
 package com.example.cs2340cteam50game.viewmodel;
 
-import android.content.Intent;
-import android.graphics.RectF;
+import com.example.cs2340cteam50game.model.Rectangle;
 import android.os.CountDownTimer;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,45 +25,45 @@ public class GameScreenModel {
 
     private int currentRoom = 0;
 
-    private final RectF[] map1Walls = {
-        new RectF(423, 256, 450, 695),
-        new RectF(526, 870, 953, 950),
-        new RectF(738, 79, 768, 435),
-        new RectF(1055, 168, 1088, 425),
-        new RectF(1055, 518, 1088, 693),
-        new RectF(2000, 342, 2220, 410),
-        new RectF(2000, 522, 2220, 592),
-        new RectF(2156, 420, 2220, 510)
+    private final Rectangle[] map1Walls = {
+        new Rectangle(423, 256, 450, 695),
+        new Rectangle(526, 870, 953, 950),
+        new Rectangle(738, 79, 768, 435),
+        new Rectangle(1055, 168, 1088, 425),
+        new Rectangle(1055, 518, 1088, 693),
+        new Rectangle(2000, 342, 2220, 410),
+        new Rectangle(2000, 522, 2220, 592),
+        new Rectangle(2156, 420, 2220, 510)
     };
-    private final RectF[] map2Walls = {
-        new RectF(106, 232, 536, 302),
-        new RectF(106, 632, 426, 702),
-        new RectF(606, 872, 636, 942),
-        new RectF(816, 872, 846, 942),
-        new RectF(736, 472, 1166, 542),
-        new RectF(1376, 712, 1796, 782),
-        new RectF(1586, 312, 2016, 382),
-        new RectF(1556, 0, 1586, 80),
-        new RectF(1766, 0, 1796, 80),
-        new RectF(1590, 0, 1765, 20)
+    private final Rectangle[] map2Walls = {
+        new Rectangle(106, 232, 536, 302),
+        new Rectangle(106, 632, 426, 702),
+        new Rectangle(606, 872, 636, 942),
+        new Rectangle(816, 872, 846, 942),
+        new Rectangle(736, 472, 1166, 542),
+        new Rectangle(1376, 712, 1796, 782),
+        new Rectangle(1586, 312, 2016, 382),
+        new Rectangle(1556, 0, 1586, 80),
+        new Rectangle(1766, 0, 1796, 80),
+        new Rectangle(1590, 0, 1765, 20)
     };
-    private final RectF[] map3Walls = {
-        new RectF(0, 230, 210, 300),
-        new RectF(0, 390, 210, 460),
-        new RectF(420, 80, 850, 140),
-        new RectF(420, 710, 850, 780),
-        new RectF(820, 310, 850, 560),
-        new RectF(1160, 550, 1590, 620),
-        new RectF(1480, 240, 1900, 300),
-        new RectF(1580, 790, 2010, 850),
-        new RectF(2090, 390, 2120, 640),
-        new RectF(1770, 0, 1800, 80),
-        new RectF(1980, 0, 2010, 80),
-        new RectF(1801, 0, 1979, 20),
+    private final Rectangle[] map3Walls = {
+        new Rectangle(0, 230, 210, 300),
+        new Rectangle(0, 390, 210, 460),
+        new Rectangle(420, 80, 850, 140),
+        new Rectangle(420, 710, 850, 780),
+        new Rectangle(820, 310, 850, 560),
+        new Rectangle(1160, 550, 1590, 620),
+        new Rectangle(1480, 240, 1900, 300),
+        new Rectangle(1580, 790, 2010, 850),
+        new Rectangle(2090, 390, 2120, 640),
+        new Rectangle(1770, 0, 1800, 80),
+        new Rectangle(1980, 0, 2010, 80),
+        new Rectangle(1801, 0, 1979, 20),
     };
-    private RectF[] currentWallSet = map1Walls;
+    private Rectangle[] currentWallSet = map1Walls;
 
-    private RectF exitBox = currentWallSet[currentWallSet.length - 1];
+    private Rectangle exitBox = currentWallSet[currentWallSet.length - 1];
     private int scoreVal = 100;
 
     public void startScoreTimer(TextView scoreDisplay) {
@@ -110,14 +109,33 @@ public class GameScreenModel {
 
     //Collision Handler
     public int checkCollisions(double newX, double newY) {
-        RectF playerHitBox = new RectF((float) newX, (float) newY,
+
+        Rectangle playerHitBox = new Rectangle((float) newX, (float) newY,
                 (float) newX + player.getSpriteWidth(),
                 (float) newY + player.getSpriteHeight());
+
         if (checkMoveRooms(playerHitBox)) {
             return 2;
         }
         for (int i = 0; i < currentWallSet.length - 1; i++) {
-            if (RectF.intersects(playerHitBox, currentWallSet[i])) {
+
+            float eLeft = currentWallSet[i].left;
+            float eTop = currentWallSet[i].top;
+            float eRight = currentWallSet[i].right;
+            float eBottom = currentWallSet[i].bottom;
+
+            float pLeft = playerHitBox.left;
+            float pTop = playerHitBox.top;
+            float pRight = playerHitBox.right;
+            float pBottom = playerHitBox.bottom;
+
+            boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
+                    || (eLeft <=  pRight && pRight <= eRight));
+
+            boolean verticalCollision = ((eTop <= pTop && pTop <= eBottom)
+                    || (eTop <=  pBottom && pBottom <= eBottom));
+
+            if ((horizontalCollision && verticalCollision)) {
                 return 1;
             }
         }
@@ -125,7 +143,7 @@ public class GameScreenModel {
     }
 
     //Specialized collision handler for changing rooms
-    public boolean checkMoveRooms(RectF playerHitBox) {
+    public boolean checkMoveRooms(Rectangle playerHitBox) {
         float eLeft = exitBox.left;
         float eTop = exitBox.top;
         float eRight = exitBox.right;
@@ -139,7 +157,7 @@ public class GameScreenModel {
         boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
                 || (eLeft <=  pRight && pRight <= eRight));
 
-        boolean verticalCollision = ((eTop <=  pTop && pTop <= eBottom)
+        boolean verticalCollision = ((eTop <= pTop && pTop <= eBottom)
                 || (eTop <=  pBottom && pBottom <= eBottom));
 
         return (horizontalCollision && verticalCollision);
@@ -237,8 +255,9 @@ public class GameScreenModel {
             currentRoom = 2;
             break;
         default:
+            System.out.println("DEFAULT SET WALL SET");
         }
-        this.exitBox = currentWallSet[currentWallSet.length - 1];
+        exitBox = currentWallSet[currentWallSet.length - 1];
     }
 
 
