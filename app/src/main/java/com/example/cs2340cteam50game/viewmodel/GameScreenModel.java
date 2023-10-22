@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.Leaderboard;
+import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.view.EndScreen;
@@ -21,13 +22,13 @@ public class GameScreenModel {
     private ImageView map;
     private GameScreen game;
 
-    CountDownTimer timer;
+    private CountDownTimer timer;
 
     private int currentRoom = 0;
 
     private final RectF[] map1Walls = {
         new RectF(423, 256, 450, 695),
-        new RectF(526, 860, 953, 950),
+        new RectF(526, 870, 953, 950),
         new RectF(738, 79, 768, 435),
         new RectF(1055, 168, 1088, 425),
         new RectF(1055, 518, 1088, 693),
@@ -64,10 +65,10 @@ public class GameScreenModel {
     private RectF[] currentWallSet = map1Walls;
 
     private RectF exitBox = currentWallSet[currentWallSet.length - 1];
-    private int scoreVal = 50;
+    private int scoreVal = 100;
 
     public void startScoreTimer(TextView scoreDisplay) {
-        timer = new CountDownTimer((50) * 1000, 1000) {
+        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
                 setScoreVal((int) (millisUntilFinished / 1000));
                 scoreDisplay.setText("Score: " + scoreVal);
@@ -125,12 +126,29 @@ public class GameScreenModel {
 
     //Specialized collision handler for changing rooms
     public boolean checkMoveRooms(RectF playerHitBox) {
-        return RectF.intersects(playerHitBox, exitBox);
+        float eLeft = exitBox.left;
+        float eTop = exitBox.top;
+        float eRight = exitBox.right;
+        float eBottom = exitBox.bottom;
+
+        float pLeft = playerHitBox.left;
+        float pTop = playerHitBox.top;
+        float pRight = playerHitBox.right;
+        float pBottom = playerHitBox.bottom;
+
+        boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
+                || (eLeft <=  pRight && pRight <= eRight));
+
+        boolean verticalCollision = ((eTop <=  pTop && pTop <= eBottom)
+                || (eTop <=  pBottom && pBottom <= eBottom));
+
+        return (horizontalCollision && verticalCollision);
     }
 
     //Passes on the nextRoom call to the GameScreen which handles it
     public void nextRoom() {
         if (currentRoom == 2) {
+            player.setMovementStrategy(new NoSpeed());
             timer.cancel();
             game.endGame();
         } else {
@@ -202,6 +220,25 @@ public class GameScreenModel {
     //Setter for playerView
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
+    }
+
+    public void setCurrentWallSet(int wallSet) {
+        switch (wallSet) {
+        case 0:
+            currentWallSet = map1Walls;
+            currentRoom = 0;
+            break;
+        case 1:
+            currentWallSet = map2Walls;
+            currentRoom = 1;
+            break;
+        case 2:
+            currentWallSet = map3Walls;
+            currentRoom = 2;
+            break;
+        default:
+        }
+        this.exitBox = currentWallSet[currentWallSet.length - 1];
     }
 
 

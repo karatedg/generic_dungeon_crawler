@@ -103,6 +103,7 @@ public class GameScreen extends AppCompatActivity {
         Score score = new Score(name, gameScreenModel.getScoreVal());
         Leaderboard leaderBoard = Leaderboard.getLeaderboard();
         leaderBoard.addScore(score);
+        Log.d("SCOREADD", "Scored added");
         Intent intent = new Intent(GameScreen.this, EndScreen.class);
         intent.putExtra("score", score.getScore());
         startActivity(intent);
