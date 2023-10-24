@@ -43,7 +43,6 @@ public class PlayerView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawBitmap(playerSprite, x, y, null);
-
     }
 
     public void updatePosition() {
