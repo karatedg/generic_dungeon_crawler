@@ -8,11 +8,6 @@ android {
     compileSdk 33
 
 
-    testOptions {
-        unitTests.returnDefaultValues = true;
-    }
-
-
     defaultConfig {
         applicationId "com.example.cs2340cteam50game"
         minSdk 24

@@ -58,4 +58,9 @@ public class Leaderboard {
     public static void clear() {
         leaderboard = null;
     }
+
+    public static boolean leaderboardExists() {
+        return (leaderboard != null);
+    }
+
 }

@@ -3,7 +3,6 @@ package com.example.cs2340cteam50game.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.content.Intent;
@@ -24,9 +23,6 @@ public class GameScreen extends AppCompatActivity {
     private int currentScreen = 0;
     private PlayerClass player;
     private String name;
-    private CountDownTimer timer;
-    private ImageView map;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +40,16 @@ public class GameScreen extends AppCompatActivity {
         TextView scoreDisplay = (TextView) findViewById(R.id.scoreText);
 
         //Initialize map and give access to the GameScreenModel
-        map = (ImageView) findViewById(R.id.gameMap);
-        gameScreenModel.setScreen(currentScreen, map);
+        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        gameScreenModel.setMap(map);
+        gameScreenModel.setScreen(currentScreen);
 
         //
         double screenWidth = getResources().getDisplayMetrics().widthPixels;
         double screenHeight = getResources().getDisplayMetrics().heightPixels;
 
         player = PlayerClass.getPlayer();
+        player.setGameScreenModel(gameScreenModel);
         player.setScreenWidth(screenWidth);
         player.setScreenHeight(screenHeight);
 
@@ -63,7 +61,6 @@ public class GameScreen extends AppCompatActivity {
         playerView = new PlayerView(this);
         gameScreenModel.setPlayerView(playerView);
         player.setSpriteData(playerView);
-        player.setGameScreenModel(gameScreenModel);
         gameLayout.addView(playerView);
 
         //Retrieve Player attributes
@@ -75,13 +72,12 @@ public class GameScreen extends AppCompatActivity {
         playerNameDisplay.setText(name);
         healthValueDisplay.setText(Integer.toString(health));
         difficultyDisplay.setText(gameScreenModel.difficultySwitch(difficulty));
-        scoreDisplay.setText("Score: 50");
-        timer = gameScreenModel.startScoreTimer(scoreDisplay);
+        scoreDisplay.setText("Score: " + gameScreenModel.getScoreVal());
+        gameScreenModel.startScoreTimer(scoreDisplay);
     }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        Log.d("KEY", "KeyDown: " + keyCode);
         switch (keyCode) {
         case KeyEvent.KEYCODE_A:
             gameScreenModel.moveLeft();
@@ -102,37 +98,14 @@ public class GameScreen extends AppCompatActivity {
         return false;
     }
 
-    public void nextRoom() {
-        if (currentScreen == 2) {
-            Score score = new Score(name, gameScreenModel.getScoreVal());
-            Leaderboard leaderBoard = Leaderboard.getLeaderboard();
-            leaderBoard.addScore(score);
-
-            timer.cancel();
-            Intent intent = new Intent(GameScreen.this, EndScreen.class);
-            intent.putExtra("score", score.getScore());
-            startActivity(intent);
-        } else {
-            currentScreen++;
-            gameScreenModel.setScreen(currentScreen, map);
-            switch (currentScreen) {
-            case 1:
-                player.setxPos(700);
-                player.setyPos(882);
-                break;
-            case 2:
-                player.setxPos(10);
-                player.setyPos(312);
-                break;
-            default:
-            }
-            playerView.updatePosition();
-        }
+    public void endGame() {
+        Score score = new Score(name, gameScreenModel.getScoreVal());
+        Leaderboard leaderBoard = Leaderboard.getLeaderboard();
+        leaderBoard.addScore(score);
+        Log.d("SCOREADD", "Scored added");
+        Intent intent = new Intent(GameScreen.this, EndScreen.class);
+        intent.putExtra("score", score.getScore());
+        startActivity(intent);
     }
-
-    public void setPlayerView(PlayerView view) {
-        this.playerView = view;
-    }
-
 
 }
