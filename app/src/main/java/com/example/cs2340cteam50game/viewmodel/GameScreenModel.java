@@ -24,35 +24,35 @@ public class GameScreenModel {
 
     private final Rectangle[] map1Walls = {
         new Rectangle(423, 256, 450, 695),
-        new Rectangle(526, 870, 953, 950),
+        new Rectangle(526, 865, 953, 950),
         new Rectangle(738, 79, 768, 435),
         new Rectangle(1055, 168, 1088, 425),
         new Rectangle(1055, 518, 1088, 693),
-        new Rectangle(2000, 342, 2220, 410),
-        new Rectangle(2000, 522, 2220, 592),
-        new Rectangle(2156, 420, 2220, 510)
+        new Rectangle(2000, 342, 2220, 390),
+        new Rectangle(2000, 522, 2220, 565),
+        new Rectangle(2170, 400, 2220, 510)
     };
     private final Rectangle[] map2Walls = {
-        new Rectangle(106, 232, 536, 302),
-        new Rectangle(106, 632, 426, 702),
+        new Rectangle(106, 232, 536, 272),
+        new Rectangle(106, 632, 426, 672),
         new Rectangle(606, 872, 636, 942),
         new Rectangle(816, 872, 846, 942),
-        new Rectangle(736, 472, 1166, 542),
-        new Rectangle(1376, 712, 1796, 782),
-        new Rectangle(1586, 312, 2016, 382),
+        new Rectangle(736, 472, 1166, 512),
+        new Rectangle(1376, 712, 1796, 752),
+        new Rectangle(1586, 312, 2016, 352),
         new Rectangle(1556, 0, 1586, 80),
         new Rectangle(1766, 0, 1796, 80),
         new Rectangle(1590, 0, 1765, 20)
     };
     private final Rectangle[] map3Walls = {
-        new Rectangle(0, 230, 210, 300),
-        new Rectangle(0, 390, 210, 460),
-        new Rectangle(420, 80, 850, 140),
-        new Rectangle(420, 710, 850, 780),
+        new Rectangle(0, 230, 210, 280),
+        new Rectangle(0, 390, 210, 440),
+        new Rectangle(420, 80, 850, 120),
+        new Rectangle(420, 710, 850, 750),
         new Rectangle(820, 310, 850, 560),
-        new Rectangle(1160, 550, 1590, 620),
-        new Rectangle(1480, 240, 1900, 300),
-        new Rectangle(1580, 790, 2010, 850),
+        new Rectangle(1160, 550, 1590, 590),
+        new Rectangle(1480, 240, 1900, 280),
+        new Rectangle(1580, 790, 2010, 830),
         new Rectangle(2090, 390, 2120, 640),
         new Rectangle(1770, 0, 1800, 80),
         new Rectangle(1980, 0, 2010, 80),
@@ -105,61 +105,25 @@ public class GameScreenModel {
     }
 
     //Collision Handler
-    public int checkCollisions(double newX, double newY) {
+    public int checkCollisions(double newX, double newY, int direction) {
 
         Rectangle playerHitBox = new Rectangle((float) newX, (float) newY,
                 (float) newX + player.getSpriteWidth(),
                 (float) newY + player.getSpriteHeight());
 
-        if (checkMoveRooms(playerHitBox)) {
+        if (playerHitBox.intersects(exitBox)) {
             return 2;
         }
+
         for (int i = 0; i < currentWallSet.length - 1; i++) {
-
-            float eLeft = currentWallSet[i].getLeft();
-            float eTop = currentWallSet[i].getTop();
-            float eRight = currentWallSet[i].getRight();
-            float eBottom = currentWallSet[i].getBottom();
-
-            float pLeft = playerHitBox.getLeft();
-            float pTop = playerHitBox.getTop();
-            float pRight = playerHitBox.getRight();
-            float pBottom = playerHitBox.getBottom();
-
-            boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
-                    || (eLeft <=  pRight && pRight <= eRight));
-
-            boolean verticalCollision = ((eTop <= pTop && pTop <= eBottom)
-                    || (eTop <=  pBottom && pBottom <= eBottom));
-
-            if ((horizontalCollision && verticalCollision)) {
+            if (playerHitBox.intersectsWall(currentWallSet[i], direction)) {
+                player.setxPos(playerHitBox.getLeft());
+                player.setyPos(playerHitBox.getTop());
                 return 1;
             }
         }
         return 0;
     }
-
-    //Specialized collision handler for changing rooms
-    public boolean checkMoveRooms(Rectangle playerHitBox) {
-        float eLeft = exitBox.getLeft();
-        float eTop = exitBox.getTop();
-        float eRight = exitBox.getRight();
-        float eBottom = exitBox.getBottom();
-
-        float pLeft = playerHitBox.getLeft();
-        float pTop = playerHitBox.getTop();
-        float pRight = playerHitBox.getRight();
-        float pBottom = playerHitBox.getBottom();
-
-        boolean horizontalCollision = ((eLeft <=  pLeft && pLeft <= eRight)
-                || (eLeft <=  pRight && pRight <= eRight));
-
-        boolean verticalCollision = ((eTop <= pTop && pTop <= eBottom)
-                || (eTop <=  pBottom && pBottom <= eBottom));
-
-        return (horizontalCollision && verticalCollision);
-    }
-
     //Passes on the nextRoom call to the GameScreen which handles it
     public void nextRoom() {
         if (currentRoom == 2) {
