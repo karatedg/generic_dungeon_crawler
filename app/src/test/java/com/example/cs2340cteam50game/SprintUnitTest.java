@@ -234,7 +234,7 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void playerMovedown(){
+    public void playerMoveDown(){
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
