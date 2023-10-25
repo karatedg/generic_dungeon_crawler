@@ -91,7 +91,7 @@ public class PlayerClass {
      */
     public void moveX(double distance) {
         double newX = xPos + distance;
-        int collisionType = gameScreenModel.checkCollisions(newX, yPos);
+        int collisionType = gameScreenModel.checkCollisions(newX, yPos, 0);
         if (collisionType == 2) {
             gameScreenModel.nextRoom();
         } else if (collisionType == 0) {
@@ -110,8 +110,8 @@ public class PlayerClass {
      */
     public void moveY(double distance) {
         double newY = yPos + distance;
-        int collisionType = gameScreenModel.checkCollisions(xPos, newY);
-        if (gameScreenModel.checkCollisions(xPos, newY) == 2) {
+        int collisionType = gameScreenModel.checkCollisions(xPos, newY, 1);
+        if (collisionType == 2) {
             gameScreenModel.nextRoom();
         } else if (collisionType == 0) {
             if (yPos + distance < 0) {

@@ -1,11 +1,12 @@
 package com.example.cs2340cteam50game.viewmodel;
 
-import android.graphics.RectF;
+import com.example.cs2340cteam50game.model.Rectangle;
 import android.os.CountDownTimer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.PlayerView;
@@ -14,51 +15,56 @@ public class GameScreenModel {
 
     private final PlayerClass player = PlayerClass.getPlayer();
     private PlayerView playerView;
-    private GameScreen gameScreen;
+    private ImageView map;
+    private GameScreen game;
 
-    private final RectF[] map1Walls = {
-        new RectF(423, 256, 450, 695),
-        new RectF(526, 860, 953, 950),
-        new RectF(738, 79, 768, 435),
-        new RectF(1055, 168, 1088, 425),
-        new RectF(1055, 518, 1088, 693),
-        new RectF(2000, 342, 2220, 410),
-        new RectF(2000, 522, 2220, 592),
-        new RectF(2156, 420, 2220, 510)
-    };
-    private final RectF[] map2Walls = {
-        new RectF(106, 232, 536, 302),
-        new RectF(106, 632, 426, 702),
-        new RectF(606, 872, 636, 942),
-        new RectF(816, 872, 846, 942),
-        new RectF(736, 472, 1166, 542),
-        new RectF(1376, 712, 1796, 782),
-        new RectF(1586, 312, 2016, 382),
-        new RectF(1556, 0, 1586, 80),
-        new RectF(1766, 0, 1796, 80),
-        new RectF(1590, 0, 1765, 20)
-    };
-    private final RectF[] map3Walls = {
-        new RectF(0, 230, 210, 300),
-        new RectF(0, 390, 210, 460),
-        new RectF(420, 80, 850, 140),
-        new RectF(420, 710, 850, 780),
-        new RectF(820, 310, 850, 560),
-        new RectF(1160, 550, 1590, 620),
-        new RectF(1480, 240, 1900, 300),
-        new RectF(1580, 790, 2010, 850),
-        new RectF(2090, 390, 2120, 640),
-        new RectF(1770, 0, 1800, 80),
-        new RectF(1980, 0, 2010, 80),
-        new RectF(1801, 0, 1979, 20),
-    };
-    private RectF[] currentWallSet = map1Walls;
+    private CountDownTimer timer;
 
-    private RectF exitBox = currentWallSet[currentWallSet.length - 1];
-    private int scoreVal = 50;
+    private int currentRoom = 0;
 
-    public CountDownTimer startScoreTimer(TextView scoreDisplay) {
-        CountDownTimer timer = new CountDownTimer((50) * 1000, 1000) {
+    private final Rectangle[] map1Walls = {
+        new Rectangle(423, 256, 450, 695),
+        new Rectangle(526, 865, 953, 950),
+        new Rectangle(738, 79, 768, 435),
+        new Rectangle(1055, 168, 1088, 425),
+        new Rectangle(1055, 518, 1088, 693),
+        new Rectangle(2000, 342, 2220, 390),
+        new Rectangle(2000, 522, 2220, 565),
+        new Rectangle(2170, 400, 2220, 510)
+    };
+    private final Rectangle[] map2Walls = {
+        new Rectangle(106, 232, 536, 272),
+        new Rectangle(106, 632, 426, 672),
+        new Rectangle(606, 872, 636, 942),
+        new Rectangle(816, 872, 846, 942),
+        new Rectangle(736, 472, 1166, 512),
+        new Rectangle(1376, 712, 1796, 752),
+        new Rectangle(1586, 312, 2016, 352),
+        new Rectangle(1556, 0, 1586, 80),
+        new Rectangle(1766, 0, 1796, 80),
+        new Rectangle(1590, 0, 1765, 20)
+    };
+    private final Rectangle[] map3Walls = {
+        new Rectangle(0, 230, 210, 280),
+        new Rectangle(0, 390, 210, 440),
+        new Rectangle(420, 80, 850, 120),
+        new Rectangle(420, 710, 850, 750),
+        new Rectangle(820, 310, 850, 560),
+        new Rectangle(1160, 550, 1590, 590),
+        new Rectangle(1480, 240, 1900, 280),
+        new Rectangle(1580, 790, 2010, 830),
+        new Rectangle(2090, 390, 2120, 640),
+        new Rectangle(1770, 0, 1800, 80),
+        new Rectangle(1980, 0, 2010, 80),
+        new Rectangle(1801, 0, 1979, 20),
+    };
+    private Rectangle[] currentWallSet = map1Walls;
+
+    private Rectangle exitBox = currentWallSet[currentWallSet.length - 1];
+    private int scoreVal = 100;
+
+    public void startScoreTimer(TextView scoreDisplay) {
+        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
             public void onTick(long millisUntilFinished) {
                 setScoreVal((int) (millisUntilFinished / 1000));
                 scoreDisplay.setText("Score: " + scoreVal);
@@ -68,8 +74,6 @@ public class GameScreenModel {
                 scoreDisplay.setText("Score: " + scoreVal);
             }
         }.start();
-
-        return timer;
     }
 
 
@@ -101,33 +105,51 @@ public class GameScreenModel {
     }
 
     //Collision Handler
-    public int checkCollisions(double newX, double newY) {
-        RectF playerHitBox = new RectF((float) newX, (float) newY,
+    public int checkCollisions(double newX, double newY, int direction) {
+
+        Rectangle playerHitBox = new Rectangle((float) newX, (float) newY,
                 (float) newX + player.getSpriteWidth(),
                 (float) newY + player.getSpriteHeight());
-        if (checkMoveRooms(playerHitBox)) {
+
+        if (playerHitBox.intersects(exitBox)) {
             return 2;
         }
+
         for (int i = 0; i < currentWallSet.length - 1; i++) {
-            if (RectF.intersects(playerHitBox, currentWallSet[i])) {
+            if (playerHitBox.intersectsWall(currentWallSet[i], direction)) {
+                player.setxPos(playerHitBox.getLeft());
+                player.setyPos(playerHitBox.getTop());
                 return 1;
             }
         }
         return 0;
     }
-
-    //Specialized collision handler for changing rooms
-    public boolean checkMoveRooms(RectF playerHitBox) {
-        return RectF.intersects(playerHitBox, exitBox);
-    }
-
     //Passes on the nextRoom call to the GameScreen which handles it
     public void nextRoom() {
-        gameScreen.nextRoom();
+        if (currentRoom == 2) {
+            player.setMovementStrategy(new NoSpeed());
+            timer.cancel();
+            game.endGame();
+        } else {
+            currentRoom++;
+            setScreen(currentRoom);
+            switch (currentRoom) {
+            case 1:
+                player.setxPos(700);
+                player.setyPos(882);
+                break;
+            case 2:
+                player.setxPos(10);
+                player.setyPos(312);
+                break;
+            default:
+            }
+            playerView.updatePosition();
+        }
     }
 
     //Updates the current game screen - handling the new image, screenNum, and currentWallSet
-    public void setScreen(int currentScreen, ImageView map) {
+    public void setScreen(int currentScreen) {
         switch (currentScreen) {
         case 0:
             map.setImageResource(R.drawable.newmap1);
@@ -149,14 +171,19 @@ public class GameScreenModel {
         exitBox = currentWallSet[currentWallSet.length - 1];
     }
 
-    //Sets the currently used PlayerView
-    public void setPlayerView(PlayerView playerView) {
-        this.playerView = playerView;
-    }
-
     //Sets the currently used GameScreen
     public void setGameScreen(GameScreen game) {
-        this.gameScreen = game;
+        this.game = game;
+    }
+
+    //Sets the currentMapView
+    public void setMap(ImageView map) {
+        this.map = map;
+    }
+
+    //Setter for score
+    public void setScoreVal(int score) {
+        scoreVal = Math.max(score, 0);
     }
 
     //Getter for score
@@ -164,9 +191,34 @@ public class GameScreenModel {
         return scoreVal;
     }
 
-    //Setter for score
-    public void setScoreVal(int score) {
-        scoreVal = Math.max(score, 0);
+    //Getter for currentScreen
+    public int getCurrentRoom() {
+        return currentRoom;
+    }
+
+    //Setter for playerView
+    public void setPlayerView(PlayerView playerView) {
+        this.playerView = playerView;
+    }
+
+    public void setCurrentWallSet(int wallSet) {
+        switch (wallSet) {
+        case 0:
+            currentWallSet = map1Walls;
+            currentRoom = 0;
+            break;
+        case 1:
+            currentWallSet = map2Walls;
+            currentRoom = 1;
+            break;
+        case 2:
+            currentWallSet = map3Walls;
+            currentRoom = 2;
+            break;
+        default:
+            System.out.println("DEFAULT SET WALL SET");
+        }
+        exitBox = currentWallSet[currentWallSet.length - 1];
     }
 
 

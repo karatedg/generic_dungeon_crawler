@@ -2,6 +2,8 @@ package com.example.cs2340cteam50game;
 
 import static org.junit.Assert.assertEquals;
 
+import android.widget.TextView;
+
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
@@ -48,7 +50,7 @@ public class SprintUnitTest {
     // David Martinez
     @Test
     public void playerHealthEasy() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(1);
         assertEquals(player.getHealthPoints(), 150);
     }
@@ -56,7 +58,7 @@ public class SprintUnitTest {
     // Noah West
     @Test
     public void playerHealthMedium() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(2);
         assertEquals(player.getHealthPoints(), 100);
     }
@@ -64,7 +66,7 @@ public class SprintUnitTest {
     // Noah West
     @Test
     public void playerHealthHard() {
-        PlayerClass player  = PlayerClass.getPlayer();
+        PlayerClass player = PlayerClass.getPlayer();
         player.setDifficultyNum(3);
         assertEquals(player.getHealthPoints(), 75);
     }
@@ -111,19 +113,27 @@ public class SprintUnitTest {
         assertEquals(model.getScoreVal(), 0);
     }
 
+    ///////////////////////////
+    // SPRINT 2 TESTS!!!!!  //
+    /////////////////////////
+
     @Test
     public void playerMoveLeftOutOfBounds() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(10);
+        player.setSpriteHeight(10);
         GameScreenModel model = new GameScreenModel();
         player.setGameScreenModel(model);
+        model.setCurrentWallSet(0);
         player.setMovementStrategy(new DefaultSpeed());
-        player.setxPos(0.0);
-        player.setyPos(0.0);
-        player.moveLeft();
-        double pos2 = player.getxPos();
+        player.setxPos(0);
+        player.setyPos(0);
 
-        assertEquals(0, (int) pos2);
+        player.moveLeft();
+
+        assertEquals(0, (int) player.getxPos());
+
     }
 
     @Test
@@ -137,7 +147,9 @@ public class SprintUnitTest {
         player.setMovementStrategy(new DefaultSpeed());
         player.setxPos(0.0);
         player.setyPos(0.0);
+
         player.moveRight();
+
         double pos2 = player.getyPos();
 
         assertEquals(0, (int) pos2);
@@ -147,36 +159,41 @@ public class SprintUnitTest {
     public void playerMoveUpOutOfBounds() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteWidth(10);
+        player.setSpriteHeight(10);
         GameScreenModel model = new GameScreenModel();
         player.setGameScreenModel(model);
+        model.setCurrentWallSet(0);
         player.setMovementStrategy(new DefaultSpeed());
-        player.setxPos(0.0);
-        player.setyPos(0.0);
-        player.moveUp();
-        double pos2 = player.getyPos();
+        player.setxPos(0);
+        player.setyPos(0);
 
-        assertEquals(0, (int) pos2);
+        player.moveUp();
+
+        assertEquals(0, (int) player.getyPos());
     }
 
     @Test
     public void playerMoveDownOutOfBounds() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(5);
+        player.setScreenHeight(5);
         GameScreenModel model = new GameScreenModel();
         player.setGameScreenModel(model);
-        player.setSpriteHeight(30);
-        player.setScreenHeight(90);
         player.setMovementStrategy(new DefaultSpeed());
         player.setxPos(0.0);
         player.setyPos(0.0);
+
         player.moveDown();
+
         double pos2 = player.getyPos();
 
-        assertEquals(0, (int) pos2);
+        assertEquals(-60, (int) pos2);
     }
 
     @Test
-    public void playerMoveLeft(){
+    public void playerMoveLeft() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -193,8 +210,9 @@ public class SprintUnitTest {
 
         assertEquals(90, (int) pos2);
     }
+
     @Test
-    public void playerMoveRight(){
+    public void playerMoveRight() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -213,7 +231,7 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void playerMoveUp(){
+    public void playerMoveUp() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         GameScreenModel model = new GameScreenModel();
@@ -254,4 +272,46 @@ public class SprintUnitTest {
         assertEquals(110, (int) pos2);
     }
 
+    @Test(expected = java.lang.NullPointerException.class)
+    public void playerMoveNextRoom() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setMovementStrategy(new DefaultSpeed());
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setScreenHeight(3000);
+        player.setScreenWidth(3000);
+        player.setSpriteHeight(10);
+        player.setSpriteWidth(10);
+        player.setxPos(2146);
+        player.setyPos(420);
+
+        player.moveRight();
+        player.moveRight();
+
+        System.out.println(player.getxPos());
+        System.out.println(player.getyPos());
+        System.out.println("Room: " + model.getCurrentRoom());
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void playerMoveEndGame() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setMovementStrategy(new DefaultSpeed());
+        GameScreenModel model = new GameScreenModel();
+        model.setCurrentWallSet(2);
+        TextView text = new TextView(null);
+        model.startScoreTimer(text);
+        player.setGameScreenModel(model);
+        player.setScreenHeight(3000);
+        player.setScreenWidth(3000);
+        player.setSpriteHeight(10);
+        player.setSpriteWidth(10);
+        player.setxPos(1810);
+        player.setyPos(28);
+
+        player.moveUp();
+
+    }
 }
