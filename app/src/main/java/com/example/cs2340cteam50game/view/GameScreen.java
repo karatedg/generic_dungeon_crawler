@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.model.FireSkullCreator;
+import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.Score;
@@ -19,10 +21,14 @@ import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
+    private FireSkullView fsView;
     private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
     private PlayerClass player;
     private String name;
+
+    private FireSkullCreator fsCreator = new FireSkullCreator();
+    private FireSkullEnemy fsEnemy = (FireSkullEnemy) fsCreator.createEnemy();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +58,6 @@ public class GameScreen extends AppCompatActivity {
         player.setGameScreenModel(gameScreenModel);
         player.setScreenWidth(screenWidth);
         player.setScreenHeight(screenHeight);
-
         player.setxPos(screenWidth / 2);
         player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
 
@@ -62,6 +67,18 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setPlayerView(playerView);
         player.setSpriteData(playerView);
         gameLayout.addView(playerView);
+
+        //Initialize FireSkullView
+        int spriteID = R.drawable.fireskull;
+        fsEnemy.setSprite(getDrawable(spriteID));
+
+        fsEnemy.setxPos(screenWidth / 3);
+        fsEnemy.setyPos(screenHeight - fsEnemy.getSprite().getIntrinsicHeight());
+        fsView = new FireSkullView(this);
+        gameScreenModel.setFireSkullView(fsView);
+        fsEnemy.setSpriteData(fsView);
+
+        gameLayout.addView(fsView);
 
         //Retrieve Player attributes
         name = player.getUsername();
