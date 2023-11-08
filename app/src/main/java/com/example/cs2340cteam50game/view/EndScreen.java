@@ -28,6 +28,11 @@ public class EndScreen extends AppCompatActivity {
 
         TextView leaderboard = (TextView) findViewById(R.id.leaderboard);
 
+        TextView gameStatus = (TextView) findViewById(R.id.GameOverText);
+        if (PlayerClass.getPlayer().getHealthPoints() <= 0) {
+            gameStatus.setText("GAME OVER");
+        }
+
         //Return to opening screen
         restartButton.setOnClickListener(
                 new View.OnClickListener() {
