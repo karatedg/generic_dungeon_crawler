@@ -31,7 +31,7 @@ public class BeastView extends View {
 
     private BeastCreator beastCreator = new BeastCreator();
 
-    public FireSkullView(Context context) {
+    public BeastView(Context context) {
         super(context);
         enemy = (BeastEnemy) beastCreator.createEnemy();
         int spriteID = R.drawable.beast;
