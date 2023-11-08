@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.view.FireSkullView;
 import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.PlayerView;
 
@@ -15,6 +16,7 @@ public class GameScreenModel {
 
     private final PlayerClass player = PlayerClass.getPlayer();
     private PlayerView playerView;
+    private FireSkullView fireSkullView;
     private ImageView map;
     private GameScreen game;
 
@@ -199,6 +201,10 @@ public class GameScreenModel {
     //Setter for playerView
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
+    }
+
+    public void setFireSkullView(FireSkullView fsView) {
+        this.fireSkullView = fsView;
     }
 
     public void setCurrentWallSet(int wallSet) {
