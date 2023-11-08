@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
-import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.PlayerClass;
 
 public class SpriteSelectionScreen extends AppCompatActivity {
@@ -30,9 +29,6 @@ public class SpriteSelectionScreen extends AppCompatActivity {
 
         sprite = ResourcesCompat.getDrawable(getResources(), R.drawable.red_idle, null);
         difficultyNum = 1;
-
-        //Setting enemy sprites
-        FireSkullEnemy.setSprite(ResourcesCompat.getDrawable(getResources(), R.drawable.fireskull, null));
 
         //Next && Previous
         Button backButton = (Button) findViewById(R.id.backButton);
