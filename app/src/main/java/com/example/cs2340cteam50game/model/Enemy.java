@@ -11,4 +11,6 @@ public interface Enemy {
     abstract void setSpriteHeight(float height);
     abstract double getxPos();
     abstract double getyPos();
+    abstract Rectangle getHitBox();
+    abstract int getDamage();
 }
