@@ -30,6 +30,18 @@ public class Rectangle {
         return bottom;
     }
 
+
+
+    //TODO: ALLOWS FOR UPDATING EXISTING RECTANGLE
+    public void updatePosition(float left, float right, float top, float bottom) {
+        this.left = left;
+        this.top = top;
+        this.right = right;
+        this.bottom = bottom;
+    }
+
+    //
+
     public boolean intersectsWall(Rectangle other, int direction) {
         if (this.right < other.left || other.right < this.left) {
             return false;

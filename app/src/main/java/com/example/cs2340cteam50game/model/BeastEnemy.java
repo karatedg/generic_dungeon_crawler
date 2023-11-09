@@ -11,6 +11,8 @@ public class BeastEnemy implements Enemy{
     private double yPos;
     private float spriteWidth = 64.0F;
     private float spriteHeight = 64.0F;
+
+    private Rectangle hitBox;
     private double movementSpeed;
     private double healthPoints;
     private int damage = 25;
@@ -45,6 +47,10 @@ public class BeastEnemy implements Enemy{
     public void setSpriteData(BeastView beastView) {
         this.spriteWidth = beastView.getSpriteWidth();
         this.spriteHeight = beastView.getSpriteHeight();
+
+        // NEW CODE
+        this.hitBox = new Rectangle((float) xPos, (float) yPos,
+                (float) xPos + spriteWidth, (float) yPos + spriteHeight);
     }
 
     @Override
@@ -74,4 +80,12 @@ public class BeastEnemy implements Enemy{
     public void setxPos(double x) {xPos = x;}
 
     public void setyPos(double y) {yPos = y;}
+
+    public Rectangle getHitBox() {
+        return hitBox;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
 }
