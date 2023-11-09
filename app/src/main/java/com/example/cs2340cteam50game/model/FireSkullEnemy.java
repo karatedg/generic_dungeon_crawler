@@ -6,14 +6,16 @@ import android.graphics.drawable.Drawable;
 import com.example.cs2340cteam50game.view.FireSkullView;
 
 public class FireSkullEnemy implements Enemy{
-    private static Drawable sprite;
+    private Drawable sprite;
     private double xPos;
     private double yPos;
-    private float spriteWidth = 64.0F;
-    private float spriteHeight = 64.0F;
+    private float spriteWidth;
+    private float spriteHeight;
+
+    private Rectangle hitBox;
     private double movementSpeed;
     private double healthPoints;
-    private int damage = 25;
+    private int damage = 10;
 
     public FireSkullEnemy() {
         this.xPos = 0.0;
@@ -38,13 +40,21 @@ public class FireSkullEnemy implements Enemy{
     }
 
     @Override
-    public Drawable getSprite() {return sprite;}
+    public Drawable getSprite() {
+        return sprite;
+    }
 
-    public static void setSprite(Drawable x) {sprite = x;}
+    public void setSprite(Drawable x) {
+        this.sprite = x;
+    }
 
     public void setSpriteData(FireSkullView fsView) {
         this.spriteWidth = fsView.getSpriteWidth();
         this.spriteHeight = fsView.getSpriteHeight();
+
+        // NEW CODE
+        this.hitBox = new Rectangle((float) xPos, (float) yPos,
+                (float) xPos + spriteWidth, (float) yPos + spriteHeight);
     }
 
     @Override
@@ -52,14 +62,18 @@ public class FireSkullEnemy implements Enemy{
         spriteWidth = width;
     }
 
-    public float getSpriteWidth() {return spriteWidth;}
+    public float getSpriteWidth() {
+        return spriteWidth;
+    }
 
     @Override
     public void setSpriteHeight(float height) {
         spriteHeight = height;
     }
 
-    public float getSpriteHeight() {return spriteHeight;}
+    public float getSpriteHeight() {
+        return spriteHeight;
+    }
 
     @Override
     public double getxPos() {
@@ -71,7 +85,20 @@ public class FireSkullEnemy implements Enemy{
         return yPos;
     }
 
-    public void setxPos(double x) {xPos = x;}
 
-    public void setyPos(double y) {yPos = y;}
+    public Rectangle getHitBox() {
+        return hitBox;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public void setxPos(double x) {
+        xPos = x;
+    }
+
+    public void setyPos(double y) {
+        yPos = y;
+    }
 }
