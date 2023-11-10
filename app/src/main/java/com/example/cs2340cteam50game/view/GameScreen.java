@@ -95,12 +95,6 @@ public class GameScreen extends AppCompatActivity {
         int fSpriteID = R.drawable.fireskull;
         fsEnemy.setSprite(getDrawable(fSpriteID));
 
-        fsEnemy.setxPos(screenWidth / 3);
-        fsEnemy.setyPos(screenHeight - fsEnemy.getSprite().getIntrinsicHeight());
-        fsView = new FireSkullView(this);
-        gameScreenModel.setFireSkullView(fsView);
-        fsEnemy.setSpriteData(fsView);
-        gameLayout.addView(fsView);
 
         //Initialize a FireSkull & FireSkullView
         FireSkullEnemy fsEnemy1 = (FireSkullEnemy) fsCreator.createEnemy();
