@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import com.example.cs2340cteam50game.view.DemonView;
 
 public class DemonEnemy implements Enemy{
-    private static Drawable sprite;
+    private Drawable sprite;
     private double xPos;
     private double yPos;
     private float spriteWidth = 64.0F;
@@ -41,7 +41,7 @@ public class DemonEnemy implements Enemy{
     @Override
     public Drawable getSprite() {return sprite;}
 
-    public static void setSprite(Drawable x) {sprite = x;}
+    public void setSprite(Drawable x) {sprite = x;}
 
     public void setSpriteData(DemonView demonView) {
         this.spriteWidth = demonView.getSpriteWidth();

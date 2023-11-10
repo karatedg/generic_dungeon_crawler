@@ -34,17 +34,15 @@ public class GhostView extends View {
 
     public GhostView(Context context, GhostEnemy ghostEnemy) {
             super(context);
-
-            //TODO: TAKES IN AN EXISTING FIRESKULL TO CREATE A VIEW FOR
             this.ghostEnemy = ghostEnemy;
-            int spriteID = R.drawable.fireskull;
+            int spriteID = R.drawable.ghost;
             Drawable sprite = getResources().getDrawable(spriteID);
             ghostEnemy.setSprite(sprite);
             Bitmap temp = ((BitmapDrawable) ghostEnemy.getSprite()).getBitmap();
             this.x = (float) ghostEnemy.getxPos();
             this.y = (float) ghostEnemy.getyPos();
-            ghostSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
-                    (int) (1.5 * temp.getHeight()), true);
+            ghostSprite = Bitmap.createScaledBitmap(temp, (int) (3 * temp.getWidth()),
+                    (int) (3 * temp.getHeight()), true);
             width = ghostSprite.getWidth();
             height = ghostSprite.getHeight();
             ghostEnemy.setSpriteWidth(width);

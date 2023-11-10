@@ -30,42 +30,35 @@ import java.util.ArrayList;
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
-    private FireSkullCreator fsCreator = new FireSkullCreator();
-    private GhostView gView;
-    private DemonView dView;
-    private BeastView bView;
     private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
     private PlayerClass player;
     private String name;
-    ArrayList<View> currentEnemies = new ArrayList<>();
     RelativeLayout gameLayout = null;
     TextView healthValueDisplay = null;
-    private FireSkullEnemy fsEnemy = (FireSkullEnemy) fsCreator.createEnemy();
-    private GhostCreator gCreator = new GhostCreator();
-    private GhostEnemy gEnemy = (GhostEnemy) gCreator.createEnemy();
-    private BeastCreator bCreator = new BeastCreator();
-    private BeastEnemy bEnemy = (BeastEnemy) bCreator.createEnemy();
-    private DemonCreator dCreator = new DemonCreator();
-    private DemonEnemy dEnemy = (DemonEnemy) dCreator.createEnemy();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.in_game_activity);
 
-        //Create associated model and give it access to this GameScreen
+        //Create associated model and give it access to this GameScreen; pass necessary drawables
         gameScreenModel = new GameScreenModel();
         gameScreenModel.setGameScreen(this);
 
+        gameScreenModel.setFsSprite(getDrawable(R.drawable.fireskull));
+        gameScreenModel.setbSprite(getDrawable(R.drawable.beast));
+        gameScreenModel.setgSprite(getDrawable(R.drawable.ghost));
+        gameScreenModel.setdSprite(getDrawable(R.drawable.demon));
+
         //Get ids for display elements
-        healthValueDisplay = (TextView) findViewById(R.id.healthValue);
-        TextView playerNameDisplay = (TextView) findViewById(R.id.playerName);
-        TextView difficultyDisplay = (TextView) findViewById(R.id.difficultySetting);
-        TextView scoreDisplay = (TextView) findViewById(R.id.scoreText);
+        healthValueDisplay = findViewById(R.id.healthValue);
+        TextView playerNameDisplay = findViewById(R.id.playerName);
+        TextView difficultyDisplay = findViewById(R.id.difficultySetting);
+        TextView scoreDisplay = findViewById(R.id.scoreText);
 
         //Initialize map and give access to the GameScreenModel
-        ImageView map = (ImageView) findViewById(R.id.gameMap);
+        ImageView map = findViewById(R.id.gameMap);
         gameScreenModel.setMap(map);
         gameScreenModel.setScreen(currentScreen);
 
@@ -87,66 +80,39 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setPlayerView(playerView);
         player.setSpriteData(playerView);
         gameLayout.addView(playerView);
-        //Initialize FireSkullView
-        int fSpriteID = R.drawable.fireskull;
-        fsEnemy.setSprite(getDrawable(fSpriteID));
 
-        FireSkullEnemy fsEnemy1 = (FireSkullEnemy) fsCreator.createEnemy();
-        FireSkullEnemy fsEnemy2 = (FireSkullEnemy) fsCreator.createEnemy();
-        int spriteID = R.drawable.fireskull;
-        fsEnemy1.setSprite(getDrawable(spriteID));
-        fsEnemy2.setSprite(getDrawable(spriteID));
-        fsEnemy1.setxPos(screenWidth * (7.0 / 10.0));
-        fsEnemy1.setyPos(screenHeight / 3);
-        fsEnemy2.setxPos(screenWidth * (4.0 / 10.0));
-        fsEnemy2.setyPos(screenHeight / 3);
 
-        //TODO: CONSTRUCTOR FOR FIRESKULLVIEW TAKES IN A FIRESKULL
-        FireSkullView fsView1 = new FireSkullView(this, fsEnemy1);
-        FireSkullView fsView2 = new FireSkullView(this, fsEnemy2);
-        fsEnemy1.setSpriteData(fsView1);
-        fsEnemy2.setSpriteData(fsView2);
 
-        currentEnemies.add(fsView1);
-        currentEnemies.add(fsView2);
+//        //Ghost View
+//        int gSpriteID = R.drawable.ghost;
+//        gEnemy.setSprite(getDrawable(gSpriteID));
+//
+//        gEnemy.setxPos(screenWidth / 3);
+//        gEnemy.setyPos(screenHeight - gEnemy.getSprite().getIntrinsicHeight());
+//        gView = new GhostView(this);
+//        gEnemy.setSpriteData(gView);
+//        gameLayout.addView(gView);
+//
+//        //Initialize DemonView
+//        int dSpriteID = R.drawable.demon;
+//        dEnemy.setSprite(getDrawable(dSpriteID));
+//
+//        dEnemy.setxPos(screenWidth / 3);
+//        dEnemy.setyPos(screenHeight - dEnemy.getSprite().getIntrinsicHeight());
+//        dView = new DemonView(this);
+//        dEnemy.setSpriteData(dView);
+//        gameLayout.addView(dView);
+//
+//        //Initialize BeastView
+//        int bSpriteID = R.drawable.beast;
+//        bEnemy.setSprite(getDrawable(bSpriteID));
+//
+//        bEnemy.setxPos(screenWidth / 3);
+//        bEnemy.setyPos(screenHeight - bEnemy.getSprite().getIntrinsicHeight());
+//        bView = new BeastView(this);
+//        bEnemy.setSpriteData(bView);
+//        gameLayout.addView(bView);
 
-        gameScreenModel.addEnemy(fsEnemy1);
-        gameScreenModel.addEnemy(fsEnemy2);
-
-        gameLayout.addView(fsView1);
-        gameLayout.addView(fsView2);
-
-        //Initialize GhostView
-        int gSpriteID = R.drawable.ghost;
-        gEnemy.setSprite(getDrawable(gSpriteID));
-
-        gEnemy.setxPos(screenWidth / 3);
-        gEnemy.setyPos(screenHeight - gEnemy.getSprite().getIntrinsicHeight());
-        gameScreenModel.setGhostView(gView);
-        gEnemy.setSpriteData(gView);
-        gameLayout.addView(gView);
-
-        //Initialize DemonView
-        int dSpriteID = R.drawable.demon;
-        dEnemy.setSprite(getDrawable(dSpriteID));
-
-        dEnemy.setxPos(screenWidth / 3);
-        dEnemy.setyPos(screenHeight - dEnemy.getSprite().getIntrinsicHeight());
-        //dView = new DemonView(this);
-        gameScreenModel.setDemonView(dView);
-        dEnemy.setSpriteData(dView);
-        gameLayout.addView(dView);
-
-        //Initialize BeastView
-        int bSpriteID = R.drawable.beast;
-        bEnemy.setSprite(getDrawable(bSpriteID));
-
-        bEnemy.setxPos(screenWidth / 3);
-        bEnemy.setyPos(screenHeight - bEnemy.getSprite().getIntrinsicHeight());
-       // bView = new BeastView(this);
-        gameScreenModel.setBeastView(bView);
-        bEnemy.setSpriteData(bView);
-        gameLayout.addView(bView);
 
         //Retrieve Player attributes
         name = player.getUsername();
@@ -193,12 +159,6 @@ public class GameScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //NEW CODE
-    public void clearEnemies() {
-        for (View enemy : currentEnemies) {
-            gameLayout.removeView(enemy);
-        }
-    }
 
     // NEW CODE
     public void updateHealth(int healthPoints) {

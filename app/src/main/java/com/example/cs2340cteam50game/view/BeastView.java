@@ -36,7 +36,7 @@ public class BeastView extends View {
             super(context);
 
             this.beastEnemy = beastEnemy;
-            int spriteID = R.drawable.fireskull;
+            int spriteID = R.drawable.beast;
             Drawable sprite = getResources().getDrawable(spriteID);
             beastEnemy.setSprite(sprite);
             Bitmap temp = ((BitmapDrawable) beastEnemy.getSprite()).getBitmap();
