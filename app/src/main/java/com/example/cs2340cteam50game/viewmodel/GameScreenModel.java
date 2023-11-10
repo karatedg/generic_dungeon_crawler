@@ -1,8 +1,11 @@
 package com.example.cs2340cteam50game.viewmodel;
 
+import com.example.cs2340cteam50game.model.Enemy;
 import com.example.cs2340cteam50game.model.Rectangle;
 import android.os.CountDownTimer;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
@@ -15,16 +18,20 @@ import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.GhostView;
 import com.example.cs2340cteam50game.view.PlayerView;
 
+import java.util.ArrayList;
+
 public class GameScreenModel {
 
     private final PlayerClass player = PlayerClass.getPlayer();
     private PlayerView playerView;
+
     private FireSkullView fireSkullView;
     private GhostView ghostView;
     private DemonView demonView;
     private BeastView beastView;
+
     private ImageView map;
-    private GameScreen game;
+    private GameScreen gameScreen;
 
     private CountDownTimer timer;
 
@@ -66,6 +73,14 @@ public class GameScreenModel {
         new Rectangle(1980, 0, 2010, 80),
         new Rectangle(1801, 0, 1979, 20),
     };
+
+
+    //TODO: ADDED A RECTANGLE ARRAYLIST TO HOLD THE CURRENT ENEMY HIT BOXES
+    private ArrayList<Enemy> currentEnemies = new ArrayList<>();
+
+
+
+
     private Rectangle[] currentWallSet = map1Walls;
 
     private Rectangle exitBox = currentWallSet[currentWallSet.length - 1];
@@ -112,7 +127,7 @@ public class GameScreenModel {
         player.moveDown();
     }
 
-    //Collision Handler
+    //Collision Handler for Walls & Rooms
     public int checkCollisions(double newX, double newY, int direction) {
 
         Rectangle playerHitBox = new Rectangle((float) newX, (float) newY,
@@ -132,12 +147,35 @@ public class GameScreenModel {
         }
         return 0;
     }
-    //Passes on the nextRoom call to the GameScreen which handles it
+
+    // Collision Handler for Enemies
+    public void checkEnemyCollisions(float xPos, float yPos, int direction) {
+        Rectangle playerHitBox = new Rectangle(xPos, yPos,
+                xPos + player.getSpriteWidth(),
+                yPos + player.getSpriteHeight());
+
+        for (Enemy enemy : currentEnemies) {
+            if (playerHitBox.intersectsWall(enemy.getHitBox(), direction)) {
+                player.takeDamage(enemy.getDamage());
+                player.setxPos(playerHitBox.getLeft());
+                player.setyPos(playerHitBox.getTop());
+                gameScreen.updateHealth(player.getHealthPoints());
+                break;
+            }
+        }
+    }
+
+
+    //TODO: CLEARS THE ENEMIES WHEN MOVING ROOMS
     public void nextRoom() {
+
+        gameScreen.clearEnemies();
+        currentEnemies.clear();
+
         if (currentRoom == 2) {
             player.setMovementStrategy(new NoSpeed());
             timer.cancel();
-            game.endGame();
+            gameScreen.endGame();
         } else {
             currentRoom++;
             setScreen(currentRoom);
@@ -181,7 +219,7 @@ public class GameScreenModel {
 
     //Sets the currently used GameScreen
     public void setGameScreen(GameScreen game) {
-        this.game = game;
+        this.gameScreen = game;
     }
 
     //Sets the currentMapView
@@ -237,6 +275,10 @@ public class GameScreenModel {
     }
 
 
+    // NEW CODE
+    public void addEnemy(Enemy enemy) {
+        currentEnemies.add(enemy);
+    }
 }
 
 

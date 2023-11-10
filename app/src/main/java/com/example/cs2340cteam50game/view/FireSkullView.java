@@ -4,19 +4,20 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.FireSkullCreator;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
+import com.example.cs2340cteam50game.model.Rectangle;
 
 
 public class FireSkullView extends View {
-    private FireSkullEnemy enemy;
+    private FireSkullEnemy fireSkull;
     private Bitmap fireSkullSprite;
-
     private float width;
     private float height;
 
@@ -28,37 +29,45 @@ public class FireSkullView extends View {
     }
     private float x;
     private float y;
+    private Paint paint;
 
-    private FireSkullCreator fsCreator = new FireSkullCreator();
-
-    public FireSkullView(Context context) {
+    //TODO: CHANGED THE CONSTRUCTOR SO IT TAKES IN AN ENEMY INSTEAD OF MAKING A NEW ONE
+    public FireSkullView(Context context, FireSkullEnemy fireSkull) {
         super(context);
-        enemy = (FireSkullEnemy) fsCreator.createEnemy();
+
+        //TODO: TAKES IN AN EXISTING FIRESKULL TO CREATE A VIEW FOR
+        this.fireSkull = fireSkull;
         int spriteID = R.drawable.fireskull;
         Drawable sprite = getResources().getDrawable(spriteID);
-        enemy.setSprite(sprite);
-        Bitmap temp = ((BitmapDrawable) enemy.getSprite()).getBitmap();
-        this.x = (float) enemy.getxPos();
-        this.y = (float) enemy.getyPos();
+        fireSkull.setSprite(sprite);
+        Bitmap temp = ((BitmapDrawable) fireSkull.getSprite()).getBitmap();
+        this.x = (float) fireSkull.getxPos();
+        this.y = (float) fireSkull.getyPos();
         fireSkullSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
                 (int) (1.5 * temp.getHeight()), true);
         width = fireSkullSprite.getWidth();
         height = fireSkullSprite.getHeight();
-        enemy.setSpriteWidth(width);
-        enemy.setSpriteHeight(height);
+        fireSkull.setSpriteWidth(width);
+        fireSkull.setSpriteHeight(height);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(3);
+        paint.setColor(Color.RED);
+
+        canvas.drawRect(x, y, x + width, y + height, paint);
         canvas.drawBitmap(fireSkullSprite, x, y, null);
     }
 
     public void updatePosition() {
-        this.x = (float) enemy.getxPos();
-        this.y = (float) enemy.getyPos();
+        this.x = (float) fireSkull.getxPos();
+        this.y = (float) fireSkull.getyPos();
         invalidate();
     }
-
 
 }

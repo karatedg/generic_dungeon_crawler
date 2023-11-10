@@ -103,6 +103,7 @@ public class PlayerClass {
                 xPos += distance;
             }
         }
+        gameScreenModel.checkEnemyCollisions((float) xPos, (float) yPos, 0);
     }
 
     /** Move y by given distance
@@ -122,6 +123,7 @@ public class PlayerClass {
                 yPos += distance;
             }
         }
+        gameScreenModel.checkEnemyCollisions((float) xPos, (float) yPos, 1);
     }
 
 
@@ -297,4 +299,10 @@ public class PlayerClass {
     }
 
 
+    public void takeDamage(int damage) {
+        healthPoints -= damage;
+        if (healthPoints < 0) {
+            healthPoints = 0;
+        }
+    }
 }

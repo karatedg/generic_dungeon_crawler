@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.content.Intent;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -24,9 +25,12 @@ import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
+import java.util.ArrayList;
+
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
+
     private FireSkullView fsView;
     private GhostView gView;
     private DemonView dView;
@@ -35,6 +39,10 @@ public class GameScreen extends AppCompatActivity {
     private int currentScreen = 0;
     private PlayerClass player;
     private String name;
+    RelativeLayout gameLayout = null;
+    TextView healthValueDisplay = null;
+
+    ArrayList<View> currentEnemies = new ArrayList<>();
 
     private FireSkullCreator fsCreator = new FireSkullCreator();
     private FireSkullEnemy fsEnemy = (FireSkullEnemy) fsCreator.createEnemy();
@@ -55,7 +63,7 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setGameScreen(this);
 
         //Get ids for display elements
-        TextView healthValueDisplay = (TextView) findViewById(R.id.healthValue);
+        healthValueDisplay = (TextView) findViewById(R.id.healthValue);
         TextView playerNameDisplay = (TextView) findViewById(R.id.playerName);
         TextView difficultyDisplay = (TextView) findViewById(R.id.difficultySetting);
         TextView scoreDisplay = (TextView) findViewById(R.id.scoreText);
@@ -65,10 +73,11 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setMap(map);
         gameScreenModel.setScreen(currentScreen);
 
-        //
+        //Get Screen Dimensions
         double screenWidth = getResources().getDisplayMetrics().widthPixels;
         double screenHeight = getResources().getDisplayMetrics().heightPixels;
 
+        //Initialize Player
         player = PlayerClass.getPlayer();
         player.setGameScreenModel(gameScreenModel);
         player.setScreenWidth(screenWidth);
@@ -77,12 +86,11 @@ public class GameScreen extends AppCompatActivity {
         player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
 
         //Initialize PlayerView
-        RelativeLayout gameLayout = findViewById(R.id.gameLayout);
+        gameLayout = findViewById(R.id.gameLayout);
         playerView = new PlayerView(this);
         gameScreenModel.setPlayerView(playerView);
         player.setSpriteData(playerView);
         gameLayout.addView(playerView);
-
         //Initialize FireSkullView
         int fSpriteID = R.drawable.fireskull;
         fsEnemy.setSprite(getDrawable(fSpriteID));
@@ -93,6 +101,32 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setFireSkullView(fsView);
         fsEnemy.setSpriteData(fsView);
         gameLayout.addView(fsView);
+
+        //Initialize a FireSkull & FireSkullView
+        FireSkullEnemy fsEnemy1 = (FireSkullEnemy) fsCreator.createEnemy();
+        FireSkullEnemy fsEnemy2 = (FireSkullEnemy) fsCreator.createEnemy();
+        int spriteID = R.drawable.fireskull;
+        fsEnemy1.setSprite(getDrawable(spriteID));
+        fsEnemy2.setSprite(getDrawable(spriteID));
+        fsEnemy1.setxPos(screenWidth * (7.0 / 10.0));
+        fsEnemy1.setyPos(screenHeight / 3);
+        fsEnemy2.setxPos(screenWidth * (4.0 / 10.0));
+        fsEnemy2.setyPos(screenHeight / 3);
+
+        //TODO: CONSTRUCTOR FOR FIRESKULLVIEW TAKES IN A FIRESKULL
+        FireSkullView fsView1 = new FireSkullView(this, fsEnemy1);
+        FireSkullView fsView2 = new FireSkullView(this, fsEnemy2);
+        fsEnemy1.setSpriteData(fsView1);
+        fsEnemy2.setSpriteData(fsView2);
+
+        currentEnemies.add(fsView1);
+        currentEnemies.add(fsView2);
+
+        gameScreenModel.addEnemy(fsEnemy1);
+        gameScreenModel.addEnemy(fsEnemy2);
+
+        gameLayout.addView(fsView1);
+        gameLayout.addView(fsView2);
 
         //Initialize GhostView
         int gSpriteID = R.drawable.ghost;
@@ -172,4 +206,19 @@ public class GameScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //NEW CODE
+    public void clearEnemies() {
+        for (View enemy : currentEnemies) {
+            gameLayout.removeView(enemy);
+        }
+    }
+
+    // NEW CODE
+    public void updateHealth(int healthPoints) {
+        if (healthPoints == 0) {
+            healthValueDisplay.setText("KO");
+        } else {
+            healthValueDisplay.setText(Integer.toString(healthPoints));
+        }
+    }
 }
