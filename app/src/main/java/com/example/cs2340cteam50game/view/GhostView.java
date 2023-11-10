@@ -9,12 +9,13 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
+import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.GhostCreator;
 import com.example.cs2340cteam50game.model.GhostEnemy;
 
 
 public class GhostView extends View {
-    private GhostEnemy enemy;
+    private GhostEnemy ghostEnemy;
     private Bitmap ghostSprite;
 
     private float width;
@@ -31,21 +32,23 @@ public class GhostView extends View {
 
     private GhostCreator ghostCreator = new GhostCreator();
 
-    public GhostView(Context context) {
-        super(context);
-        enemy = (GhostEnemy) ghostCreator.createEnemy();
-        int spriteID = R.drawable.ghost;
-        Drawable sprite = getResources().getDrawable(spriteID);
-        enemy.setSprite(sprite);
-        Bitmap temp = ((BitmapDrawable) enemy.getSprite()).getBitmap();
-        this.x = (float) enemy.getxPos();
-        this.y = (float) enemy.getyPos();
-        ghostSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
-                (int) (1.5 * temp.getHeight()), true);
-        width = ghostSprite.getWidth();
-        height = ghostSprite.getHeight();
-        enemy.setSpriteWidth(width);
-        enemy.setSpriteHeight(height);
+    public GhostView(Context context, GhostEnemy ghostEnemy) {
+            super(context);
+
+            //TODO: TAKES IN AN EXISTING FIRESKULL TO CREATE A VIEW FOR
+            this.ghostEnemy = ghostEnemy;
+            int spriteID = R.drawable.fireskull;
+            Drawable sprite = getResources().getDrawable(spriteID);
+            ghostEnemy.setSprite(sprite);
+            Bitmap temp = ((BitmapDrawable) ghostEnemy.getSprite()).getBitmap();
+            this.x = (float) ghostEnemy.getxPos();
+            this.y = (float) ghostEnemy.getyPos();
+            ghostSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
+                    (int) (1.5 * temp.getHeight()), true);
+            width = ghostSprite.getWidth();
+            height = ghostSprite.getHeight();
+            ghostEnemy.setSpriteWidth(width);
+            ghostEnemy.setSpriteHeight(height);
     }
 
     @Override
@@ -55,8 +58,8 @@ public class GhostView extends View {
     }
 
     public void updatePosition() {
-        this.x = (float) enemy.getxPos();
-        this.y = (float) enemy.getyPos();
+        this.x = (float) ghostEnemy.getxPos();
+        this.y = (float) ghostEnemy.getyPos();
         invalidate();
     }
 

@@ -30,8 +30,7 @@ import java.util.ArrayList;
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
-
-    private FireSkullView fsView;
+    private FireSkullCreator fsCreator = new FireSkullCreator();
     private GhostView gView;
     private DemonView dView;
     private BeastView bView;
@@ -39,12 +38,9 @@ public class GameScreen extends AppCompatActivity {
     private int currentScreen = 0;
     private PlayerClass player;
     private String name;
+    ArrayList<View> currentEnemies = new ArrayList<>();
     RelativeLayout gameLayout = null;
     TextView healthValueDisplay = null;
-
-    ArrayList<View> currentEnemies = new ArrayList<>();
-
-    private FireSkullCreator fsCreator = new FireSkullCreator();
     private FireSkullEnemy fsEnemy = (FireSkullEnemy) fsCreator.createEnemy();
     private GhostCreator gCreator = new GhostCreator();
     private GhostEnemy gEnemy = (GhostEnemy) gCreator.createEnemy();
@@ -95,8 +91,6 @@ public class GameScreen extends AppCompatActivity {
         int fSpriteID = R.drawable.fireskull;
         fsEnemy.setSprite(getDrawable(fSpriteID));
 
-
-        //Initialize a FireSkull & FireSkullView
         FireSkullEnemy fsEnemy1 = (FireSkullEnemy) fsCreator.createEnemy();
         FireSkullEnemy fsEnemy2 = (FireSkullEnemy) fsCreator.createEnemy();
         int spriteID = R.drawable.fireskull;
@@ -128,7 +122,6 @@ public class GameScreen extends AppCompatActivity {
 
         gEnemy.setxPos(screenWidth / 3);
         gEnemy.setyPos(screenHeight - gEnemy.getSprite().getIntrinsicHeight());
-        gView = new GhostView(this);
         gameScreenModel.setGhostView(gView);
         gEnemy.setSpriteData(gView);
         gameLayout.addView(gView);
@@ -139,7 +132,7 @@ public class GameScreen extends AppCompatActivity {
 
         dEnemy.setxPos(screenWidth / 3);
         dEnemy.setyPos(screenHeight - dEnemy.getSprite().getIntrinsicHeight());
-        dView = new DemonView(this);
+        //dView = new DemonView(this);
         gameScreenModel.setDemonView(dView);
         dEnemy.setSpriteData(dView);
         gameLayout.addView(dView);
@@ -150,7 +143,7 @@ public class GameScreen extends AppCompatActivity {
 
         bEnemy.setxPos(screenWidth / 3);
         bEnemy.setyPos(screenHeight - bEnemy.getSprite().getIntrinsicHeight());
-        bView = new BeastView(this);
+       // bView = new BeastView(this);
         gameScreenModel.setBeastView(bView);
         bEnemy.setSpriteData(bView);
         gameLayout.addView(bView);

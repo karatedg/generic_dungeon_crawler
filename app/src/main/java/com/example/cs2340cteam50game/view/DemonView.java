@@ -31,10 +31,10 @@ public class DemonView extends View {
 
     private DemonCreator demonCreator = new DemonCreator();
 
-    public DemonView(Context context) {
+    public DemonView(Context context, DemonEnemy enemy) {
         super(context);
-        enemy = (DemonEnemy) demonCreator.createEnemy();
-        int spriteID = R.drawable.demon;
+        this.enemy = enemy;
+        int spriteID = R.drawable.fireskull;
         Drawable sprite = getResources().getDrawable(spriteID);
         enemy.setSprite(sprite);
         Bitmap temp = ((BitmapDrawable) enemy.getSprite()).getBitmap();
