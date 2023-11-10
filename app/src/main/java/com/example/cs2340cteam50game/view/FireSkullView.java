@@ -28,11 +28,9 @@ public class FireSkullView extends View {
     private float x;
     private float y;
 
-    //TODO: CHANGED THE CONSTRUCTOR SO IT TAKES IN AN ENEMY INSTEAD OF MAKING A NEW ONE
     public FireSkullView(Context context, FireSkullEnemy fireSkull) {
         super(context);
 
-        //TODO: TAKES IN AN EXISTING FIRESKULL TO CREATE A VIEW FOR
         this.fireSkull = fireSkull;
         int spriteID = R.drawable.fireskull;
         Drawable sprite = getResources().getDrawable(spriteID);

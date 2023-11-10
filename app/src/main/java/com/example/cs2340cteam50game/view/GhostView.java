@@ -9,7 +9,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.GhostCreator;
 import com.example.cs2340cteam50game.model.GhostEnemy;
 
@@ -33,20 +32,20 @@ public class GhostView extends View {
     private GhostCreator ghostCreator = new GhostCreator();
 
     public GhostView(Context context, GhostEnemy ghostEnemy) {
-            super(context);
-            this.ghostEnemy = ghostEnemy;
-            int spriteID = R.drawable.ghost;
-            Drawable sprite = getResources().getDrawable(spriteID);
-            ghostEnemy.setSprite(sprite);
-            Bitmap temp = ((BitmapDrawable) ghostEnemy.getSprite()).getBitmap();
-            this.x = (float) ghostEnemy.getxPos();
-            this.y = (float) ghostEnemy.getyPos();
-            ghostSprite = Bitmap.createScaledBitmap(temp, (int) (3 * temp.getWidth()),
-                    (int) (3 * temp.getHeight()), true);
-            width = ghostSprite.getWidth();
-            height = ghostSprite.getHeight();
-            ghostEnemy.setSpriteWidth(width);
-            ghostEnemy.setSpriteHeight(height);
+        super(context);
+        this.ghostEnemy = ghostEnemy;
+        int spriteID = R.drawable.ghost;
+        Drawable sprite = getResources().getDrawable(spriteID);
+        ghostEnemy.setSprite(sprite);
+        Bitmap temp = ((BitmapDrawable) ghostEnemy.getSprite()).getBitmap();
+        this.x = (float) ghostEnemy.getxPos();
+        this.y = (float) ghostEnemy.getyPos();
+        ghostSprite = Bitmap.createScaledBitmap(temp, (int) (3 * temp.getWidth()),
+                (int) (3 * temp.getHeight()), true);
+        width = ghostSprite.getWidth();
+        height = ghostSprite.getHeight();
+        ghostEnemy.setSpriteWidth(width);
+        ghostEnemy.setSpriteHeight(height);
     }
 
     @Override

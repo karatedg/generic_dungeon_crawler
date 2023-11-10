@@ -29,10 +29,7 @@ public class Rectangle {
     public float getBottom() {
         return bottom;
     }
-
-
-
-    //TODO: ALLOWS FOR UPDATING EXISTING RECTANGLE
+    
     public void updatePosition(float left, float right, float top, float bottom) {
         this.left = left;
         this.top = top;

@@ -5,7 +5,7 @@ package com.example.cs2340cteam50game.model;
 import android.graphics.drawable.Drawable;
 import com.example.cs2340cteam50game.view.FireSkullView;
 
-public class FireSkullEnemy implements Enemy{
+public class FireSkullEnemy implements Enemy {
     private Drawable sprite;
     private double xPos;
     private double yPos;

@@ -5,7 +5,7 @@ package com.example.cs2340cteam50game.model;
 import android.graphics.drawable.Drawable;
 import com.example.cs2340cteam50game.view.GhostView;
 
-public class GhostEnemy implements Enemy{
+public class GhostEnemy implements Enemy {
     private Drawable sprite;
     private double xPos;
     private double yPos;
@@ -39,9 +39,13 @@ public class GhostEnemy implements Enemy{
     }
 
     @Override
-    public Drawable getSprite() {return sprite;}
+    public Drawable getSprite() {
+        return sprite;
+    }
 
-    public void setSprite(Drawable x) {sprite = x;}
+    public void setSprite(Drawable x) {
+        sprite = x;
+    }
 
     public void setSpriteData(GhostView ghostView) {
         this.spriteWidth = ghostView.getSpriteWidth();
@@ -57,14 +61,18 @@ public class GhostEnemy implements Enemy{
         spriteWidth = width;
     }
 
-    public float getSpriteWidth() {return spriteWidth;}
+    public float getSpriteWidth() {
+        return spriteWidth;
+    }
 
     @Override
     public void setSpriteHeight(float height) {
         spriteHeight = height;
     }
 
-    public float getSpriteHeight() {return spriteHeight;}
+    public float getSpriteHeight() {
+        return spriteHeight;
+    }
 
     @Override
     public double getxPos() {
@@ -86,7 +94,11 @@ public class GhostEnemy implements Enemy{
         return damage;
     }
 
-    public void setxPos(double x) {xPos = x;}
+    public void setxPos(double x) {
+        xPos = x;
+    }
 
-    public void setyPos(double y) {yPos = y;}
+    public void setyPos(double y) {
+        yPos = y;
+    }
 }

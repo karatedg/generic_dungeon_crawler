@@ -1,7 +1,5 @@
 package com.example.cs2340cteam50game.model;
 
-import com.example.cs2340cteam50game.model.DemonEnemy;
-
 public class DemonCreator extends EnemyCreator {
 
     public DemonCreator() {

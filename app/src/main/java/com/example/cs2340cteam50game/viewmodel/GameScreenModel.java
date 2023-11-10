@@ -91,8 +91,6 @@ public class GameScreenModel {
         new Rectangle(1801, 0, 1979, 20),
     };
 
-
-    //TODO: ADDED A RECTANGLE ARRAYLIST TO HOLD THE CURRENT ENEMY HIT BOXES
     private ArrayList<Enemy> currentEnemies = new ArrayList<>();
     private ArrayList<View> enemyViews = new ArrayList<>();
 

@@ -11,7 +11,6 @@ import android.view.View;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.BeastCreator;
 import com.example.cs2340cteam50game.model.BeastEnemy;
-import com.example.cs2340cteam50game.model.FireSkullEnemy;
 
 
 public class BeastView extends View {
@@ -33,21 +32,20 @@ public class BeastView extends View {
     private BeastCreator beastCreator = new BeastCreator();
 
     public BeastView(Context context, BeastEnemy beastEnemy) {
-            super(context);
-
-            this.beastEnemy = beastEnemy;
-            int spriteID = R.drawable.beast;
-            Drawable sprite = getResources().getDrawable(spriteID);
-            beastEnemy.setSprite(sprite);
-            Bitmap temp = ((BitmapDrawable) beastEnemy.getSprite()).getBitmap();
-            this.x = (float) beastEnemy.getxPos();
-            this.y = (float) beastEnemy.getyPos();
-            beastSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
-                    (int) (1.5 * temp.getHeight()), true);
-            width = beastSprite.getWidth();
-            height = beastSprite.getHeight();
-            beastEnemy.setSpriteWidth(width);
-            beastEnemy.setSpriteHeight(height);
+        super(context);
+        this.beastEnemy = beastEnemy;
+        int spriteID = R.drawable.beast;
+        Drawable sprite = getResources().getDrawable(spriteID);
+        beastEnemy.setSprite(sprite);
+        Bitmap temp = ((BitmapDrawable) beastEnemy.getSprite()).getBitmap();
+        this.x = (float) beastEnemy.getxPos();
+        this.y = (float) beastEnemy.getyPos();
+        beastSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
+                (int) (1.5 * temp.getHeight()), true);
+        width = beastSprite.getWidth();
+        height = beastSprite.getHeight();
+        beastEnemy.setSpriteWidth(width);
+        beastEnemy.setSpriteHeight(height);
     }
 
     @Override
