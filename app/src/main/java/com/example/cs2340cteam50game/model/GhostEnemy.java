@@ -14,6 +14,7 @@ public class GhostEnemy implements Enemy{
     private double movementSpeed;
     private double healthPoints;
     private int damage = 25;
+    private Rectangle hitBox;
 
     public GhostEnemy() {
         this.xPos = 0.0;
@@ -45,6 +46,10 @@ public class GhostEnemy implements Enemy{
     public void setSpriteData(GhostView ghostView) {
         this.spriteWidth = ghostView.getSpriteWidth();
         this.spriteHeight = ghostView.getSpriteHeight();
+
+        // NEW CODE
+        this.hitBox = new Rectangle((float) xPos, (float) yPos,
+                (float) xPos + spriteWidth, (float) yPos + spriteHeight);
     }
 
     @Override
@@ -69,6 +74,16 @@ public class GhostEnemy implements Enemy{
     @Override
     public double getyPos() {
         return yPos;
+    }
+
+    @Override
+    public Rectangle getHitBox() {
+        return hitBox;
+    }
+
+    @Override
+    public int getDamage() {
+        return damage;
     }
 
     public void setxPos(double x) {xPos = x;}
