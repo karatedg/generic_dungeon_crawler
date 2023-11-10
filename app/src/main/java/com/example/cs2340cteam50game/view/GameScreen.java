@@ -11,8 +11,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.model.BeastCreator;
+import com.example.cs2340cteam50game.model.BeastEnemy;
+import com.example.cs2340cteam50game.model.DemonCreator;
+import com.example.cs2340cteam50game.model.DemonEnemy;
 import com.example.cs2340cteam50game.model.FireSkullCreator;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
+import com.example.cs2340cteam50game.model.GhostCreator;
+import com.example.cs2340cteam50game.model.GhostEnemy;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.Score;
@@ -24,6 +30,11 @@ import java.util.ArrayList;
 
 public class GameScreen extends AppCompatActivity {
     private PlayerView playerView;
+
+    private FireSkullView fsView;
+    private GhostView gView;
+    private DemonView dView;
+    private BeastView bView;
     private GameScreenModel gameScreenModel;
     private int currentScreen = 0;
     private PlayerClass player;
@@ -34,6 +45,13 @@ public class GameScreen extends AppCompatActivity {
     ArrayList<View> currentEnemies = new ArrayList<>();
 
     private FireSkullCreator fsCreator = new FireSkullCreator();
+    private FireSkullEnemy fsEnemy = (FireSkullEnemy) fsCreator.createEnemy();
+    private GhostCreator gCreator = new GhostCreator();
+    private GhostEnemy gEnemy = (GhostEnemy) gCreator.createEnemy();
+    private BeastCreator bCreator = new BeastCreator();
+    private BeastEnemy bEnemy = (BeastEnemy) bCreator.createEnemy();
+    private DemonCreator dCreator = new DemonCreator();
+    private DemonEnemy dEnemy = (DemonEnemy) dCreator.createEnemy();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +91,16 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setPlayerView(playerView);
         player.setSpriteData(playerView);
         gameLayout.addView(playerView);
+        //Initialize FireSkullView
+        int fSpriteID = R.drawable.fireskull;
+        fsEnemy.setSprite(getDrawable(fSpriteID));
+
+        fsEnemy.setxPos(screenWidth / 3);
+        fsEnemy.setyPos(screenHeight - fsEnemy.getSprite().getIntrinsicHeight());
+        fsView = new FireSkullView(this);
+        gameScreenModel.setFireSkullView(fsView);
+        fsEnemy.setSpriteData(fsView);
+        gameLayout.addView(fsView);
 
         //Initialize a FireSkull & FireSkullView
         FireSkullEnemy fsEnemy1 = (FireSkullEnemy) fsCreator.createEnemy();
@@ -99,6 +127,39 @@ public class GameScreen extends AppCompatActivity {
 
         gameLayout.addView(fsView1);
         gameLayout.addView(fsView2);
+
+        //Initialize GhostView
+        int gSpriteID = R.drawable.ghost;
+        gEnemy.setSprite(getDrawable(gSpriteID));
+
+        gEnemy.setxPos(screenWidth / 3);
+        gEnemy.setyPos(screenHeight - gEnemy.getSprite().getIntrinsicHeight());
+        gView = new GhostView(this);
+        gameScreenModel.setGhostView(gView);
+        gEnemy.setSpriteData(gView);
+        gameLayout.addView(gView);
+
+        //Initialize DemonView
+        int dSpriteID = R.drawable.demon;
+        dEnemy.setSprite(getDrawable(dSpriteID));
+
+        dEnemy.setxPos(screenWidth / 3);
+        dEnemy.setyPos(screenHeight - dEnemy.getSprite().getIntrinsicHeight());
+        dView = new DemonView(this);
+        gameScreenModel.setDemonView(dView);
+        dEnemy.setSpriteData(dView);
+        gameLayout.addView(dView);
+
+        //Initialize BeastView
+        int bSpriteID = R.drawable.beast;
+        bEnemy.setSprite(getDrawable(bSpriteID));
+
+        bEnemy.setxPos(screenWidth / 3);
+        bEnemy.setyPos(screenHeight - bEnemy.getSprite().getIntrinsicHeight());
+        bView = new BeastView(this);
+        gameScreenModel.setBeastView(bView);
+        bEnemy.setSpriteData(bView);
+        gameLayout.addView(bView);
 
         //Retrieve Player attributes
         name = player.getUsername();
