@@ -258,7 +258,7 @@ public class GameScreenModel {
         gameLayout.addView(fsView);
 
         EnemyMovementHandler fsMove = new EnemyMovementHandler(fsEnemy, fsView, player,
-                gameScreen, 0);
+                gameScreen, 1);
         eMovementHandlers.add(fsMove);
 
         enemyViews.add(fsView);
@@ -275,7 +275,7 @@ public class GameScreenModel {
         gameLayout.addView(bView);
 
         EnemyMovementHandler bMove = new EnemyMovementHandler(beastEnemy, bView, player,
-                gameScreen, 1);
+                gameScreen, 0);
         eMovementHandlers.add(bMove);
 
         enemyViews.add(bView);
@@ -293,18 +293,28 @@ public class GameScreenModel {
         beastEnemy.setSpriteData(bView);
 
         gameLayout.addView(bView);
+
+        EnemyMovementHandler bMove = new EnemyMovementHandler(beastEnemy, bView, player,
+                gameScreen, 0);
+        eMovementHandlers.add(bMove);
+
         enemyViews.add(bView);
         currentEnemies.add(beastEnemy);
 
         //Add Demon
         DemonEnemy demonEnemy = (DemonEnemy) dCreator.createEnemy();
         demonEnemy.setSprite(dSprite);
-        demonEnemy.setxPos(screenWidth * (4.5 / 10.0));
-        demonEnemy.setyPos(screenHeight * (1.25 / 10.0));
+        demonEnemy.setxPos(screenWidth * (3.5 / 10.0));
+        demonEnemy.setyPos(screenHeight * (1 / 10.0));
         DemonView dView = new DemonView(gameScreen, demonEnemy);
         demonEnemy.setSpriteData(dView);
 
         gameLayout.addView(dView);
+
+        EnemyMovementHandler dMove = new EnemyMovementHandler(demonEnemy, dView, player,
+                gameScreen, 3);
+        eMovementHandlers.add(dMove);
+
         enemyViews.add(dView);
         currentEnemies.add(demonEnemy);
     }
@@ -320,6 +330,11 @@ public class GameScreenModel {
         demonEnemy.setSpriteData(dView);
 
         gameLayout.addView(dView);
+
+        EnemyMovementHandler dMove = new EnemyMovementHandler(demonEnemy, dView, player,
+                gameScreen, 3);
+        eMovementHandlers.add(dMove);
+
         enemyViews.add(dView);
         currentEnemies.add(demonEnemy);
 
@@ -332,6 +347,11 @@ public class GameScreenModel {
         ghostEnemy.setSpriteData(gView);
 
         gameLayout.addView(gView);
+
+        EnemyMovementHandler gMove = new EnemyMovementHandler(ghostEnemy, gView, player,
+                gameScreen, 2);
+        eMovementHandlers.add(dMove);
+
         enemyViews.add(gView);
         currentEnemies.add(ghostEnemy);
     }

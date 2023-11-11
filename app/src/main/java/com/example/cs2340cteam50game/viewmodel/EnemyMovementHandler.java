@@ -32,31 +32,38 @@ public class EnemyMovementHandler {
         case 1:
             movementStyle = moveVertical();
             break;
+        case 2:
+            movementStyle = moveCircular();
+            break;
+        case 3:
+            movementStyle = moveDiagonal();
+            break;
         default:
-
         }
         movementClock = new Timer();
-        movementClock.scheduleAtFixedRate(movementStyle, 0, 150);
+        movementClock.scheduleAtFixedRate(movementStyle, 0, 100);
     }
+
+
 
     private TimerTask moveHorizontal() {
 
         TimerTask moveHorizontal = new TimerTask() {
             private int stepsLeft = 0;
-            private int stepsRight = 60;
+            private int stepsRight = 30;
 
             @Override
             public void run() {
-                if (stepsRight < 100) {
+                if (stepsRight < 60) {
                     enemy.move(5, 0);
                     stepsRight++;
-                    if (stepsRight == 100) {
+                    if (stepsRight == 60) {
                         stepsLeft = 0;
                     }
-                } else if (stepsLeft < 100) {
+                } else if (stepsLeft < 60) {
                     enemy.move(-5, 0);
                     stepsLeft++;
-                    if (stepsLeft == 100) {
+                    if (stepsLeft == 60) {
                         stepsRight = 0;
                     }
                 }
@@ -67,6 +74,8 @@ public class EnemyMovementHandler {
 
         return moveHorizontal;
     }
+
+
 
     private TimerTask moveVertical() {
 
@@ -95,6 +104,68 @@ public class EnemyMovementHandler {
         };
         return moveVertical;
     }
+
+
+
+    private TimerTask moveCircular() {
+        TimerTask moveCircular = new TimerTask() {
+            private double angle = 30;
+            private double radius = 10;
+
+            @Override
+            public void run() {
+                double x = radius * Math.cos(Math.toRadians(angle));
+                double y = radius * Math.sin(Math.toRadians(angle));
+
+                enemy.move((int) x, (int) y);
+
+                angle += 10;
+
+                checkPlayerCollision(0);
+                checkPlayerCollision(1);
+                enemyView.updatePosition();
+            }
+        };
+        return moveCircular;
+    }
+
+    private TimerTask moveDiagonal() {
+        TimerTask moveDiagonal = new TimerTask() {
+            private int xDirection = 1;
+            private int yDirection = 1;
+            private int xStep = 5;
+            private int yStep = 5;
+            private int maxX = 100;
+            private int maxY = 100;
+            private int minX = 0;
+            private int minY = 0;
+
+            private int currentX = minX;
+            private int currentY = minY;
+
+            @Override
+            public void run() {
+                enemy.move(xStep * xDirection, yStep * yDirection);
+
+                currentX += xStep * xDirection;
+                currentY += yStep * yDirection;
+
+                if (currentX >= maxX || currentX <= minX) {
+                    xDirection *= -1; // Change x direction when reaching boundaries
+                }
+
+                if (currentY >= maxY || currentY <= minY) {
+                    yDirection *= -1; // Change y direction when reaching boundaries
+                }
+
+                checkPlayerCollision(0);
+                checkPlayerCollision(1);
+                enemyView.updatePosition();
+            }
+        };
+        return moveDiagonal;
+    }
+
 
 
     // Collision Handler for Enemy With Player

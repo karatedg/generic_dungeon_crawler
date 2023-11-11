@@ -53,7 +53,7 @@ public class DemonEnemy implements Enemy {
 
         // NEW CODE
         this.hitBox = new Rectangle((float) xPos, (float) yPos,
-                (float) xPos + spriteWidth, (float) yPos + spriteHeight);
+                (float) xPos + spriteWidth - 60, (float) yPos + spriteHeight);
     }
 
     @Override

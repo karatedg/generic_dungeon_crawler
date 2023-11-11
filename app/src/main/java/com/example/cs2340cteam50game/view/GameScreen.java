@@ -121,7 +121,11 @@ public class GameScreen extends AppCompatActivity {
     // NEW CODE
     public void updateHealth(int healthPoints) {
         if (healthPoints == 0) {
-            healthValueDisplay.setText("KO");
+            //healthValueDisplay.setText("KO");
+            if(!player.isDead()) {
+                player.setDead(true);
+                endGame();
+            }
         } else {
             healthValueDisplay.setText(Integer.toString(healthPoints));
         }
