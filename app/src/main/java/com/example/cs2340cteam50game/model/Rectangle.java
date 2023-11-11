@@ -18,17 +18,11 @@ public class Rectangle {
         return left;
     }
 
-    public float getRight() {
-        return right;
-    }
 
     public float getTop() {
         return top;
     }
 
-    public float getBottom() {
-        return bottom;
-    }
 
     public void updatePosition(double stepX, double stepY) {
         left += stepX;
@@ -36,8 +30,6 @@ public class Rectangle {
         top += stepY;
         bottom += stepY;
     }
-
-    //
 
     public boolean intersectsWall(Rectangle other, int direction) {
         if (this.right < other.left || other.right < this.left) {
