@@ -13,4 +13,5 @@ public interface Enemy {
     abstract double getyPos();
     abstract Rectangle getHitBox();
     abstract int getDamage();
+    abstract void move(int stepX, int stepY);
 }

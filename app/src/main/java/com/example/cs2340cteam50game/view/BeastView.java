@@ -13,7 +13,7 @@ import com.example.cs2340cteam50game.model.BeastCreator;
 import com.example.cs2340cteam50game.model.BeastEnemy;
 
 
-public class BeastView extends View {
+public class BeastView extends View implements EnemyView {
     private BeastEnemy beastEnemy;
     private Bitmap beastSprite;
 
@@ -40,8 +40,8 @@ public class BeastView extends View {
         Bitmap temp = ((BitmapDrawable) beastEnemy.getSprite()).getBitmap();
         this.x = (float) beastEnemy.getxPos();
         this.y = (float) beastEnemy.getyPos();
-        beastSprite = Bitmap.createScaledBitmap(temp, (int) (1.5 * temp.getWidth()),
-                (int) (1.5 * temp.getHeight()), true);
+        beastSprite = Bitmap.createScaledBitmap(temp, (int) (2 * temp.getWidth()),
+                (int) (2 * temp.getHeight()), true);
         width = beastSprite.getWidth();
         height = beastSprite.getHeight();
         beastEnemy.setSpriteWidth(width);

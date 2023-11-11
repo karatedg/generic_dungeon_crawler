@@ -101,4 +101,10 @@ public class DemonEnemy implements Enemy {
     public void setyPos(double y) {
         yPos = y;
     }
+
+    public void move(int stepX, int stepY) {
+        xPos += stepX;
+        yPos += stepY;
+        hitBox.updatePosition(stepX, stepY);
+    }
 }

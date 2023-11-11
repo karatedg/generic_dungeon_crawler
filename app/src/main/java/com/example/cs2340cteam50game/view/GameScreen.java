@@ -126,4 +126,8 @@ public class GameScreen extends AppCompatActivity {
             healthValueDisplay.setText(Integer.toString(healthPoints));
         }
     }
+
+    public void updatePlayer() {
+        playerView.updatePosition();
+    }
 }

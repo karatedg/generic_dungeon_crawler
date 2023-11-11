@@ -13,7 +13,7 @@ import com.example.cs2340cteam50game.model.DemonCreator;
 import com.example.cs2340cteam50game.model.DemonEnemy;
 
 
-public class DemonView extends View {
+public class DemonView extends View implements EnemyView {
     private DemonEnemy enemy;
     private Bitmap demonSprite;
 

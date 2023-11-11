@@ -100,4 +100,10 @@ public class BeastEnemy implements Enemy {
     public int getDamage() {
         return damage;
     }
+
+    public void move(int stepX, int stepY) {
+        xPos += stepX;
+        yPos += stepY;
+        hitBox.updatePosition(stepX, stepY);
+    }
 }

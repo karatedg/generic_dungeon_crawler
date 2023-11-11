@@ -93,6 +93,7 @@ public class GameScreenModel {
 
     private ArrayList<Enemy> currentEnemies = new ArrayList<>();
     private ArrayList<View> enemyViews = new ArrayList<>();
+    private ArrayList<EnemyMovementHandler> eMovementHandlers = new ArrayList<>();
 
     private Rectangle[] currentWallSet = map1Walls;
 
@@ -182,6 +183,10 @@ public class GameScreenModel {
 
         clearEnemies();
         currentEnemies.clear();
+        for (EnemyMovementHandler handler : eMovementHandlers) {
+            handler.stopMovement();
+        }
+        eMovementHandlers.clear();
 
         if (currentRoom == 2) {
             player.setMovementStrategy(new NoSpeed());
@@ -251,6 +256,11 @@ public class GameScreenModel {
         fsEnemy.setSpriteData(fsView);
 
         gameLayout.addView(fsView);
+
+        EnemyMovementHandler fsMove = new EnemyMovementHandler(fsEnemy, fsView, player,
+                gameScreen, 0);
+        eMovementHandlers.add(fsMove);
+
         enemyViews.add(fsView);
         currentEnemies.add(fsEnemy);
 
@@ -263,6 +273,11 @@ public class GameScreenModel {
         beastEnemy.setSpriteData(bView);
 
         gameLayout.addView(bView);
+
+        EnemyMovementHandler bMove = new EnemyMovementHandler(beastEnemy, bView, player,
+                gameScreen, 1);
+        eMovementHandlers.add(bMove);
+
         enemyViews.add(bView);
         currentEnemies.add(beastEnemy);
     }
