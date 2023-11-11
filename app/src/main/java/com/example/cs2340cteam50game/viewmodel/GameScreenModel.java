@@ -181,7 +181,6 @@ public class GameScreenModel {
 
     public void nextRoom() {
 
-        clearEnemies();
         currentEnemies.clear();
         for (EnemyMovementHandler handler : eMovementHandlers) {
             handler.stopMovement();
@@ -193,6 +192,7 @@ public class GameScreenModel {
             timer.cancel();
             gameScreen.endGame();
         } else {
+            clearEnemies();
             currentRoom++;
             setScreen(currentRoom);
             switch (currentRoom) {

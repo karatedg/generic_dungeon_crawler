@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.content.Intent;
 
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -121,8 +122,10 @@ public class GameScreen extends AppCompatActivity {
     // NEW CODE
     public void updateHealth(int healthPoints) {
         if (healthPoints == 0) {
-            //healthValueDisplay.setText("KO");
             if(!player.isDead()) {
+                player.setyPos(-30);
+                player.setxPos(-30);
+                playerView.setVisibility(View.INVISIBLE);
                 player.setDead(true);
                 endGame();
             }
