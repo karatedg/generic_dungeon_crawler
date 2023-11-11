@@ -6,7 +6,6 @@ import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Rectangle;
 import com.example.cs2340cteam50game.view.EnemyView;
 import com.example.cs2340cteam50game.view.GameScreen;
-import com.example.cs2340cteam50game.view.PlayerView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -43,8 +42,8 @@ public class EnemyMovementHandler {
     private TimerTask moveHorizontal() {
 
         TimerTask moveHorizontal = new TimerTask() {
-            int stepsLeft = 0;
-            int stepsRight = 60;
+            private int stepsLeft = 0;
+            private int stepsRight = 60;
 
             @Override
             public void run() {
@@ -72,8 +71,8 @@ public class EnemyMovementHandler {
     private TimerTask moveVertical() {
 
         TimerTask moveVertical = new TimerTask() {
-            int stepsUp = 0;
-            int stepsDown = 30;
+            private int stepsUp = 0;
+            private int stepsDown = 30;
 
             @Override
             public void run() {

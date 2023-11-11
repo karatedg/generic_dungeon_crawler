@@ -4,15 +4,13 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
-import com.example.cs2340cteam50game.model.Rectangle;
+
 
 
 public class FireSkullView extends View implements EnemyView {

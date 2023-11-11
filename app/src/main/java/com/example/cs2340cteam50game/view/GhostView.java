@@ -13,7 +13,7 @@ import com.example.cs2340cteam50game.model.GhostCreator;
 import com.example.cs2340cteam50game.model.GhostEnemy;
 
 
-public class GhostView extends View implements EnemyView{
+public class GhostView extends View implements EnemyView {
     private GhostEnemy ghostEnemy;
     private Bitmap ghostSprite;
 
