@@ -29,6 +29,8 @@ public class PlayerClass {
     private Drawable sprite;
     private int difficultyNum;
 
+    private boolean isDead;
+
     //In-Game:
     private GameScreenModel gameScreenModel;
 
@@ -53,6 +55,7 @@ public class PlayerClass {
         this.healthPoints = 0;
         this.sprite = null;
         this.difficultyNum = 1;
+        this.isDead = false;
     }
 
     /**
@@ -274,6 +277,14 @@ public class PlayerClass {
         } else if (difficultyNum == 3) {
             setHealthPoints(75);
         }
+    }
+
+    public boolean isDead() {
+        return isDead;
+    }
+
+    public void setDead(boolean dead) {
+        isDead = dead;
     }
 
     /**
