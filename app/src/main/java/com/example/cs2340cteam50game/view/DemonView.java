@@ -13,7 +13,7 @@ import com.example.cs2340cteam50game.model.DemonCreator;
 import com.example.cs2340cteam50game.model.DemonEnemy;
 
 
-public class DemonView extends View {
+public class DemonView extends View implements EnemyView {
     private DemonEnemy enemy;
     private Bitmap demonSprite;
 
@@ -34,7 +34,7 @@ public class DemonView extends View {
     public DemonView(Context context, DemonEnemy enemy) {
         super(context);
         this.enemy = enemy;
-        int spriteID = R.drawable.fireskull;
+        int spriteID = R.drawable.demon;
         Drawable sprite = getResources().getDrawable(spriteID);
         enemy.setSprite(sprite);
         Bitmap temp = ((BitmapDrawable) enemy.getSprite()).getBitmap();

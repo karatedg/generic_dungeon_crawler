@@ -4,18 +4,16 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
-import com.example.cs2340cteam50game.model.Rectangle;
 
 
-public class FireSkullView extends View {
+
+public class FireSkullView extends View implements EnemyView {
     private FireSkullEnemy fireSkull;
     private Bitmap fireSkullSprite;
     private float width;
@@ -29,13 +27,10 @@ public class FireSkullView extends View {
     }
     private float x;
     private float y;
-    private Paint paint;
 
-    //TODO: CHANGED THE CONSTRUCTOR SO IT TAKES IN AN ENEMY INSTEAD OF MAKING A NEW ONE
     public FireSkullView(Context context, FireSkullEnemy fireSkull) {
         super(context);
 
-        //TODO: TAKES IN AN EXISTING FIRESKULL TO CREATE A VIEW FOR
         this.fireSkull = fireSkull;
         int spriteID = R.drawable.fireskull;
         Drawable sprite = getResources().getDrawable(spriteID);
@@ -54,13 +49,6 @@ public class FireSkullView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
-        paint = new Paint();
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(3);
-        paint.setColor(Color.RED);
-
-        canvas.drawRect(x, y, x + width, y + height, paint);
         canvas.drawBitmap(fireSkullSprite, x, y, null);
     }
 

@@ -30,14 +30,11 @@ public class Rectangle {
         return bottom;
     }
 
-
-
-    //TODO: ALLOWS FOR UPDATING EXISTING RECTANGLE
-    public void updatePosition(float left, float right, float top, float bottom) {
-        this.left = left;
-        this.top = top;
-        this.right = right;
-        this.bottom = bottom;
+    public void updatePosition(double stepX, double stepY) {
+        left += stepX;
+        right += stepX;
+        top += stepY;
+        bottom += stepY;
     }
 
     //
@@ -67,6 +64,37 @@ public class Rectangle {
             }
             if (this.bottom > other.bottom) {
                 this.top = other.bottom + 1;
+            }
+        }
+
+        return true;
+    }
+
+    public boolean intersectsEnemy(Rectangle other, int direction) {
+        if (this.right < other.left || other.right < this.left) {
+            return false;
+        }
+
+        if (this.bottom < other.top || other.bottom < this.top) {
+            return false;
+        }
+
+        if (direction == 0 && this.left < other.right && this.right > other.left) {
+            if (this.left < other.left) {
+                this.left = other.left - (this.right - this.left) - 10;
+            }
+
+            if (this.right > other.right) {
+                this.left = other.right + 10;
+            }
+        }
+
+        if (direction == 1 && this.top < other.bottom && this.bottom > other.top) {
+            if (this.top < other.top) {
+                this.top = other.top - (this.bottom - this.top) - 10;
+            }
+            if (this.bottom > other.bottom) {
+                this.top = other.bottom + 10;
             }
         }
 

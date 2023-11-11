@@ -5,8 +5,8 @@ package com.example.cs2340cteam50game.model;
 import android.graphics.drawable.Drawable;
 import com.example.cs2340cteam50game.view.BeastView;
 
-public class BeastEnemy implements Enemy{
-    private static Drawable sprite;
+public class BeastEnemy implements Enemy {
+    private Drawable sprite;
     private double xPos;
     private double yPos;
     private float spriteWidth = 64.0F;
@@ -40,9 +40,13 @@ public class BeastEnemy implements Enemy{
     }
 
     @Override
-    public Drawable getSprite() {return sprite;}
+    public Drawable getSprite() {
+        return sprite;
+    }
 
-    public static void setSprite(Drawable x) {sprite = x;}
+    public void setSprite(Drawable x) {
+        sprite = x;
+    }
 
     public void setSpriteData(BeastView beastView) {
         this.spriteWidth = beastView.getSpriteWidth();
@@ -58,14 +62,18 @@ public class BeastEnemy implements Enemy{
         spriteWidth = width;
     }
 
-    public float getSpriteWidth() {return spriteWidth;}
+    public float getSpriteWidth() {
+        return spriteWidth;
+    }
 
     @Override
     public void setSpriteHeight(float height) {
         spriteHeight = height;
     }
 
-    public float getSpriteHeight() {return spriteHeight;}
+    public float getSpriteHeight() {
+        return spriteHeight;
+    }
 
     @Override
     public double getxPos() {
@@ -77,9 +85,13 @@ public class BeastEnemy implements Enemy{
         return yPos;
     }
 
-    public void setxPos(double x) {xPos = x;}
+    public void setxPos(double x) {
+        xPos = x;
+    }
 
-    public void setyPos(double y) {yPos = y;}
+    public void setyPos(double y) {
+        yPos = y;
+    }
 
     public Rectangle getHitBox() {
         return hitBox;
@@ -87,5 +99,11 @@ public class BeastEnemy implements Enemy{
 
     public int getDamage() {
         return damage;
+    }
+
+    public void move(int stepX, int stepY) {
+        xPos += stepX;
+        yPos += stepY;
+        hitBox.updatePosition(stepX, stepY);
     }
 }
