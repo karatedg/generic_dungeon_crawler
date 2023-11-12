@@ -101,6 +101,10 @@ public class BeastEnemy implements Enemy {
         return damage;
     }
 
+    public void setHitBox(Rectangle hitBox) {
+        this.hitBox = hitBox;
+    }
+
     public void move(int stepX, int stepY) {
         xPos += stepX;
         yPos += stepY;
