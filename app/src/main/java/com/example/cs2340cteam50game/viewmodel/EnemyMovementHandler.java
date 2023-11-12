@@ -187,6 +187,7 @@ public class EnemyMovementHandler {
 
     public void stopMovement() {
         movementClock.cancel();
+        movementClock.purge();
     }
 
 }

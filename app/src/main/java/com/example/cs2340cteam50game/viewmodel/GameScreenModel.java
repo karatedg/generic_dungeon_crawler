@@ -237,6 +237,17 @@ public class GameScreenModel {
         exitBox = currentWallSet[currentWallSet.length - 1];
     }
 
+    public void endGameDeath() {
+
+        currentEnemies.clear();
+        for (EnemyMovementHandler handler : eMovementHandlers) {
+            handler.stopMovement();
+        }
+        eMovementHandlers.clear();
+
+        gameScreen.endGame();
+    }
+
     //NEW CODE
     public void clearEnemies() {
         for (View enemy : enemyViews) {
