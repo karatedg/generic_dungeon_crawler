@@ -102,7 +102,6 @@ public class Rectangle {
             return false;
 
         }
-
         return true;
     }
 }

@@ -235,7 +235,7 @@ public class PlayerClass {
      * @return HP
      */
     public int getHealthPoints() {
-        return healthPoints;
+        return this.healthPoints;
     }
 
     /**
@@ -318,11 +318,17 @@ public class PlayerClass {
         return spriteHeight;
     }
 
+    private boolean checkDead = false;
+
+    public boolean getCheckDead() {
+        return checkDead;
+    }
 
     public void takeDamage() {
-        healthPoints -= damageTaken;
+        this.healthPoints -= damageTaken;
         if (healthPoints < 0) {
-            healthPoints = 0;
+            this.healthPoints = 0;
+            checkDead = true;
         }
     }
 }

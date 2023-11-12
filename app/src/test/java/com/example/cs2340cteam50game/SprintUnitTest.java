@@ -6,14 +6,14 @@ import android.widget.TextView;
 
 import com.example.cs2340cteam50game.model.BeastEnemy;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
+import com.example.cs2340cteam50game.model.DemonEnemy;
 import com.example.cs2340cteam50game.model.Enemy;
+import com.example.cs2340cteam50game.model.FireSkullEnemy;
+import com.example.cs2340cteam50game.model.GhostEnemy;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Rectangle;
 import com.example.cs2340cteam50game.model.Score;
-import com.example.cs2340cteam50game.view.BeastView;
-import com.example.cs2340cteam50game.view.GameScreen;
-import com.example.cs2340cteam50game.viewmodel.EnemyMovementHandler;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 import org.junit.Test;
@@ -356,37 +356,144 @@ public class SprintUnitTest {
     }
 
     @Test
-    public void testDamageTaken() {
+    public void testDamageTakenEasy() {
         PlayerClass.clear();
         PlayerClass player = PlayerClass.getPlayer();
         player.setSpriteHeight(15);
-        player.setScreenHeight(15);
-        player.setHealthPoints(100);
-        GameScreenModel model = new GameScreenModel();
-        player.setGameScreenModel(model);
-        player.setMovementStrategy(new DefaultSpeed());
-        player.setxPos(0.0);
-        player.setyPos(0.0);
-
-        BeastEnemy beastEnemy = new BeastEnemy();
-        beastEnemy.setHitBox(new Rectangle(5, 5, 5, 5));
-        beastEnemy.setxPos(3);
-        beastEnemy.setyPos(0.0);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(1);
 
         Rectangle playerHitBox = new Rectangle(0, 0,
                 0 + player.getSpriteWidth(),
                 0 + player.getSpriteHeight());
 
-        if (playerHitBox.intersectsEnemy(beastEnemy.getHitBox(), 0)) {
-            System.out.println("intersecting enemy");
-            player.takeDamage(beastEnemy.getDamage());
-            player.setxPos(playerHitBox.getLeft());
-            player.setyPos(playerHitBox.getTop());
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
         }
 
-        model.checkEnemyCollisions(0, 0, 0);
-
-        int expectedHealthAfterCollision = 100 - beastEnemy.getDamage();
+        int expectedHealthAfterCollision = 140;
         assertEquals(expectedHealthAfterCollision, player.getHealthPoints(), 0);
     }
+
+    @Test
+    public void testDamageTakenMedium() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(2);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
+        }
+
+        int expectedHealthAfterCollision = 85;
+        assertEquals(expectedHealthAfterCollision, player.getHealthPoints(), 0);
+    }
+
+    @Test
+    public void testDamageTakenHard() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(3);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
+        }
+
+        int expectedHealthAfterCollision = 55;
+        assertEquals(expectedHealthAfterCollision, player.getHealthPoints(), 0);
+    }
+
+    @Test
+    public void testPlayerEnemyCollision() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(3);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        GhostEnemy ghostEnemy = new GhostEnemy();
+        ghostEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        assertEquals(playerHitBox.intersects(ghostEnemy.getHitBox()), true);
+    }
+
+    @Test
+    public void testPlayerDeath() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(3);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        player.setHealthPoints(5);
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
+        }
+
+        assertEquals(player.getCheckDead(), true);
+    }
+
+    @Test
+    public void testEnemyCreationSet1() {
+        GameScreenModel model = new GameScreenModel();
+        model.createEnemySet1();
+
+        ArrayList<Enemy> enemies = model.getCurrentEnemies();
+        assertEquals(enemies.get(0) instanceof FireSkullEnemy, true);
+        assertEquals(enemies.get(1) instanceof BeastEnemy, true);
+    }
+
+    @Test
+    public void testEnemyCreationSet2() {
+        GameScreenModel model = new GameScreenModel();
+        model.createEnemySet2();
+
+        ArrayList<Enemy> enemies = model.getCurrentEnemies();
+        assertEquals(enemies.get(0) instanceof BeastEnemy, true);
+        assertEquals(enemies.get(1) instanceof DemonEnemy, true);
+    }
+
+    @Test
+    public void testEnemyCreationSet3() {
+        GameScreenModel model = new GameScreenModel();
+        model.createEnemySet3();
+
+        ArrayList<Enemy> enemies = model.getCurrentEnemies();
+        assertEquals(enemies.get(0) instanceof DemonEnemy, true);
+        assertEquals(enemies.get(1) instanceof GhostEnemy, true);
+    }
+
 }

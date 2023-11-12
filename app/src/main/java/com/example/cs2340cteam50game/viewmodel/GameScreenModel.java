@@ -217,21 +217,25 @@ public class GameScreenModel {
             map.setImageResource(R.drawable.newmap1);
             currentWallSet = map1Walls;
             createEnemySet1();
+            createEnemySet1Views();
             break;
         case 1:
             map.setImageResource(R.drawable.newmap2);
             currentWallSet = map2Walls;
             createEnemySet2();
+            createEnemySet2Views();
             break;
         case 2:
             map.setImageResource(R.drawable.newmap3);
             currentWallSet = map3Walls;
             createEnemySet3();
+            createEnemySet3Views();
             break;
         default:
             map.setImageResource(R.drawable.newmap1);
             currentWallSet = map1Walls;
             createEnemySet1();
+            createEnemySet1Views();
             break;
         }
         exitBox = currentWallSet[currentWallSet.length - 1];
@@ -258,23 +262,15 @@ public class GameScreenModel {
         enemyViews.clear();
     }
 
-    private void createEnemySet1() {
+
+
+    public void createEnemySet1() {
 
         //Add Fire Skull
         FireSkullEnemy fsEnemy = (FireSkullEnemy) fsCreator.createEnemy();
         fsEnemy.setSprite(fsSprite);
         fsEnemy.setxPos(screenWidth * (7.0 / 10.0));
         fsEnemy.setyPos(screenHeight / 3.0);
-        FireSkullView fsView = new FireSkullView(gameScreen, fsEnemy);
-        fsEnemy.setSpriteData(fsView);
-
-        gameLayout.addView(fsView);
-
-        EnemyMovementHandler fsMove = new EnemyMovementHandler(fsEnemy, fsView, player,
-                gameScreen, 1);
-        eMovementHandlers.add(fsMove);
-
-        enemyViews.add(fsView);
         currentEnemies.add(fsEnemy);
 
         //Add Beast
@@ -282,36 +278,39 @@ public class GameScreenModel {
         beastEnemy.setSprite(bSprite);
         beastEnemy.setxPos(screenWidth * (3.33 / 10.0));
         beastEnemy.setyPos(screenHeight * (6 / 10.0));
-        BeastView bView = new BeastView(gameScreen, beastEnemy);
-        beastEnemy.setSpriteData(bView);
-
-        gameLayout.addView(bView);
-
-        EnemyMovementHandler bMove = new EnemyMovementHandler(beastEnemy, bView, player,
-                gameScreen, 0);
-        eMovementHandlers.add(bMove);
-
-        enemyViews.add(bView);
         currentEnemies.add(beastEnemy);
     }
 
-    private void createEnemySet2() {
+    public void createEnemySet1Views() {
+        FireSkullEnemy fsEnemy = (FireSkullEnemy) currentEnemies.get(0);
+        FireSkullView fsView = new FireSkullView(gameScreen,
+                fsEnemy);
+        fsEnemy.setSpriteData(fsView);
+        gameLayout.addView(fsView);
+        EnemyMovementHandler fsMove = new EnemyMovementHandler(fsEnemy, fsView, player,
+                gameScreen, 1);
+        eMovementHandlers.add(fsMove);
+        enemyViews.add(fsView);
+
+
+        BeastEnemy bEnemy = (BeastEnemy) currentEnemies.get(1);
+        BeastView bView = new BeastView(gameScreen, bEnemy);
+        bEnemy.setSpriteData(bView);
+        gameLayout.addView(bView);
+        EnemyMovementHandler bMove = new EnemyMovementHandler(bEnemy, bView, player,
+                gameScreen, 0);
+        eMovementHandlers.add(bMove);
+        enemyViews.add(bView);
+
+    }
+
+    public void createEnemySet2() {
 
         //Add Beast
         BeastEnemy beastEnemy = (BeastEnemy) bCreator.createEnemy();
         beastEnemy.setSprite(bSprite);
         beastEnemy.setxPos(screenWidth * (7.5 / 10.0));
         beastEnemy.setyPos(screenHeight * (5 / 10.0));
-        BeastView bView = new BeastView(gameScreen, beastEnemy);
-        beastEnemy.setSpriteData(bView);
-
-        gameLayout.addView(bView);
-
-        EnemyMovementHandler bMove = new EnemyMovementHandler(beastEnemy, bView, player,
-                gameScreen, 0);
-        eMovementHandlers.add(bMove);
-
-        enemyViews.add(bView);
         currentEnemies.add(beastEnemy);
 
         //Add Demon
@@ -319,36 +318,39 @@ public class GameScreenModel {
         demonEnemy.setSprite(dSprite);
         demonEnemy.setxPos(screenWidth * (3.5 / 10.0));
         demonEnemy.setyPos(screenHeight * (1 / 10.0));
-        DemonView dView = new DemonView(gameScreen, demonEnemy);
-        demonEnemy.setSpriteData(dView);
-
-        gameLayout.addView(dView);
-
-        EnemyMovementHandler dMove = new EnemyMovementHandler(demonEnemy, dView, player,
-                gameScreen, 3);
-        eMovementHandlers.add(dMove);
-
-        enemyViews.add(dView);
         currentEnemies.add(demonEnemy);
     }
 
-    private void createEnemySet3() {
+    public void createEnemySet2Views() {
+        BeastEnemy bEnemy = (BeastEnemy) currentEnemies.get(0);
+        BeastView bView = new BeastView(gameScreen,
+                bEnemy);
+        bEnemy.setSpriteData(bView);
+        gameLayout.addView(bView);
+        EnemyMovementHandler bMove = new EnemyMovementHandler(bEnemy, bView, player,
+                gameScreen, 0);
+        eMovementHandlers.add(bMove);
+        enemyViews.add(bView);
+
+
+        DemonEnemy dEnemy = (DemonEnemy) currentEnemies.get(1);
+        DemonView dView = new DemonView(gameScreen, dEnemy);
+        dEnemy.setSpriteData(dView);
+        gameLayout.addView(dView);
+        EnemyMovementHandler dMove = new EnemyMovementHandler(dEnemy, dView, player,
+                gameScreen, 3);
+        eMovementHandlers.add(dMove);
+        enemyViews.add(dView);
+
+    }
+
+    public void createEnemySet3() {
 
         //Add Demon
         DemonEnemy demonEnemy = (DemonEnemy) dCreator.createEnemy();
         demonEnemy.setSprite(dSprite);
         demonEnemy.setxPos(screenWidth * (2.0 / 10.0));
         demonEnemy.setyPos(screenHeight * (3.33 / 10.0));
-        DemonView dView = new DemonView(gameScreen, demonEnemy);
-        demonEnemy.setSpriteData(dView);
-
-        gameLayout.addView(dView);
-
-        EnemyMovementHandler dMove = new EnemyMovementHandler(demonEnemy, dView, player,
-                gameScreen, 3);
-        eMovementHandlers.add(dMove);
-
-        enemyViews.add(dView);
         currentEnemies.add(demonEnemy);
 
         //Add Ghost
@@ -356,17 +358,33 @@ public class GameScreenModel {
         ghostEnemy.setSprite(gSprite);
         ghostEnemy.setxPos(screenWidth * (4.75 / 10.0));
         ghostEnemy.setyPos(screenHeight * (2.25 / 10.0));
-        GhostView gView = new GhostView(gameScreen, ghostEnemy);
-        ghostEnemy.setSpriteData(gView);
-
-        gameLayout.addView(gView);
-
-        EnemyMovementHandler gMove = new EnemyMovementHandler(ghostEnemy, gView, player,
-                gameScreen, 2);
-        eMovementHandlers.add(dMove);
-
-        enemyViews.add(gView);
         currentEnemies.add(ghostEnemy);
+    }
+
+    public void createEnemySet3Views() {
+
+        DemonEnemy dEnemy = (DemonEnemy) currentEnemies.get(0);
+        DemonView dView = new DemonView(gameScreen, dEnemy);
+        dEnemy.setSpriteData(dView);
+        gameLayout.addView(dView);
+        EnemyMovementHandler dMove = new EnemyMovementHandler(dEnemy, dView, player,
+                gameScreen, 3);
+        eMovementHandlers.add(dMove);
+        enemyViews.add(dView);
+
+        GhostEnemy gEnemy = (GhostEnemy) currentEnemies.get(1);
+        GhostView gView = new GhostView(gameScreen,
+                gEnemy);
+        gEnemy.setSpriteData(gView);
+        gameLayout.addView(gView);
+        EnemyMovementHandler gMove = new EnemyMovementHandler(gEnemy, gView, player,
+                gameScreen, 2);
+        eMovementHandlers.add(gMove);
+        enemyViews.add(gView);
+
+
+
+
     }
 
 
@@ -396,6 +414,10 @@ public class GameScreenModel {
     //Getter for currentScreen
     public int getCurrentRoom() {
         return currentRoom;
+    }
+
+    public ArrayList<Enemy> getCurrentEnemies() {
+        return currentEnemies;
     }
 
     //Setter for playerView
