@@ -122,15 +122,13 @@ public class GameScreen extends AppCompatActivity {
 
     // NEW CODE
     public void updateHealth(int healthPoints) {
-        if (healthPoints == 0) {
-            if(!player.isDead()) {
-                player.setDead(true);
-                healthValueDisplay.setText("KO");
-                player.setyPos(0);
-                player.setxPos(0);
-                playerView.setVisibility(View.INVISIBLE);
-                gameScreenModel.endGameDeath();
-            }
+        if (healthPoints == 0 && !player.isDead()) {
+            player.setDead(true);
+            healthValueDisplay.setText("KO");
+            player.setyPos(0);
+            player.setxPos(0);
+            playerView.setVisibility(View.INVISIBLE);
+            gameScreenModel.endGameDeath();
         } else {
             healthValueDisplay.setText(Integer.toString(healthPoints));
         }
