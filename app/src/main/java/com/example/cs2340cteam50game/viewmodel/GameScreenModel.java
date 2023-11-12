@@ -170,7 +170,7 @@ public class GameScreenModel {
 
         for (Enemy enemy : currentEnemies) {
             if (playerHitBox.intersectsWall(enemy.getHitBox(), direction)) {
-                player.takeDamage(enemy.getDamage());
+                player.takeDamage();
                 player.setxPos(playerHitBox.getLeft());
                 player.setyPos(playerHitBox.getTop());
                 gameScreen.updateHealth(player.getHealthPoints());
@@ -244,6 +244,8 @@ public class GameScreenModel {
             handler.stopMovement();
         }
         eMovementHandlers.clear();
+        clearEnemies();
+        timer.cancel();
 
         gameScreen.endGame();
     }

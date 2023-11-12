@@ -2,7 +2,6 @@ package com.example.cs2340cteam50game.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -13,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.Score;
@@ -29,6 +29,8 @@ public class GameScreen extends AppCompatActivity {
     private String name;
     private RelativeLayout gameLayout = null;
     private TextView healthValueDisplay = null;
+
+    private ImageView map = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +53,7 @@ public class GameScreen extends AppCompatActivity {
         TextView scoreDisplay = findViewById(R.id.scoreText);
 
         //Initialize map and give access to the GameScreenModel
-        ImageView map = findViewById(R.id.gameMap);
+        map = findViewById(R.id.gameMap);
         gameScreenModel.setMap(map);
         gameScreenModel.setScreen(currentScreen);
 
@@ -113,10 +115,10 @@ public class GameScreen extends AppCompatActivity {
         Score score = new Score(name, gameScreenModel.getScoreVal());
         Leaderboard leaderBoard = Leaderboard.getLeaderboard();
         leaderBoard.addScore(score);
-        Log.d("SCOREADD", "Scored added");
         Intent intent = new Intent(GameScreen.this, EndScreen.class);
         intent.putExtra("score", score.getScore());
         startActivity(intent);
+        GameScreen.this.finishAffinity();
     }
 
 

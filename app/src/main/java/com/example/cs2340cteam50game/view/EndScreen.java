@@ -29,9 +29,18 @@ public class EndScreen extends AppCompatActivity {
         TextView leaderboard = (TextView) findViewById(R.id.leaderboard);
 
         TextView gameStatus = (TextView) findViewById(R.id.GameOverText);
+
         if (PlayerClass.getPlayer().getHealthPoints() <= 0) {
             gameStatus.setText("GAME OVER");
         }
+
+        Intent intent = getIntent();
+        int score = intent.getIntExtra("score", 0);
+        Score score1 = new Score(PlayerClass.getPlayer().getUsername(), score);
+        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(),
+                                findViewById(R.id.leaderboard), score1);
+
+
 
         //Return to opening screen
         restartButton.setOnClickListener(
@@ -43,12 +52,6 @@ public class EndScreen extends AppCompatActivity {
                     }
                 });
 
-        Intent intent = getIntent();
-        int score = intent.getIntExtra("score", 0);
-        Score score1 = new Score(PlayerClass.getPlayer().getUsername(), score);
-        LeaderBoardView.renderLeaderboard(Leaderboard.getLeaderboard(),
-                                findViewById(R.id.leaderboard), score1);
-        //leaderboard.setText(Integer.toString(gameScreen.scoreVal));
 
         //Quit to home screen
         quitButton.setOnClickListener(new View.OnClickListener() {
