@@ -14,7 +14,7 @@ public class EnemyMovementHandler {
 
     private final Enemy enemy;
     private final EnemyView enemyView;
-    private final Timer movementClock;
+    private Timer movementClock;
     private TimerTask movementStyle;
     private final PlayerClass player;
     private final GameScreen gameScreen;
@@ -41,7 +41,7 @@ public class EnemyMovementHandler {
         default:
         }
         movementClock = new Timer();
-        movementClock.scheduleAtFixedRate(movementStyle, 0, 100);
+        movementClock.scheduleAtFixedRate(movementStyle, 0, 200);
     }
 
 
@@ -71,7 +71,6 @@ public class EnemyMovementHandler {
                 enemyView.updatePosition();
             }
         };
-
         return moveHorizontal;
     }
 
@@ -177,7 +176,7 @@ public class EnemyMovementHandler {
                 (float) yPos + player.getSpriteHeight());
 
         if (playerHitBox.intersectsEnemy(enemy.getHitBox(), direction)) {
-            player.takeDamage(enemy.getDamage());
+            player.takeDamage();
             player.setxPos(playerHitBox.getLeft());
             player.setyPos(playerHitBox.getTop());
             gameScreen.updatePlayer();
@@ -187,6 +186,9 @@ public class EnemyMovementHandler {
 
     public void stopMovement() {
         movementClock.cancel();
+        movementClock.purge();
+        movementClock = null;
+        movementStyle = null;
     }
 
 }

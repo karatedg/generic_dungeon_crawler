@@ -3,7 +3,6 @@ package com.example.cs2340cteam50game.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.content.Intent;
 
@@ -29,6 +28,8 @@ public class GameScreen extends AppCompatActivity {
     private RelativeLayout gameLayout = null;
     private TextView healthValueDisplay = null;
 
+    private ImageView map = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +51,7 @@ public class GameScreen extends AppCompatActivity {
         TextView scoreDisplay = findViewById(R.id.scoreText);
 
         //Initialize map and give access to the GameScreenModel
-        ImageView map = findViewById(R.id.gameMap);
+        map = findViewById(R.id.gameMap);
         gameScreenModel.setMap(map);
         gameScreenModel.setScreen(currentScreen);
 
@@ -112,10 +113,10 @@ public class GameScreen extends AppCompatActivity {
         Score score = new Score(name, gameScreenModel.getScoreVal());
         Leaderboard leaderBoard = Leaderboard.getLeaderboard();
         leaderBoard.addScore(score);
-        Log.d("SCOREADD", "Scored added");
         Intent intent = new Intent(GameScreen.this, EndScreen.class);
         intent.putExtra("score", score.getScore());
         startActivity(intent);
+        GameScreen.this.finishAffinity();
     }
 
 
@@ -123,11 +124,12 @@ public class GameScreen extends AppCompatActivity {
     public void updateHealth(int healthPoints) {
         if (healthPoints == 0) {
             if(!player.isDead()) {
-                player.setyPos(-30);
-                player.setxPos(-30);
-                playerView.setVisibility(View.INVISIBLE);
                 player.setDead(true);
-                endGame();
+                healthValueDisplay.setText("KO");
+                player.setyPos(0);
+                player.setxPos(0);
+                playerView.setVisibility(View.INVISIBLE);
+                gameScreenModel.endGameDeath();
             }
         } else {
             healthValueDisplay.setText(Integer.toString(healthPoints));

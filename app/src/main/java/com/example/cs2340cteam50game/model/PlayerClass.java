@@ -23,13 +23,19 @@ public class PlayerClass {
     private float spriteWidth;
     private float spriteHeight;
     private int healthPoints;
+    private boolean isDead;
+
+    private int damageTaken;
+
+
+
 
     //Player Selected Values:
     private String username;
     private Drawable sprite;
     private int difficultyNum;
 
-    private boolean isDead;
+
 
     //In-Game:
     private GameScreenModel gameScreenModel;
@@ -272,10 +278,13 @@ public class PlayerClass {
         this.difficultyNum = difficultyNum;
         if (difficultyNum == 1) {
             setHealthPoints(150);
+            this.damageTaken = 10;
         } else if (difficultyNum == 2) {
             setHealthPoints(100);
+            this.damageTaken = 15;
         } else if (difficultyNum == 3) {
             setHealthPoints(75);
+            this.damageTaken = 20;
         }
     }
 
@@ -310,8 +319,8 @@ public class PlayerClass {
     }
 
 
-    public void takeDamage(int damage) {
-        healthPoints -= damage;
+    public void takeDamage() {
+        healthPoints -= damageTaken;
         if (healthPoints < 0) {
             healthPoints = 0;
         }
