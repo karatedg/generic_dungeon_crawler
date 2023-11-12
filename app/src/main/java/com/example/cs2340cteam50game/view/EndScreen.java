@@ -15,7 +15,7 @@ import com.example.cs2340cteam50game.model.Leaderboard;
 
 
 public class EndScreen extends AppCompatActivity {
-    private GameScreen gameScreen = new GameScreen();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,10 +25,8 @@ public class EndScreen extends AppCompatActivity {
         //Restart and Quit Buttons
         Button restartButton = (Button) findViewById(R.id.restartButton);
         Button quitButton = (Button) findViewById(R.id.quitButton);
-
-        TextView leaderboard = (TextView) findViewById(R.id.leaderboard);
-
         TextView gameStatus = (TextView) findViewById(R.id.GameOverText);
+
 
         if (PlayerClass.getPlayer().getHealthPoints() <= 0) {
             gameStatus.setText("GAME OVER");

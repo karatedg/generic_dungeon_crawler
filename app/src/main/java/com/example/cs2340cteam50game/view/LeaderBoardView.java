@@ -12,8 +12,8 @@ public class LeaderBoardView {
 
 
         Score latest = score;
-
         String time = latest.getTimestamp().toString();
+
         render += String.format("%10s %15d %45s\n\n\n", latest.getName(), latest.getScore(),
                 time.replace('T', ' ').substring(0, time.length() - 7));
 
