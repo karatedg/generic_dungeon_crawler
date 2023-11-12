@@ -425,6 +425,9 @@ public class GameScreenModel {
     public void setdSprite(Drawable dSprite) {
         this.dSprite = dSprite;
     }
+    public void setEnemies(Enemy enemy) {
+        currentEnemies.add(enemy);
+    }
 
 }
 

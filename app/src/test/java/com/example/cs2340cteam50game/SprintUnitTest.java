@@ -4,10 +4,16 @@ import static org.junit.Assert.assertEquals;
 
 import android.widget.TextView;
 
+import com.example.cs2340cteam50game.model.BeastEnemy;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
+import com.example.cs2340cteam50game.model.Enemy;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.model.Rectangle;
 import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.view.BeastView;
+import com.example.cs2340cteam50game.view.GameScreen;
+import com.example.cs2340cteam50game.viewmodel.EnemyMovementHandler;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 import org.junit.Test;
@@ -315,5 +321,72 @@ public class SprintUnitTest {
 
     }
 
+    ///////////////////////////
+    // SPRINT 4 TESTS!!!!!  //
+    /////////////////////////
 
+    @Test
+    public void testMoveHorizontal() {
+        // Test horizontal movement to the right
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(5, 5, 5, 5));
+        beastEnemy.setxPos(0.0);
+        beastEnemy.setyPos(0.0);
+        beastEnemy.move(5, 0);
+        assertEquals(5.0, beastEnemy.getxPos(), 0);
+
+        // Test horizontal movement to the left
+        beastEnemy.move(-5, 0);
+        assertEquals(0, beastEnemy.getxPos(), 0);
+    }
+
+    @Test
+    public void testMoveVertical() {
+        // Test vertical movement to the up
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(5, 5, 5, 5));
+        beastEnemy.setxPos(0.0);
+        beastEnemy.setyPos(0.0);
+        beastEnemy.move(0, 5);
+        assertEquals(5.0, beastEnemy.getyPos(), 0);
+
+        // Test vertical movement to the down
+        beastEnemy.move(0, -5);
+        assertEquals(0, beastEnemy.getyPos(), 0);
+    }
+
+    @Test
+    public void testDamageTaken() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setScreenHeight(15);
+        player.setHealthPoints(100);
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setMovementStrategy(new DefaultSpeed());
+        player.setxPos(0.0);
+        player.setyPos(0.0);
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(5, 5, 5, 5));
+        beastEnemy.setxPos(3);
+        beastEnemy.setyPos(0.0);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        if (playerHitBox.intersectsEnemy(beastEnemy.getHitBox(), 0)) {
+            System.out.println("intersecting enemy");
+            player.takeDamage(beastEnemy.getDamage());
+            player.setxPos(playerHitBox.getLeft());
+            player.setyPos(playerHitBox.getTop());
+        }
+
+        model.checkEnemyCollisions(0, 0, 0);
+
+        int expectedHealthAfterCollision = 100 - beastEnemy.getDamage();
+        assertEquals(expectedHealthAfterCollision, player.getHealthPoints(), 0);
+    }
 }

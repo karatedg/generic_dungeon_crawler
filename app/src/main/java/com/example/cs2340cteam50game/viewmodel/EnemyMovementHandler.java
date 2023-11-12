@@ -46,7 +46,7 @@ public class EnemyMovementHandler {
 
 
 
-    private TimerTask moveHorizontal() {
+    public TimerTask moveHorizontal() {
 
         TimerTask moveHorizontal = new TimerTask() {
             private int stepsLeft = 0;
