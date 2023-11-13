@@ -26,8 +26,8 @@ public class GhostView extends View implements EnemyView {
     public float getSpriteHeight() {
         return height;
     }
-    private float x;
-    private float y;
+    private volatile float x;
+    private volatile float y;
 
     private GhostCreator ghostCreator = new GhostCreator();
 

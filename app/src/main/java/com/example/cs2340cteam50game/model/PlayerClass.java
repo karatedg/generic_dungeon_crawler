@@ -16,13 +16,13 @@ public class PlayerClass {
     }
 
     //System Values:
-    private double xPos;
-    private double yPos;
+    private volatile double xPos;
+    private volatile double yPos;
     private final double movementSpeed;
     private MovementStrategy movementStrategy;
     private float spriteWidth;
     private float spriteHeight;
-    private int healthPoints;
+    private volatile int healthPoints;
     private boolean isDead;
 
     private int damageTaken;

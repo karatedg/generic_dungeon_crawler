@@ -13,6 +13,7 @@ import com.example.cs2340cteam50game.model.Rectangle;
 
 import android.graphics.drawable.Drawable;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -31,6 +32,8 @@ import com.example.cs2340cteam50game.view.PlayerView;
 import java.util.ArrayList;
 
 public class GameScreenModel {
+
+    private Handler mainHandler = new Handler();
 
     private final PlayerClass player = PlayerClass.getPlayer();
     private PlayerView playerView;
@@ -288,8 +291,11 @@ public class GameScreenModel {
         fsEnemy.setSpriteData(fsView);
         gameLayout.addView(fsView);
         EnemyMovementHandler fsMove = new EnemyMovementHandler(fsEnemy, fsView, player,
-                gameScreen, 1);
+                gameScreen, 1, mainHandler);
         eMovementHandlers.add(fsMove);
+
+        new Thread(fsMove).start();
+
         enemyViews.add(fsView);
 
 
@@ -298,8 +304,11 @@ public class GameScreenModel {
         bEnemy.setSpriteData(bView);
         gameLayout.addView(bView);
         EnemyMovementHandler bMove = new EnemyMovementHandler(bEnemy, bView, player,
-                gameScreen, 0);
+                gameScreen, 0, mainHandler);
         eMovementHandlers.add(bMove);
+
+        new Thread(bMove).start();
+
         enemyViews.add(bView);
 
     }
@@ -328,8 +337,11 @@ public class GameScreenModel {
         bEnemy.setSpriteData(bView);
         gameLayout.addView(bView);
         EnemyMovementHandler bMove = new EnemyMovementHandler(bEnemy, bView, player,
-                gameScreen, 0);
+                gameScreen, 0, mainHandler);
         eMovementHandlers.add(bMove);
+
+        new Thread(bMove).start();
+
         enemyViews.add(bView);
 
 
@@ -338,8 +350,11 @@ public class GameScreenModel {
         dEnemy.setSpriteData(dView);
         gameLayout.addView(dView);
         EnemyMovementHandler dMove = new EnemyMovementHandler(dEnemy, dView, player,
-                gameScreen, 3);
+                gameScreen, 3, mainHandler);
         eMovementHandlers.add(dMove);
+
+        new Thread(dMove).start();
+
         enemyViews.add(dView);
 
     }
@@ -368,8 +383,11 @@ public class GameScreenModel {
         dEnemy.setSpriteData(dView);
         gameLayout.addView(dView);
         EnemyMovementHandler dMove = new EnemyMovementHandler(dEnemy, dView, player,
-                gameScreen, 3);
+                gameScreen, 3, mainHandler);
         eMovementHandlers.add(dMove);
+
+        new Thread(dMove).start();
+
         enemyViews.add(dView);
 
         GhostEnemy gEnemy = (GhostEnemy) currentEnemies.get(1);
@@ -378,8 +396,11 @@ public class GameScreenModel {
         gEnemy.setSpriteData(gView);
         gameLayout.addView(gView);
         EnemyMovementHandler gMove = new EnemyMovementHandler(gEnemy, gView, player,
-                gameScreen, 2);
+                gameScreen, 2, mainHandler);
         eMovementHandlers.add(gMove);
+
+        new Thread(gMove).start();
+
         enemyViews.add(gView);
 
 

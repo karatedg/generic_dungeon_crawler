@@ -1,6 +1,8 @@
 package com.example.cs2340cteam50game.viewmodel;
 
 
+import android.os.Handler;
+
 import com.example.cs2340cteam50game.model.Enemy;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Rectangle;
@@ -10,7 +12,7 @@ import com.example.cs2340cteam50game.view.GameScreen;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class EnemyMovementHandler {
+public class EnemyMovementHandler implements Runnable {
 
     private final Enemy enemy;
     private final EnemyView enemyView;
@@ -19,12 +21,16 @@ public class EnemyMovementHandler {
     private final PlayerClass player;
     private final GameScreen gameScreen;
 
+    private Handler handler;
+
     public EnemyMovementHandler(Enemy enemy, EnemyView enemyView,
-                                PlayerClass player, GameScreen gameScreen, int direction) {
+                                PlayerClass player, GameScreen gameScreen,
+                                int direction, Handler handler) {
         this.enemy = enemy;
         this.enemyView = enemyView;
         this.player = player;
         this.gameScreen = gameScreen;
+        this.handler = handler;
         switch (direction) {
         case 0:
             movementStyle = moveHorizontal();
@@ -40,6 +46,10 @@ public class EnemyMovementHandler {
             break;
         default:
         }
+    }
+
+    @Override
+    public void run() {
         movementClock = new Timer();
         movementClock.scheduleAtFixedRate(movementStyle, 0, 200);
     }
@@ -68,7 +78,7 @@ public class EnemyMovementHandler {
                     }
                 }
                 checkPlayerCollision(0);
-                enemyView.updatePosition();
+                handler.post(enemyView::updatePosition);
             }
         };
         return moveHorizontal;
@@ -98,7 +108,7 @@ public class EnemyMovementHandler {
                     }
                 }
                 checkPlayerCollision(1);
-                enemyView.updatePosition();
+                handler.post(enemyView::updatePosition);
             }
         };
         return moveVertical;
@@ -122,7 +132,7 @@ public class EnemyMovementHandler {
 
                 checkPlayerCollision(0);
                 checkPlayerCollision(1);
-                enemyView.updatePosition();
+                handler.post(enemyView::updatePosition);
             }
         };
         return moveCircular;
@@ -159,7 +169,7 @@ public class EnemyMovementHandler {
 
                 checkPlayerCollision(0);
                 checkPlayerCollision(1);
-                enemyView.updatePosition();
+                handler.post(enemyView::updatePosition);
             }
         };
         return moveDiagonal;
@@ -179,16 +189,20 @@ public class EnemyMovementHandler {
             player.takeDamage();
             player.setxPos(playerHitBox.getLeft());
             player.setyPos(playerHitBox.getTop());
-            gameScreen.updatePlayer();
-            gameScreen.updateHealth(player.getHealthPoints());
+
+            handler.post(gameScreen::updatePlayer);
+            handler.post(() -> gameScreen.updateHealth(player.getHealthPoints()));
         }
     }
 
     public void stopMovement() {
-        movementClock.cancel();
-        movementClock.purge();
-        movementClock = null;
-        movementStyle = null;
+        if (!(movementClock == null)) {
+            movementClock.cancel();
+            movementClock.purge();
+            movementClock = null;
+            movementStyle = null;
+        }
     }
+
 
 }

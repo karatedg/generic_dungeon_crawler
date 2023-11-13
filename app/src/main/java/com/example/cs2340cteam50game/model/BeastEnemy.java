@@ -7,12 +7,12 @@ import com.example.cs2340cteam50game.view.BeastView;
 
 public class BeastEnemy implements Enemy {
     private Drawable sprite;
-    private double xPos;
-    private double yPos;
+    private volatile double xPos;
+    private volatile double yPos;
     private float spriteWidth = 64.0F;
     private float spriteHeight = 64.0F;
 
-    private Rectangle hitBox;
+    private volatile Rectangle hitBox;
     private double movementSpeed;
     private double healthPoints;
     private int damage = 25;

@@ -7,12 +7,12 @@ import com.example.cs2340cteam50game.view.FireSkullView;
 
 public class FireSkullEnemy implements Enemy {
     private Drawable sprite;
-    private double xPos;
-    private double yPos;
+    private volatile double xPos;
+    private volatile double yPos;
     private float spriteWidth;
     private float spriteHeight;
 
-    private Rectangle hitBox;
+    private volatile Rectangle hitBox;
     private double movementSpeed;
     private double healthPoints;
     private int damage = 10;
