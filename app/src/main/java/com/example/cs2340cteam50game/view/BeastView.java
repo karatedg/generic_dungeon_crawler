@@ -9,7 +9,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.BeastCreator;
 import com.example.cs2340cteam50game.model.BeastEnemy;
 
 
@@ -26,10 +25,8 @@ public class BeastView extends View implements EnemyView {
     public float getSpriteHeight() {
         return height;
     }
-    private float x;
-    private float y;
-
-    private BeastCreator beastCreator = new BeastCreator();
+    private volatile float x;
+    private volatile float y;
 
     public BeastView(Context context, BeastEnemy beastEnemy) {
         super(context);

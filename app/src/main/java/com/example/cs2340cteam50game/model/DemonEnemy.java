@@ -7,14 +7,14 @@ import com.example.cs2340cteam50game.view.DemonView;
 
 public class DemonEnemy implements Enemy {
     private Drawable sprite;
-    private double xPos;
-    private double yPos;
+    private volatile double xPos;
+    private volatile double yPos;
     private float spriteWidth = 64.0F;
     private float spriteHeight = 64.0F;
     private double movementSpeed;
     private double healthPoints;
     private int damage = 25;
-    private Rectangle hitBox;
+    private volatile Rectangle hitBox;
 
     public DemonEnemy() {
         this.xPos = 0.0;

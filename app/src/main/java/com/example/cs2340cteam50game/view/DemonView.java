@@ -26,8 +26,8 @@ public class DemonView extends View implements EnemyView {
     public float getSpriteHeight() {
         return height;
     }
-    private float x;
-    private float y;
+    private volatile float x;
+    private volatile float y;
 
     private DemonCreator demonCreator = new DemonCreator();
 

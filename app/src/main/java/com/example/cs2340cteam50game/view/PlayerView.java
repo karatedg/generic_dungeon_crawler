@@ -22,8 +22,8 @@ public class PlayerView extends View {
     public float getSpriteHeight() {
         return height;
     }
-    private float x;
-    private float y;
+    private volatile float x;
+    private volatile float y;
 
     public PlayerView(Context context) {
         super(context);
