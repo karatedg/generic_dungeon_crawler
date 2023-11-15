@@ -2,6 +2,8 @@ package com.example.cs2340cteam50game.viewmodel;
 
 import com.example.cs2340cteam50game.model.BeastCreator;
 import com.example.cs2340cteam50game.model.BeastEnemy;
+import com.example.cs2340cteam50game.model.ConfusionMovement;
+import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.DemonCreator;
 import com.example.cs2340cteam50game.model.DemonEnemy;
 import com.example.cs2340cteam50game.model.Enemy;
@@ -177,6 +179,18 @@ public class GameScreenModel {
                 player.setxPos(playerHitBox.getLeft());
                 player.setyPos(playerHitBox.getTop());
                 gameScreen.updateHealth(player.getHealthPoints());
+                //confusion movement stuff, only applies for the ghost
+                if (enemy instanceof GhostEnemy) {
+                    player.setMovementStrategy(new ConfusionMovement());
+                    CountDownTimer confusion = new CountDownTimer(8000, 1000) {
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        public void onFinish() {
+                            player.setMovementStrategy(new DefaultSpeed());
+                        }
+                    }.start();
+
+                }
                 break;
             }
         }
