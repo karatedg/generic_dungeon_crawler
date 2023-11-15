@@ -182,7 +182,7 @@ public class GameScreenModel {
                 //confusion movement stuff, only applies for the ghost
                 if (enemy instanceof GhostEnemy) {
                     player.setMovementStrategy(new ConfusionMovement());
-                    CountDownTimer confusion = new CountDownTimer(7000, 1000) {
+                    CountDownTimer confusion = new CountDownTimer(8000, 1000) {
                         public void onTick(long millisUntilFinished) {
                         }
                         public void onFinish() {
