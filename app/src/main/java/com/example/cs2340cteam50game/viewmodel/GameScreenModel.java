@@ -11,6 +11,7 @@ import com.example.cs2340cteam50game.model.FireSkullCreator;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.GhostCreator;
 import com.example.cs2340cteam50game.model.GhostEnemy;
+import com.example.cs2340cteam50game.model.HealthPowerup;
 import com.example.cs2340cteam50game.model.Powerup;
 import com.example.cs2340cteam50game.model.Rectangle;
 
@@ -25,12 +26,15 @@ import android.widget.TextView;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.model.ShieldPowerup;
+import com.example.cs2340cteam50game.model.SpeedBoost;
 import com.example.cs2340cteam50game.model.SpeedPowerup;
 import com.example.cs2340cteam50game.view.BeastView;
 import com.example.cs2340cteam50game.view.DemonView;
 import com.example.cs2340cteam50game.view.FireSkullView;
 import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.GhostView;
+import com.example.cs2340cteam50game.view.HealthPowerupView;
 import com.example.cs2340cteam50game.view.PlayerView;
 import com.example.cs2340cteam50game.view.SpeedPowerupView;
 
@@ -51,6 +55,7 @@ public class GameScreenModel {
     private Drawable speedSprite;
     private Drawable healthSprite;
     private Drawable shieldSprite;
+    private Drawable playerShieldSprite;
 
     //Creates the Creator classes used for making enemies
     private FireSkullCreator fsCreator = new FireSkullCreator();
@@ -105,6 +110,7 @@ public class GameScreenModel {
 
     private ArrayList<Powerup> currentPowerups = new ArrayList<>();
     private ArrayList<Enemy> currentEnemies = new ArrayList<>();
+    private ArrayList<View> powerupViews = new ArrayList<>();
     private ArrayList<View> enemyViews = new ArrayList<>();
     private ArrayList<EnemyMovementHandler> eMovementHandlers = new ArrayList<>();
 
@@ -204,9 +210,49 @@ public class GameScreenModel {
         }
     }
 
+    //Collision Handler for PowerUps
+    public void checkPowerUpCollisions(float xPos, float yPos, int direction) {
+        Rectangle playerHitBox = new Rectangle(xPos, yPos,
+                xPos + player.getSpriteWidth(),
+                yPos + player.getSpriteHeight());
+
+        for (Powerup powerup : currentPowerups) {
+            if (playerHitBox.intersectsWall(powerup.getHitBox(), direction)) {
+                if (powerup instanceof SpeedPowerup) {
+                    player.setMovementStrategy(new SpeedBoost());
+                    CountDownTimer speedBoosted = new CountDownTimer(8000, 1000) {
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        public void onFinish() {
+                            player.setMovementStrategy(new DefaultSpeed());
+                        }
+                    }.start();
+                    //remove power up
+
+                } else if (powerup instanceof HealthPowerup) {
+                    if (player.getDifficultyNum() == 1) {
+                        player.setHealthPoints(150); //difficulty health
+                    } else if (player.getDifficultyNum() == 2) {
+                        player.setHealthPoints(100);
+                    } else {
+                        player.setHealthPoints(75);
+                    }
+                    gameScreen.updateHealth(player.getHealthPoints());
+                    //remove power up
+                } else if (powerup instanceof ShieldPowerup) {
+                    player.setSprite(playerShieldSprite);
+                    //remove power up
+                }
+
+                break;
+            }
+        }
+    }
+
     public void nextRoom() {
 
         currentEnemies.clear();
+        currentPowerups.clear();
         for (EnemyMovementHandler handler : eMovementHandlers) {
             handler.stopMovement();
         }
@@ -218,6 +264,7 @@ public class GameScreenModel {
             gameScreen.endGame();
         } else {
             clearEnemies();
+            clearPowerups();
             currentRoom++;
             setScreen(currentRoom);
             switch (currentRoom) {
@@ -244,13 +291,15 @@ public class GameScreenModel {
             createEnemySet1();
             createEnemySet1Views();
             createPowerUpSet1();
-            createPowerupSet1Views();
+            createPowerUpSet1Views();
             break;
         case 1:
             map.setImageResource(R.drawable.newmap2);
             currentWallSet = map2Walls;
             createEnemySet2();
             createEnemySet2Views();
+            createPowerUpSet2();
+            createPowerUpSet2Views();
             break;
         case 2:
             map.setImageResource(R.drawable.newmap3);
@@ -271,6 +320,7 @@ public class GameScreenModel {
     public void endGameDeath() {
 
         currentEnemies.clear();
+        currentPowerups.clear();
         for (EnemyMovementHandler handler : eMovementHandlers) {
             handler.stopMovement();
         }
@@ -289,6 +339,13 @@ public class GameScreenModel {
         enemyViews.clear();
     }
 
+    public void clearPowerups() {
+        for (View powerup : powerupViews) {
+            gameLayout.removeView(powerup);
+        }
+        powerupViews.clear();
+    }
+
     public void createPowerUpSet1() {
         //Add Speed PowerUp
         SpeedPowerup speedPowerup = (SpeedPowerup) new SpeedPowerup();
@@ -298,11 +355,29 @@ public class GameScreenModel {
         currentPowerups.add(speedPowerup);
     }
 
-    public void createPowerupSet1Views() {
+    public void createPowerUpSet1Views() {
         SpeedPowerup speedPowerup = (SpeedPowerup) currentPowerups.get(0);
         SpeedPowerupView speedPowerupView = new SpeedPowerupView(gameScreen, speedPowerup);
         speedPowerup.setSpriteData(speedPowerupView);
         gameLayout.addView(speedPowerupView);
+        powerupViews.add(speedPowerupView);
+    }
+
+    public void createPowerUpSet2() {
+        //Add Health PowerUp
+        HealthPowerup healthPowerup = (HealthPowerup) new HealthPowerup();
+        healthPowerup.setSprite(healthSprite);
+        healthPowerup.setxPos(1400.0);
+        healthPowerup.setyPos(screenHeight/2);
+        currentPowerups.add(healthPowerup);
+    }
+
+    public void createPowerUpSet2Views() {
+        HealthPowerup healthPowerup = (HealthPowerup) currentPowerups.get(0);
+        HealthPowerupView healthPowerupView = new HealthPowerupView(gameScreen, healthPowerup);
+        healthPowerup.setSpriteData(healthPowerupView);
+        gameLayout.addView(healthPowerupView);
+        powerupViews.add(healthPowerupView);
     }
 
     public void createEnemySet1() {

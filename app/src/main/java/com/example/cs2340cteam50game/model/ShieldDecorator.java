@@ -15,7 +15,7 @@ public class ShieldDecorator extends PowerupDecorator {
 
     @Override
     public void usePowerup() {
-        decoratedPowerup.usePowerup();
+        //decoratedPowerup.usePowerup();
         useAbility(decoratedPowerup);
     }
 
