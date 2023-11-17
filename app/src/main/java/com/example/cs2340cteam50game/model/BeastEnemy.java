@@ -25,21 +25,6 @@ public class BeastEnemy implements Enemy {
         this.sprite = null;
     }
     @Override
-    public void movementCycle() {
-        // Some movement pattern for Skull
-    }
-
-    @Override
-    public void die() {
-        // when player attacks and enemy health == 0
-    }
-
-    @Override
-    public void onHit() {
-        //For skull when player collides, swap players left and right, and up and down
-    }
-
-    @Override
     public Drawable getSprite() {
         return sprite;
     }

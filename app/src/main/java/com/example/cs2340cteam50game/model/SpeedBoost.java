@@ -5,21 +5,25 @@ public class SpeedBoost implements MovementStrategy {
 
     @Override
     public void moveUp() {
+        player.setMovementSpeed(25);
         player.moveY(player.getMovementSpeed());
     }
 
     @Override
     public void moveDown() {
+        player.setMovementSpeed(25);
         player.moveY(-1 * player.getMovementSpeed());
     }
 
     @Override
     public void moveRight() {
+        player.setMovementSpeed(25);
         player.moveX(player.getMovementSpeed());
     }
 
     @Override
     public void moveLeft() {
+        player.setMovementSpeed(25);
         player.moveX(-1 * player.getMovementSpeed());
     }
 
