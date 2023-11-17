@@ -24,14 +24,18 @@ import android.widget.TextView;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.model.Sword;
 import com.example.cs2340cteam50game.view.BeastView;
 import com.example.cs2340cteam50game.view.DemonView;
 import com.example.cs2340cteam50game.view.FireSkullView;
 import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.GhostView;
 import com.example.cs2340cteam50game.view.PlayerView;
+import com.example.cs2340cteam50game.view.SwordView;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class GameScreenModel {
 
@@ -39,6 +43,7 @@ public class GameScreenModel {
 
     private final PlayerClass player = PlayerClass.getPlayer();
     private PlayerView playerView;
+    private SwordView swordView;
     private ImageView map;
     private GameScreen gameScreen;
     private int screenWidth;
@@ -58,6 +63,7 @@ public class GameScreenModel {
     private CountDownTimer timer;
 
     private int currentRoom = 0;
+    private Drawable swordSprite;
 
     private final Rectangle[] map1Walls = {
         new Rectangle(423, 256, 450, 695),
@@ -479,6 +485,29 @@ public class GameScreenModel {
         }
         exitBox = currentWallSet[currentWallSet.length - 1];
     }
+    public void attack() {
+        Sword sword = Sword.getSword();
+        sword.setSpriteHeight(5);
+        sword.setSpriteWidth(5);
+        SwordView swordView1 = new SwordView(gameScreen, sword);
+        sword.setSprite(swordSprite);
+        sword.setxPos(PlayerClass.getPlayer().getxPos());
+        sword.setyPos(PlayerClass.getPlayer().getyPos() + 50);
+        CountDownTimer countDownTimer = new CountDownTimer(1000, 1000) {
+            @Override
+            public void onTick(long l) {
+                gameLayout.addView(swordView1);
+            }
+
+            @Override
+            public void onFinish() {
+                gameLayout.removeView(swordView1);
+            }
+        }.start();
+    }
+    private void removeSword(SwordView swordView1) {
+        gameLayout.removeView(swordView1);
+    }
 
     public void setFsSprite(Drawable fsSprite) {
         this.fsSprite = fsSprite;
@@ -499,6 +528,9 @@ public class GameScreenModel {
         currentEnemies.add(enemy);
     }
 
+    public void setSwordSprite(Drawable drawable) {
+        this.swordSprite = drawable;
+    }
 }
 
 
