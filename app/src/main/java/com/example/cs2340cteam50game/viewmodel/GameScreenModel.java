@@ -11,6 +11,7 @@ import com.example.cs2340cteam50game.model.FireSkullCreator;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.GhostCreator;
 import com.example.cs2340cteam50game.model.GhostEnemy;
+import com.example.cs2340cteam50game.model.Powerup;
 import com.example.cs2340cteam50game.model.Rectangle;
 
 import android.graphics.drawable.Drawable;
@@ -24,12 +25,14 @@ import android.widget.TextView;
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.NoSpeed;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.model.SpeedPowerup;
 import com.example.cs2340cteam50game.view.BeastView;
 import com.example.cs2340cteam50game.view.DemonView;
 import com.example.cs2340cteam50game.view.FireSkullView;
 import com.example.cs2340cteam50game.view.GameScreen;
 import com.example.cs2340cteam50game.view.GhostView;
 import com.example.cs2340cteam50game.view.PlayerView;
+import com.example.cs2340cteam50game.view.SpeedPowerupView;
 
 import java.util.ArrayList;
 
@@ -44,6 +47,10 @@ public class GameScreenModel {
     private int screenWidth;
     private int screenHeight;
     private RelativeLayout gameLayout;
+
+    private Drawable speedSprite;
+    private Drawable healthSprite;
+    private Drawable shieldSprite;
 
     //Creates the Creator classes used for making enemies
     private FireSkullCreator fsCreator = new FireSkullCreator();
@@ -96,6 +103,7 @@ public class GameScreenModel {
         new Rectangle(1801, 0, 1979, 20),
     };
 
+    private ArrayList<Powerup> currentPowerups = new ArrayList<>();
     private ArrayList<Enemy> currentEnemies = new ArrayList<>();
     private ArrayList<View> enemyViews = new ArrayList<>();
     private ArrayList<EnemyMovementHandler> eMovementHandlers = new ArrayList<>();
@@ -235,6 +243,8 @@ public class GameScreenModel {
             currentWallSet = map1Walls;
             createEnemySet1();
             createEnemySet1Views();
+            createPowerUpSet1();
+            createPowerupSet1Views();
             break;
         case 1:
             map.setImageResource(R.drawable.newmap2);
@@ -279,7 +289,21 @@ public class GameScreenModel {
         enemyViews.clear();
     }
 
+    public void createPowerUpSet1() {
+        //Add Speed PowerUp
+        SpeedPowerup speedPowerup = (SpeedPowerup) new SpeedPowerup();
+        speedPowerup.setSprite(speedSprite);
+        speedPowerup.setxPos(210.0);
+        speedPowerup.setyPos(screenHeight/3);
+        currentPowerups.add(speedPowerup);
+    }
 
+    public void createPowerupSet1Views() {
+        SpeedPowerup speedPowerup = (SpeedPowerup) currentPowerups.get(0);
+        SpeedPowerupView speedPowerupView = new SpeedPowerupView(gameScreen, speedPowerup);
+        speedPowerup.setSpriteData(speedPowerupView);
+        gameLayout.addView(speedPowerupView);
+    }
 
     public void createEnemySet1() {
 
