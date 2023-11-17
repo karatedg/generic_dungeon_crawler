@@ -11,7 +11,7 @@ public class SpeedDecorator extends PowerupDecorator {
 
     @Override
     public void usePowerup() {
-        decoratedPowerup.usePowerup();
+        //decoratedPowerup.usePowerup();
         setAbility(decoratedPowerup);
     }
 

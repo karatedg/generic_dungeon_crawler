@@ -11,7 +11,7 @@ public class HealthDecorator extends PowerupDecorator {
 
     @Override
     public void usePowerup() {
-        decoratedPowerup.usePowerup();
+       // decoratedPowerup.usePowerup();
         useAbility(decoratedPowerup);
     }
 

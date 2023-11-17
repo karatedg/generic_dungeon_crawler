@@ -18,7 +18,7 @@ public class PlayerClass {
     //System Values:
     private volatile double xPos;
     private volatile double yPos;
-    private final double movementSpeed;
+    private double movementSpeed;
     private MovementStrategy movementStrategy;
     private float spriteWidth;
     private float spriteHeight;
@@ -113,6 +113,7 @@ public class PlayerClass {
             }
         }
         gameScreenModel.checkEnemyCollisions((float) xPos, (float) yPos, 0);
+        gameScreenModel.checkPowerUpCollisions((float) xPos, (float) yPos, 0);
     }
 
     /** Move y by given distance
@@ -133,6 +134,7 @@ public class PlayerClass {
             }
         }
         gameScreenModel.checkEnemyCollisions((float) xPos, (float) yPos, 1);
+        gameScreenModel.checkPowerUpCollisions((float) xPos, (float) yPos, 1);
     }
 
 
@@ -207,6 +209,10 @@ public class PlayerClass {
      */
     public double getMovementSpeed() {
         return movementSpeed;
+    }
+
+    public void setMovementSpeed(double movementSpeed) {
+        this.movementSpeed = movementSpeed;
     }
 
     /**

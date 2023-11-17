@@ -2,7 +2,6 @@ package com.example.cs2340cteam50game.model;
 
 import android.graphics.drawable.Drawable;
 
-import com.example.cs2340cteam50game.view.FireSkullView;
 import com.example.cs2340cteam50game.view.SpeedPowerupView;
 
 public class SpeedPowerup implements Powerup {
@@ -20,9 +19,8 @@ public class SpeedPowerup implements Powerup {
         this.y = 0.0;
     }
 
-    @Override
-    public void usePowerup() {
-        System.out.println("SpeedPowerup(Redbull) has been picked up");
+    public Rectangle getHitBox() {
+        return hitBox;
     }
 
     public void setSpriteData(SpeedPowerupView speedPowerupView) {
