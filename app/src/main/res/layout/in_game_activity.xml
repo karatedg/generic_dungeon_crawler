@@ -8,10 +8,62 @@
     android:background="@drawable/welcome_background"
     android:screenOrientation="landscape">
 
-    <androidx.constraintlayout.widget.Group
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="LeftButton,DownButton,UpButton,RightButton" />
+    <RelativeLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/gameMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/LeftButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageView
+        android:id="@+id/DownButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LeftButton"
+        app:srcCompat="@drawable/down_arrow" />
+
+    <ImageView
+        android:id="@+id/RightButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DownButton"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <ImageView
+        android:id="@+id/UpButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/DownButton"
+        app:layout_constraintStart_toEndOf="@+id/LeftButton"
+        app:srcCompat="@drawable/up_arrow" />
 
     <TextView
         android:id="@+id/playerName"
@@ -76,68 +128,5 @@
         android:textColor="#FFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/LeftButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="L"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/DownButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="8dp"
-        android:text="D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/LeftButton" />
-
-    <Button
-        android:id="@+id/UpButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="60dp"
-        android:text="U"
-        app:layout_constraintBottom_toBottomOf="@id/DownButton"
-        app:layout_constraintStart_toStartOf="@id/LeftButton" />
-
-    <Button
-        android:id="@+id/RightButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="8dp"
-        android:text="R"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/DownButton" />
-
-    <RelativeLayout
-        android:id="@+id/gameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/gameMap"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY" />
-
-    </RelativeLayout>
-
-    =======
 
 </androidx.constraintlayout.widget.ConstraintLayout>
