@@ -155,18 +155,68 @@ public class GameScreenModel {
         }
     }
 
+
+
+
+    private PlayerMovementHandler left = new PlayerMovementHandler(0, this, mainHandler);
+    private PlayerMovementHandler up = new PlayerMovementHandler(1, this, mainHandler);
+    private PlayerMovementHandler down = new PlayerMovementHandler(2, this, mainHandler);
+    private PlayerMovementHandler right = new PlayerMovementHandler(3, this, mainHandler);
+
+
+    public void startMovement(int direction) {
+        switch (direction) {
+        case 0:
+            new Thread(left).start();
+            break;
+        case 1:
+            new Thread(up).start();
+            break;
+        case 2:
+            new Thread(down).start();
+            break;
+        case 3:
+            new Thread(right).start();
+            break;
+        default:
+        }
+    }
+
+    public void stopMovement(int direction) {
+        switch (direction) {
+        case 0:
+            left.stopMovement();
+            break;
+        case 1:
+            up.stopMovement();
+            break;
+        case 2:
+            down.stopMovement();
+            break;
+        case 3:
+            right.stopMovement();
+            break;
+        default:
+        }
+    }
+
+
     //Callable movement methods
     public void moveLeft() {
         player.moveLeft();
+        playerView.updatePosition();
     }
     public void moveUp() {
         player.moveUp();
+        playerView.updatePosition();
     }
     public void moveRight() {
         player.moveRight();
+        playerView.updatePosition();
     }
     public void moveDown() {
         player.moveDown();
+        playerView.updatePosition();
     }
 
     //Collision Handler for Walls & Rooms
