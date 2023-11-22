@@ -22,9 +22,11 @@ public class SwordView extends View {
     public float getSpriteWidth() {
         return width;
     }
+
     public float getSpriteHeight() {
         return height;
     }
+
     private volatile float x;
     private volatile float y;
 
@@ -36,16 +38,15 @@ public class SwordView extends View {
         Drawable sprite = getResources().getDrawable(spriteID);
         sword.setSprite(sprite);
         Bitmap temp = ((BitmapDrawable) sword.getSprite()).getBitmap();
-        this.x = (float) PlayerClass.getPlayer().getxPos();
-        this.y = (float) PlayerClass.getPlayer().getyPos() + 50;
-        swordSprite = Bitmap.createScaledBitmap(temp, (int) (.25 * temp.getWidth()),
+        this.x = (float) PlayerClass.getPlayer().getxPos() + 25;
+        this.y = (float) PlayerClass.getPlayer().getyPos() - 90;
+        swordSprite = Bitmap.createScaledBitmap(temp, (int) (.125 * temp.getWidth()),
                 (int) (.25 * temp.getHeight()), true);
         width = swordSprite.getWidth();
         height = swordSprite.getHeight();
         sword.setSpriteWidth(width);
         sword.setSpriteHeight(height);
     }
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);

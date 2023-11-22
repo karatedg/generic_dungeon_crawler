@@ -257,6 +257,50 @@ public class GameScreenModel {
             }
         }
     }
+    public void checkEnemySwordCollisions(Sword sword) {
+        for (Enemy enemy : currentEnemies) {
+            if (sword.getHitBox().intersects(enemy.getHitBox())) {
+                if (currentRoom == 0 && enemy instanceof FireSkullEnemy) {
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    eMovementHandlers.get(0).stopMovement();
+                    gameLayout.removeView(enemyViews.get(0));
+                }
+                if (currentRoom == 0 && enemy instanceof BeastEnemy) {
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    eMovementHandlers.get(1).stopMovement();
+                    gameLayout.removeView(enemyViews.get(1));
+                }
+                if (currentRoom == 1 && enemy instanceof BeastEnemy) {
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    eMovementHandlers.get(0).stopMovement();
+                    gameLayout.removeView(enemyViews.get(0));
+                }
+                if (currentRoom == 1 && enemy instanceof DemonEnemy) {
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    eMovementHandlers.get(1).stopMovement();
+                    gameLayout.removeView(enemyViews.get(1));
+                }
+                if (currentRoom == 2 && enemy instanceof DemonEnemy) {
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    eMovementHandlers.get(0).stopMovement();
+                    gameLayout.removeView(enemyViews.get(0));
+                }
+                if (currentRoom == 2 && enemy instanceof GhostEnemy) {
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    eMovementHandlers.get(1).stopMovement();
+                    enemy.setHitBox(new Rectangle((float) -20, (float) -20,
+                            (float) -20, (float) -20));
+                    gameLayout.removeView(enemyViews.get(1));
+                }
+            }
+        }
+    }
 
     public void nextRoom() {
 
@@ -589,16 +633,18 @@ public class GameScreenModel {
     }
     public void attack() {
         Sword sword = Sword.getSword();
-        sword.setSpriteHeight(5);
-        sword.setSpriteWidth(5);
+        sword.setxPos(PlayerClass.getPlayer().getxPos() + 25);
+        sword.setyPos(PlayerClass.getPlayer().getyPos() - 90);
         SwordView swordView1 = new SwordView(gameScreen, sword);
         sword.setSprite(swordSprite);
-        sword.setxPos(PlayerClass.getPlayer().getxPos());
-        sword.setyPos(PlayerClass.getPlayer().getyPos() + 50);
+        sword.setSpriteData(swordView1);
+        System.out.println(sword.getHitBox().getTop());
+        System.out.println(sword.getHitBox().getLeft());
         CountDownTimer countDownTimer = new CountDownTimer(1000, 1000) {
             @Override
             public void onTick(long l) {
                 gameLayout.addView(swordView1);
+                checkEnemySwordCollisions(sword);
             }
 
             @Override

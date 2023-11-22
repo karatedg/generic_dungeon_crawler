@@ -93,4 +93,7 @@ public class FireSkullEnemy implements Enemy {
         yPos += stepY;
         hitBox.updatePosition(stepX, stepY);
     }
+    public void setHitBox(Rectangle hitBox) {
+        this.hitBox = hitBox;
+    }
 }

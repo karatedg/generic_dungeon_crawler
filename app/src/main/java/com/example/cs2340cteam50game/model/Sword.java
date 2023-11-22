@@ -88,5 +88,6 @@ public class Sword implements Weapon {
     public void setyPos(double y) {
         yPos = y;
     }
+    public void setHitBox(Rectangle rect) { hitBox = rect;}
 
 }
