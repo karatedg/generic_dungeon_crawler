@@ -43,6 +43,7 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setbSprite(getDrawable(R.drawable.beast));
         gameScreenModel.setgSprite(getDrawable(R.drawable.ghost));
         gameScreenModel.setdSprite(getDrawable(R.drawable.demon));
+        gameScreenModel.setSwordSprite(getDrawable(R.drawable.sword));
 
         //Get ids for display elements
         healthValueDisplay = findViewById(R.id.healthValue);
@@ -102,6 +103,8 @@ public class GameScreen extends AppCompatActivity {
         case KeyEvent.KEYCODE_S:
             gameScreenModel.moveDown();
             break;
+        case KeyEvent.KEYCODE_SPACE:
+            gameScreenModel.attack();
         default:
             break;
         }
@@ -133,6 +136,7 @@ public class GameScreen extends AppCompatActivity {
             healthValueDisplay.setText(Integer.toString(healthPoints));
         }
     }
+
 
     public void updatePlayer() {
         playerView.updatePosition();
