@@ -15,7 +15,7 @@ public class SpeedDecorator extends PowerupDecorator {
         setAbility(decoratedPowerup);
     }
 
-    private void setAbility(Powerup decoratedPowerup){
+    private void setAbility(Powerup decoratedPowerup) {
         System.out.println("Speed has been increased");
         player.setMovementStrategy(speedBoost);
     }

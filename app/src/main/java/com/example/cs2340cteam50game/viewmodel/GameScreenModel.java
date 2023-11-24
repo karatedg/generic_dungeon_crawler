@@ -50,8 +50,6 @@ import com.example.cs2340cteam50game.view.SwordView;
 import com.example.cs2340cteam50game.view.SpeedPowerupView;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class GameScreenModel {
 
@@ -477,7 +475,7 @@ public class GameScreenModel {
         SpeedPowerup speedPowerup = (SpeedPowerup) new SpeedPowerup();
         speedPowerup.setSprite(speedSprite);
         speedPowerup.setxPos(210.0);
-        speedPowerup.setyPos(screenHeight/3);
+        speedPowerup.setyPos(screenHeight / 3);
         currentPowerups.add(speedPowerup);
     }
 
@@ -494,7 +492,7 @@ public class GameScreenModel {
         HealthPowerup healthPowerup = (HealthPowerup) new HealthPowerup();
         healthPowerup.setSprite(healthSprite);
         healthPowerup.setxPos(1400.0);
-        healthPowerup.setyPos(screenHeight/2);
+        healthPowerup.setyPos(screenHeight / 2);
         currentPowerups.add(healthPowerup);
     }
 
@@ -511,7 +509,7 @@ public class GameScreenModel {
         ShieldPowerup shieldPowerup = (ShieldPowerup) new ShieldPowerup();
         shieldPowerup.setSprite(shieldSprite);
         shieldPowerup.setxPos(1000);
-        shieldPowerup.setyPos(screenHeight/2);
+        shieldPowerup.setyPos(screenHeight / 2);
         currentPowerups.add(shieldPowerup);
     }
 
@@ -723,10 +721,10 @@ public class GameScreenModel {
     }
     public void attack() {
         Sword sword = Sword.getSword();
-        sword.setxPos(PlayerClass.getPlayer().getxPos() + 25);
-        sword.setyPos(PlayerClass.getPlayer().getyPos() - 90);
-        SwordView swordView1 = new SwordView(gameScreen, sword);
         sword.setSprite(swordSprite);
+        sword.setxPos(player.getxPos() + player.getSpriteWidth());
+        sword.setyPos(player.getyPos());
+        SwordView swordView1 = new SwordView(gameScreen, sword);
         sword.setSpriteData(swordView1);
         System.out.println(sword.getHitBox().getTop());
         System.out.println(sword.getHitBox().getLeft());

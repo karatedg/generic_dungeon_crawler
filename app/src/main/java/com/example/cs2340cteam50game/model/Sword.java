@@ -1,8 +1,6 @@
 package com.example.cs2340cteam50game.model;
 
 import android.graphics.drawable.Drawable;
-
-import com.example.cs2340cteam50game.view.FireSkullView;
 import com.example.cs2340cteam50game.view.SwordView;
 
 public class Sword implements Weapon {
@@ -43,7 +41,6 @@ public class Sword implements Weapon {
         this.spriteWidth = swordView.getSpriteWidth();
         this.spriteHeight = swordView.getSpriteHeight();
 
-        // NEW CODE
         this.hitBox = new Rectangle((float) xPos, (float) yPos,
                 (float) xPos + spriteWidth, (float) yPos + spriteHeight);
     }
@@ -88,6 +85,8 @@ public class Sword implements Weapon {
     public void setyPos(double y) {
         yPos = y;
     }
-    public void setHitBox(Rectangle rect) { hitBox = rect;}
+    public void setHitBox(Rectangle rect) {
+        hitBox = rect;
+    }
 
 }

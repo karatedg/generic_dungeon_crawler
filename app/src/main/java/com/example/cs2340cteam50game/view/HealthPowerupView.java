@@ -12,7 +12,7 @@ import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.HealthPowerup;
 
 
-public class HealthPowerupView extends View{
+public class HealthPowerupView extends View {
     private HealthPowerup medkit;
     private Bitmap medkitSprite;
     private float width;

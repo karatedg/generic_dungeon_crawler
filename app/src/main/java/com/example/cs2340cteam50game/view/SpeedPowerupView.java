@@ -12,7 +12,7 @@ import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.SpeedPowerup;
 
 
-public class SpeedPowerupView extends View{
+public class SpeedPowerupView extends View {
     private SpeedPowerup redbull;
     private Bitmap redbullSprite;
     private float width;

@@ -11,11 +11,11 @@ public class HealthDecorator extends PowerupDecorator {
 
     @Override
     public void usePowerup() {
-       // decoratedPowerup.usePowerup();
+        // decoratedPowerup.usePowerup();
         useAbility(decoratedPowerup);
     }
 
-    private void useAbility(Powerup decoratedPowerup){
+    private void useAbility(Powerup decoratedPowerup) {
         System.out.println("Health has been restored");
         player.setHealthPoints(newHealth);
     }
