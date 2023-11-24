@@ -1,5 +1,14 @@
 package com.example.cs2340cteam50game.viewmodel;
 
+import android.graphics.drawable.Drawable;
+import android.os.CountDownTimer;
+import android.os.Handler;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.BeastCreator;
 import com.example.cs2340cteam50game.model.BeastEnemy;
 import com.example.cs2340cteam50game.model.ConfusionMovement;
@@ -12,21 +21,14 @@ import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.GhostCreator;
 import com.example.cs2340cteam50game.model.GhostEnemy;
 import com.example.cs2340cteam50game.model.HealthPowerup;
+import com.example.cs2340cteam50game.model.NoSpeed;
+import com.example.cs2340cteam50game.model.PlayerClass;
+
 import com.example.cs2340cteam50game.model.Powerup;
 import com.example.cs2340cteam50game.model.Rectangle;
 
-import android.graphics.drawable.Drawable;
-import android.os.CountDownTimer;
-import android.os.Handler;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.NoSpeed;
-import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Sword;
+
 import com.example.cs2340cteam50game.model.ShieldPowerup;
 import com.example.cs2340cteam50game.model.SpeedBoost;
 import com.example.cs2340cteam50game.model.SpeedPowerup;
@@ -39,7 +41,11 @@ import com.example.cs2340cteam50game.view.GhostView;
 import com.example.cs2340cteam50game.view.HealthPowerupView;
 import com.example.cs2340cteam50game.view.PlayerView;
 
+import com.example.cs2340cteam50game.view.ShieldPowerupView;
+
+
 import com.example.cs2340cteam50game.view.SwordView;
+
 
 import com.example.cs2340cteam50game.view.SpeedPowerupView;
 
@@ -279,14 +285,14 @@ public class GameScreenModel {
             if (playerHitBox.intersectsWall(powerup.getHitBox(), direction)) {
                 if (powerup instanceof SpeedPowerup) {
                     player.setMovementStrategy(new SpeedBoost());
-                    CountDownTimer speedBoosted = new CountDownTimer(8000, 1000) {
+                    CountDownTimer speedBoosted = new CountDownTimer(12000, 1000) {
                         public void onTick(long millisUntilFinished) {
                         }
                         public void onFinish() {
                             player.setMovementStrategy(new DefaultSpeed());
                         }
                     }.start();
-                    //remove power up
+                    gameLayout.removeView(powerupViews.get(0));
 
                 } else if (powerup instanceof HealthPowerup) {
                     if (player.getDifficultyNum() == 1) {
@@ -297,10 +303,25 @@ public class GameScreenModel {
                         player.setHealthPoints(75);
                     }
                     gameScreen.updateHealth(player.getHealthPoints());
-                    //remove power up
+                    gameLayout.removeView(powerupViews.get(0));
                 } else if (powerup instanceof ShieldPowerup) {
-                    player.setSprite(playerShieldSprite);
-                    //remove power up
+                    //Regen
+                    CountDownTimer invincibility = new CountDownTimer(8000, 400) {
+                        public void onTick(long millisUntilFinished) {
+                            if (player.getDifficultyNum() == 1) {
+                                player.setHealthPoints(150); //difficulty health
+                            } else if (player.getDifficultyNum() == 2) {
+                                player.setHealthPoints(100);
+                            } else {
+                                player.setHealthPoints(75);
+                            }
+                            gameScreen.updateHealth(player.getHealthPoints());
+                        }
+                        public void onFinish() {
+                            gameScreen.updateHealth(player.getHealthPoints());
+                        }
+                    }.start();
+                    gameLayout.removeView(powerupViews.get(0));
                 }
 
                 break;
@@ -409,6 +430,8 @@ public class GameScreenModel {
             currentWallSet = map3Walls;
             createEnemySet3();
             createEnemySet3Views();
+            createPowerUpSet3();
+            createPowerUpSet3Views();
             break;
         default:
             map.setImageResource(R.drawable.newmap1);
@@ -481,6 +504,23 @@ public class GameScreenModel {
         healthPowerup.setSpriteData(healthPowerupView);
         gameLayout.addView(healthPowerupView);
         powerupViews.add(healthPowerupView);
+    }
+
+    public void createPowerUpSet3() {
+        //Add Shield PowerUp
+        ShieldPowerup shieldPowerup = (ShieldPowerup) new ShieldPowerup();
+        shieldPowerup.setSprite(shieldSprite);
+        shieldPowerup.setxPos(1000);
+        shieldPowerup.setyPos(screenHeight/2);
+        currentPowerups.add(shieldPowerup);
+    }
+
+    public void createPowerUpSet3Views() {
+        ShieldPowerup shieldPowerup = (ShieldPowerup) currentPowerups.get(0);
+        ShieldPowerupView shieldPowerupView = new ShieldPowerupView(gameScreen, shieldPowerup);
+        shieldPowerup.setSpriteData(shieldPowerupView);
+        gameLayout.addView(shieldPowerupView);
+        powerupViews.add(shieldPowerupView);
     }
 
     public void createEnemySet1() {
