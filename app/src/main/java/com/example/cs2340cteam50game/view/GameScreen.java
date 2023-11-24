@@ -188,6 +188,7 @@ public class GameScreen extends AppCompatActivity {
             break;
         case KeyEvent.KEYCODE_SPACE:
             gameScreenModel.attack();
+            break;
         default:
             break;
         }

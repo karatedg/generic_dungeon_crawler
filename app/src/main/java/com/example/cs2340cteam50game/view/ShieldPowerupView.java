@@ -12,7 +12,7 @@ import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.ShieldPowerup;
 
 
-public class ShieldPowerupView extends View{
+public class ShieldPowerupView extends View {
     private ShieldPowerup shield;
     private Drawable playerShield;
     private Bitmap shieldSprite;

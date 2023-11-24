@@ -10,7 +10,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import com.example.cs2340cteam50game.R;
-import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Sword;
 
 public class SwordView extends View {
@@ -38,8 +37,8 @@ public class SwordView extends View {
         Drawable sprite = getResources().getDrawable(spriteID);
         sword.setSprite(sprite);
         Bitmap temp = ((BitmapDrawable) sword.getSprite()).getBitmap();
-        this.x = (float) PlayerClass.getPlayer().getxPos() + 25;
-        this.y = (float) PlayerClass.getPlayer().getyPos() - 90;
+        this.x = (float) sword.getxPos();
+        this.y = (float) sword.getyPos();
         swordSprite = Bitmap.createScaledBitmap(temp, (int) (.125 * temp.getWidth()),
                 (int) (.25 * temp.getHeight()), true);
         width = swordSprite.getWidth();
