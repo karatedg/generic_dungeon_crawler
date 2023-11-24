@@ -1,30 +1,35 @@
 package com.example.cs2340cteam50game.model;
 
-
-
 import android.graphics.drawable.Drawable;
-import com.example.cs2340cteam50game.view.FireSkullView;
 
-public class FireSkullEnemy implements Enemy {
+import com.example.cs2340cteam50game.view.FireSkullView;
+import com.example.cs2340cteam50game.view.SwordView;
+
+public class Sword implements Weapon {
     private Drawable sprite;
     private volatile double xPos;
     private volatile double yPos;
-    private float spriteWidth;
-    private float spriteHeight;
-
+    private float spriteWidth = 64.0F;
+    private float spriteHeight = 64.0F;
     private volatile Rectangle hitBox;
-    private double movementSpeed;
-    private double healthPoints;
-    private int damage = 10;
+    private static volatile Sword swordInstance;
 
-    public FireSkullEnemy() {
+    public Sword() {
         this.xPos = 0.0;
         this.yPos = 0.0;
-        this.movementSpeed = 10;
-        this.healthPoints = 10;
         this.sprite = null;
     }
 
+    public static Sword getSword() {
+        if (swordInstance == null) {
+            synchronized (Sword.class) {
+                if (swordInstance == null) {
+                    swordInstance = new Sword();
+                }
+            }
+        }
+        return swordInstance;
+    }
     @Override
     public Drawable getSprite() {
         return sprite;
@@ -34,9 +39,9 @@ public class FireSkullEnemy implements Enemy {
         this.sprite = x;
     }
 
-    public void setSpriteData(FireSkullView fsView) {
-        this.spriteWidth = fsView.getSpriteWidth();
-        this.spriteHeight = fsView.getSpriteHeight();
+    public void setSpriteData(SwordView swordView) {
+        this.spriteWidth = swordView.getSpriteWidth();
+        this.spriteHeight = swordView.getSpriteHeight();
 
         // NEW CODE
         this.hitBox = new Rectangle((float) xPos, (float) yPos,
@@ -76,10 +81,6 @@ public class FireSkullEnemy implements Enemy {
         return hitBox;
     }
 
-    public int getDamage() {
-        return damage;
-    }
-
     public void setxPos(double x) {
         xPos = x;
     }
@@ -87,13 +88,6 @@ public class FireSkullEnemy implements Enemy {
     public void setyPos(double y) {
         yPos = y;
     }
+    public void setHitBox(Rectangle rect) { hitBox = rect;}
 
-    public void move(int stepX, int stepY) {
-        xPos += stepX;
-        yPos += stepY;
-        hitBox.updatePosition(stepX, stepY);
-    }
-    public void setHitBox(Rectangle hitBox) {
-        this.hitBox = hitBox;
-    }
 }

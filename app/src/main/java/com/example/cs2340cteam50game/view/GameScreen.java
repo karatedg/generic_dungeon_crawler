@@ -2,10 +2,12 @@ package com.example.cs2340cteam50game.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.content.Intent;
 
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -43,6 +45,7 @@ public class GameScreen extends AppCompatActivity {
         gameScreenModel.setbSprite(getDrawable(R.drawable.beast));
         gameScreenModel.setgSprite(getDrawable(R.drawable.ghost));
         gameScreenModel.setdSprite(getDrawable(R.drawable.demon));
+        gameScreenModel.setSwordSprite(getDrawable(R.drawable.sword));
 
         //Get ids for display elements
         healthValueDisplay = findViewById(R.id.healthValue);
@@ -59,20 +62,9 @@ public class GameScreen extends AppCompatActivity {
         double screenWidth = getResources().getDisplayMetrics().widthPixels;
         double screenHeight = getResources().getDisplayMetrics().heightPixels;
 
-        //Initialize Player
-        player = PlayerClass.getPlayer();
-        player.setGameScreenModel(gameScreenModel);
-        player.setScreenWidth(screenWidth);
-        player.setScreenHeight(screenHeight);
-        player.setxPos(screenWidth / 2);
-        player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
-
-        //Initialize PlayerView
-        gameLayout = findViewById(R.id.gameLayout);
-        playerView = new PlayerView(this);
-        gameScreenModel.setPlayerView(playerView);
-        player.setSpriteData(playerView);
-        gameLayout.addView(playerView);
+        //Initialize Player & PlayerView
+        initializePlayer(screenWidth, screenHeight);
+        initializePlayerView();
 
         //Retrieve Player attributes
         name = player.getUsername();
@@ -85,6 +77,98 @@ public class GameScreen extends AppCompatActivity {
         difficultyDisplay.setText(gameScreenModel.difficultySwitch(difficulty));
         scoreDisplay.setText("Score: " + gameScreenModel.getScoreVal());
         gameScreenModel.startScoreTimer(scoreDisplay);
+
+        ImageView leftButton = findViewById(R.id.LeftButton);
+        ImageView upButton = findViewById(R.id.UpButton);
+        ImageView downButton = findViewById(R.id.DownButton);
+        ImageView rightButton = findViewById(R.id.RightButton);
+
+        initializeButtons(leftButton, upButton, downButton, rightButton);
+
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private void initializeButtons(ImageView left, ImageView up, ImageView down, ImageView right) {
+
+        left.setOnTouchListener((view, motionEvent) -> {
+            switch (motionEvent.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                gameScreenModel.startMovement(0);
+                //start movement
+                break;
+            case MotionEvent.ACTION_UP:
+                gameScreenModel.stopMovement(0);
+                //cancel movement
+                break;
+            default:
+            }
+            return true;
+        });
+
+        up.setOnTouchListener((view, motionEvent) -> {
+            switch (motionEvent.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                gameScreenModel.startMovement(1);
+                //start movement
+                break;
+            case MotionEvent.ACTION_UP:
+                gameScreenModel.stopMovement(1);
+                //cancel movement
+                break;
+            default:
+            }
+            return true;
+        });
+
+        down.setOnTouchListener((view, motionEvent) -> {
+            switch (motionEvent.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                gameScreenModel.startMovement(2);
+                //start movement
+                break;
+            case MotionEvent.ACTION_UP:
+                gameScreenModel.stopMovement(2);
+                //cancel movement
+                break;
+            default:
+            }
+            return true;
+        });
+
+        right.setOnTouchListener((view, motionEvent) -> {
+            switch (motionEvent.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                gameScreenModel.startMovement(3);
+                //start movement
+                break;
+            case MotionEvent.ACTION_UP:
+                gameScreenModel.stopMovement(3);
+                //cancel movement
+                break;
+            default:
+            }
+            return true;
+        });
+
+    }
+
+
+
+    private void initializePlayer(double screenWidth, double screenHeight) {
+        player = PlayerClass.getPlayer();
+        player.setGameScreenModel(gameScreenModel);
+        player.setScreenWidth(screenWidth);
+        player.setScreenHeight(screenHeight);
+        player.setxPos(screenWidth / 2);
+        player.setyPos(screenHeight - player.getSprite().getIntrinsicHeight());
+    }
+
+    private void initializePlayerView() {
+        gameLayout = findViewById(R.id.gameLayout);
+        playerView = new PlayerView(this);
+        gameScreenModel.setPlayerView(playerView);
+        player.setSpriteData(playerView);
+        gameLayout.addView(playerView);
     }
 
     @Override
@@ -102,10 +186,11 @@ public class GameScreen extends AppCompatActivity {
         case KeyEvent.KEYCODE_S:
             gameScreenModel.moveDown();
             break;
+        case KeyEvent.KEYCODE_SPACE:
+            gameScreenModel.attack();
         default:
             break;
         }
-        playerView.updatePosition();
         return false;
     }
 
@@ -133,6 +218,7 @@ public class GameScreen extends AppCompatActivity {
             healthValueDisplay.setText(Integer.toString(healthPoints));
         }
     }
+
 
     public void updatePlayer() {
         playerView.updatePosition();
