@@ -31,6 +31,7 @@ public class GameScreen extends AppCompatActivity {
     private TextView healthValueDisplay = null;
 
     private ImageView map = null;
+    private TextView scoreDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +52,9 @@ public class GameScreen extends AppCompatActivity {
         healthValueDisplay = findViewById(R.id.healthValue);
         TextView playerNameDisplay = findViewById(R.id.playerName);
         TextView difficultyDisplay = findViewById(R.id.difficultySetting);
-        TextView scoreDisplay = findViewById(R.id.scoreText);
+        scoreDisplay = findViewById(R.id.scoreText);
+
+
 
         //Initialize map and give access to the GameScreenModel
         map = findViewById(R.id.gameMap);
@@ -75,8 +78,8 @@ public class GameScreen extends AppCompatActivity {
         playerNameDisplay.setText(name);
         healthValueDisplay.setText(Integer.toString(health));
         difficultyDisplay.setText(gameScreenModel.difficultySwitch(difficulty));
-        scoreDisplay.setText("Score: " + gameScreenModel.getScoreVal());
-        gameScreenModel.startScoreTimer(scoreDisplay);
+        setScoreDisplay(gameScreenModel.getScoreVal());
+        //gameScreenModel.startScoreTimer(scoreDisplay);
 
         ImageView leftButton = findViewById(R.id.LeftButton);
         ImageView upButton = findViewById(R.id.UpButton);
@@ -223,5 +226,9 @@ public class GameScreen extends AppCompatActivity {
 
     public void updatePlayer() {
         playerView.updatePosition();
+    }
+
+    public void setScoreDisplay(int score) {
+        scoreDisplay.setText("Score " + score);
     }
 }
