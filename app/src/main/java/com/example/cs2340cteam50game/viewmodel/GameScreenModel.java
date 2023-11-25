@@ -132,18 +132,18 @@ public class GameScreenModel {
     private Rectangle exitBox = currentWallSet[currentWallSet.length - 1];
     private int scoreVal = 100;
 
-    public void startScoreTimer(TextView scoreDisplay) {
-        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
-            public void onTick(long millisUntilFinished) {
-                setScoreVal((int) (millisUntilFinished / 1000));
-                scoreDisplay.setText("Score: " + scoreVal);
-            }
-            public void onFinish() {
-                setScoreVal(0);
-                scoreDisplay.setText("Score: " + scoreVal);
-            }
-        }.start();
-    }
+//    public void startScoreTimer(TextView scoreDisplay) {
+//        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
+//            public void onTick(long millisUntilFinished) {
+//                setScoreVal((int) (millisUntilFinished / 1000));
+//                scoreDisplay.setText("Score: " + scoreVal);
+//            }
+//            public void onFinish() {
+//                setScoreVal(0);
+//                scoreDisplay.setText("Score: " + scoreVal);
+//            }
+//        }.start();
+//    }
 
     //Takes in a difficulty int and returns a string representing that difficulty
     public String difficultySwitch(int difficulty) {
@@ -253,6 +253,7 @@ public class GameScreenModel {
         for (Enemy enemy : currentEnemies) {
             if (playerHitBox.intersectsWall(enemy.getHitBox(), direction)) {
                 player.takeDamage();
+                // player score decreases
                 player.setxPos(playerHitBox.getLeft());
                 player.setyPos(playerHitBox.getTop());
                 gameScreen.updateHealth(player.getHealthPoints());
@@ -329,6 +330,11 @@ public class GameScreenModel {
     public void checkEnemySwordCollisions(Sword sword) {
         for (Enemy enemy : currentEnemies) {
             if (sword.getHitBox().intersects(enemy.getHitBox())) {
+                // player score increases
+                scoreVal -= 5;
+                setScoreVal(scoreVal);
+                gameScreen.setScoreDisplay(scoreVal);
+
                 if (currentRoom == 0 && enemy instanceof FireSkullEnemy) {
                     enemy.setHitBox(new Rectangle((float) -20, (float) -20,
                             (float) -20, (float) -20));
