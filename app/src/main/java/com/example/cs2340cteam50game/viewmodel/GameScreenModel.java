@@ -130,7 +130,7 @@ public class GameScreenModel {
     private Rectangle[] currentWallSet = map1Walls;
 
     private Rectangle exitBox = currentWallSet[currentWallSet.length - 1];
-    private int scoreVal = 100;
+    private int scoreVal = 0;
 
 //    public void startScoreTimer(TextView scoreDisplay) {
 //        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
@@ -253,7 +253,9 @@ public class GameScreenModel {
         for (Enemy enemy : currentEnemies) {
             if (playerHitBox.intersectsWall(enemy.getHitBox(), direction)) {
                 player.takeDamage();
-                // player score decreases
+                scoreVal -= 5;
+                //setScoreVal(scoreVal);
+                gameScreen.setScoreDisplay(scoreVal);
                 player.setxPos(playerHitBox.getLeft());
                 player.setyPos(playerHitBox.getTop());
                 gameScreen.updateHealth(player.getHealthPoints());
@@ -331,8 +333,8 @@ public class GameScreenModel {
         for (Enemy enemy : currentEnemies) {
             if (sword.getHitBox().intersects(enemy.getHitBox())) {
                 // player score increases
-                scoreVal -= 5;
-                setScoreVal(scoreVal);
+                scoreVal += 10;
+                //setScoreVal(scoreVal);
                 gameScreen.setScoreDisplay(scoreVal);
 
                 if (currentRoom == 0 && enemy instanceof FireSkullEnemy) {
@@ -388,7 +390,7 @@ public class GameScreenModel {
 
         if (currentRoom == 2) {
             player.setMovementStrategy(new NoSpeed());
-            timer.cancel();
+            //timer.cancel();
             gameScreen.endGame();
         } else {
             clearEnemies();
@@ -456,7 +458,7 @@ public class GameScreenModel {
         }
         eMovementHandlers.clear();
         clearEnemies();
-        timer.cancel();
+       //timer.cancel();
 
         gameScreen.endGame();
     }
