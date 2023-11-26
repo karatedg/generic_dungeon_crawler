@@ -85,13 +85,15 @@ public class GameScreen extends AppCompatActivity {
         ImageView upButton = findViewById(R.id.UpButton);
         ImageView downButton = findViewById(R.id.DownButton);
         ImageView rightButton = findViewById(R.id.RightButton);
+        ImageView attackButton = findViewById(R.id.AttackButton);
 
-        initializeButtons(leftButton, upButton, downButton, rightButton);
+        initializeButtons(leftButton, upButton, downButton, rightButton, attackButton);
 
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    private void initializeButtons(ImageView left, ImageView up, ImageView down, ImageView right) {
+    private void initializeButtons(ImageView left, ImageView up, ImageView down,
+                                   ImageView right, ImageView attackButton) {
 
         left.setOnTouchListener((view, motionEvent) -> {
             switch (motionEvent.getAction()) {
@@ -153,6 +155,7 @@ public class GameScreen extends AppCompatActivity {
             return true;
         });
 
+        attackButton.setOnClickListener(view -> gameScreenModel.attack());
     }
 
 
