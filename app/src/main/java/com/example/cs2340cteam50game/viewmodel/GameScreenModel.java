@@ -6,7 +6,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.example.cs2340cteam50game.R;
 import com.example.cs2340cteam50game.model.BeastCreator;
@@ -132,18 +131,18 @@ public class GameScreenModel {
     private Rectangle exitBox = currentWallSet[currentWallSet.length - 1];
     private int scoreVal = 0;
 
-//    public void startScoreTimer(TextView scoreDisplay) {
-//        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
-//            public void onTick(long millisUntilFinished) {
-//                setScoreVal((int) (millisUntilFinished / 1000));
-//                scoreDisplay.setText("Score: " + scoreVal);
-//            }
-//            public void onFinish() {
-//                setScoreVal(0);
-//                scoreDisplay.setText("Score: " + scoreVal);
-//            }
-//        }.start();
-//    }
+    //    public void startScoreTimer(TextView scoreDisplay) {
+    //        timer = new CountDownTimer((scoreVal) * 1000, 1000) {
+    //            public void onTick(long millisUntilFinished) {
+    //                setScoreVal((int) (millisUntilFinished / 1000));
+    //                scoreDisplay.setText("Score: " + scoreVal);
+    //            }
+    //            public void onFinish() {
+    //                setScoreVal(0);
+    //                scoreDisplay.setText("Score: " + scoreVal);
+    //            }
+    //        }.start();
+    //    }
 
     //Takes in a difficulty int and returns a string representing that difficulty
     public String difficultySwitch(int difficulty) {
@@ -338,8 +337,10 @@ public class GameScreenModel {
                 gameScreen.setScoreDisplay(scoreVal);
 
                 if (currentRoom == 0 && enemy instanceof FireSkullEnemy) {
+
                     enemy.setHitBox(new Rectangle((float) -20, (float) -20,
                             (float) -20, (float) -20));
+
                     eMovementHandlers.get(0).stopMovement();
                     gameLayout.removeView(enemyViews.get(0));
                 }
@@ -458,7 +459,7 @@ public class GameScreenModel {
         }
         eMovementHandlers.clear();
         clearEnemies();
-       //timer.cancel();
+        //timer.cancel();
 
         gameScreen.endGame();
     }
@@ -736,7 +737,7 @@ public class GameScreenModel {
         sword.setSpriteData(swordView1);
         System.out.println(sword.getHitBox().getTop());
         System.out.println(sword.getHitBox().getLeft());
-        CountDownTimer countDownTimer = new CountDownTimer(1000, 1000) {
+        CountDownTimer countDownTimer = new CountDownTimer(500, 500) {
             @Override
             public void onTick(long l) {
                 gameLayout.addView(swordView1);
