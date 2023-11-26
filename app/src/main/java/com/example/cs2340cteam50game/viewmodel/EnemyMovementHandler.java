@@ -186,10 +186,11 @@ public class EnemyMovementHandler implements Runnable {
                 (float) yPos + player.getSpriteHeight());
 
         if (playerHitBox.intersectsEnemy(enemy.getHitBox(), direction)) {
-            player.takeDamage();
             player.setxPos(playerHitBox.getLeft());
             player.setyPos(playerHitBox.getTop());
 
+            handler.post(player::takeDamage);
+            handler.post(gameScreen::updateScoreDisplay);
             handler.post(gameScreen::updatePlayer);
             handler.post(() -> gameScreen.updateHealth(player.getHealthPoints()));
         }

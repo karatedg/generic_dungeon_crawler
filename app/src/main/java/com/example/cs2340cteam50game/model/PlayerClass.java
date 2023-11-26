@@ -26,6 +26,7 @@ public class PlayerClass {
     private boolean isDead;
 
     private int damageTaken;
+    private int scoreLost;
 
 
 
@@ -284,13 +285,16 @@ public class PlayerClass {
         this.difficultyNum = difficultyNum;
         if (difficultyNum == 1) {
             setHealthPoints(150);
-            this.damageTaken = 10;
+            damageTaken = 10;
+            scoreLost = 5;
         } else if (difficultyNum == 2) {
             setHealthPoints(100);
-            this.damageTaken = 15;
+            damageTaken = 15;
+            scoreLost = 10;
         } else if (difficultyNum == 3) {
             setHealthPoints(75);
-            this.damageTaken = 20;
+            damageTaken = 20;
+            scoreLost = 15;
         }
     }
 
@@ -331,10 +335,12 @@ public class PlayerClass {
     }
 
     public void takeDamage() {
+        gameScreenModel.adjustScoreVal(-1 * scoreLost);
         this.healthPoints -= damageTaken;
         if (healthPoints < 0) {
             this.healthPoints = 0;
             checkDead = true;
         }
     }
+
 }
