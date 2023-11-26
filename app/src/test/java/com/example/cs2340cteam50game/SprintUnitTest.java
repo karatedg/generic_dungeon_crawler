@@ -310,7 +310,7 @@ public class SprintUnitTest {
         GameScreenModel model = new GameScreenModel();
         model.setCurrentWallSet(2);
         TextView text = new TextView(null);
-        //model.startScoreTimer(text);
+//        model.startScoreTimer(text);
         player.setGameScreenModel(model);
         player.setScreenHeight(3000);
         player.setScreenWidth(3000);
@@ -364,6 +364,7 @@ public class SprintUnitTest {
         player.setSpriteHeight(15);
         player.setSpriteWidth(15);
         player.setDifficultyNum(1);
+        player.setGameScreenModel(new GameScreenModel());
 
         Rectangle playerHitBox = new Rectangle(0, 0,
                 0 + player.getSpriteWidth(),
@@ -387,6 +388,7 @@ public class SprintUnitTest {
         player.setSpriteHeight(15);
         player.setSpriteWidth(15);
         player.setDifficultyNum(2);
+        player.setGameScreenModel(new GameScreenModel());
 
         Rectangle playerHitBox = new Rectangle(0, 0,
                 0 + player.getSpriteWidth(),
@@ -410,6 +412,7 @@ public class SprintUnitTest {
         player.setSpriteHeight(15);
         player.setSpriteWidth(15);
         player.setDifficultyNum(3);
+        player.setGameScreenModel(new GameScreenModel());
 
         Rectangle playerHitBox = new Rectangle(0, 0,
                 0 + player.getSpriteWidth(),
@@ -451,6 +454,7 @@ public class SprintUnitTest {
         player.setSpriteHeight(15);
         player.setSpriteWidth(15);
         player.setDifficultyNum(3);
+        player.setGameScreenModel(new GameScreenModel());
 
         Rectangle playerHitBox = new Rectangle(0, 0,
                 0 + player.getSpriteWidth(),
@@ -497,8 +501,6 @@ public class SprintUnitTest {
         assertEquals(enemies.get(0) instanceof DemonEnemy, true);
         assertEquals(enemies.get(1) instanceof GhostEnemy, true);
     }
-
-
 
     ///////////////////////////
     // SPRINT 5 TESTS!!!!!  //
@@ -573,6 +575,91 @@ public class SprintUnitTest {
         posY = player.getyPos();
         assertEquals(100, (int) posY);
     }
+  
+    @Test
+    public void testScoreLossEasy() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(1);
+
+        GameScreenModel model = new GameScreenModel();
+        model.setScoreVal(100);
+
+        player.setGameScreenModel(model);
 
 
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
+        }
+
+        int expectedScore = 95;
+        assertEquals(expectedScore, model.getScoreVal(), 0);
+    }
+
+    @Test
+    public void testScoreLossMedium() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(2);
+
+        GameScreenModel model = new GameScreenModel();
+        model.setScoreVal(100);
+
+        player.setGameScreenModel(model);
+
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
+        }
+
+        int expectedScore = 90;
+        assertEquals(expectedScore, model.getScoreVal(), 0);
+    }
+
+    @Test
+    public void testScoreLossHard() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        player.setDifficultyNum(3);
+
+        GameScreenModel model = new GameScreenModel();
+        model.setScoreVal(100);
+
+        player.setGameScreenModel(model);
+
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        BeastEnemy beastEnemy = new BeastEnemy();
+        beastEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        if (playerHitBox.intersects(beastEnemy.getHitBox())) {
+            player.takeDamage();
+        }
+
+        int expectedScore = 85;
+        assertEquals(expectedScore, model.getScoreVal(), 0);
+    }
 }

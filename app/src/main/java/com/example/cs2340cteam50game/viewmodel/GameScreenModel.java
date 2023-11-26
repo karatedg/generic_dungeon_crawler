@@ -251,10 +251,10 @@ public class GameScreenModel {
 
         for (Enemy enemy : currentEnemies) {
             if (playerHitBox.intersectsWall(enemy.getHitBox(), direction)) {
+
                 player.takeDamage();
-                scoreVal -= 5;
-                //setScoreVal(scoreVal);
-                gameScreen.setScoreDisplay(scoreVal);
+                updateScoreDisplay();
+
                 player.setxPos(playerHitBox.getLeft());
                 player.setyPos(playerHitBox.getTop());
                 gameScreen.updateHealth(player.getHealthPoints());
@@ -331,10 +331,10 @@ public class GameScreenModel {
     public void checkEnemySwordCollisions(Sword sword) {
         for (Enemy enemy : currentEnemies) {
             if (sword.getHitBox().intersects(enemy.getHitBox())) {
+
                 // player score increases
-                scoreVal += 10;
-                //setScoreVal(scoreVal);
-                gameScreen.setScoreDisplay(scoreVal);
+                adjustScoreVal(10);
+                updateScoreDisplay();
 
                 if (currentRoom == 0 && enemy instanceof FireSkullEnemy) {
 
@@ -688,6 +688,14 @@ public class GameScreenModel {
     //Setter for score
     public void setScoreVal(int score) {
         scoreVal = Math.max(score, 0);
+    }
+
+    public void adjustScoreVal(int change) {
+        scoreVal = Math.max(scoreVal + change, 0);
+    }
+
+    public void updateScoreDisplay() {
+        gameScreen.setScoreDisplay(scoreVal);
     }
 
     //Getter for score

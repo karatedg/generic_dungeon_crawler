@@ -231,6 +231,11 @@ public class GameScreen extends AppCompatActivity {
         playerView.updatePosition();
     }
 
+    public void updateScoreDisplay() {
+        scoreDisplay.setText("Score " + gameScreenModel.getScoreVal());
+    }
+
+
     public void setScoreDisplay(int score) {
         scoreDisplay.setText("Score " + score);
     }
