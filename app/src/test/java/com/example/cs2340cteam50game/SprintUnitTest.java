@@ -16,6 +16,7 @@ import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Rectangle;
 import com.example.cs2340cteam50game.model.Score;
 import com.example.cs2340cteam50game.model.SpeedBoost;
+import com.example.cs2340cteam50game.model.Sword;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 import org.junit.Test;
@@ -661,5 +662,20 @@ public class SprintUnitTest {
 
         int expectedScore = 85;
         assertEquals(expectedScore, model.getScoreVal(), 0);
+    }
+    @Test
+    public void testSwordEnemyCollision() {
+        Sword sword = Sword.getSword();
+        sword.setSpriteHeight(15);
+        sword.setSpriteWidth(15);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + sword.getSpriteWidth(),
+                0 + sword.getSpriteHeight());
+
+        GhostEnemy ghostEnemy = new GhostEnemy();
+        ghostEnemy.setHitBox(new Rectangle(0, 0, 5, 5));
+
+        assertEquals(playerHitBox.intersects(ghostEnemy.getHitBox()), true);
     }
 }
