@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import android.widget.TextView;
 
 import com.example.cs2340cteam50game.model.BeastEnemy;
+import com.example.cs2340cteam50game.model.ConfusionMovement;
 import com.example.cs2340cteam50game.model.DefaultSpeed;
 import com.example.cs2340cteam50game.model.DemonEnemy;
 import com.example.cs2340cteam50game.model.Enemy;
@@ -14,6 +15,7 @@ import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
 import com.example.cs2340cteam50game.model.Rectangle;
 import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.SpeedBoost;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
 import org.junit.Test;
@@ -308,7 +310,7 @@ public class SprintUnitTest {
         GameScreenModel model = new GameScreenModel();
         model.setCurrentWallSet(2);
         TextView text = new TextView(null);
-        model.startScoreTimer(text);
+        //model.startScoreTimer(text);
         player.setGameScreenModel(model);
         player.setScreenHeight(3000);
         player.setScreenWidth(3000);
@@ -495,5 +497,82 @@ public class SprintUnitTest {
         assertEquals(enemies.get(0) instanceof DemonEnemy, true);
         assertEquals(enemies.get(1) instanceof GhostEnemy, true);
     }
+
+
+
+    ///////////////////////////
+    // SPRINT 5 TESTS!!!!!  //
+    /////////////////////////
+
+    @Test
+    public void testConfusionMovement() {
+        //setup
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setScreenHeight(500);
+        player.setMovementStrategy(new ConfusionMovement());
+        player.setxPos(100);
+        player.setyPos(100);
+
+        //right
+        player.moveRight();
+        double posX = player.getxPos();
+        assertEquals(90, (int) posX);
+
+        //left
+        player.moveLeft();
+        posX = player.getxPos();
+        assertEquals(100, (int) posX);
+
+        //up
+        player.moveUp();
+        double posY = player.getyPos();
+        assertEquals(110, (int) posY);
+
+        //down
+        player.moveDown();
+        posY = player.getyPos();
+        assertEquals(100, (int) posY);
+    }
+
+    @Test
+    public void testSpeedBoostMovement() {
+        //setup
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+        player.setSpriteWidth(5);
+        player.setScreenWidth(200);
+        player.setScreenHeight(500);
+        player.setMovementStrategy(new SpeedBoost());
+        player.setxPos(100);
+        player.setyPos(100);
+
+        //right
+        player.moveRight();
+        double posX = player.getxPos();
+        assertEquals(125, (int) posX);
+
+        //left
+        player.moveLeft();
+        posX = player.getxPos();
+        assertEquals(100, (int) posX);
+
+        //up
+        player.moveUp();
+        double posY = player.getyPos();
+        assertEquals(75, (int) posY);
+
+        //down
+        player.moveDown();
+        posY = player.getyPos();
+        assertEquals(100, (int) posY);
+    }
+
 
 }
