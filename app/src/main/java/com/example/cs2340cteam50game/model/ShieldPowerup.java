@@ -68,4 +68,8 @@ public class ShieldPowerup implements Powerup {
         return x;
     }
 
+    public void setHitBox(Rectangle hitBox) {
+        this.hitBox = hitBox;
+    }
+
 }

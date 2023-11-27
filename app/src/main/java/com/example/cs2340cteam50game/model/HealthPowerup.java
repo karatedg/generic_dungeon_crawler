@@ -48,6 +48,10 @@ public class HealthPowerup implements Powerup {
         return width;
     }
 
+    public Float getHeight() {
+        return height;
+    }
+
     public void setSpriteHeight(Float height) {
         this.height = height;
     }
@@ -66,6 +70,10 @@ public class HealthPowerup implements Powerup {
 
     public double getxPos() {
         return x;
+    }
+
+    public void setHitBox(Rectangle hitBox) {
+        this.hitBox = hitBox;
     }
 
 }

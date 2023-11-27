@@ -68,4 +68,8 @@ public class SpeedPowerup implements Powerup {
         return x;
     }
 
+    public void setHitBox(Rectangle hitBox) {
+        this.hitBox = hitBox;
+    }
+
 }

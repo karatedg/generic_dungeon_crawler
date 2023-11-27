@@ -11,11 +11,15 @@ import com.example.cs2340cteam50game.model.DemonEnemy;
 import com.example.cs2340cteam50game.model.Enemy;
 import com.example.cs2340cteam50game.model.FireSkullEnemy;
 import com.example.cs2340cteam50game.model.GhostEnemy;
+import com.example.cs2340cteam50game.model.HealthPowerup;
 import com.example.cs2340cteam50game.model.Leaderboard;
 import com.example.cs2340cteam50game.model.PlayerClass;
+import com.example.cs2340cteam50game.model.Powerup;
 import com.example.cs2340cteam50game.model.Rectangle;
 import com.example.cs2340cteam50game.model.Score;
+import com.example.cs2340cteam50game.model.ShieldPowerup;
 import com.example.cs2340cteam50game.model.SpeedBoost;
+import com.example.cs2340cteam50game.model.SpeedPowerup;
 import com.example.cs2340cteam50game.model.Sword;
 import com.example.cs2340cteam50game.viewmodel.GameScreenModel;
 
@@ -678,4 +682,76 @@ public class SprintUnitTest {
 
         assertEquals(playerHitBox.intersects(ghostEnemy.getHitBox()), true);
     }
+
+    @Test
+    public void testSpeedPowerupCollides() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        SpeedPowerup speedPower = new SpeedPowerup();
+        speedPower.setSpriteWidth((float) 15.0);
+        speedPower.setSpriteHeight((float) 15.0);
+        speedPower.setHitBox(new Rectangle(0, 0, 5, 5));
+        assertEquals(playerHitBox.intersects((speedPower.getHitBox())), true);
+    }
+
+    @Test
+    public void testHealthPowerupCollides() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        HealthPowerup heathPower = new HealthPowerup();
+        heathPower.setSpriteWidth((float) 15.0);
+        heathPower.setSpriteHeight((float) 15.0);
+        heathPower.setHitBox(new Rectangle(0, 0, 5, 5));
+        assertEquals(playerHitBox.intersects((heathPower.getHitBox())), true);
+    }
+
+    @Test
+    public void testShieldPowerCollides() {
+        PlayerClass.clear();
+        PlayerClass player = PlayerClass.getPlayer();
+        player.setSpriteHeight(15);
+        player.setSpriteWidth(15);
+        GameScreenModel model = new GameScreenModel();
+        player.setGameScreenModel(model);
+
+        Rectangle playerHitBox = new Rectangle(0, 0,
+                0 + player.getSpriteWidth(),
+                0 + player.getSpriteHeight());
+
+        ShieldPowerup shieldPower = new ShieldPowerup();
+        shieldPower.setSpriteWidth((float) 15.0);
+        shieldPower.setSpriteHeight((float) 15.0);
+        shieldPower.setHitBox(new Rectangle(0, 0, 5, 5));
+        assertEquals(playerHitBox.intersects((shieldPower.getHitBox())), true);
+    }
+
+    @Test
+    public void testPowerupCreationSet1() {
+        GameScreenModel model = new GameScreenModel();
+        model.createPowerUpSet1();
+
+        ArrayList<Powerup> powerups = model.getCurrentPowerups();
+        assertEquals(powerups.get(0) instanceof SpeedPowerup, true);
+    }
+
+
+
 }
