@@ -712,6 +712,10 @@ public class GameScreenModel {
         return currentEnemies;
     }
 
+    public ArrayList<Powerup> getCurrentPowerups() {
+        return currentPowerups;
+    }
+
     //Setter for playerView
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
